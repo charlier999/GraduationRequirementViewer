@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.gradview.data.dao","l":"UsersDAO"}];updateSearchResults();

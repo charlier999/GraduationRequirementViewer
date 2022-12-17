@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+
+<!-- Common Header Fragment -->
+<div th:fragment="header">
+	<div align="center">
+	 
+	</div>
+	<div class="bs-example">
+		<nav class="navbar navbar-default">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" 
+					data-target="#navbarCollapse" 
+					data-toggle="collapse" 
+					class="navbar-toggle"
+				>
+					<span class="sr-only"> Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collection of nav links and other content for toggling -->
+			<div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/home">Home</a></li>
+					<li><a href="/battery/all">Battery</a></li>
+					<li><a href="/admin">Admin</a></li>
+					<!-- Add user roles to prevent unautherized users in the admin pages. -->
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<form th:action="@{/logout}" method="post">
+							<input type="submit" value="Log Out"/>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- Page Title and Logo -->
+	
+	<br/><br/>
+</div>
+
+<div th:fragment="footer">
+	<h5 style="color:purple; text-align:center; position:fixed; bottom:0; width:100%">
+		Copyright 202 Placeholder LLC
+	</h5>
+</div>
