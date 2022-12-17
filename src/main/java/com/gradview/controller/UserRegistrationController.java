@@ -27,8 +27,8 @@ public class UserRegistrationController
 {
 	private static final Logger logger = LoggerFactory.getLogger( UserRegistrationController.class );
 
-	@Autowired
-	private PasswordEncoder passwordEncoder;
+	//@Autowired
+	//private PasswordEncoder passwordEncoder;
 
 	@Autowired
 	private UserSecurityService userSecurityService;

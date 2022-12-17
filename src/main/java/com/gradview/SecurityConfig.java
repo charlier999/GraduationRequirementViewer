@@ -15,6 +15,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 
@@ -38,7 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 	@Bean
 	public PasswordEncoder passwordEncoder()
 	{
-		return new BCryptPasswordEncoder();
+		// return new BCryptPasswordEncoder();
+		return new PasswordEnconderTest();
 	}
 
 	@Override
@@ -57,18 +59,29 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 	public void configure( AuthenticationManagerBuilder auth ) throws Exception
 	{
 		logger.info( "AuthenticationManagerBuilder configuration is started." );
-		auth.jdbcAuthentication().dataSource( this.dataSource )//.passwordEncoder( this.passwordEncoder() )
+		auth.jdbcAuthentication().dataSource( this.dataSource )// .passwordEncoder( this.passwordEncoder() )
 				.usersByUsernameQuery( "SELECT username, password, enabled FROM users WHERE username = ?" )
-				.authoritiesByUsernameQuery(
-						"SELECT users.username, ur.name "
-						+ "FROM users "
-						+ "INNER JOIN `user-assigned-role` AS uar "
-						+ "ON users.id = uar.userID "
-						+ "INNER JOIN `user-roles` AS ur "
-						+ "ON uar.roleID = ur.id "
-						+ "WHERE users.username = ?" ); // This works now
+				.authoritiesByUsernameQuery( "SELECT users.username, ur.name " + "FROM users "
+						+ "INNER JOIN `user-assigned-role` AS uar " + "ON users.id = uar.userID "
+						+ "INNER JOIN `user-roles` AS ur " + "ON uar.roleID = ur.id " + "WHERE users.username = ?" ); // This
+																														// works
+																														// now
 		logger.info( "AuthenticationManagerBuilder configuration has finished." );
 	}
-	
 
+}
+
+class PasswordEnconderTest implements PasswordEncoder
+{
+	@Override
+	public String encode( CharSequence charSequence )
+	{
+		return charSequence.toString();
+	}
+
+	@Override
+	public boolean matches( CharSequence charSequence, String s )
+	{
+		return charSequence.toString().equals( s );
+	}
 }
