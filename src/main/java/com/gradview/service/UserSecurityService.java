@@ -110,6 +110,7 @@ public class UserSecurityService
 			UserInfo output = new UserInfo( -1, username, "null", null, -1, null, null );
 			output.setId( this.getUserIDByUsername( username ) );
 			output.setUserRoles( this.getUserAssignedRoleByUserID( output.getId() ) );
+			return output;
 		}
 		catch ( DataAccessException e )
 		{
@@ -126,7 +127,6 @@ public class UserSecurityService
 			logger.warn( "getUserByUsername: No users were found." );
 			throw new NoRowsFoundException();
 		}
-		return null;
 
 	}
 
@@ -199,49 +199,23 @@ public class UserSecurityService
 	 * calling it.
 	 * 
 	 * @param httpResponse ({@link HttpServletResponse}) - REQUIRED FOR REDIRECT.
-	 * @return {@link User}
+	 * @return {@link UserInfo}
 	 * @throws DataAccessException
 	 * @throws IOException
+	 * @throws NoRowsFoundException 
+	 * @throws UserNotFoundException 
+	 * @throws TooManyRowsException 
 	 */
-	public UserInfo getCurrentSessionUser( HttpServletResponse httpResponse ) throws DataAccessException, IOException
+	public UserInfo getCurrentSessionUser() throws DataAccessException, IOException, TooManyRowsException, UserNotFoundException, NoRowsFoundException
 	{
 		logger.info( "getCurrentSessionUser: Starting." );
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		try
-		{
+		
 			// Get the user from session authentication.
 			logger.info( ": Retreiveing logged in user's details." );
 			String name = auth.getName();
 			// If name equals the name given by spring for a user not logged in.
-			if ( name.equals( "anonymousUser" ) ) httpResponse.sendRedirect( "/login" );
 			return this.getUserByUsername( name );
-		}
-		catch ( TooManyRowsException e )
-		{
-			logger.info( "getCurrentSessionUser: More then expected rows." );
-			logger.info( "getCurrentSessionUser: Redirecting to '/login'." );
-			httpResponse.sendRedirect( "/login" );
-
-		}
-		catch ( UserNotFoundException e )
-		{
-			logger.info( "getCurrentSessionUser: User was not found." );
-			logger.info( "getCurrentSessionUser: Redirecting to '/login'." );
-			httpResponse.sendRedirect( "/login" );
-		}
-		catch ( DataAccessException e )
-		{
-			logger.warn( "getCurrentSessionUser: DataAccessException ocured." );
-			logger.info( "getCurrentSessionUser: Redirecting to '/login'." );
-			httpResponse.sendRedirect( "/login" );
-		}
-		catch ( NoRowsFoundException e )
-		{
-			logger.warn( "getUserIDByUsername: No users were found." );
-			logger.info( "getCurrentSessionUser: Redirecting to '/login'." );
-			httpResponse.sendRedirect( "/login" );
-		}
-		return null;
 	}
 
 	/**
