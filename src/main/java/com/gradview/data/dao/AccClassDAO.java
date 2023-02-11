@@ -273,7 +273,43 @@ public class AccClassDAO
         return false;
     }
 
-
+    public boolean delete( AccClassDAM input ) throws DataAccessException
+	{
+		logger.info( "delete: Started." );
+		// Create sql statement.
+		String sqlQ = "DELETE FROM " + TABLENAME + "WHERE " + COL_ID + " = ? ";
+		try
+		{
+			// delete
+			int rows = this.jdbcTemplate.update( sqlQ, input.getId() );
+			if ( rows == 1 )
+			{
+				logger.info( "delete: Delete Successful." );
+				logger.info( "delete: Returns true." );
+				return true;
+			}
+			else
+			{
+				logger.error( "delete: Delete Failed." );
+				logger.info( "delete: Returns false." );
+				return false;
+			}
+		}
+		catch ( DataAccessException e )
+		{
+			logger.warn( "delete: DataAccessException occured." );
+			throw e;
+		}
+		catch ( Exception ex )
+		{
+			logger.error( "delete: Exception occured." );
+			// Print a Stack Trace if an exception occurs.
+			ex.printStackTrace();
+		}
+		logger.error( "delete: Delete Failed." );
+	    logger.info( "delete: Returns false." );
+		return false;
+	}
 
 
 
