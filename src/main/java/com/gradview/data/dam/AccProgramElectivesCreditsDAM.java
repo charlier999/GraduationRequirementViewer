@@ -1,6 +1,6 @@
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
-public class AccProgramElectivesCreditsDAO
+public class AccProgramElectivesCreditsDAM
 {
 	/**
 	 * The ID number of the Program.
@@ -20,7 +20,7 @@ public class AccProgramElectivesCreditsDAO
 	 * @param minimum - The minimum number of elective credits required.
 	 * @param maximum - The maximum number of elective credits required.
 	 */
-	public AccProgramElectivesCreditsDAO( int programID, int minimum, int maximum )
+	public AccProgramElectivesCreditsDAM( int programID, int minimum, int maximum )
 	{
 		super();
 		this.programID = programID;

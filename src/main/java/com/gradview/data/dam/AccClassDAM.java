@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
 /**
  * Represents the "acc-class" table columns.
  * 
  * @author Charles Davis
  */
-public class AccClass
+public class AccClassDAM
 {
 	/**
 	 * The ID number of the Class.
@@ -38,7 +38,7 @@ public class AccClass
 	 * @param number      - The number of the Class.
 	 * @param credits     - The number of credits the Class awards.
 	 */
-	public AccClass( int id, String name, String description, String number, int credits )
+	public AccClassDAM( int id, String name, String description, String number, int credits )
 	{
 		super();
 		this.id = id;
@@ -54,7 +54,7 @@ public class AccClass
 	 * @param number      - The number of the Class.
 	 * @param credits     - The number of credits the Class awards.
 	 */
-	public AccClass( String name, String description, String number, int credits )
+	public AccClassDAM( String name, String description, String number, int credits )
 	{
 		super();
 		this.name = name;

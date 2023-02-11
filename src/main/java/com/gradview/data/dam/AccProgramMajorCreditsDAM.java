@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
 /**
  * Represents the "acc-program-major-credits" table columns.
  * 
  * @author Charles Davis
  */
-public class AccProgramMajorCreditsDAO
+public class AccProgramMajorCreditsDAM
 {
 	/**
 	 * The ID number of the Program.
@@ -23,7 +23,7 @@ public class AccProgramMajorCreditsDAO
 	 * @param programID - The ID number of the Program.
 	 * @param credits - The number of total amount of major credits the program requires.
 	 */
-	public AccProgramMajorCreditsDAO( int programID, int credits )
+	public AccProgramMajorCreditsDAM( int programID, int credits )
 	{
 		super();
 		this.programID = programID;

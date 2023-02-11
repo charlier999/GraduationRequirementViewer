@@ -1,14 +1,11 @@
-/**
- * 
- */
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
 /**
  * Represents the "acc-class-prerequisite" table columns.
  * 
  * @author Charles Davis
  */
-public class AccClassPrerequisiteDAO
+public class AccClassPrerequisiteDAM
 {
 	/**
 	 * The ID of the Class.
@@ -23,7 +20,7 @@ public class AccClassPrerequisiteDAO
 	 * @param classID        - The ID of the Class.
 	 * @param requireClassID - The ID of the Class required to take the Class.
 	 */
-	public AccClassPrerequisiteDAO( int classID, int requireClassID )
+	public AccClassPrerequisiteDAM( int classID, int requireClassID )
 	{
 		super();
 		this.classID = classID;

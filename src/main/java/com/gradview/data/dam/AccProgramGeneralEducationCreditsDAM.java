@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
 /**
  * Represents the "acc-program-general-education-credits" table columns.
  * 
  * @author Charles Davis
  */
-public class AccProgramGeneralEducationCreditsDAO
+public class AccProgramGeneralEducationCreditsDAM
 {
 	/**
 	 * The ID number of the Program.
@@ -28,7 +28,7 @@ public class AccProgramGeneralEducationCreditsDAO
 	 * @param minimum - The minimum number of general education credits required.
 	 * @param maximum - The maximum number of general education credits required.
 	 */
-	public AccProgramGeneralEducationCreditsDAO( int programID, int minimum, int maximum )
+	public AccProgramGeneralEducationCreditsDAM( int programID, int minimum, int maximum )
 	{
 		super();
 		this.programID = programID;

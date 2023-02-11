@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
 /**
  * Represents the "acc-general-education-competency" table columns.
  * 
  * @author Charles Davis
  */
-public class AccGeneralEducationCompetencyDAO
+public class AccGeneralEducationCompetencyDAM
 {
 	/**
 	 * The ID number of the General Education Competency.
@@ -40,7 +40,7 @@ public class AccGeneralEducationCompetencyDAO
 	 * @param maximumCredits - The maximum required credits for the General
 	 *                       Education Competency.
 	 */
-	public AccGeneralEducationCompetencyDAO( int id, String name, String description, int minimumCredits,
+	public AccGeneralEducationCompetencyDAM( int id, String name, String description, int minimumCredits,
 			int maximumCredits )
 	{
 		super();
@@ -59,7 +59,7 @@ public class AccGeneralEducationCompetencyDAO
 	 * @param maximumCredits - The maximum required credits for the General
 	 *                       Education Competency.
 	 */
-	public AccGeneralEducationCompetencyDAO( String name, String description, int minimumCredits, int maximumCredits )
+	public AccGeneralEducationCompetencyDAM( String name, String description, int minimumCredits, int maximumCredits )
 	{
 		super();
 		this.name = name;

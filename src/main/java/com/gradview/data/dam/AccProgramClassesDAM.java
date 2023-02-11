@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
 /**
  * Represents the "acc-program-classes" table columns.
  * 
  * @author Charles Davis
  */
-public class AccProgramClassesDAO
+public class AccProgramClassesDAM
 {
 	/**
 	 * The ID number of the Program.
@@ -23,7 +23,7 @@ public class AccProgramClassesDAO
 	 * @param programID - The ID number of the Program.
 	 * @param classID   - The ID number of the Class.
 	 */
-	public AccProgramClassesDAO( int programID, int classID )
+	public AccProgramClassesDAM( int programID, int classID )
 	{
 		super();
 		this.programID = programID;

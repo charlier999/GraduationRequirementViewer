@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.gradview.data.dao;
+package com.gradview.data.dam;
 
 /**
  * Represents the "acc-program" table columns.
  * 
  * @author Charles Davis
  */
-public class AccProgramDAO
+public class AccProgramDAM
 {
 	/**
 	 * The ID number of the Program.
@@ -43,7 +43,7 @@ public class AccProgramDAO
 	 * @param baOfArts    - The program is a bachelors of arts.
 	 * @param baOfScience - The program is a bachelors of science.
 	 */
-	public AccProgramDAO( int id, String name, String description, String level, boolean baOfArts, boolean baOfScience )
+	public AccProgramDAM( int id, String name, String description, String level, boolean baOfArts, boolean baOfScience )
 	{
 		super();
 		this.id = id;
@@ -61,7 +61,7 @@ public class AccProgramDAO
 	 * @param baOfArts    - The program is a bachelors of arts.
 	 * @param baOfScience - The program is a bachelors of science.
 	 */
-	public AccProgramDAO( String name, String description, String level, boolean baOfArts, boolean baOfScience )
+	public AccProgramDAM( String name, String description, String level, boolean baOfArts, boolean baOfScience )
 	{
 		super();
 		this.name = name;
