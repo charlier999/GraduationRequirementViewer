@@ -29,7 +29,7 @@ public class AccProgramMajorCreditsDAO
     @Autowired
 	private JdbcTemplate jdbcTemplate;
     /** 
-     * Retrieves a list of all {@link AccProgramMajorCreditsDAM programs credits} from {@value #TABLENAME}
+     * Retrieves a list of all {@link AccProgramMajorCreditsDAM programs class credits} from {@value #TABLENAME}
      * @return List< {@link AccProgramMajorCreditsDAM} >
      * @throws NoRowsFoundException No rows were found in the table.
      * @throws DataAccessException An access exception occured.
@@ -91,7 +91,7 @@ public class AccProgramMajorCreditsDAO
     }
 
     /** 
-     * Searches for {@link AccProgramMajorCreditsDAM programs credits} in the requested column for the query in the {@value #TABLENAME} table.
+     * Searches for {@link AccProgramMajorCreditsDAM programs class credits} in the requested column for the query in the {@value #TABLENAME} table.
      * @param colName The column to search for the query in.
      * @param query The value to search in the column for.
      * @return List< {@link AccProgramMajorCreditsDAM} >
@@ -156,10 +156,10 @@ public class AccProgramMajorCreditsDAO
     }
 
     /** 
-     * Inserts the {@link AccProgramMajorCreditsDAM program credits} into the {@value #TABLENAME} table.
-     * @param input The {@link AccProgramMajorCreditsDAM program credits} to insert into the {@value #TABLENAME} table.
-     * @return boolean Status of creation. True: {@link AccProgramMajorCreditsDAM program credits} was added to the {@value #TABLENAME} table. 
-     *          False: {@link AccProgramMajorCreditsDAM program credits} was NOT added to the {@value #TABLENAME} table.
+     * Inserts the {@link AccProgramMajorCreditsDAM program class credits} into the {@value #TABLENAME} table.
+     * @param input The {@link AccProgramMajorCreditsDAM program class credits} to insert into the {@value #TABLENAME} table.
+     * @return boolean Status of creation. True: {@link AccProgramMajorCreditsDAM program class credits} was added to the {@value #TABLENAME} table. 
+     *          False: {@link AccProgramMajorCreditsDAM program class credits} was NOT added to the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
      * @throws Exception Catch all for any exception.
      */
@@ -204,10 +204,10 @@ public class AccProgramMajorCreditsDAO
     }
 
     /** 
-     * Updates the {@link AccProgramMajorCreditsDAM program credits} into the {@value #TABLENAME} table using the {@link AccProgramMajorCreditsDAM}'s ProgramID to select the database entry to update. 
-     * @param input The {@link AccProgramMajorCreditsDAM program credits} to update into the {@value #TABLENAME} table.
-     * @return boolean Status of update. True: {@link AccProgramMajorCreditsDAM program credits} was updated in the {@value #TABLENAME} table. 
-     *          False: {@link AccProgramMajorCreditsDAM program credits} was NOT updated in the {@value #TABLENAME} table.
+     * Updates the {@link AccProgramMajorCreditsDAM program class credits} into the {@value #TABLENAME} table using the {@link AccProgramMajorCreditsDAM}'s ProgramID to select the database entry to update. 
+     * @param input The {@link AccProgramMajorCreditsDAM program class credits} to update into the {@value #TABLENAME} table.
+     * @return boolean Status of update. True: {@link AccProgramMajorCreditsDAM program class credits} was updated in the {@value #TABLENAME} table. 
+     *          False: {@link AccProgramMajorCreditsDAM program class credits} was NOT updated in the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
      * @throws Exception Catch all for any exception.
      */
@@ -252,11 +252,11 @@ public class AccProgramMajorCreditsDAO
     }
 
     /**
-     * Delets the inputed {@link AccProgramMajorCreditsDAM program credits} from the {@value #TABLENAME} table using both of {@link AccProgramMajorCreditsDAM}'s ProgramID
+     * Delets the inputed {@link AccProgramMajorCreditsDAM program class credits} from the {@value #TABLENAME} table using both of {@link AccProgramMajorCreditsDAM}'s ProgramID
      *  to select the database entry to delete. 
      * @param input The {@link AccProgramMajorCreditsDAM} to delete into the {@value #TABLENAME} table.
-     * @return boolean Status of deletion. True: {@link AccProgramMajorCreditsDAM program credits} was deleted from the {@value #TABLENAME} table. 
-     *          False: {@link AccProgramMajorCreditsDAM program credits} was NOT deleted from the {@value #TABLENAME} table.
+     * @return boolean Status of deletion. True: {@link AccProgramMajorCreditsDAM program class credits} was deleted from the {@value #TABLENAME} table. 
+     *          False: {@link AccProgramMajorCreditsDAM program class credits} was NOT deleted from the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
      * @throws Exception Catch all for any exception.
      */
