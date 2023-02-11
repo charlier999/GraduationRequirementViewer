@@ -8,21 +8,7 @@
 	</head>
 	<body>
 		<div layout:fragment="content">
-			<a href="/logout">logout</a>
-			<h3>Your Roles</h3>
-			<table>
-				<tr>
-					<th></th>
-					<th></th>
-				</tr>
-				<tr th:each="role : ${roles}">
-					<td th:text="${role.roleID}"></td>
-					<td th:if="${role.roleID == 0}"><h2 th:text="User"></h2></td>
-					
-					
-				</tr>
-			</table>
-			<h4 th:text="${roles}"></h4>
+
 		</div>
 	</body>
 </html>
