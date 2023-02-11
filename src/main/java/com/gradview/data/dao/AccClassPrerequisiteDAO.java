@@ -160,7 +160,7 @@ public class AccClassPrerequisiteDAO
 
     /** 
      * Inserts the {@link AccClassPrerequisiteDAM class prerequisite} into the {@value #TABLENAME} table.
-     * @param accClass The {@link AccClassPrerequisiteDAM class prerequisite} to insert into the {@value #TABLENAME} table. Does NOT use the ID property.
+     * @param accClass The {@link AccClassPrerequisiteDAM class prerequisite} to insert into the {@value #TABLENAME} table.
      * @return boolean Status of creation. True: {@link AccClassPrerequisiteDAM Class prerequisite} was added to the {@value #TABLENAME} table. 
      *          False: {@link AccClassPrerequisiteDAM Class prerequisite} was NOT added to the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
@@ -207,7 +207,7 @@ public class AccClassPrerequisiteDAO
     }
 
     /**
-     * Delets the inputed {@link AccClassPrerequisiteDAM class prerequisite} from the {@value #TABLENAME} table using the {@link AccClassPrerequisiteDAM}'s' ID 
+     * Delets the inputed {@link AccClassPrerequisiteDAM class prerequisite} from the {@value #TABLENAME} table using both of {@link AccClassPrerequisiteDAM}'s class IDs 
      *  to select the database entry to delete. 
      * @param input The {@link AccClassPrerequisiteDAM} to delete into the {@value #TABLENAME} table. Requires ID property.
      * @return boolean Status of deletion. True: {@link AccClassPrerequisiteDAM Class prerequisite} was deleted from the {@value #TABLENAME} table. 
