@@ -13,10 +13,12 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.InvalidResultSetAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.stereotype.Component;
 
 import com.gradview.data.dam.AccGeneralEducationCompetencyDAM;
 import com.gradview.exception.NoRowsFoundException;
 
+@Component
 public class AccGeneralEducationCompetencyDAO 
 {
     private static final Logger logger = LoggerFactory.getLogger(AccGeneralEducationCompetencyDAO.class);

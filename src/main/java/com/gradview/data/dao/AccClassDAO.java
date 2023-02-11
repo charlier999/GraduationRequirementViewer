@@ -13,6 +13,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.InvalidResultSetAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import org.springframework.stereotype.Component;
 
 import com.gradview.data.dam.AccClassDAM;
 import com.gradview.exception.NoRowsFoundException;
@@ -20,6 +21,7 @@ import com.gradview.exception.NoRowsFoundException;
 /**
  * Accesses and interacts with {@value #TABLENAME} table.
  */
+@Component
 public class AccClassDAO 
 {
     private static final Logger logger = LoggerFactory.getLogger(AccClassDAO.class);
