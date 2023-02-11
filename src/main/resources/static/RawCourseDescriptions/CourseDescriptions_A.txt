@@ -1,0 +1,1579 @@
+Accounting (ACC)
+ACC-240: Fundamentals of Accounting 4 credits
+In this course, students examine basic accounting concepts and
+explore how accounting information assists business leaders in
+making financial decisions that increase profitability and
+contribute to competitive advantage. There is specific emphasis
+on the analysis of financial statements in the business decisionmaking process, budgeting, and factors businesses must consider
+when determining appropriate pricing of goods and services.
+Prerequisite: MAT-144 or MAT-154.
+ACC-250: Financial Accounting 4 credits
+This course is an introduction to the accounting cycle and the
+construction of financial statements. Students explore the
+fundamental principles and practices of financial accounting as
+outlined by Generally Accepted Accounting Principles (GAAP);
+the steps in the accounting cycle from journalizing transactions
+through the preparation of financial statements; and the use and
+interpretation of the balance sheet, income statement, and
+statement of cash flows. Prerequisite: MAT-134, MAT-144 or
+MAT-154.
+ACC-260: Management Accounting 4 credits
+This course is an introduction to the use of managerial accounting
+data in the decision-making process. Topics include the use of
+cost-volume-profit (CVP) analysis and relevant costs in decision
+making, using budgets and the balanced scorecard to evaluate
+performance, methods for setting prices of products and services,
+and analyzing capital investment opportunities. Prerequisite:
+ACC-250.
+ACC-335: Accounting Information Systems 4 credits
+This course provides students with an introduction to current
+practices and techniques used to design, install, operate, and
+manage an integrated accounting system in either a manual or
+computerized setting. Application controls, information security
+requirements, and integration with other business information
+systems are examined. Prerequisite: BIT-200.
+ACC-337: Introduction to Accounting
+Analytics
+4 credits
+This course is an introduction to data analytics techniques
+frequently used in accounting. Students explain basic concepts of
+financial data analytics and apply descriptive analyses, diagnostic
+analyses, predictive analytics, and prescriptive analytics to
+business scenarios. Prerequisite: ACC-335.
+ACC-360: Cost Accounting 4 credits
+This course provides a study of principles of internal accounting,
+including job order systems, process costing, activity-based
+costing, and budgeting. Prerequisite: ACC-260 or ACC-350.
+ACC-361: Intermediate Managerial
+Accounting
+4 credits
+This course explores intermediate managerial accounting
+concepts. Students analyze cost behavior, value inventory using
+multiple costing methods, prepare budgets and evaluate
+variances, and use financial data and nonfinancial measures to
+analyze performance. Prerequisites: ACC-260, ACC-335 and,
+BUS-352.
+ACC-370: Intermediate Accounting I 4 credits
+This course is an in-depth study of accounting objectives,
+principles, theory, and practice as related to the balance sheet and
+income statement. Students explore the accounting cycle, the
+preparation of detailed financial statements in accordance with
+Generally Accepted Accounting Principles (GAAP), accounting
+for assets, and other items frequently addressed on the Uniform
+Certified Public Accounting Examination (Uniform CPA Exam).
+Prerequisites: ACC-250 and ACC-260.
+ACC-371: Intermediate Accounting II 4 credits
+This course is an in-depth study of accounting objectives,
+principles, theory, and practice as related to the balance sheet and
+income statement. Students explore liabilities and equity items;
+the specific rules for accounting for leases, accounting changes,
+and income taxes, and other items frequently addressed on the
+Uniform Certified Public Accounting Examination (Uniform
+CPA Exam). Prerequisite: ACC-370.
+ACC-425: Ethics in Accounting 4 credits
+This course is an in-depth study of ethical issues encountered in
+public accounting. Students develop a foundation for ethical
+decision making and explore ethical guidelines specific to the
+accounting profession. This course is designed to meet the
+requirements for licensure of certified public accountants in
+California. Prerequisites: BUS-340, ACC-460, and ACC-491.
+ACC-460: Taxation 4 credits
+This course provides a study of the theory and practices of
+accounting for income taxes of individuals. Students explore the
+responsibilities of a tax accountant, specific transactions that
+affect the tax liability of individuals. Prerequisite: ACC-370 or
+FIN-350.
+ACC-465: Taxation II 4 credits
+This course provides a study of the theory and practices of
+accounting for income taxes of corporations, partnerships, and S
+corporations. Students explore tax treatment of transactions
+frequently encountered by various entities and prepare illustrative
+tax returns and related schedules. Prerequisite: ACC-460.
+ACC-482: Accounting Capstone 4 credits
+This course is a synthesis of concepts learned throughout the
+student’s prior coursework, with a focus on material tested on the
+Uniform Certified Public Accountant (CPA) Exam. Students
+reinforce concepts that have been introduced throughout the
+program and apply these concepts through completing questions
+and simulations like those found on the Uniform Certified Public
+Accountant (CPA) Exam. Prerequisites: ACC-485, ACC-460,
+and ACC-491.
+ACC-485: Advanced Accounting 4 credits
+This course provides a study of accounting theory as it applies to
+partnerships and business combinations, international accounting,
+and governmental accounting. Prerequisites: ACC-370 and ACC371.
+ACC-486: Financial Statement Analysis 4 credits
+This course provides a detailed analysis and interpretation of a
+firm’s three principal financial statements and their uses from a
+managerial perspective. Prerequisites: ACC-240, ACC-260, or
+ACC-350; and FIN-350.
+ACC-491: Auditing 4 credits
+Auditing is an examination of generally accepted auditing
+standards, procedures involved in the auditing process, and
+ethical issues faced by the auditor. Through class discussions,
+practical applications, and case studies, students learn the
+responsibilities of the independent public auditor in the
+expression of opinion within the guidelines set by the AICPA’s
+Code of Professional Ethics. Topics include the nature and types
+of audits, auditor responsibilities and legal liabilities, audit
+reports, auditing procedures, ethical issues, contemporary issues
+in auditing, and the Sarbanes-Oxley Act of 2002. Prerequisites:
+ACC-260 or ACC-350, and ACC-370.
+ACC-502: Accounting Practices 4 credits
+This course is designed for students who are preparing for more
+advanced coursework in business but who have not had
+accounting in undergraduate work. Topics covered include the
+principles and practices of financial accounting, including the
+fundamentals of revenue recognition, the components of the
+balance sheet, and financial statement analysis. The course
+explores accounting theories using publicly traded companies and
+case studies.
+ACC-614: Accounting Research 2 credits
+This course provides students with applied research experience
+using electronic databases to determine proper application of
+GAAP, IASs, and IFRSs to practical situations. Students develop
+the skills needed to access accounting and auditing rules and
+regulations, company financial statements, and related industry
+data used for analyzing financial statements.
+ACC-616: Financial Research and
+Compliance
+4 credits
+This course provides students with applied research experience
+using electronic databases to determine proper application of
+GAAP, IASs, and IFRSs to practical situations. Students develop
+the skills needed to access accounting, auditing, and taxation
+rules and regulations; company financial statements; and related
+industry data used for analyzing financial statements.
+ACC-622: Accounting Information Systems 4 credits
+This course provides students with an analysis of current
+practices and techniques used to design, install, operate, and
+manage an integrated accounting system in either a manual or a
+computerized setting. Application controls, information security
+requirements, and integration with other business information
+systems are examined.
+ACC-650: Managerial Accounting 4 credits
+This course covers managerial accounting concepts and
+procedures for internal reporting, including the study of cost
+behavior, cost systems, budgeting, and performance evaluation.
+Coursework includes case studies, group projects, and class
+discussion. Prerequisite: ACC-502.
+ACC-653: Advanced Managerial and Cost
+Accounting
+4 credits
+This course explores advanced managerial and cost accounting
+methods frequently used in accounting. Students apply
+managerial and cost accounting methods that are commonly
+tested on the Uniform Certified Public Accountant (CPA) Exam
+Business Analysis and Reporting (BAR) discipline.
+ACC-656: Advanced Accounting 4 credits
+This course explores advanced accounting theories and practices
+frequently used in public accounting. Students apply advanced
+accounting methods that are commonly tested on the Uniform
+Certified Public Accountant (CPA) Exam: Business Analysis and
+Reporting (BAR) Discipline.
+ACC-657: Advanced Data Analytics 4 credits
+This course explores advanced data analytics techniques
+frequently used in public accounting. Students apply financial
+data analytics methods that are commonly tested on the Uniform
+Certified Public Accountant (CPA) Exam: Business Analysis and
+Reporting (BAR) Discipline.
+ACC-658: Governmental and Not-For-Profit
+Accounting
+4 credits
+This course explores accounting theories and practices used for
+governmental and not-for-profit entities. Students apply
+governmental and not-for-profit accounting methods that are
+commonly tested on the Uniform Certified Public Accountant
+(CPA) Exam: Business Analysis and Reporting (BAR)
+Discipline.
+ACC-660: Advanced Financial Accounting 4 credits
+This course is an exploration of advanced topics in financial
+accounting and reporting, including recognition, measurement,
+and valuation issues affecting organizations. Prerequisite: ACC650.
+ACC-667: Advanced Audit 4 credits
+This course provides an overview of auditing concepts related to
+forensic accounting, the internal audit function, operational
+auditing, and auditing information systems. In addition, students
+will become familiar with fraudulent financial reporting and the
+prevention and detection of irregularities. Prerequisites: ACC616, and BUS-623.
+ACC-668: Advanced Taxation 4 credits
+This course is a study of the theory and practices of accounting
+for income taxes of corporations, partnerships, estates, and trusts.
+In addition, students will explore advanced tax planning
+concepts, including international tax implications. Prerequisites:
+ACC-616 and BUS-623.
+
+Spring 2023 Academic Catalog 240 © 2017 Grand Canyon University. All Rights Reserved.
+ACC-670: Advanced Financial Statement
+Analysis
+4 credits
+This course covers in-depth analysis and interpretation of
+corporate financial reports. Students examine the form, content,
+and general accounting principles governing the construction of
+financial statements. There is particular emphasis on the analysis
+and interpretation of financial data as well as on the utility and
+limitations of financial accounting data. Prerequisites: ACC-650
+or ACC-653, and ACC-660.
+ACC-680: Auditing and Data Analytics Core 4 credits
+This course is a review of concepts frequently tested on the
+Uniform Certified Public Accountant (CPA) Exam: Auditing and
+Accounting Information Systems Core (AUD). Students reinforce
+concepts learned in undergraduate work and apply them by
+completing questions and simulations similar to those found on
+the Uniform CPA Exam.
+ACC-681: Tax Core 4 credits
+This course is a review of concepts frequently tested on the
+Uniform Certified Public Accountant (CPA) Exam: Tax Core
+(TAX). Students reinforce concepts learned in undergraduate
+work and apply them by completing questions and simulations
+similar to those found on the Uniform CPA Exam.
+ACC-682: Accounting and Data Analytics
+Core
+4 credits
+This course is a review of concepts frequently tested on the
+Uniform Certified Public Accountant (CPA) Exam: Accounting
+and Data Analytics Core (ACC). Students reinforce concepts
+learned in undergraduate work and apply them by completing
+questions and simulations similar to those found on the Uniform
+CPA Exam.
+ACC-685: BAR Discipline Capstone 2 credits
+This course is a review of concepts frequently tested on the
+Uniform Certified Public Accountant (CPA) Exam: Business
+Analysis and Reporting (BAR) Discipline. Students reinforce
+concepts learned throughout the program and apply them by
+completing questions and simulations similar to those found on
+the Uniform CPA Exam. Prerequisites: ACC-653, ACC-656,
+ACC-657, and ACC-658.
+ACC-690Ω: Capstone I 4 credits
+This course is an introduction to the Uniform CPA exam. It is
+designed to prepare students for the Financial Accounting and
+Reporting (FAR) and Business Environment Concepts (BEC)
+parts of the exam.
+ACC-691Ω: Capstone II 4 credits
+This course is designed to help students to prepare for the
+Auditing (AUD) and Regulation (REG) sections of the Uniform
+Certified Public Accountant (CPA) Exam. Students will review
+materials frequently tested on the Uniform CPA Exam and will
+use practice questions, problems, and simulations to demonstrate
+mastery of accounting concepts.
+Administration (ADM)
+ADM-530: Public and Nonprofit
+Administration
+4 credits
+This course examines the day-to-day duties of public
+administrators. Relationship building, political awareness, and
+collaborative strategies are highlighted throughout the course.
+How to best employ skills for the effective running of an
+organization is incorporated.
+ADM-560: Influence, Power, and Politics in
+Public Administration
+4 credits
+This course examines power and political structures employed
+within public administration. The ethical use of power and how
+to effectively influence others in public administration is
+practiced.
+ADM-614: Economics for Public
+Administrators
+4 credits
+In this course, the role of government in the economy is explored
+within the general context of market failure and social equity.
+Topics include allocation of goods and services, income
+distribution, externalities, public goods, and public choice theory.
+This course also examines the impact of macroeconomic events
+and policy decisions on the budgets and service levels of public
+entities.
+ADM-620: Leading Public Organizations 4 credits
+This course examines leadership practices and qualities necessary
+to lead an organization. A focus is given to the science of
+organizational behavior and how it contributes to effective
+leaders and managers.
+ADM-624: Public Governance 4 credits
+This course focuses on how government and public organizations
+serve their stakeholders, the manner in which their services are
+carried out, how resources are managed, and how regulatory
+powers are complied with and/or managed. The best practices in
+public governance, issues related to transparency, participation,
+and accountability are examined.
+ADM-626: Public Budgeting and Financial
+Management
+4 credits
+This course provides an introduction to the revenue and
+expenditure structure of the public sector, including revenue
+policy, expenditure policy, and budget structure and
+administration.
+ADM-630: Introduction to the Nonprofit and
+NGO Sector
+4 credits
+This course explores the theories and concepts of nonprofit and
+nongovernmental organizations, stressing their waxing
+importance in the domestic and international arenas. In particular,
+the course examines the history, structure, management,
+missions, and future of nonprofits and NGOs.
+
+Spring 2023 Academic Catalog 241 © 2017 Grand Canyon University. All Rights Reserved.
+ADM-632: Intergovernmental Relations 4 credits
+This course examines in detail the relationships among the
+federal, state, and municipal levels of government in the United
+States. The history of U.S. federalism is briefly covered, followed
+by a more in-depth focus on such issues as competition among
+levels and branches of government, the challenge of institutional
+fragmentation, and the role of governmental interest groups.
+Specific policy issues (education, health care, social services) are
+used to examine and analyze the dynamics of these relationships.
+ADM-634: Policy Studies 4 credits
+This course focuses on how challenges and problems facing
+society become policy issues. Leading theories in policy analysis
+and the policy-making process are examined and critiqued. The
+impact of policy decisions on various groups within society
+(related to gender, age, ethnicity, etc.) is also examined.
+ADM-636: Law and Administrative Process 4 credits
+An introduction to law relevant to public administration, this
+course covers selected topics in administrative and constitutional
+law, including the exercise of governmental power, legislative
+and executive oversight, rule making, adjudication, and judicial
+review.
+ADM-638: Fundamentals of Community
+Development
+4 credits
+This course reviews the theoretical concepts on community
+development. The practice of community development includes
+effective mobilization, building, and management of collective
+efforts. In particular, the course explores the social, political,
+economic, environmental, and religious aspects of communitybased collective action to solve pressing problems.
+ADM-640: Program Evaluation 4 credits
+This course examines systematic program evaluation using
+various research methods. A focus is given to Local and State
+programs and policies.
+ADM-641: Funding and Program Evaluation
+of Nonprofit Organizations
+4 credits
+This course addresses the many facets of funding for nonprofit
+organizations. Relationship building, in addition to various
+funding strategies are covered. Approaches to keep an
+organization on solid financial ground are examined.
+ADM-645: Strategic Planning and Program
+Evaluation in Healthcare
+4 credits
+This course exposes students to the role strategic planning and
+program evaluation play in developing, implementing, and
+assessing public health care programs. The use of a strategic
+planning and program evaluation framework for program
+proposals is covered.
+Advertising (ADV)
+ADV-110: Fundamentals of Advertising 4 credits
+This course introduces the fundamentals of the advertising
+industry including basic elements of campaign strategy and
+design. Students learn the foundational communication and
+writing skills necessary to create effective campaigns.
+Contemporary legal and ethical issues in advertising are also
+addressed. Technology requirement: Students are responsible for
+providing their own laptop that is capable of running the Adobe
+Creative Cloud. Verify required technical specifications in the
+University Policy Handbook available on www.gcu.edu.
+ADV-250҂
+: Advanced Design Fundamentals 4 credits
+This course builds on design fundamentals by increasing
+students’ understanding of content development and production
+methods within the advertising design process. Students will
+create and produce advertising campaigns and products of
+various scope and size. Technology requirement: Students are
+responsible for providing their own laptop that is capable of
+running the Adobe Creative Cloud. Verify required technical
+specifications in the University Policy Handbook available on
+www.gcu.edu. Prerequisite: ADV-110, DDN-110 or DDN-115.
+ADV-250HN҂
+: Advanced Design Fundamentals 4 credits
+This course builds on design fundamentals by increasing
+students’ understanding of content development and production
+methods within the advertising design process. Students will
+create and produce advertising campaigns and products of
+various scope and size. Technology requirement: Students are
+responsible for providing their own laptop that is capable of
+running the Adobe Creative Cloud. Verify required technical
+specifications in the University Policy Handbook available on
+www.gcu.edu. Prerequisite: ADV-110, DDN-110.
+ADV-260∆: Advertising Copywriting 4 credits
+This writing intensive course focuses on creative copywriting
+techniques to develop advertising campaigns for print and
+multimedia channels. Students enhance persuasive writing skills
+to create compelling and ethical advertising campaigns that are
+competitive in the industry. Technology requirement: Students
+are responsible for providing their own laptop that is capable of
+running the Adobe Creative Cloud. Verify required technical
+specifications in the University Policy Handbook available on
+www.gcu.edu. Prerequisite: ENG-106.
+ADV-340∆҂: Media Law and Ethics 4 credits
+This writing intensive course provides an overview of the laws
+and regulations that apply to advertising, marketing, and media
+organizations with emphasis on business organization,
+intellectual property, and regulatory processes. Ethical practices
+and theory as they apply to the mass media industry are also
+addressed. Technology requirement: Students are responsible for
+providing their own laptop that is capable of running the Adobe
+Creative Cloud. Verify required technical specifications in the
+University Policy Handbook available on www.gcu.edu.
+
+Spring 2023 Academic Catalog 242 © 2017 Grand Canyon University. All Rights Reserved.
+ADV340HN∆҂:
+Media Law and Ethics 4 credits
+This writing intensive course provides an overview of the laws
+and regulations that apply to advertising, marketing, and media
+organizations with emphasis on business organization,
+intellectual property, and regulatory processes. Ethical practices
+and theory as they apply to the mass media industry are also
+addressed. Technology requirement: Students are responsible for
+providing their own laptop that is capable of running the Adobe
+Creative Cloud. Verify required technical specifications in the
+University Policy Handbook available on www.gcu.edu.
+ADV-350∆҂: Digital Advertising Communication 4 credits
+This writing intensive course explores integrated marketing
+communications and the development of marketing and
+advertising messages across digital platforms. Students focus on
+current trends in online advertising, social media platforms, and
+relevant emerging technologies. Technology requirement:
+Students are responsible for providing their own laptop that is
+capable of running the Adobe Creative Cloud. Verify required
+technical specifications in the University Policy Handbook
+available on www.gcu.edu. Prerequisite: DDN-110 or DDN-115,
+ADV-260.
+ADV350HN∆҂:
+Digital Advertising Communication 4 credits
+This writing intensive course explores integrated marketing
+communications and the development of marketing and
+advertising messages across digital platforms. Students focus on
+current trends in online advertising, social media platforms, and
+relevant emerging technologies. Technology requirement:
+Students are responsible for providing their own laptop that is
+capable of running the Adobe Creative Cloud. Verify required
+technical specifications in the University Policy Handbook
+available on www.gcu.edu. Prerequisite: ADV-260.
+ADV-355: Image Creation 4 credits
+Students learn methods of image creation, including vectors,
+typographic, and pixel-based imagery manipulation, for the
+purposes of aligning image production with advertising campaign
+strategy. Emphasis is placed on selection of appropriate imagery
+through analysis of audience needs, historical representation of
+ideas, stereotypes, and cultural iconography. Each student will
+need a laptop computer with the Adobe Creative Cloud
+subscription. Technology requirement: Students are responsible
+for providing their own laptop that is capable of running the
+Adobe Creative Cloud. Verify required technical specifications in
+the University Policy Handbook available on www.gcu.edu.
+Prerequisite: DDN-110 or DDN-115.
+ADV-371: Design Studio I 4 credits
+Students work with industry-based projects within a highly
+collaborative environment to develop strong strategy and concept
+development methodologies. Projects focus on production
+methods for print, web, and digital media. Technology
+requirement: Students are responsible for providing their own
+laptop that is capable of running the Adobe Creative Cloud.
+Verify required technical specifications in the University Policy
+Handbook available on www.gcu.edu. Prerequisites: DDN-120
+and DDN-210.
+ADV-456: Design Studio II 4 credits
+In this course students use the principles of user experience and
+user interaction to improve client-brand relationships within
+industry-based projects. Students create client and consumer
+profiles and develop projects within a highly collaborative
+environment. Technology requirement: Students are responsible
+for providing their own laptop that is capable of running the
+Adobe Creative Cloud. Verify required technical specifications in
+the University Policy Handbook available on www.gcu.edu.
+Prerequisite: ADV-371.
+ADV-471: Design Studio III 4 credits
+Working with industry-based projects, students act as art
+directors to concept, develop, and produce interactive and multiplatform advertising solutions within a highly collaborative
+environment. Working in teams, students strengthen their process
+of collaboration from initial project identification through to final
+production. Technology requirement: Students are responsible for
+providing their own laptop that is capable of running the Adobe
+Creative Cloud. Verify required technical specifications in the
+University Policy Handbook available on www.gcu.edu.
+Prerequisite: ADV-350, ADV-456.
+Aerospace Studies (AES)
+AES-101: Air Force Today I 2 credits
+Every Fall. A survey course designed to introduce students to the
+United States Air Force and Air Force Reserve Officer Training
+Corps (AFROTC). Featured topics include: mission and
+organization of the Air Force, officership and professionalism,
+military customs and courtesies, Air Force officer opportunities,
+group leadership problems and an introduction to communication
+skills. Leadership Laboratory (AES-102) is mandatory for
+AFROTC cadets and complements this course by providing
+cadets with followership and leadership experiences.
+AES-102: Leadership Laboratory 0 credits
+Every Fall. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. It is a student planned, organized, and
+executed practicum conducted under the supervision of the
+detachment commander and commandant of cadets. Leadership
+Lab emphasizes common Air Force customs and courtesies, drill
+and ceremonies, health and physical fitness through group
+participation. Co-requisite: AES-101.
+
+Spring 2023 Academic Catalog 243 © 2017 Grand Canyon University. All Rights Reserved.
+AES-103: The Air Force Today II 2 credits
+Every Spring. A survey and follow-on course to AES-101
+designed to introduce students to the United States Air Force and
+encourage participation in Air Force Reserve Officer Training
+Corps (AFROTC). Featured topics include: introduction to
+leadership, Air Force Core Values, introduction to interpersonal
+communication and team building, and a continuation of
+communication skills. Prerequisite: AES-101. Co-Requisites:
+Leadership Laboratory (AES-104) is mandatory for AFROTC
+cadets and complements this course by providing cadets with
+followership experiences.
+AES-104: Leadership Laboratory 0 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. It is a student planned, organized, and
+executed practicum conducted under the supervision of the
+detachment commander and commandant of cadets.
+Prerequisites: AES-104 is a continuation of AES-102 with more
+in-depth emphasis on learning the environments and dynamics of
+an Air Force officer. Co-Requisite: AES-103.
+AES-201: Evolution of USAF Air/Space
+Power
+2 credits
+Every Fall. This course focuses on facilitating the transition from
+Air Force ROTC cadet to Air Force ROTC candidate. The course
+is designed to examine the general aspects of air and space power
+through a historical perspective. Utilizing this perspective, the
+course covers a time period from the first balloons and dirigibles
+to the modern technology currently used in overseas contingency
+operations. Featured topics include: Air Force heritage, Air Force
+leaders, introduction to ethics and values, group leadership
+problems and continuing application of communication skills.
+Leadership Laboratory (AES-202) is mandatory for AFROTC
+cadets and complements this course by providing cadets with
+followership and leadership experiences. Prerequisite: AES-103.
+AES-202: Leadership Laboratory 2 credits
+Every Fall. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. AES-202 provides application of advanced
+drill and ceremonies, issuing commands, knowing flag etiquette,
+and developing, directing, and evaluating skills to lead others.
+Co-requisite: AES-201.
+AES-202A: Leadership Laboratory 0 credits
+Every Fall. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. AES-202A provides application of advanced
+drill and ceremonies, issuing commands, knowing flag etiquette,
+and developing, directing, and evaluating skills to lead others.
+Co-requisite: AES-201.
+AES-203: Evolution of USAF Air/Space
+Power
+2 credits
+Every Spring. Continuation of AES-201. The course provides
+students with knowledge level understanding for general element
+and employment of air and space power. Furthermore, it
+discusses the importance of Air Force Core Values with use of
+operational examples and historical Air Force leaders. Continues
+to develop communication skills. Topics include: the Air Force
+mission and organization, modern joint expeditionary Airmen,
+officer opportunities, and professionalism. Prerequisite: AES-201
+or department approval. Co-Requisites: Leadership Laboratory
+(AES-204) is mandatory for AFROTC cadets and complements
+this course by providing cadets with followership and leadership
+experiences.
+AES-204: Leadership Laboratory 0 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-202 with an emphasis
+on preparation for field training. Co-requisite: AES-203.
+AES-294A: Air Force Physical Fitness 2 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-202 with an emphasis
+on preparation for field training. Co-requisite: AES-203.
+AES-294B: Air Force Physical Fitness 2 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-202 with an emphasis
+on preparation for field training. Co-requisite: AES-203.
+AES-294C: Air Force Physical Fitness 2 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-202 with an emphasis
+on preparation for field training. Co-requisite: AES-203.
+AES-294D: Air Force Physical Fitness 2 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-202 with an emphasis
+on preparation for field training. Co-requisite: AES-203.
+
+Spring 2023 Academic Catalog 244 © 2017 Grand Canyon University. All Rights Reserved.
+AES-294E: Air Force Physical Fitness 2 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-202 with an emphasis
+on preparation for field training. Co-requisite: AES-203.
+AES-294F: Air Force Physical Fitness 2 credits
+Instruction on adapted physical activities to promote a healthy
+Air Force lifestyle mixed with a variety of sports and sports
+activities to include calisthenics, sit-ups, push-ups, running,
+basketball, volleyball, and other physical events. Co-Requisite:
+AES-101, AES-103, AES-201, AES-203, AES-301, AES-303,
+AES-401 or AES-403.
+AES-294G: Air Force Physical Fitness 2 credits
+Instruction on adapted physical activities to promote a healthy
+Air Force lifestyle mixed with a variety of sports and sports
+activities to include calisthenics, sit-ups, push-ups, running,
+basketball, volleyball, and other physical events. Co-Requisite:
+AES-101, AES-103, AES-201, AES-203, AES-301, AES-303,
+AES-401 or AES-403.
+AES-294H: Air Force Physical Fitness 2 credits
+Instruction on adapted physical activities to promote a healthy
+Air Force lifestyle mixed with a variety of sports and sports
+activities to include calisthenics, sit-ups, push-ups, running,
+basketball, volleyball, and other physical events. Co-Requisite:
+AES-101, AES-103, AES-201, AES-203, AES-301, AES-303,
+AES-401 or AES-403.
+AES-301: U.S. Air Force Communication
+Management Leadership
+3 credits
+Every Fall. A study of leadership, quality management
+fundamentals, professional knowledge, Air Force personnel
+evaluation systems, leadership ethics, and the communication
+skills required of an Air Force junior officer. Case studies are
+used to examine Air Force leadership and management situations
+as a means of demonstrating and exercising practical applications
+of the concepts being studied. Individual leadership skills and
+personal strengths and weaknesses are applied to the Air Force
+environment. Prerequisite: AES-203. Co-Requisites: Leadership
+Laboratory (AES-302) is mandatory for AFROTC cadets and
+complements this course by providing cadets with followership
+and leadership experiences.
+AES-302: Leadership Laboratory 0 credits
+Every Fall. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Advanced leadership experiences applying
+leadership and management principles to motivate and enhance
+the performance of other cadets. Leadership traits and abilities
+are enhanced. Co-Requisite: AES-301.
+AES-303: Air Force Leadership Studies II 3 credits
+Every Spring. AES-303 is a continuation of AES-301 on the
+study of leadership and management fundamentals, professional
+knowledge, leadership ethics, and communicative skills required
+of an Air Force junior officer. Case studies are used to examine
+Air Force leadership and management situations as a means of
+demonstrating and exercising practical application of the
+concepts being studied. Prerequisite: AES-203. Co-Requisites:
+Leadership Laboratory (AES-304) is mandatory for AFROTC
+cadets and complements this course by providing cadets with
+followership and leadership experiences.
+AES-304: Leadership Laboratory 0 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-302 with emphasis on
+planning the military activities of the cadet corps and applying
+advanced leadership methods. Co-Requisite: AES-303.
+AES-401: National Security Affairs 3 credits
+Every Fall. The course examines the national security process,
+regional studies, advanced leadership ethics, and Air Force
+doctrine. Special topics of interest include the military as a
+profession, officership, military justice, civilian control of the
+military, preparation for active duty, and current issues affecting
+the military profession. Within this structure, continued emphasis
+is given to the refinement of communication skills. Prerequisite:
+AES-303. Co-Requisites: Leadership Laboratory (AES-402) is
+mandatory for AFROTC cadets and complements this course by
+providing cadets with followership and leadership experiences.
+AES-402: Leadership Laboratory 0 credits
+Every Fall. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Advanced leadership experience
+demonstrating learned skills in planning and controlling the
+military activities of the corps. Co-Requisite: AES-401.
+AES-403A: Regional Security Issues 3 credits
+Every Spring. Continuation of AES-401 which examines regional
+studies and advanced leadership ethics. Special topics of interest
+focus on the military as a profession, officership, military justice,
+preparation for active duty, and current issues affecting military
+professionalism. Special emphasis is given on the transition from
+civilian to military life and what it takes to be a good second
+lieutenant in the United States Air Force. Co-requisite:
+Leadership Laboratory (AES-404) is mandatory for AFROTC
+cadets and complements this course by providing cadets with
+followership and leadership experiences. Prerequisite: AES-401
+Co-Requisites: Leadership Laboratory (AES-404) is mandatory
+for AFROTC cadets and complements this course by providing
+cadets with followership and leadership experiences.
+
+Spring 2023 Academic Catalog 245 © 2017 Grand Canyon University. All Rights Reserved.
+AES-404: Leadership Laboratory 0 credits
+Every Spring. Leadership Laboratory (LLAB) is a dynamic and
+integrated grouping of leadership developmental activities
+designed to meet the needs and expectations of prospective Air
+Force second lieutenants and complement the AFROTC
+academic program. Continuation of AES-402 with emphasis on
+preparation for transition from civilian to military life. CoRequisite: AES-403.
+Applied Management (AMP)
+AMP-450V: Leadership and Vocation 3 credits
+This course emphasizes major leadership approaches and models
+used within health care today. Topics include regulatory
+leadership, servant leadership, and formal and informal
+leadership roles. Students have an opportunity to analyze
+leadership approaches to decision making and the impact of
+professional mentorship. The significance and use of
+collaborative leadership, communication, and decision making, in
+health care are explored. Students examine leadership behaviors
+that leverage diversity and foster inclusion to ensure
+professionalism and the professional responsibility of leaders
+today.
+Acute Care Nurse Practitioner
+(ANP)
+ANP-635Ω: Health Promotion and Maintenance
+and On-Campus Experience I
+4 credits
+This course covers preventive health care practices and integrates
+cultural and spiritual considerations, environmental factors,
+genetic influences, and national public health objectives.
+Emphasis is placed on development of the advanced practice
+registered nurse-patient relationship to enhance the effectiveness
+of patient education, counseling, and promotion of healthy
+lifestyle changes. Learners explore concepts relevant to acute
+care, including integration of the family and patient support
+systems into care. Specific emphasis is placed on clinical
+diagnostic reasoning and interpretation and the development of
+differential diagnoses based on clinical practice guidelines.
+Learners examine professional and patient community resources
+and evaluate the use of integrative healing strategies in assisting
+patients to achieve health goals using evidence-based research.
+This course includes a required 3-day, on-campus experience.
+Prerequisite: NUR-634.
+ANP-635CEΩ: ANP-635 On-Campus Experience I 0 credits
+This course covers preventive health care practices and integrates
+cultural and spiritual considerations, environmental factors,
+genetic influences, and national public health objectives.
+Emphasis is placed on development of the advanced practice
+registered nurse-patient relationship to enhance the effectiveness
+of patient education, counseling, and promotion of healthy
+lifestyle changes. Learners explore concepts relevant to acute
+care, including integration of the family and patient support
+systems into care. Specific emphasis is placed on clinical
+diagnostic reasoning and interpretation and the development of
+differential diagnoses based on clinical practice guidelines.
+Learners examine professional and patient community resources
+and evaluate the use of integrative healing strategies in assisting
+patients to achieve health goals using evidence-based research.
+This course includes a required 3-day, on-campus experience.
+Prerequisite: NUR-634.
+ANP-650Ω: Adult-Gerontology Acute Care I 7 credits
+This course focuses on evidence-based theory and research
+related to adult-gerontological patients experiencing acute
+illnesses with comorbidities. Learners synthesize data from a
+variety of health resources related to the care of the adultgerontological patient. Learners analyze common problems seen
+in the acute care setting to develop prioritized differential
+diagnoses, make clinical judgments, and recommend appropriate
+treatments for acute alterations in health with particular emphasis
+on restorative care. Clinical practice affords learners the
+opportunity to refine their clinical decision-making skills in
+advanced health assessment, clinical diagnosis, procedural skill
+acquisition, and care management of acute and chronically ill
+adult-gerontological patients. Practicum experiences emphasize
+the physiological and psychosocial impact of acute and critical
+illness on patients, family, and community. Practicum/field
+experience hours: 225. Prerequisite: ANP-635.
+ANP-652Ω: Adult-Gerontology Acute Care II 7 credits
+This course continues to focus on evidenced-based theory and
+research related to acute illnesses in the adult-gerontological
+population in the acute care setting. Learners build on prior
+knowledge and synthesize data from a variety of health resources
+related to the care of the acutely ill patient. Utilizing a systems
+framework, learners further develop clinical judgment and
+decision-making skills in order to recommend treatments for
+alterations in different systems as they develop an evidence-based
+plan of care. Clinical practice affords learners the opportunity to
+refine their clinical decision-making skills in advanced health
+assessment, clinical diagnosis, procedural skill acquisition, and
+care management of acute and chronically ill adult-gerontological
+patients. Practicum experiences emphasize the physiological and
+psychosocial impact of acute and critical illness on patients,
+family, and community. Practicum/field experience hours: 225.
+Prerequisite: ANP-650.
+
+Spring 2023 Academic Catalog 246 © 2017 Grand Canyon University. All Rights Reserved.
+ANP-654Ω: Adult-Gerontology Acute Care III
+and On-Campus Experience II
+7 credits
+This course serves as the final synthesis of evidenced-based
+theory and research related to care of complex, acute, and
+critically ill adult-gerontological and frail elderly patients with
+comorbidities. Learners continue to build on prior knowledge and
+synthesize data from a variety of health resources related to the
+care of the acutely ill patient. Utilizing a systems framework,
+learners further develop appropriate clinical judgment and
+decision-making skills regarding appropriate recommendations
+and treatments related to alterations in different systems as they
+develop an evidence-based plan of care for adult-gerontological
+patients. Practicum experiences emphasize the physiological and
+psychosocial impact of acute and critical illness on patients,
+family, and community, and prepare the Adult Gerontology
+Acute Care Nurse Practitioner in the diagnosis and management
+of chronic, exacerbated, acute, and life-threatening health
+problems. This course includes a required 2-day, on-campus
+experience. Practicum/field experience hours: 225. Prerequisite:
+ANP-652.
+ANP-654CEΩ: ANP-654 On-Campus Experience
+II
+0 credits
+This course serves as the final synthesis of evidenced-based
+theory and research related to care of complex, acute, and
+critically ill adult-gerontological and frail elderly patients with
+comorbidities. Learners continue to build on prior knowledge and
+synthesize data from a variety of health resources related to the
+care of the acutely ill patient. Utilizing a systems framework,
+learners further develop appropriate clinical judgment and
+decision-making skills regarding appropriate recommendations
+and treatments related to alterations in different systems as they
+develop an evidence-based plan of care for adult-gerontological
+patients. Practicum experiences emphasize the physiological and
+psychosocial impact of acute and critical illness on patients,
+family, and community, and prepare the Adult Gerontology
+Acute Care Nurse Practitioner in the diagnosis and management
+of chronic, exacerbated, acute, and life-threatening health
+problems. This course includes a required 2-day, on-campus
+experience. Prerequisite: ANP-652.
+Arts Education (ARE)
+ARE-337: Integrated Arts Methods and
+Assessment in the Elementary
+School
+4 credits
+Practicum/field experience hours: 20. Fingerprint clearance
+required.
+ARE-480Ω: Student Teaching: Arts Education 12 credits
+Teacher candidates are engaged in the student teaching
+experience that includes practical classroom experiences,
+research, analysis, and teaching to support the creation of a
+Student Teaching Performance of Evaluation (STEP). Fingerprint
+clearance required. Prerequisites: Successful completion of all
+courses in POS and content area; a 2.8 GPA; successful
+completion of NES or your state’s mandated content area exams;
+and approval and placement by the College of Education Office
+of Clinical Practice. All paperwork for student teaching must be
+submitted by the due date the semester prior to student teaching.
+Fingerprint clearance required.
+Athletic Training (ATP)
+ATP-214Ω: Care, Treatment, and Prevention of
+Athletic Injuries
+3 credits
+This course provides students with a basic knowledge and
+understanding of the principles of sports medicine, the care and
+treatment of athletic trauma, and the use of proper conditioning
+principles for the prevention of injury. Prerequisites: BIO-155
+and BIO-155L or BIO-201 and BIO-201L, or BIO-210 and BIO210L. Co-Requisite: ATP-214L.
+ATP-214LΩ: Care, Treatment, and Prevention of
+Athletic Injuries Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course and provides students with a basic knowledge and
+understanding of the principles of sports medicine, the care and
+treatment of athletic trauma, safety and its importance in related
+settings, and the use of proper conditioning principles in the
+prevention of injury. Prerequisites: BIO-155 and BIO-155L or
+BIO-201 and BIO-201L, or BIO-210 and BIO-210L. CoRequisite: ATP-214.
+ATP-256Ω: Health Promotion and Wellness
+Protection
+4 credits
+This course includes the study of the general principles of health
+maintenance and promotion. Students learn the role of exercise,
+including flexibility, strength training, and cardiovascular
+conditioning in maintaining a healthy lifestyle. Topics include
+nutrition and dietary requirements for health and weight
+management. Students administer testing procedures to obtain
+baseline data regarding a patient's level of general health and use
+this data to design a program specific to the performance and
+health goals of the patient. In addition, this course reviews the
+basics of evidence-based practice in athletic training.
+Prerequisites: BIO-201 and BIO-201L.
+
+Spring 2023 Academic Catalog 247 © 2017 Grand Canyon University. All Rights Reserved.
+ATP-301҂Ω: Recognition and Evaluation of
+Injuries I
+3 credits
+This course provides students with the specific knowledge and
+practical skills required to perform proper evaluation of the upper
+and lower body. Students learn to palpate body and soft tissue
+structures, and perform active, passive, and resistive range of
+motion testing, neurological testing, and special ligament tests for
+the major synovial joints in the body. Students are provided
+multiple opportunities to reinforce their knowledge with handson practice. Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301L.
+ATP-301HN҂
+: Recognition and Evaluation of
+Injuries I
+3 credits
+This course provides students with the specific knowledge and
+practical skills required to perform proper evaluation of the upper
+and lower body. Students learn to palpate body and soft tissue
+structures, and perform active, passive, and resistive range of
+motion testing, neurological testing, and special ligament tests for
+the major synovial joints in the body. Students are provided
+multiple opportunities to reinforce their knowledge with handson practice. Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301L.
+ATP-301L҂Ω: Recognition and Evaluation of
+Injuries I Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course and provides students with the specific knowledge
+and practical skills required to perform proper evaluation of the
+lower body. Students learn to palpate body and soft tissue
+structures, and perform active, passive, and resistive range of
+motion testing, neurological testing, and special ligament tests for
+the major synovial joints in the body. Students are provided
+multiple opportunities to reinforce their knowledge with handson practice. Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301.
+ATP301LHN҂
+:
+Recognition and Evaluation of
+Injuries I Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course and provides students with the specific knowledge
+and practical skills required to perform proper evaluation of the
+lower body. Students learn to palpate body and soft tissue
+structures, and perform active, passive, and resistive range of
+motion testing, neurological testing, and special ligament tests for
+the major synovial joints in the body. Students are provided
+multiple opportunities to reinforce their knowledge with handson practice. Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301.
+ATP-302҂Ω: Recognition and Evaluation of
+Injuries II
+3 credits
+Building on concepts from ATP-301, this course provides
+students the opportunity to further analyze and apply skills in the
+areas related to the components of injury evaluation of the upper
+extremity, including history taking, inspection, palpation, joint
+movement, manual muscle testing, joint stability tests,
+neurological testing, and formulation of both a clinical and a
+differential diagnoses. Prerequisites: ATP-301, ATP-301L, ATP315, and ATP-315L. Co-Requisite: ATP-302L.
+ATP-302HN҂
+: Recognition and Evaluation of
+Injuries II
+3 credits
+Building on concepts from ATP-301, this course provides
+students the opportunity to further analyze and apply skills in the
+areas related to the components of injury evaluation of the upper
+extremity, including history taking, inspection, palpation, joint
+movement, manual muscle testing, joint stability tests,
+neurological testing, and formulation of both a clinical and a
+differential diagnoses. Prerequisites: ATP-301, ATP-301L, ATP315, and ATP-315L. Co-Requisite: ATP-302L.
+ATP-302L҂Ω: Recognition and Evaluation of
+Injuries II Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course and provides students with specific knowledge and
+practical skills required to perform proper evaluation of the upper
+extremity. This course also allows students to demonstrate
+differences between on-field and clinical evaluations, including
+history taking, inspection, palpation, joint movement, manual
+muscle testing, joint stability tests, neurological testing, and
+formulation of both a clinical and a differential diagnosis.
+Students are provided multiple opportunities to reinforce their
+knowledge with hands-on practice. Prerequisites: ATP-301, ATP301L, ATP-315, and ATP-315L. Co-Requisite: ATP-302.
+ATP302LHN҂
+:
+Recognition and Evaluation of
+Injuries II Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course and provides students with specific knowledge and
+practical skills required to perform proper evaluation of the upper
+extremity. This course also allows students to demonstrate
+differences between on-field and clinical evaluations, including
+history taking, inspection, palpation, joint movement, manual
+muscle testing, joint stability tests, neurological testing, and
+formulation of both a clinical and a differential diagnosis.
+Students are provided multiple opportunities to reinforce their
+knowledge with hands-on practice. Prerequisites: ATP-301, ATP301L, ATP-315, and ATP-315L. Co-Requisite: ATP-302.
+
+Spring 2023 Academic Catalog 248 © 2017 Grand Canyon University. All Rights Reserved.
+ATP-310Ω: Injury Prevention and Wellness
+Clinical
+4 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. In this clinical course, students select, apply,
+evaluate, and modify appropriate standard protective equipment,
+taping, wrapping, bracing, padding, and other custom devices for
+the patient. Students administer testing procedures to obtain
+baseline data regarding a patient's level of general health
+(including nutritional habits, physical activity status, and body
+composition) and use these data to design, implement, evaluate,
+and modify a program specific to the performance and health
+goals of the patient. This includes instructing the patient in the
+proper performance of the activities, recognizing the warning
+signs and symptoms of potential injuries and illnesses that may
+occur, and explaining the role of exercise in maintaining overall
+health and the prevention of diseases. Students are assigned to a
+preceptor who provides supervision on a daily basis through
+constant visual and auditory interaction, providing feedback to
+students on their progression. The mode of delivery is student-tostudent demonstration and a clinical exam testing students'
+proficiency at a clinical site (high school, college, or
+professional) on true patients. Practicum/field experience hours:
+150. Prerequisites: ATP-214, ATP-214L, ATP-256, BIO-202,
+BIO-202L, and acceptance into the Athletic Training program.
+ATP-315Ω: Emergency Care for Acute Injuries 3 credits
+This course includes the study of the proper techniques in caring
+for patients by recognizing catastrophic and emergent conditions
+and treating appropriately. Students learn establishing and
+maintaining an airway, maintaining neutral spine alignment with
+an athlete wearing protective equipment, wound management,
+immobilization, transfer techniques including spine boarding,
+core body temperature, and caring for athletes with conditions
+such as asthma and diabetes. Students are prepared to complete
+Emergency Cardiac Care (ECC) certification upon completion of
+the course. Prerequisites: BIO-202, BIO-202L, and acceptance
+into the Athletic Training program. Co-Requisite: ATP-315L.
+ATP-315LΩ: Emergency Care for Acute Injuries
+Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course, including the study of the proper techniques in
+caring for a patient by recognizing catastrophic and emergent
+conditions and treating appropriately. Students demonstrate
+establishing and maintaining an airway, maintaining neutral spine
+alignment with an athlete wearing protective equipment, wound
+management, immobilization, transfer techniques including spine
+boarding, core body temperature, and caring for athletes with
+conditions such as asthma and diabetes. Prerequisites: BIO-202,
+BIO-202L, and acceptance into the Athletic Training program.
+Co-Requisite: ATP-315.
+ATP-320Ω: Emergency Care and Lower
+Extremity Evaluation Clinical
+4 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. In this clinical course, students perform a
+comprehensive clinical examination of a patient with a lower
+extremity condition. This exam incorporates clinical reasoning in
+the selection of assessment procedures and interpretation of
+findings in order to formulate a diagnosis or differential
+diagnosis, determine underlying impairments, and identify
+activity limitations and participation restrictions. Based on the
+assessment data and consideration of the patient's goals, students
+provide the appropriate initial care and establish overall treatment
+goals. In addition, students also clinically evaluate and manage a
+patient with an emergency injury or condition to include the
+assessment of vital signs and level of consciousness, activation of
+emergency action plan, secondary assessment, diagnosis, and
+provision of the appropriate emergency care (e.g., CPR, AED,
+supplemental oxygen, airway adjunct, splinting, spinal
+stabilization, control of bleeding). Students are assigned to a
+preceptor who provides supervision on a daily basis through
+constant visual and auditory interaction, providing feedback to
+students on their progression. The mode of delivery is student-tostudent demonstration and a clinical exam testing students’
+proficiency at a clinical site (high school, college, or
+professional) on true patients. Practicum/field experience hours:
+150. Prerequisites: ATP-301, ATP-301L, ATP-310, ATP-315,
+and ATP-315L.
+ATP-322Ω: Therapeutic Modalities 3 credits
+This course is a study of various therapeutic modalities that aid in
+the healing process of injuries. The course covers the theory
+behind and proper use of these modalities. Prerequisites: ATP301 and ATP-301L. Co-Requisite: ATP-322L.
+ATP-322LΩ: Therapeutic Modalities Lab 1 credits
+This lab complements and supports the principles taught in the
+lecture course. Students develop practical applications of
+therapeutic modality techniques. Prerequisites: ATP-301 and
+ATP-301L. Co-Requisite: ATP-322.
+
+Spring 2023 Academic Catalog 249 © 2017 Grand Canyon University. All Rights Reserved.
+ATP-330Ω: Therapeutic Modalities and Upper
+Extremity Techniques Clinical
+4 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. In this clinical course, students perform a
+comprehensive clinical examination of a patient with an upper
+extremity, head, neck, thorax, and spine injury or condition. This
+exam incorporates clinical reasoning in the selection of
+assessment procedures and interpretation of findings in order to
+formulate a diagnosis or differential diagnosis, determine
+underlying impairments, and identify activity limitations and
+participation restrictions. Based on the assessment data and
+consideration of the patient's goals, students provide the
+appropriate initial care, including appropriate therapeutic
+modalities, and establish overall treatment goals. Students are
+assigned to a preceptor who provides supervision on a daily basis
+through constant visual and auditory interaction, providing
+feedback to students on their progression. The mode of delivery
+is student-to-student demonstration and a clinical exam testing
+students’ proficiency at a clinical site (high school, college, or
+professional) on true patients. Practicum/field experience hours:
+150. Prerequisites: ATP-302, ATP-302L, ATP-320, ATP-322,
+and ATP-322L.
+ATP-360҂Ω: Theory of Prescribing Exercise 3 credits
+This course covers the specific and applied use of exercise in
+prevention of injury, improvement of performance, and recovery
+from disability and dysfunction, including specific exercise
+routines, kinesiological principles, history and scope of
+rehabilitating exercise, abnormal clinical kinesiology,
+examination procedures, and reconditioning of specific disorders.
+Prerequisites: ATP-302, ATP-302L, ATP-322, and ATP-322L.
+Co-Requisite: ATP-360L.
+ATP-360HN҂
+: Theory of Prescribing Exercise 3 credits
+This course covers the specific and applied use of exercise in
+prevention of injury, improvement of performance, and recovery
+from disability and dysfunction, including specific exercise
+routines, kinesiological principles, history and scope of
+rehabilitating exercise, abnormal clinical kinesiology,
+examination procedures, and reconditioning of specific disorders.
+Prerequisites: ATP-302, ATP-302L, ATP-322, and ATP-322L.
+Co-Requisite: ATP-360L.
+ATP-360L҂Ω: Theory of Prescribing Exercise Lab 1 credits
+This lab complements and supports the principles taught in the
+lecture course. Practical applications and experiments include
+exercise prescription and rehabilitation techniques. Prerequisites:
+ATP-302, ATP-302L, ATP-322, and ATP-322L. Co-Requisite:
+ATP-360.
+ATP-401҂Ω: General Medical Conditions 3 credits
+This course provides a broad discussion of general medical
+conditions and associated pathologies of the physically active, as
+well as information applicable to athletes, coaches, and athletic
+trainers of all levels. This course covers evaluation techniques
+and equipment for all body systems, conditions, and special
+populations. Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401L.
+ATP-401HN҂
+: General Medical Conditions 3 credits
+This course provides a broad discussion of general medical
+conditions and associated pathologies of the physically active, as
+well as information applicable to athletes, coaches, and athletic
+trainers of all levels. This course covers evaluation techniques
+and equipment for all body systems, conditions, and special
+populations. Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401L.
+ATP-401L҂Ω: General Medical Conditions Lab 1 credits
+This lab complements and supports principles taught in the
+lecture course and provides a broad discussion of general medical
+conditions and associated pathologies of the physically active, as
+well as information applicable to athletes, coaches, and athletic
+trainers of all levels. This course covers evaluation techniques
+and equipment for all body systems, conditions, and special
+populations. Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401.
+ATP401LHN҂
+:
+General Medical Conditions Lab 1 credits
+This lab complements and supports principles taught in the
+lecture course and provides a broad discussion of general medical
+conditions and associated pathologies of the physically active, as
+well as information applicable to athletes, coaches, and athletic
+trainers of all levels. This course covers evaluation techniques
+and equipment for all body systems, conditions, and special
+populations. Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401.
+ATP-402Ω: Pharmacology and Advanced
+Therapeutic Interventions
+4 credits
+This course examines current theories and practices of
+pharmacology and epidemiology of drug use as related to athletic
+training and sports medicine. The course also examines how to
+appropriately create a plan of care for a patient utilizing
+therapeutic modalities, rehabilitation, and pharmacologic
+interventions. Prerequisites: ATP-322, ATP-322L, ATP-360,
+ATP-360L, ATP-401, and ATP-401L.
+ATP-420Ω: Health Care Administration in
+Athletic Training
+4 credits
+This course establishes a framework for health care
+administration and management, tasks and techniques required in
+athletic training, health care programs, the health care industry,
+and interscholastic and intercollegiate athletics. Students assess
+their personal and professional readiness for management and
+leadership and acquire skills necessary for effective
+administration and leadership within the industry. Co-Requisite:
+ATP-450.
+
+Spring 2023 Academic Catalog 250 © 2017 Grand Canyon University. All Rights Reserved.
+ATP-440Ω: Therapeutic Interventions Clinical 4 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. In this clinical course, students perform a
+comprehensive clinical examination of a patient. Based on the
+assessment data and consideration of the patient's goals, the
+student creates and implements a therapeutic intervention that
+targets these treatment goals to include, as appropriate,
+therapeutic modalities, medications (with physician involvement
+as necessary), and rehabilitative techniques and procedures.
+Students integrate and interpret various forms of standardized
+documentation, including both patient-oriented and clinicianoriented outcome measures, to recommend activity level, make
+return-to-play decisions, maximize patient outcomes and progress
+in the treatment plan, and analyze injury data to formulate a
+prevention program. Students are assigned to a preceptor who
+provides supervision on a daily basis through constant visual and
+auditory interaction, providing feedback to students on their
+progression. The mode of delivery is student-to-student
+demonstration and a clinical exam testing students' proficiency at
+a clinical site (high school, college, or professional) on true
+patients. Practicum/field experience hours: 150. Prerequisites:
+ATP-330, ATP-360, and ATP-360L.
+ATP-450Ω: General Medicine and Health Care
+Administration Clinical
+4 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. Students develop, implement, and monitor
+prevention strategies for at-risk individuals (e.g., persons with
+asthma or diabetes, a previous history of heat illness, or sickle
+cell trait) and large groups to allow safe physical activity in a
+variety of conditions. This includes obtaining and interpreting
+data related to potentially hazardous environmental conditions,
+monitoring body functions (e.g., blood glucose, peak expiratory
+flow, hydration status), and making the appropriate
+recommendations for individual safety and activity status.
+Students also demonstrate the ability to recognize and refer atrisk individuals and individuals with psychosocial disorders or
+mental health emergencies. Students also demonstrate
+appropriate documentation and policy/procedure strategies. As
+part of this clinical experience, students will participate in a
+minimum of four weeks at an immersive clinical rotation. This
+rotation allows the student to partake in the totality of care
+associated with professional practice. Per CAATE Standard 55,
+“Clinical education may begin prior to or extend beyond the
+institution’s academic calendar.” The student’s clinical
+immersion site will be selected by the program. Students are
+assigned to a preceptor who provides supervision on a daily basis
+through constant visual and auditory interaction, providing
+feedback to students on their progression. The mode of delivery
+is student-to-student demonstration and a clinical exam testing
+students’ proficiency at a clinical site (high school, college, or
+professional) on true patients. Practicum/field experience hours:
+150. Prerequisites: ATP-401, ATP-401L, and ATP-440. CoRequisite: ATP-420.
+ATP-460Ω: Advanced Athletic Training
+Clinical
+4 credits
+This course provides a clinical setting in which athletic training
+students apply and demonstrate proficiency in athletic training
+skills. Students demonstrate knowledge and skills assessed in
+previous clinical coursework while integrating evidence-based
+practice into clinical decision making. Students are assigned to a
+preceptor who provides supervision on a daily basis through
+constant visual and auditory interaction, providing feedback to
+students on their progression. The mode of delivery is student-tostudent demonstration and a clinical exam testing students'
+proficiency at a clinical site (high school, college, or
+professional) on true patients. Practicum/field experience hours:
+150. Prerequisite: ATP-450.
+ATP-480∆Ω: Athletic Training Capstone 3 credits
+This writing-intensive capstone course serves as a culmination of
+the learning experiences during the athletic training education
+program at Grand Canyon University. Students are challenged to
+demonstrate higher level thinking, review evidence-based
+literature, and display athletic training professional behaviors.
+Students have the opportunity to identify a clinical practice
+problem, search the literature, and propose an evidence-based
+solution that results in practice improvement. Prerequisites: ATP402, ATP-420, and ATP-450.
+ATP-485Ω: Athletic Training Board of
+Certification Exam Preparation
+1 credits
+This course prepares students to sit for the Athletic Training
+Board of Certification (BOC) exam. Students examine
+professional regulations and certification requirements and use
+practice exam questions to prepare for the certification exam.
+Prerequisite: ATP-420.
+ATP-500: Foundations of Professional
+Practice and Athletic Training
+2 credits
+This course provides students with an introduction to the
+foundations of professional athletic training practice. Students
+learn about the various health professions that comprise the
+sports medicine team and the appropriate communication
+strategies in patient care. These concepts are rooted in rules,
+regulations, and profession documents that comprise the athletic
+trainer’s scope of practice and standards of care. Students also
+learn about injury and illness prevention strategies such as health
+and wellness, nutrition, athletic taping and bracing, and sports
+regulations (NCAA, NAIA, etc.). Lastly, students learn about the
+Core Competencies: patient-centered care, interprofessional
+education (IPE), evidence-based practice, quality improvement,
+and health care informatics. Prerequisite: Formal acceptance into
+the MS – Athletic Training program. Co-Requisite: ATP-500L.
+ATP-500L: Foundations of Professional
+Practice and Athletic Training Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course. This course encompasses: the principles of health
+and wellness, injury and illness prevention basics, nutrition
+planning, taping, bracing and padding for the extremities and
+spine, communication strategies in sports medicine, and sportsspecific equipment fitting. Prerequisite: Formal acceptance into
+the MS – Athletic Training program. Co-Requisite: ATP-500.
+
+Spring 2023 Academic Catalog 251 © 2017 Grand Canyon University. All Rights Reserved.
+ATP-510: Evaluation, Diagnosis, and
+Pathophysiology of General
+Medical Conditions
+4 credits
+This course provides foundational knowledge in general
+evaluation skills for an athletic trainer. This course also provides
+knowledge, skills, and assessment techniques for general medical
+conditions and associated pathologies of the physically active, as
+well as information applicable to athletes, coaches, and athletic
+trainers of all levels. The systems instructed in this course are:
+Respiratory, Cardiovascular, Abdominal, Genitourinary,
+Gynecologic, Reproductive, Neurology and Concussions, Ears,
+Eyes, Nose, Throat, Infectious Disease, Systemic Conditions,
+Dermatology, and an Introduction to Psychosocial Conditions.
+ATP-515: Emergency Management for
+Athletic Trainers
+3 credits
+This course includes the study of the proper techniques for
+managing patients with acute or emergent conditions. Students
+learn to perform a primary and secondary survey, as well as
+triage medical emergencies. Skills and knowledge instructed in
+this course include establishing and maintaining an airway,
+maintaining neutral spine alignment with an athlete wearing
+protective equipment, wound management, immobilization,
+management of shock, anaphylaxis, mental health emergencies,
+transfer techniques including spine boarding, core body
+temperature, and caring for athletes with systemic conditions. All
+this content is founded in the development of an Emergency
+Action Plan. Prerequisite: Formal acceptance into the MS –
+Athletic Training program. Co-Requisite: ATP-515L.
+ATP-515L: Response to Emergent and
+Immediate Injuries and Illnesses
+Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course. This course encompasses: establishing and
+maintaining an airway, maintaining neutral spine alignment with
+an athlete wearing protective equipment, wound management,
+immobilization, management of shock, anaphylaxis, mental
+health emergencies, transfer techniques including spine boarding,
+core body temperature, and caring for athletes with systemic
+conditions. Prerequisite: Formal acceptance into the MS –
+Athletic Training program. Co-Requisite: ATP-515.
+ATP-520: Therapeutic Interventions I -
+Therapeutic Modalities
+3 credits
+This course is a study of various therapeutic modalities that aid in
+the healing process of injuries. Students learn the theories of pain
+relief and management, the phases of the healing process, and the
+viscoelastic properties of tissue. These concepts are woven into
+each of the electrophysical agents taught in this course such as
+manual therapies, electrical stimulation, cryotherapy,
+thermotherapy, ultrasound, diathermy, LASER, and other
+contemporary modalities. The course also covers treatment
+planning, goal setting, and the appropriate prescription of
+therapeutic agents. Prerequisite: ATP-500. Co-Requisite: ATP520L.
+ATP-520L: Therapeutic Interventions I -
+Therapeutic Modalities Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course. This course encompasses: manual therapies,
+electrical stimulation, cryotherapy, thermotherapy, ultrasound,
+diathermy, LASER, and other contemporary modalities.
+Prerequisite: ATP-500. Co-Requisite: ATP-520.
+ATP-521: Therapeutic Interventions II -
+Rehabilitation
+3 credits
+This course covers the specific and applied use of manual
+therapies and therapeutic exercises. Students are introduced to the
+principles of rehabilitation, including, exercise prescription,
+injury prevention programs, clinical evaluation, collecting and
+analyzing patient-rated outcome measures to make clinical
+decisions, and developing a plan of care, to include objective
+return to play criteria. Students in this course are prepared to
+work with members of the sports medicine team, through
+interprofessional collaboration, to optimize patient-centered care,
+function, and return to play. This course has a foundation in the
+ICF model to guide patient care to address all contextual and
+personal factors in the rehabilitation process. Prerequisite: ATP520. Co-Requisite: ATP-521L.
+ATP-521L: Therapeutic Interventions II -
+Rehabilitation Lab
+1 credits
+This lab complements and supports the principles taught in the
+lecture course. This course encompasses: the principles of
+rehabilitation, including, exercise prescription, injury prevention
+programs, clinical evaluation, collecting and analyzing patient
+rated outcome measures to make clinical decisions, and
+developing a plan of care, to include objective return to play
+criteria. Prerequisite: ATP-520. Co-Requisite: ATP-521.
+ATP-522: Therapeutic Interventions III -
+Pharmacology and Advanced
+Interventions
+3 credits
+This course examines current theories and practices of
+pharmacology as related to athletic training and sports medicine.
+Students learn about the drugs used to treat musculoskeletal
+injuries, respiratory conditions, cardiovascular system, GI
+disorders, metabolic disorders, and infectious diseases. This
+course also covers the FDA approval process, supplements and
+banned substances in international sport. The course also
+examines how to appropriately create a plan of care for a patient
+utilizing therapeutic modalities, rehabilitation, and
+pharmacologic interventions.
+
+Spring 2023 Academic Catalog 252 © 2017 Grand Canyon University. All Rights Reserved.
+ATP-530: Research Methods and Statistics
+for Athletic Trainers
+2 credits
+This course introduces the student to statistics and research
+design in medicine. Students learn how to identify clinical and
+research problems. The main purpose of the Research Methods
+and Design and Statistics for Athletic Trainers course is to
+introduce students to quantitative and qualitative methods for
+conducting meaningful inquiry and research. Student gain an
+overview of research formulation, specifically: design,
+methodology, format, data management, data analysis, and data
+presentation. The course helps students develop the ability to use
+this knowledge to become more effective sports medicine
+researchers. This course also teaches students about: injury and
+illness surveillance systems and public data sources, incidence
+and prevalence rates, screening data, and patterns and trends in
+epidemiology. This course is an introduction to basic public
+health concepts and will be scaffolded upon later in the program.
+ATP-540: Biomechanics in Sport 2 credits
+This course prepares students for NASM’s corrective exercise
+specialist credential. Students learn about human movement
+patterns, foundations in kinesiology, sports biomechanics, static
+and dynamic postural assessments, assessments for movement,
+strength, and range of motion, foundations in corrective exercise,
+and corrective exercise interventions.
+ATP-551C: Clinical Education in Athletic
+Training I
+3 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. Students are assigned to a preceptor who provides
+supervision daily through constant visual and auditory
+interaction, providing feedback to students on their progression.
+The mode of delivery is student-to-student demonstration and a
+clinical exam testing students' proficiency at a clinical site (high
+school, college, or professional) on real patients. The emphasis of
+this clinical is on developing critical thinking skills, reasonable
+clinical decision making and clinical competency in emergency
+response, general medical evaluations, injury prevention
+strategies, lower extremity evaluations, and therapeutic
+modalities. Clinical hours: 135.
+ATP-552C: Clinical Education in Athletic
+Training II
+3 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. Students are assigned to a preceptor who provides
+supervision daily through constant visual and auditory
+interaction, providing feedback to students on their progression.
+The mode of delivery is student-to-student demonstration and a
+clinical exam testing students' proficiency at a clinical site (high
+school, college, or professional) on real patients. The emphasis of
+this clinical is on developing critical thinking skills, reasonable
+clinical decision making and clinical competency in upper
+extremity evaluations, orthopedic rehabilitation, and a review of
+skills from the previous clinical class. Clinical hours: 135.
+ATP-553C: Clinical Education in Athletic
+Training III
+6 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. Students are assigned to a preceptor who provides
+supervision daily through constant visual and auditory
+interaction, providing feedback to students on their progression.
+The mode of delivery is student-to-student demonstration and a
+clinical exam testing students' proficiency at a clinical site (high
+school, college, or professional) on real patients. The emphasis of
+this clinical is on developing critical thinking skills, reasonable
+clinical decision making, clinical competency, and integration of
+knowledge and skills from all domains of athletic training.
+Clinical hours: 270.
+ATP-554C: Clinical Education in Athletic
+Training IV
+4 credits
+This course provides a clinical setting in which athletic training
+students clinically apply and demonstrate proficiency in athletic
+training skills. Students are assigned to a preceptor who provides
+supervision daily through constant visual and auditory
+interaction, providing feedback to students on their progression.
+The mode of delivery is student-to-student demonstration and a
+clinical exam testing students' proficiency at a clinical site (high
+school, college, or professional) on real patients. The emphasis of
+this clinical is on developing critical thinking skills, reasonable
+clinical decision making, clinical competency, and integration of
+knowledge and skills from all domains of athletic training.
+Clinical hours: 180.
+ATP-600C: Immersive Clinical Experience 4 credits
+This clinical allows students to experience the totality of care
+rendered by an athletic trainer. Students are assigned to a
+preceptor who provides supervision daily through constant visual
+and auditory interaction, providing feedback to students on their
+progression. The mode of delivery is student-to-student
+demonstration and a clinical exam testing students' proficiency at
+a clinical site (high school, college, or professional) on real
+patients. Clinical hours: 180.
+ATP-601: Psychosocial Conditions and
+Interventions
+2 credits
+This course provides content in the recognition and management
+of mental health conditions, motivation of the athlete, and selfcare strategies for the athletic trainer. This includes skills and
+knowledge in communication strategies, motivational techniques,
+appropriate referral strategies, intervention planning and mental
+health first response. Focus on the development and application
+of interpersonal communication strategies, motivational
+techniques, and referral strategies commonly used for
+psychosocial interventions in athletic training.
+ATP-602: Research in Athletic Training I -
+Proposal and Methods
+2 credits
+In this course, students propose their capstone project. This
+includes: Problem Statements, a PICO question, Methodology,
+Review of Relevant Literature, CITI Training, Formal Proposal,
+and IRB Submission (if applicable). This course culminates into
+the second research class in preparation for data collection,
+publications, professional abstract submission, and final capstone
+presentations.
+
+Spring 2023 Academic Catalog 253 © 2017 Grand Canyon University. All Rights Reserved.
+ATP-603: Research in Athletic Training II -
+Applied Project/Capstone
+2 credits
+In this course, students complete and present their capstone
+project. This includes: IRB Approval (if applicable), Data
+Collection, Data Analysis, Completion of Final Project,
+Dissemination of Results, and Future Research/Directions. This
+course prepares students to be clinical scholars and disseminate
+research that is practice-based and relevant to current practice.
+ATP-610: Healthcare Administration and
+Public Health
+3 credits
+This course establishes a framework for health care
+administration and management, tasks and techniques required in
+athletic training, health care programs, the health care industry,
+and interscholastic and intercollegiate athletics. Students assess
+their personal and professional readiness for management and
+leadership and acquire skills necessary for effective
+administration and leadership within the industry. This
+knowledge and skills include: documentation in EHR/EMRs,
+leadership concepts, management (human resources, payor
+systems, budget, grant funding or other income sources),
+organizational concepts, facility design, scope of practice and
+legal aspects in sports medicine. This course also builds on the
+foundations in public health and includes topics such as advocacy
+groups, group interventions, public education on specific
+pathologies, population health, regional identification of healthrelated problems, and other advanced public health concepts.
+This course contains a culminating project that proposes a
+solution to an identified public health problem.
+ATP-620: BOC Prep Course 2 credits
+This course prepares students to sit for the Athletic Training
+Board of Certification (BOC) exam. Students examine
+professional regulations and certification requirements and use
+practice exam questions to prepare for the certification exam.
+Students also develop a timeline for preparation for the BOC
+examination.

@@ -1,0 +1,3180 @@
+Music Applied Piano (MAP)
+MAP-118: Private Piano Study I 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MAP-120: Private Piano Study Majors I 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: Music
+Department approval and placement audition.
+MAP-128: Private Piano Study II 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors. Prerequisites: MAP-118 or Music Department
+approval and placement audition.
+MAP-130: Private Piano Study Majors II 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MAP-120 or
+Music Department approval and placement audition.
+MAP-218: Private Piano Study III 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MAP-220: Private Piano Study Majors III 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MAP-130 or
+Music Department approval and placement audition.
+MAP-230: Private Piano Study Majors IV 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MAP-220 or
+Music Department approval and placement audition.
+MAP-250: Private Piano Study IV 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MAP-318: Private Piano Study V 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MAP-320: Private Piano Study Majors V 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MAP-230 or
+Music Department approval and placement audition.
+MAP-330: Private Piano Study Majors VI 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MAP-320 or
+Music Department approval and placement audition.
+MAP-350: Private Piano Study VI 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MAP-390Ω: Junior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's junior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+MAP-420: Private Piano Study Majors VII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MAP-330 or
+Music Department approval and placement audition.
+MAP-430: Private Piano Study Majors VIII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MAP-420 or
+Music Department approval and placement audition.
+MAP-450: Private Piano Study VII 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MAP-451: Private Piano Study VIII 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors. Prerequisites: Music Department approval and
+placement audition.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 395 © 2017 Grand Canyon University. All Rights Reserved.
+MAP-490Ω: Senior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's senior year.
+Student must concurrently be enrolled in the appropriate level of
+private instruction. Co-Requisite: Student must concurrently be
+enrolled in the appropriate level of private instruction.
+Mathematics (MAT)
+MAT-110: Basics of Algebra 4 credits
+This course is designed to build students' understanding of, and
+skill in, basic algebraic practices and procedures. Students learn
+to manipulate mathematical operations involving real and
+complex numbers. Topics include solving and graphing equations
+and inequalities, solving systems of equations, operations on
+functions, use of real and complex number systems, solving
+rational functions, and solving exponential and logarithmic
+functions. Emphasis will be placed on algebraic processes and
+building a framework for future courses.
+MAT-134: Applications of Algebra 4 credits
+This course explores applications of algebraic concepts. Integers,
+fractions, decimals, percents, and ratios are studied within the
+real and complex number systems. Students learn to solve linear
+equations and inequalities; rational and exponential expressions;
+linear systems; and quadratic, exponential, and logarithmic
+equations. Estimation techniques and principles of number theory
+are explored. Emphasis is placed on developing students’
+understanding of number representation and skill in the
+application of numerical operations to solving real-world
+problems. Prerequisite: Grade of C or better in MAT-110.
+MAT-144: College Mathematics 4 credits
+The course covers mathematics that matter in modern society.
+Key areas of focus include financial literacy, numerically-based
+decision making, growth, scale, and numerical applications. The
+course applies basic college-level mathematics to real-life
+problems and is appropriate for students whose majors do not
+require college algebra or higher.
+MAT-150: Mathematics for Elementary
+Teachers I
+4 credits
+This is the first in a two-course sequence designed for
+prospective elementary school teachers. Concepts include set
+theory, functions, numeration systems, number theory and
+properties of the natural numbers, integers, rational numbers,
+ratios, proportions, decimals, and percents, with an emphasis on
+problem solving and critical thinking.
+MAT-151: Mathematics for Elementary
+Teachers II
+4 credits
+This is the second in a two-course sequence designed for
+prospective elementary school teachers. Concepts include
+elementary probability, data analysis, descriptive statistics,
+geometry of shapes in two and three dimensions, congruence and
+similarity, measurement, and geometric transformations, with an
+emphasis on problem solving and critical thinking. Prerequisite:
+MAT-150.
+MAT-154: Applications of College Algebra 4 credits
+This course is designed to prepare learners to integrate
+fundamental mathematical concepts with the critical and
+quantitative thinking needed to solve workplace-related
+problems. The course is founded upon a functional and
+technological approach to algebra. Topics include functions and
+their graphs; polynomial, rational, exponential, and logarithmic
+functions; algebraic and exponential equations; and probability.
+Emphasis is placed on developing students’ understanding of
+mathematical representation and logical reasoning to solve realworld problems. Prerequisite: Grade of C or better in MAT-110.
+MAT-215: Discrete Mathematics 4 credits
+This course examines how discrete mathematics can be applied to
+problem solving as well as mathematical reasoning and
+communication. Additionally, this course introduces how
+mathematics uses established methods to determine and validate
+new conclusions through the use of discrete mathematics.
+Prerequisites: MAT-252 and MAT-253.
+MAT-225: Mathematics and Technology
+through Time
+4 credits
+This course is an exploration of the history of humanity through
+the lens of mathematics and technology. Students study important
+thinkers and their tools and techniques with an emphasis on how
+their discoveries have impacted the modern world. Students are
+shown insights into how those thinkers solved problems and the
+critical analysis to apply those insights to modern issues in
+diverse areas of interest. The use of tools and techniques of
+mathematics and technology aids in applying those insights.
+Prerequisite: MAT-250 or MAT-261.
+MAT-225XV: Mathematics and Technology
+through Time
+4 credits
+This course is an exploration of the history of humanity through
+the lens of mathematics and technology. Students study important
+thinkers and their tools and techniques with an emphasis on how
+their discoveries have impacted the modern world. Students are
+shown insights into how those thinkers solved problems and the
+critical analysis to apply those insights to modern issues in
+diverse areas of interest. The use of tools and techniques of
+mathematics and technology aids in applying those insights.
+Prerequisite: MAT-250 or MAT-261.
+MAT-251: Brief Calculus 4 credits
+This course develops the concepts of calculus through a wide
+variety of applications. Topics include limits, continuity,
+derivatives, antiderivatives, and integration. Prerequisite: MAT154.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 396 © 2017 Grand Canyon University. All Rights Reserved.
+MAT-252: Calculus and Analytic Geometry I 4 credits
+This course provides a rigorous treatment of the concepts and
+methods of elementary calculus and its application to real-world
+problems. Topics include a brief review of linear, exponential,
+logarithmic, trigonometric, and inverse functions; understanding
+and calculating limits, continuity, and derivatives as rates of
+change; differentiation rules including derivatives of
+polynomials, exponentials, trigonometric, and logarithmic
+functions; product and quotient rules, the chain rule, and implicit
+differentiation; related rates, curve sketching, maximum and
+minimum problems, mean value theorem, linear approximation,
+indeterminate forms, and L’Hospital’s rule; and applied
+optimization problems, antiderivatives, and approximating areas
+under the curve. Prerequisite: Grade of C or better in MAT-250
+or MAT-261.
+MAT-253: Calculus and Analytic Geometry II 4 credits
+This course provides a rigorous treatment of the concepts,
+methods, and applications of integral calculus and is the second
+course in a three-course sequence. Topics include definite
+integrals, fundamental theorem of calculus, and integration rules;
+arc length, solids of revolution, and physical applications;
+techniques of integration including improper integrals and an
+introduction to differential equations; polar coordinates,
+parametric equations, infinite sequences, and series; power series
+and conic sections; and vector arithmetic, dot product, and
+projections. Prerequisite: Grade of C or better in MAT-252.
+MAT-254: Calculus and Analytic Geometry
+III
+4 credits
+This course provides a rigorous treatment of the concepts,
+methods, and applications of multivariable calculus and is the
+final course in a three-course sequence. Topics include vector
+arithmetic, dot and cross product, projections, parametric curves
+and vector functions, velocity and acceleration, arc length and
+curvature; functions of several variables; partial differentiation;
+maximum and minimum problems; Lagrange multipliers; double
+and triple integrals in polar, rectangular, cylindrical, and
+spherical coordinates; vectors fields and line integrals; and
+conservative vector fields and fundamental theorem for line
+integrals, Green's theorem, curl and divergence, parametric
+surfaces, surface integrals, Stokes' theorem, and divergence
+theorem. Prerequisite: Grade of C or better in MAT-253.
+MAT-261: Pre-Calculus 4 credits
+This course presents the fundamentals of algebra and
+trigonometry with some applications; it provides the background
+and introduction for the study of calculus. Topics include review
+of linear equations and inequalities in one and multiple variables;
+functions and their graphs; polynomial, rational, exponential,
+logarithmic, and trigonometric functions; systems of equations
+and matrices; and sequences and series. Slope and rate of change
+are introduced to set up the concepts of limits and derivatives.
+There is an emphasis on both an understanding of the
+mathematical concepts involved as well as their applications to
+the principles and real-world problems encountered in science
+and engineering. Technology is utilized to facilitate problem
+analysis and graphing. Prerequisite: MAT-134 or MAT-154.
+MAT-261XV: Pre-Calculus 4 credits
+This course presents the fundamentals of algebra and
+trigonometry with some applications; it provides the background
+and introduction for the study of calculus. Topics include review
+of linear equations and inequalities in one and multiple variables;
+functions and their graphs; polynomial, rational, exponential,
+logarithmic, and trigonometric functions; systems of equations
+and matrices; and sequences and series. Slope and rate of change
+are introduced to set up the concepts of limits and derivatives.
+There is an emphasis on both an understanding of the
+mathematical concepts involved as well as their applications to
+the principles and real-world problems encountered in science
+and engineering. Technology is utilized to facilitate problem
+analysis and graphing. Prerequisite: MAT-134 or MAT-154.
+MAT-262: Calculus for Science and
+Engineering I
+4 credits
+This course provides a rigorous treatment of the concepts and
+methods of elementary calculus and its application to real-world
+problems. Topics include differentiation, optimization, and
+integration. Software is utilized to facilitate problem analysis and
+graphing. Prerequisite: MAT-261 or ESG-162/162L.
+MAT-264: Calculus for Science and
+Engineering II
+4 credits
+This course provides a rigorous treatment of the concepts and
+methods of integral, multivariable, and vector calculus and its
+application to real-world problems. Prerequisite: MAT-262.
+MAT-274: Probability and Statistics 4 credits
+This course provides an introduction to the study of basic
+probability, descriptive and inferential statistics, and decision
+making. Emphasis is placed on measures of central tendency and
+dispersion, correlation, regression, discrete and continuous
+probability distributions, quality control population parameter
+estimation, and hypothesis testing. Prerequisite: Grade of C or
+better in MAT-134, MAT-144 or MAT-154.
+MAT-312҂: Higher Geometry 4 credits
+This course provides an axiomatic approach to geometry,
+including analysis of the parallel postulate and an introduction to
+non-Euclidean models. Other topics include planar
+transformations and isometry groups, analytic geometry, and the
+history of geometry. Prerequisites: MAT-252 and MAT-345.
+MAT312HN҂:
+Higher Geometry 4 credits
+This course provides an axiomatic approach to geometry,
+including analysis of the parallel postulate and an introduction to
+non-Euclidean models. Other topics include planar
+transformations and isometry groups, analytic geometry, and the
+history of geometry. Prerequisites: MAT-252 and MAT-345.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 397 © 2017 Grand Canyon University. All Rights Reserved.
+MAT-345: Applied Linear Algebra I 4 credits
+This course is intended primarily for mathematics, science, and
+engineering students. The goal of the course is to impart the
+concepts and techniques of modern linear algebra (over the real
+scalar field) with a significant level of rigor. Students write
+clearly about the concepts of linear algebra (definitions,
+counterexamples, simple proofs), and apply theory to examples.
+The course emphasizes the practical nature of solutions to linear
+algebra problems. Students implement some of these solutions,
+where appropriate, as computer programs. Prerequisite: MAT264 or MAT-253
+MAT-351: Calculus for Biomedical Science 4 credits
+This course is intended for health science majors and develops
+the concepts of calculus through a wide variety of biological and
+medical applications. Topics include an in-depth study of limits,
+continuity, the derivative and its applications, and antiderivatives.
+These concepts are examined through algebraic and
+transcendental functions of a single variable. Application areas
+include mathematical physiology, pharmacology, cell biology,
+and population biology. Prerequisite: MAT-250 or MAT-261.
+MAT-364: Differential Equations for Science
+and Engineering
+4 credits
+This course focuses on solutions and qualitative study of linear
+systems of ordinary differential equations, and on the analysis of
+classical partial differential equations. Topics include first- and
+second-order equations; series solutions; Laplace transform
+solutions; higher order equations; Fourier series; second-order
+partial differential equations. Boundary value problems,
+electrostatics, and quantum mechanics provide the main context
+in this course. Prerequisite: MAT-253 or MAT-264.
+MAT-374: Probability and Statistics - Calculus
+Based
+4 credits
+This course covers the role of statistics in engineering,
+probability, discrete random variables and probability
+distributions, continuous random variables and probability
+distributions, joint probability distributions, random sampling and
+data description, point estimation of parameters, statistical
+intervals for a single sample, and tests of hypotheses for a single
+sample. Prerequisite: MAT-253 or MAT-264.
+MAT-380: Mathematics for the Secondary
+Educator
+4 credits
+This course examines the core concepts of algebra and geometry,
+with a focus on the individual and interrelated elements, for the
+purpose of understanding their meaning, expression, and
+interaction. Therefore, course activities require clearly
+demonstrating an understanding of the meaning of these concepts
+with regards to secondary education in both verbal and written
+form. Prerequisite: MAT-252.
+MAT-470∆҂: Mathematical Modeling 4 credits
+This writing intensive course is an introduction to the
+construction and analysis of mathematical and statistical models
+in diverse areas of human endeavor. Students use tools and
+approaches to solve challenging problems. Prerequisites: MAT253 and MAT-345.
+MAT470HN∆҂:
+Mathematical Modeling 4 credits
+This writing intensive course is an introduction to the
+construction and analysis of mathematical and statistical models
+in diverse areas of human endeavor. Students use tools and
+approaches to solve challenging problems. Prerequisites: MAT252, MAT-253, MAT-345 and MAT-274.
+MAT-480: Methods of Teaching Mathematics
+in Secondary Schools
+4 credits
+This course is designed to develop an understanding and ability
+to apply the methods and principles of effective instruction using
+mathematics in the secondary classroom. This course examines
+different learning modalities, instructional strategies, and the use
+of technology to help plan and teach effective mathematical
+lessons that increase student achievement and are aligned to the
+mathematics standards. Practicum/field experience hours: 15.
+Fingerprint clearance required.
+MAT-505: Discrete Math: Data-Analysis 4 credits
+This course looks at evidence-based data analysis from a discrete
+mathematics perspective. Emphasis is placed on fundamental
+understanding of statistical descriptors. The theoretical
+framework is developed through applications in cognition and
+instruction. Prerequisite: MAT-513.
+MAT-513: Graduate Algebra 4 credits
+This course covers essential topics in algebra to prepare learners
+in their profession and to succeed in fulfilling future
+programmatic requirements. Topics include: algebraic structures,
+matrices, linear transformations, and their numerical applications.
+MAT-525: History of Mathematical Thought 4 credits
+The student is asked to use techniques of mathematical proof to
+trace the development of important foundations of thought and
+advances in mathematical thinking. This course follows the
+evolution of mathematics through history in its attempt to
+represent and understand the world around us. Topics covered
+include induction, logic, discrete analysis, calculus, and linear
+programming. Emphasis is placed on how a mathematical topic
+originated within its historical context and the theory used to
+support it. Prerequisite: MAT-513.
+MAT-550: Mathematical Modeling 4 credits
+The student is introduced to the techniques and examination of
+graduate-level mathematical modeling, including formulation,
+application, and analysis of a mathematical model. Topics
+covered include differential equations, computational methods,
+regression, and stochastic models. Emphasis is placed on
+applications and computational methods. Prerequisite: MAT-513.
+MAT-552: Applied Nonlinear Dynamics 4 credits
+This course provides a brief overview of ordinary differential
+equations, geometric representation of ODE solutions,
+autonomous systems, flows on the line, linear systems and phase
+portraits, nonlinear systems, local and global behavior,
+linearization, stability, and bifurcations. Applications include
+models extracted from population biology, ecology, and
+neurophysiology. Prerequisites: MAT-513 and MAT-550.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 398 © 2017 Grand Canyon University. All Rights Reserved.
+MAT-571: Real Analysis 4 credits
+This course is an introduction to the rigorous theory underlying
+calculus, covering the real number system and functions of one
+variable. It is based entirely on mathematical proofs. The student
+is expected to know how to read and, to some extent, construct
+proofs before taking this course. Topics typically include
+construction of the real number system, properties of the real
+number system, continuous functions, differential and integral
+calculus of functions of one variable, and sequences and series of
+functions. Prerequisite: MAT-513.
+Brass Instruments (MBE)
+MBE-113: Private Applied InstructionSecondary I
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors. Prerequisites: Music Department approval and
+placement audition.
+MBE-115: Private Applied Instruction I 2 credits
+This course includes private instruction in the major instrument.
+Emphasis is on advanced technique and literature. Prerequisites:
+Music Department approval and placement audition.
+MBE-123: Private Applied InstructionSecondary II
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MBE-125: Private Applied Instruction II 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MBE-115 or
+Music Department approval and placement audition.
+MBE-213: Private Applied InstructionSecondary III
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MBE-215: Private Applied Instruction III 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MBE-125 or
+Music Department approval and placement audition.
+MBE-223: Private Applied InstructionSecondary IV
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MBE-225: Private Applied Instruction IV 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MBE-215 or
+Music Department approval and placement audition.
+MBE-313: Private Applied InstructionSecondary V
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MBE-315: Private Applied Instruction V 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MBE-225 or
+Music Department approval and placement audition.
+MBE-323: Private Applied InstructionSecondary VI
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MBE-325: Private Applied Instruction VI 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MBE-315 or
+Music Department approval and placement audition.
+MBE-390Ω: Junior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's junior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+MBE-413: Private Applied InstructionSecondary VII
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MBE-415: Private Applied Instruction VII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MBE-325 or
+Music Department approval and placement audition.
+MBE-423: Private Applied InstructionSecondary VIII
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MBE-425: Private Applied Instruction VIII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MBE-415 or
+Music Department approval and placement audition.
+MBE-490Ω: Senior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's senior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 399 © 2017 Grand Canyon University. All Rights Reserved.
+Music Education (MED)
+MED-200: Instrumental Techniques: Low
+Brass
+1 credits
+This course is a practical study of low brass instruments in which
+students learn to play, care for, and teach each instrument.
+MED-201: Instrumental Techniques: Strings 1 credits
+This course is a practical study of the high and low string
+instruments in which students learn to play, care for, and teach
+each instrument.
+MED-202: Instrumental Techniques: Brass 1 credits
+This course is a practical study of the high and low brass
+instruments in which students learn to play, care for, and teach
+each instrument.
+MED-203: Instrumental Techniques: Winds 1 credits
+This course is a practical study of the wind instruments in which
+students learn to play, care for, and teach each instrument.
+Practicum/field experience hours: None. Fingerprint clearance
+not required.
+MED-205: Instrumental Techniques: High
+Brass
+1 credits
+This course is a practical study of high brass instruments in
+which students learn to play, care for, and teach each instrument.
+MED-210: Instrumental Techniques: Clarinet
+and Saxophone
+1 credits
+This course is a practical study of the clarinet and saxophone in
+which students learn to play, care for, and teach each instrument.
+MED-215: Instrumental Techniques: Double
+Reeds and Flutes
+1 credits
+This course is a practical study of flute and double reed
+instruments in which students learn to play, care for, and teach
+each instrument.
+MED-220: Marching Band Techniques 1 credits
+This course is a practical study of organizing and training
+marching bands for high schools and at the collegiate level.
+MED-225: Instrumental Techniques:
+Percussion
+1 credits
+This course is a practical study of percussion instruments in
+which students learn to play, care for, and teach each instrument.
+MED-320: Technology for Music Educators 2 credits
+Students will study and utilize a variety of music technologies
+such as computer software, hardware, networking, multimedia,
+interactive media, and the Internet in order to foster inquiry,
+collaboration, and interaction in classroom to meet the needs of a
+diverse student population.
+MED-335: Fundamentals of Music and
+Culture for Diverse Learners
+3 credits
+Students study music as culture, and explore the historical,
+philosophical, and sociological influences that have shaped
+music, ethnomusicology, and music education. This course also
+examines the issues faced by educators today, as well as the
+challenges that await people now entering the teaching
+profession. The course covers the unique learning needs of
+exceptional students. Emphasis is placed on definitions, etiology,
+characteristics, and prevalence of various exceptionalities; laws
+and litigation protecting the rights of students with special needs
+and their families; current issues affecting persons with special
+needs; social perceptions, assessment, inclusion, transition; and
+basic curriculum accommodations and supportive services for
+teaching students with special needs in the music classroom.
+Practicum/field experience hours: 15. Fingerprint clearance
+required.
+MED-335N: Fundamentals of Music and
+Culture for Diverse Learners
+3 credits
+Students study music as culture, and explore the historical,
+philosophical, and sociological influences that have shaped
+music, ethnomusicology, and music education. This course also
+examines the issues faced by educators today, as well as the
+challenges that await people now entering the teaching
+profession. The course covers the unique learning needs of
+exceptional students. Emphasis is placed on definitions, etiology,
+characteristics, and prevalence of various exceptionalities; laws
+and litigation protecting the rights of students with special needs
+and their families; current issues affecting persons with special
+needs; social perceptions, assessment, inclusion, transition; and
+basic curriculum accommodations and supportive services for
+teaching students with special needs in the music classroom.
+Practicum/field experience hours: 10. Fingerprint clearance
+required.
+MED-340: Teaching General Music in the
+Elementary and Secondary Schools
+2 credits
+An introductory course to music education, this course is a study
+and demonstration of methods, materials, topics and issues in
+teaching general music in the schools. The course will cover
+methods, approaches, and philosophies of teaching general music
+as they relate to current national and Arizona music education
+standards. A study is made of activities implemented with each
+grade level. Lesson plans are prepared. Students visit classrooms
+to observe teaching situations. Practicum/field experience hours:
+10. Fingerprint clearance required. Prerequisites: MED-355 or
+MED-355N and MED-365 or MED-365N.
+MED-340N: Teaching General Music in the
+Elementary and Secondary Schools
+2 credits
+An introductory course to music education, this course is a study
+and demonstration of methods, materials, topics and issues in
+teaching general music in the schools. The course will cover
+methods, approaches, and philosophies of teaching general music
+as they relate to current national and Arizona music education
+standards. A study is made of activities implemented with each
+grade level. Lesson plans are prepared. Students visit classrooms
+to observe teaching situations. Practicum/field experience hours:
+20. Fingerprint clearance required. Prerequisites: MED-355 or
+MED-355N and MED-365 or MED-365N.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 400 © 2017 Grand Canyon University. All Rights Reserved.
+MED-355: Music Methods and Assessment in
+the Elementary School
+2 credits
+This course is a study and demonstration of methods and
+materials for the first six grades. Students will be introduced to a
+number of methodologies including Orff, Dalcrose, Kodaly, and
+Suzuki, and explore their conceptual pedagogical framework,
+methodology, application and assessment. A study is made of
+activities implemented with each grade level. Lesson plans are
+prepared. Students visit classrooms to observe teaching
+situations. Practicum/field experience hours: 25. Fingerprint
+clearance required. Prerequisite: MED-320.
+MED-355N҂
+: Music Methods and Assessment in
+the Elementary School
+2 credits
+This course is a study and demonstration of methods and
+materials for the first six grades. Students will be introduced to a
+number of methodologies including Orff, Dalcroze, Kodaly, and
+Suzuki, and explore their conceptual pedagogical framework,
+methodology, application and assessment. A study is made of
+activities implemented with each grade level. Lesson plans are
+prepared. Students visit classrooms to observe teaching
+situations. Practicum/field experience hours: 20. Fingerprint
+clearance required. Prerequisite: MED-320.
+MED-365: Music Methods and Assessment in
+the Secondary School
+2 credits
+This course is a study of methods for developing and conducting
+the music program in junior and senior high schools, focusing on
+general pedagogy, curriculum, and assessment. Methods,
+materials, topics, and issues in music education will be used to
+prepare music education majors to enter the teaching profession.
+Practicum/field experience hours: 25. Fingerprint clearance
+required. Prerequisite: MED-320.
+MED-365N҂
+: Music Methods and Assessment in
+the Secondary School
+2 credits
+This course is a study of methods for developing and conducting
+the music program in junior and senior high schools, focusing on
+general pedagogy, curriculum, and assessment. Methods,
+materials, topics, and issues in music education will be used to
+prepare music education majors to enter the teaching profession.
+Practicum/field experience hours: 20. Fingerprint clearance
+required. Prerequisite: MED-320.
+MED-371: Teaching General Music in the
+Elementary and Secondary Schools
+2 credits
+An introductory course to music education, this course is a study
+and demonstration of methods, materials, topics and issues in
+teaching general music in the schools. The course will cover
+methods, approaches, and philosophies of teaching general music
+as they relate to current national and Arizona music education
+standards. A study is made of activities implemented with each
+grade level. Lesson plans are prepared. Students visit classrooms
+to observe teaching situations. Practicum/field experience hours:
+35. Fingerprint clearance required. Prerequisites: MED-355 or
+MED-355N and MED-365 or MED-365N.
+MED-415: Band Methods and Pedagogy 2 credits
+A study of advanced problems in rehearsing and conducting at
+the high school level. An examination and analysis of the
+prevailing band philosophies, including performance techniques,
+score preparation, rehearsal techniques, programming, and
+administration of the band program.
+MED-430: Vocal Pedagogy for Music
+Educators
+2 credits
+This course is a study of skills for the teaching of voice to
+individuals or groups. The physical voice, vocal health, and
+potential vocal problems are analyzed as well as historical
+methods of correction.
+MED-480AΩ: Student Teaching: Elementary
+Music
+6 credits
+Teacher candidates are required to fulfill an 8-week internship
+experience in a classroom with a certified, experienced teacher.
+The semester includes the opportunity to improve skills in
+classroom management, assessment, and professional
+preparation, and to utilize applicable content standards and
+Interstate Teacher Assessment and Support Consortium
+(InTASC) standards within the classroom. All paperwork for
+student teaching must be submitted by the due date the semester
+prior to student teaching. Prerequisites: for A: Fingerprint
+Clearance and one of the following combinations: 1) Successful
+completion of all courses in the Program of Study, a 2.8 GPA,
+and approval and placement by the Office of Field Experience
+and Certification; or 2) Successful completion of all courses in
+POS and content area; senior status; a 2.8 GPA; successful
+completion of state mandated basic skills and content area exams
+or Praxis I ® (Basic Skills) and Praxis II ® (Content Area);
+Arizona residents will be required to take the Arizona Educator
+Proficiency Assessments (AEPA).
+MED-480BΩ: Student Teaching: Secondary
+Music
+6 credits
+Teacher candidates are required to fulfill an 8-week internship
+experience in a classroom with a certified, experienced teacher.
+The semester includes the opportunity to improve skills in
+classroom management, assessment, and professional
+preparation, and to utilize applicable content standards and
+Interstate Teacher Assessment and Support Consortium
+(InTASC) standards within the classroom. All paperwork for
+student teaching must be submitted by the due date the semester
+prior to student teaching. Prerequisites: for B: Fingerprint
+Clearance and one of the following combinations: 1) Successful
+completion of all courses in the Program of Study, a 2.8 GPA,
+and approval and placement by the Office of Field Experience
+and Certification; or 2) Successful completion of all courses in
+POS and content area; senior status; a 2.8 GPA; successful
+completion of state mandated basic skills and content area exams
+or Praxis I ® (Basic Skills) and Praxis II ® (Content Area);
+Arizona residents will be required to take the Arizona Educator
+Proficiency Assessments (AEPA).
+Mechanical Engineering (MEE)
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 401 © 2017 Grand Canyon University. All Rights Reserved.
+MEE-335: Aerospace Propulsion & Lab 4 credits
+The course provides theories of thermodynamics of propulsion
+that are applied in air-breathing and rocket propulsion system.
+Students are given introduction to one-dimensional compressible
+internal flow, thermodynamics of aircraft jet engines including
+ramjets, turbojet, turbofan, turboprop, and turboshaft engines.
+Students are also provided performance analysis of main
+components of gas turbine engines such as inlets, compressors,
+combustors, turbines, and nozzles. Prerequisite: STG-330.
+MEE-340҂
+: Structure and Property of
+Materials
+3 credits
+This course covers basic concepts in materials structure and its
+relation to properties. The course will provide students with a
+broad overview of materials science and engineering. The goal of
+this course is to understand the fundamental reasons that
+materials have the properties they do. Students examine
+properties of interesting materials and try to understand them in
+terms of their actual atomic or molecular structure. Prerequisite:
+CHM-115, CHM-115L, PHY-122, PHY-122L, MAT-364. CoRequisite: MEE-340L.
+MEE-340HN҂
+: Structure and Property of
+Materials
+3 credits
+This course covers basic concepts in materials structure and its
+relation to properties. The course will provide students with a
+broad overview of materials science and engineering. The goal of
+this course is to understand the fundamental reasons that
+materials have the properties they do. Students examine
+properties of interesting materials and try to understand them in
+terms of their actual atomic or molecular structure. Prerequisite:
+CHM-115, CHM-115L, PHY-122, PHY-122L, MAT-364. CoRequisite: MEE-340LHN.
+MEE-340L҂
+: Structure and Property of
+Materials Lab
+1 credits
+This is the lab section of MEE-340. The course reinforces
+theoretical concepts covered in lecture and with hands-on
+activities. Students conduct lab experiments to better understand
+how certain properties of materials manifest themselves.
+Prerequisite: CHM-115, CHM-115L, PHY-122, PHY-122L,
+MAT-364. Co-Requisite: MEE-340.
+MEE340LHN҂
+:
+Structure and Property of
+Materials Lab
+1 credits
+This is the lab section of MEE-340. The course reinforces
+theoretical concepts covered in lecture and with hands-on
+activities. Students conduct lab experiments to better understand
+how certain properties of materials manifest themselves.
+Prerequisite: CHM-115, CHM-115L, PHY-122, PHY-122L,
+MAT-364. Co-Requisite: MEE-340HN.
+MEE-352: Solid Mechanics & Lab 4 credits
+This course covers concepts and theories of internal force, stress,
+strain, and strength of structural elements under static loading
+conditions. The course also examines constitutive behavior for
+linear elastic structures and deflection and stress analysis
+procedures for bars, beams, and shafts. Students will examine and
+analyze various modes of failure of solid materials. Prerequisites:
+ESG-250 or ESG-251, ESG-260 or ESG-360, and MAT-364.
+MEE-360: Dynamics 3 credits
+This course introduces the principles of kinematics and kinetics
+as they apply to engineering systems and analyses. This course
+covers Newton’s second law, work-energy and power, impulse
+and momentum methods. Additional topics include vibrations
+and an introduction to transient responses. Simulation with
+Solidworks and MATLAB are also covered. Prerequisite: ESG260. Co-Requisite: MEE-360L.
+MEE-360L: Dynamics Lab 1 credits
+This course utilizes lab experimentation and computer simulation
+to further explore the concepts and principles introduced in the
+MEE-360 lecture course. Students will learn how to set up and
+perform engineering tests and simulations in the context of
+complex, real-world engineering problems. Prerequisite: ESG260. Co-Requisite: MEE-360.
+MEE-440: Structures of Composite Materials
+for Aerospace
+2 credits
+The course introduces mechanics of aircraft materials and
+structures including stress and strain analysis, torsion, bending,
+failure criteria, buckling, fatigue, and composite laminates
+analysis. Students will be introduced to aerospace standards for
+design, structural integrity, system safety, dynamic stresses, and
+case studies. Prerequisites: MEE-352 and MEE-340.
+MEE-445: Heat Transfer & Lab 4 credits
+This course is an introduction to heat transfer. Concepts of
+conduction, convection, and radiation will be explored. Methods
+for analysis of steady and unsteady conduction, laminar and
+turbulent convection, and radiation will be introduced. Heat
+exchanger design and analysis methods will be addressed. The
+concept of mass transfer will also be introduced. Students will
+use learn simulation methods using the SolidWorks software.
+Prerequisite: ESG-345.
+MEE-450: Aerodynamics & Lab 4 credits
+The course provides students fundamental principles of
+incompressible and compressible flow, performance analysis of
+airfoil in subsonic and supersonic flow, and design applications.
+Students are introduced to theories and practical application of
+aerodynamics including flow over finite wings, through nozzles,
+diffusers, and wind tunnels. Prerequisite: ESG-345.
+MEE-455: Dynamics and Controls of Flight &
+Lab
+4 credits
+The course introduces fundamental theories of control system and
+application to flight control. Students are introduced to
+mathematical models of dynamics systems, transient-response
+analysis, and root-locus analysis. Additional topics include
+control systems design by frequency response, application of
+root-locus method and PID controls. Prerequisites: MEE-360,
+MEE-360L, and MEE-450.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 402 © 2017 Grand Canyon University. All Rights Reserved.
+MEE-460: Mechanical Instrumentation and
+Devices & Lab
+4 credits
+This course introduces standard mechanical tests and computer
+based data acquisition techniques, e.g., installing thermocouples,
+strain gages, positioning static and probes. ASME and ASTM test
+codes are studied, as are OSHA standards. The course examines
+how various physical property and system performance tests are
+set up, conducted, and analyzed. Prerequisites: EEE-202, EEE202L, and MAT-364.
+MEE-471: Principles of Mechanical Design I 2 credits
+Machine elements are selected and designed based on theories
+and methods developed in statics, dynamics, and strength of
+materials. Individual components will also be analyzed using
+CAE methods. Prerequisite: MEE-460, ESG-360.
+MEE-472: Principles of Mechanical Design II 2 credits
+This course covers the integration of machine elements into a
+system and the verification that the resulting system performs as
+intended in its operational environment. Areas of study include
+technical planning, requirements management, integration,
+verification, validation, and production. Prerequisite: ESG-360.
+MEE-473: Mechanical Design Principles I &
+Lab
+2 credits
+This course covers the integration of machine elements into a
+system and the verification that the resulting system performs as
+intended in its operational environment. Areas of study include
+technical planning, requirements management, integration,
+verification, validation, and production. Prerequisites: (MEE-352
+and MEE-360 and MEE-360L) or (ESG-360).
+MEE-474: Mechanical Design Principles II &
+Lab
+2 credits
+Machine elements are selected and designed based on theories
+and methods developed in statics, dynamics, and strength of
+materials. Individual components will also be analyzed use CAE
+methods. Prerequisite: MEE-473.
+MEE-475: Aerospace Design Principles & Lab 2 credits
+The course introduces fundamental principles of aircraft design.
+Students perform a group-based aircraft design with skills and
+knowledge acquired in aerospace curriculum. Aircraft design
+mission includes overview of design process, standards, aircraft
+sizing, airfoil and wing/tail geometry selection, aircraft
+configuration layout, propulsion and fuel system selection,
+analysis of aircraft performance, stability, control, flight safety,
+structures, and cost. Prerequisite: MEE-473.
+MEE-480: Electro-Mechanical Systems and
+Controls & Lab
+4 credits
+This course is an introduction to designing electro-mechanical
+systems, or mechatronics, which require integration of the
+mechanical and electrical engineering disciplines within a unified
+framework. Topics covered in the course include: application of
+electro-mechanical systems; measurement and sensing; actuators;
+interfacing of devices to controllers; programming controllers for
+real-time tasks; feedback control of electro-mechanical systems
+including servo controls. Prerequisite: MEE-460 or ESG-330.
+Music Ensemble (MEN)
+MEN-305: Musical Theater Workshop 0 credits
+Musical Theatre Workshop develops students’ singing, dancing,
+and acting skills through application of technique to rehearsal and
+performance. Emphasis is placed on a performer’s role in an
+ensemble and the importance of choral movement, sound, and
+focus. Students are walked through the entire production process,
+from audition, to rehearsal, to performance, and are guided
+through techniques unique to the musical theatre experience, like
+stylistic study, body conditioning, diction, and ornamentation.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission.
+MEN-306: Canyon Choral Society 0 credits
+This large choral non-auditioned campus community ensemble
+performs masterworks of the choral-symphonic literature, with
+major presentations in the Fall and Spring. The Canyon Choral
+Society is open to the students, faculty, and staff of Grand
+Canyon University and to the Phoenix community at large.
+Members of the Canyon Chorale, Critical Mass, and Canyon
+Singers are required to participate in the Canyon Choral Society.
+MEN-308: Canyon Chorale 0 credits
+The Canyon Chorale is an auditioned ensemble presenting the
+best in choral literature from historic masterworks of all stylistic
+periods and different cultures. Members are selected through an
+annual audition open to both music and non-music majors at
+Grand Canyon University. The chorale performs on campus, in
+the metropolitan Phoenix and Tucson areas, and in churches and
+schools throughout the region. All members of the Canyon
+Chorale are required to participate in the Canyon Choral Society.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission.
+MEN-312: Opera Workshop 0 credits
+This course is a workshop in developing the techniques and skills
+of operatic performance, including a fully staged opera
+production. Emphasis will be placed equally on singing and
+acting skills providing students with the opportunity to study,
+develop, and improve their dramatic skills outside of their voice
+studios and gain valuable stage experience through performances
+of fully staged operatic works. This experience should also help
+students to better understand the development of performance
+practice as it relates to other historical, theoretical, and
+compositional music studies. Detailed musical coaching will
+include stylistic study, diction, ornamentation, and discussions of
+performance practice. Members are selected through an annual
+audition open to both music and non-music majors at Grand
+Canyon University. Prerequisite: Admission into this ensemble
+by audition only or instructor's permission.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 403 © 2017 Grand Canyon University. All Rights Reserved.
+MEN-314: Canyon Singers 0 credits
+This auditioned chamber-sized ensemble is geared towards music
+majors and those with significant choral experience. Its repertory
+includes a variety of music, from Renaissance madrigals to
+contemporary selections, and music from non-western traditions,
+performing on campus and in the community. All members of the
+Canyon Singers are required to participate in the Canyon Chorale
+and in the Canyon Choral Society. Members are selected through
+an annual audition open to both music and non-music majors at
+Grand Canyon University. Prerequisite: Admission into this
+ensemble by audition only or instructor's permission.
+MEN-315: Critical Mass 0 credits
+This is a traveling vocal ensemble with a strong emphasis on
+Christian character, student leadership, and music that promotes
+the espoused mission of the University and the vision of the
+music department. Preparation and availability for touring is
+required. The ensemble is on the road during the school year,
+spring break and summer break representing Grand Canyon
+University at churches, schools, special events, and other venues
+throughout the United States and abroad. Emphasis is placed on
+musical excellence and individual commitment. All members of
+Critical Mass are required to participate in the Canyon Choral
+Society and other ensembles as assigned by the department.
+Prerequisites: Music Department approval and placement
+audition.
+MEN-318Ω: Collaborative Music Ensemble
+Majors
+0 credits
+Coached instruction in chamber and small ensemble settings.
+Members are selected through an annual audition open to both
+music and non-music majors at Grand Canyon University.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission. Co-Requisite: Enrollment in Private
+Studio instruction.
+MEN-334: Percussion Ensemble 0 credits
+The Percussion Ensemble provides students with the opportunity
+to develop their musical skills through rehearsal and performance
+in a percussion ensemble. Members are selected through an
+annual audition open to both music and non-music majors at
+Grand Canyon University. Prerequisite: Admission into this
+ensemble by audition only or instructor's permission.
+MEN-336: Pep Band 0 credits
+The Pep Band provides students with the opportunity to develop
+their musical skills through rehearsal and performance in a band
+ensemble. Members are selected through an annual audition open
+to both music and non-music majors at Grand Canyon University.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission.
+MEN-338: Wind Ensemble 0 credits
+The Wind Ensemble is comprised of music majors, minors, and
+students from other disciplines. Musicians are provided an
+opportunity to increase their performance skills through an active
+and challenging involvement with the creative process. The Wind
+Ensemble also offers non-music majors an avenue in which to
+continue making music throughout their college careers. The
+literature performed is selected from the finest contemporary and
+traditional repertoire. Members are selected through an annual
+audition open to both music and non-music majors at Grand
+Canyon University. Prerequisite: Admission into this ensemble
+by audition only or instructor's permission.
+MEN-338A: Woodwind Chamber Ensemble 0 credits
+The Woodwind Chamber Ensemble is comprised of music
+majors, minors, and students from other disciplines. Musicians
+are provided an opportunity to increase their performance skills
+through an active and challenging involvement with the creative
+process in a small ensemble setting concentrating in the chamber
+music repertory. The Woodwind Chamber Ensemble also offers
+non-music majors an avenue in which to continue making music
+throughout their college careers. The literature performed is
+selected from the finest contemporary and traditional repertoire.
+Members are selected through an annual audition open to both
+music and non-music majors at Grand Canyon University.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission.
+MEN-338B: Brass Chamber Ensemble 0 credits
+The Brass Chamber Ensemble is comprised of music majors,
+minors, and students from other disciplines. Musicians are
+provided an opportunity to increase their performance skills
+through an active and challenging involvement with the creative
+process in a small ensemble setting concentrating in the chamber
+music repertory. The Brass Chamber Ensemble also offers nonmusic majors an avenue in which to continue making music
+throughout their college careers. The literature performed is
+selected from the finest contemporary and traditional repertoire.
+Members are selected through an annual audition open to both
+music and non-music majors at Grand Canyon University.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission.
+MEN-340: String Ensemble 0 credits
+The String Ensemble is comprised of music majors, minors, and
+students from other disciplines. Musicians are provided an
+opportunity to increase their performance skills through an active
+and challenging involvement with the creative process. The
+String Ensemble also offers non-music majors an avenue in
+which to continue making music throughout their college careers.
+The literature performed is selected from the finest contemporary
+and traditional repertoire. Prerequisites: Music Department
+approval and placement audition.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 404 © 2017 Grand Canyon University. All Rights Reserved.
+MEN-340A: String Chamber Ensemble 0 credits
+The String Chamber Ensemble is comprised of music majors,
+minors, and students from other disciplines. Musicians are
+provided an opportunity to increase their performance skills
+through an active and challenging involvement with the creative
+process in a small ensemble setting concentrating in the chamber
+music repertory. The String Chamber Ensemble also offers nonmusic majors an avenue in which to continue making music
+throughout their college careers. The literature performed is
+selected from the finest contemporary and traditional repertoire.
+Members are selected through an annual audition open to both
+music and non-music majors at Grand Canyon University.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission.
+MEN-340B: Guitar Ensemble 0 credits
+The Guitar Ensemble is comprised of music majors, minors, and
+students from other disciplines. Musicians are provided an
+opportunity to increase their performance skills through an active
+and challenging involvement with the creative process. The
+Guitar Ensemble also offers non-music majors an avenue in
+which to continue making music throughout their college careers.
+The literature performed is selected from the finest contemporary
+and traditional repertoire. Prerequisites: Music Department
+approval and placement audition.
+MEN-340C: Piano Ensemble 0 credits
+The Piano Ensemble is comprised of music majors, minors, and
+students from other disciplines. Musicians are provided an
+opportunity to increase their performance skills through an active
+and challenging involvement with the creative process. The Piano
+Ensemble also offers non-music majors an avenue in which to
+continue making music throughout their college careers. The
+literature performed is selected from the finest contemporary and
+traditional repertoire. Prerequisites: Music Department approval
+and placement audition.
+MEN-348: Jazz Band 0 credits
+The Jazz Band is a performance ensemble designed to provide
+the student with experience performing jazz-oriented material.
+Members are selected through an annual audition open to both
+music and non-music majors at Grand Canyon University.
+Prerequisite: Admission into this ensemble by audition only or
+instructor's permission.
+MEN-350: GCU Philharmonic Society 0 credits
+The GCU Philharmonic Society is our campus community
+orchestra. It performs masterworks of the symphonic literature,
+with major presentations in the Fall and Spring. The GCU
+Philharmonic Society is open to the students, faculty, and staff of
+Grand Canyon University, and to the Phoenix community at
+large. Prerequisite: Admission into this ensemble by audition
+only or instructor's permission.
+Mechanical Engineering
+Technology (MET)
+MET-203: Strength of Materials & Lab 4 credits
+This course covers concepts of the strength of materials.
+Principally, the strength characteristics of metals will be
+examined including their performance in bending, torsion, shear,
+and uniaxial loading conditions. Additional topics will include
+buckling and pressure vessel calculations. Prerequisite: MET-212
+or ESG-260.
+MET-212: Static Analysis of Mechanical
+Systems & Lab
+4 credits
+This course covers static loading conditions in mechanical
+systems. Topics in this course include resolution of forces in both
+trusses and frames. Prerequisites: PHY-111 and PHY-111L. CoRequisite: ESG-250.
+MET-213: Dynamic Analysis of Mechanical
+Systems & Lab
+4 credits
+This course will examine both kinetics and kinematics of
+components and systems including the examination of
+mechanisms in dynamics. Prerequisite: MET-212.
+MET-275: Computerized Design and
+Manufacturing Tools in MET &
+Lab
+4 credits
+This course is an extension of Computer-Aided Engineering
+(CAE) for Mechanical Engineering Technology.. Tools for
+Computer-Aided Design (CAD), Computer-Aided Manufacturing
+(CAM), and CAE, in general will be used in a variety of
+industrial applications. Emphasis will be placed upon how these
+computerized tools can be used in design and manufacturing
+including the introduction of Computerized Numerical Control
+(CNC) systems for the generation of tools paths and tool design.
+Prerequisite: ESG-250 or ESG-251.
+MET-291: Applications of Machine Shop
+Tools & Lab
+2 credits
+This course emphasizes appropriate machine shop tool selection
+for the job in regard to cutting, drilling, milling, and turning.
+Hands-on activities in the machine shops focus on safe operation
+of the equipment. The course also covers the three principle
+orthographic views of an object and how to draw by hand for
+engineering applications. Co-Requisite: ESG-251.
+MET-302: Principles of Design I & Lab 4 credits
+This course covers analytical and practical methods of design,
+analysis, and reliability of mechanical systems. Design
+component elements include gears, belts, pulleys, chains, brakes,
+and power screws. Basic stress calculations and material
+selection will also be discussed. Prerequisites: MET-212 and
+MET-275 or ESG-260 and MET-275.
+MET-308: Fluid/Thermal Transport & Lab 4 credits
+This course examines fluid mechanics and heat transfer. Topics
+include flow measurement, pressure drop, heat exchangers, and
+hydraulics and their subsequent industrial applications.
+Prerequisites: MET-213 and CHM-113 or MEE-360 and CHM113.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 405 © 2017 Grand Canyon University. All Rights Reserved.
+MET-312: Metrology and CNC Machining &
+Lab
+4 credits
+This course covers the use of Computerized Numerical Control
+(CNC) machine tools. Topics include Geometric Dimensioning
+and Tolerancing (GD&T) and CNC programming. The course
+emphasizes safety and process planning. Prerequisites: PHY-111,
+PHY-111L and MET-275.
+MET-315: Material and Processes & Lab 4 credits
+This course examines the different aspects of material use in
+manufacturing processes. Topics include mechanical properties
+of metals, composites, atomic structure, corrosion, creep, failure
+theories, and heat treatment. Prerequisites: MET-203 and CHM113.
+MET-402: Principles of Design II & Lab 4 credits
+This course is an extension of Principles of Design I and furthers
+the understanding of the design of mechanical systems. Failure
+theories and overall design considerations such as engineering
+economics and ethics will be covered. Prerequisite: MET-302
+MET-418: Heat and Power Generation & Lab 4 credits
+This course examines the fundamental laws which exist in
+thermodynamics. Topics include ideal gases, mixtures, power and
+refrigeration cycles. Emphasis will be placed on applying
+knowledge to heating, ventilating, and air conditioning (HVAC)
+and refrigeration systems. Prerequisite: MET-308.
+MET-484: Computer Aided Manufacturing &
+Lab
+4 credits
+This course will cover the various considerations that need to be
+addressed when designing a part for different types of
+manufacturing. Students will explore a variety of aspects of
+design for manufacturing (DFM), utilizing CAM software for
+part design, mold design, CNC machining, plasma cutting, and
+additional applications. Prerequisite: MET-275. Co-Requisite:
+ESG-461.
+Marriage and Family Therapy
+(MFT)
+MFT-526: Advanced Family Systems Theory 3 credits
+This course examines the dynamic processes of traditional and
+nontraditional family and couple relationships and the role, value,
+and benefits of family systems therapy. The biopsychosocial
+perspectives of family and family systems are evaluated along
+with the foundational development of marriage and family
+therapy. Assessment and treatment of couples and families are
+also addressed.
+MFT-532: Family Systems and Addictive
+Disorders
+3 credits
+This course examines the impact of substance use and addictive
+disorders on family systems. Various treatment interventions are
+discussed. The treatment roles and responsibilities of addicted
+individuals and their families are also examined.
+MFT-620: Diversity in Family Systems 3 credits
+This course examines the dynamic processes of diverse family
+systems, including multicultural families, blended families, samesex parents, grandparents as primary caregivers, single-parent
+families, adoptive, foster, transitional families, and separated
+families.
+MFT-621: Couples and Family Dynamics:
+Systemic Perspectives
+3 credits
+This course examines the development of problems within the
+family of origin, and the historical and theoretical perspectives of
+couples and family system dynamics. It addresses the dynamics
+of the parent/child relationship, family of origin influences,
+partner selection, and premarital therapy. Family roles and
+interactional patterns are examined, as are parenting and changes
+in the parental relationships across the lifespan, resilience, and
+divorce. Skills and techniques relevant to couples, premarital
+counseling, family therapy, parenting, and lifestyle transitions are
+explored.
+Management (MGT)
+MGT-325: Managing Business
+Communications and Change
+4 credits
+This course focuses on communication skills and strategies
+required to be successful in diverse, dispersed, and global
+organizations. Students examine various approaches of effective
+and persuasive business communication at all levels of an
+organization, including the use of contemporary channels and the
+challenges of technologically mediated communication to convey
+important information leading to the facilitation of organizational
+change in today's dynamic workplace.
+MGT-410: Servant Leadership 4 credits
+This course focuses on servant leadership and ethical leadership,
+explores how servant leadership is different from other styles of
+leadership, and examines how this connects to ethics,
+accountability, and being a responsible leader.
+MGT-420҂
+: Organizational Behavior and
+Management
+4 credits
+Drawing upon real-world management situations, this course is a
+study of individual and group behavior in organizations through
+detailed coverage of the functions of management, individual
+differences/diversity, leadership, motivation, decision making,
+organizational design, and organizational change and
+development. Emphasis is placed on how an understanding of
+organizational behavior leads to effective management practice.
+MGT-422HN҂
+: Honors for Organizational
+Behavior and Management
+4 credits
+Drawing upon real-world management situations, this course is a
+study of individual and group behavior in organizations through
+detailed coverage of the functions of management, individual
+differences/diversity, leadership, motivation, decision making,
+organizational design, and organizational change and
+development. Emphasis is placed on how an understanding of
+organizational behavior leads to effective management practice.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 406 © 2017 Grand Canyon University. All Rights Reserved.
+MGT-434: Human Resources 4 credits
+This course is a study of the human resource management
+function in organizations, including detailed coverage of staffing,
+organizational development, compensation and benefits
+administration, and employee relations. Emphasis is placed on
+how human resource management as a whole enhances
+organizational performance and success. Prerequisite: HIM-425,
+MGT-420, or MGT-422HN. Equivalent to AMP-434.
+MGT-440: Project Management 4 credits
+This course is a study of the challenges associated with managing
+projects within the context of the overarching management
+framework of planning, organizing, leading, and controlling.
+Emphasis is placed on balancing competing priorities related to
+human resources, time constraints, and physical
+resources/materials, as well as managing and controlling project
+scope.
+MGT-455: Production/Operations
+Management
+4 credits
+This course provides an introduction to designing, planning,
+operating, and controlling production systems. Emphasis is on
+managerial concepts and strategies relating to the management of
+operations in both manufacturing and service environments.
+Quantitative and qualitative methods and tools are introduced and
+applied. Prerequisite: BUS-352, MAT-274, MAT-374, or ESG374.
+MGT-460: Workforce Planning 4 credits
+This course examines the human resources functions related to
+workforce planning and the practical application of these
+functions used by business and human resources leaders to
+execute strategic workforce planning effectively. Prerequisites:
+MGT-325 and MGT-434.
+MGT-465: Employee Relations 4 credits
+This course explores the areas of Employee Relations within the
+field of Human Resources and helps prepare students to develop
+a working knowledge of employee relations that can help
+organizations identify and resolve workplace issues. Prerequisite:
+MGT-434.
+MGT-605: Leadership and Organizations 4 credits
+The purpose of this course is to introduce students to the College
+of Business, key concepts of leadership, and an overview of how
+the science of organizational behavior contributes to effective
+leaders and managers.
+MGT-640: Fundamentals of Project
+Management
+4 credits
+This course covers fundamental aspects of traditional project
+management as delineated in the Project Management Institute's
+(PMI) Project Management Body of Knowledge (PMBOK). This
+course is designed to help prepare students for the PMI Certified
+Associate in Project Management (CAPM) and Project
+Management Professional (PMP) exams. The course also covers
+the basic logistics of taking the CAPM and PMP certification
+exams.
+MGT-641: Agile Project Management 4 credits
+This course covers agile aspects of project management including
+agile principles, best practices, and tools and techniques across
+major agile methodologies. This course is designed to help
+prepare students for the PMI Agile Certified Practitioner (ACP)
+exam. The course also covers the basic logistics of taking the
+ACP certification exam. Prerequisite: MGT-640.
+MGT-655: Operations Management 4 credits
+Operations Management examines managerial concepts and
+strategies relating to the management of operations in both
+manufacturing and service environments. Emphasis is placed on
+methods to streamline and drive inefficiencies out of a firm’s
+internal processes to build a highly efficient organization. The
+course also focuses on external processes by examining ways to
+achieve greater supply chain integration with suppliers and
+customers. Quantitative and qualitative methods and tools are
+introduced and applied. Prerequisite: SYM-506.
+MGT-660: Strategic Management 4 credits
+This capstone course focuses on preparing and conducting a
+strategic analysis of a selected publicly traded firm to produce
+actionable intelligence used to formulate recommendations to
+promote the creation of a value-adding strategy. Based on the
+results of their strategic analysis, students are then required to
+prepare the framework of a strategic plan that creates significant
+value for the selected firm. Prerequisites: MGT-605, MKT-607,
+ACC-650, and FIN-650.
+MGT-665: IT Project Management 4 credits
+This course introduces project management techniques essential
+to the success of IT-driven organizations, including management
+of virtual teams and outsourcing. Students apply best practices
+for managing complex, collaborative IT projects with the goal of
+increasing quality and efficiency and adding value to
+organizations. Prerequisites: LDR-604, MIS-640, and MIS-652.
+Prerequisites: LDR-604, MIS-640, and MIS-652.
+MGT-670: Strategic Management of
+Information Technology Capstone
+4 credits
+This course presents principles for strategic management of
+information technology systems within organizations with
+emphasis on assessing the impact of emerging technologies;
+enterprise system solutions; and recommending, deploying, and
+evaluating solutions. Students have the opportunity to synthesize
+and practice what they have learned in the program by
+undertaking an applied project within the IT industry. Projects
+focus on IT and systems management solutions to contemporary
+business needs. Emphasis is on critical thinking and problemsolving skills applicable in contemporary, IT-driven business
+organizations. Prerequisites: MGT-665 and MIS-657.
+Prerequisites: MGT-665 and MIS-657.
+MGT-805: Designing Organizational
+Structures
+3 credits
+This course examines the foundational considerations of
+organizational design and the relationship between design and
+structures. It presents the key considerations relevant in designing
+and structuring the optimal organization. The theoretical
+foundations for such decisions are also presented.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 407 © 2017 Grand Canyon University. All Rights Reserved.
+MGT-820: Using Business Analytics for
+Competitive Advantage
+3 credits
+Students will research the emerging use of business analytics in
+organizations. Through exploration of the available tools and
+models, this course will explore how analytics can be used for
+competitive advantage
+MGT-825: Contemporary Business Law 3 credits
+Learners explore the legal aspects of business management in a
+global integrated enterprise. Emphasis is placed on ethically
+limiting organizational liability in a complex business
+environment by extending the perspective of business beyond
+profit.
+MGT-830: Management of Business
+Complexity
+3 credits
+This course provides the doctoral learner the opportunity to
+manage a fictitious business entity in which they balance
+conflicting resource requests. The doctoral learner applies the
+management, financial, marketing, technology, and economic
+skills acquired during the program of study to recommend policy
+decisions with the intent to increase stakeholder value,
+competitive advantage, and long term sustainability.
+Mental Health and Wellness
+(MHW)
+MHW-501: Introduction to Mental Health and
+Wellness
+4 credits
+This course is an introductory course in mental health and
+wellness practices. The purpose of the course is to develop a
+basic understanding of mental health and wellness practices and
+wellness approaches. An overview of mental health disorders,
+basic overview of treatment practices, and the Dimensions of
+Wellness are covered.
+MHW-510: Ethics and Cultural Diversity in
+Mental Health and Wellness
+4 credits
+This course covers ethics and cultural diversity as it relates to
+mental health and wellness. The history of ethics is addressed,
+including how early ethical models evolved into modern ethical
+codes in the mental health and wellness professions. How ethics
+relates to legal standards and issues such as records and billing
+are addressed. Cultural diversity, sensitivity, and competence are
+covered.
+MHW-511: Mental Health, the Biblical
+Narrative, and Christian Theology
+4 credits
+This course explores relevant topics such as the nature of God
+and mankind, sin and psychopathology from a Christian
+worldview. A theology of pain and suffering from a biblical
+perspective is examined. A brief overview of mental health and
+social issues most likely to be seen in a ministry setting is
+explored.
+MHW-512: Introduction to Family Dynamics &
+Systems
+4 credits
+This course introduces students to the dynamics of the family
+unit. The family is examined as an interactive system of
+individuals whose roles and boundaries constantly shift to
+accommodate the needs of the collective family unit. The
+influence of relationships, interactional patterns, and
+communication among family members is covered through a
+systemic lens. Considering the function of behaviors will
+determine how problems are formed, perpetuated, and resolved
+within families.
+MHW-513: Grief and Bereavement Theory and
+Practice
+4 credits
+This course covers the history of grief theory research. It
+investigates common experiences of individuals experiencing a
+loss. The various forms of loss and the unique characteristics of
+grievers are examined. Resources for grief and bereavement are
+covered.
+MHW-514: Introduction to Prevention Science 4 credits
+This course covers a history of prevention science and prevention
+programs. It examines what has been effective in the prevention
+field. The course reviews existing evidence-based prevention
+programs and practices, including how cultural differences have
+shaped the prevention field.
+MHW-520: Group Dynamics 4 credits
+This course provides an examination of group dynamics, types of
+group process structures, and various strategies used for group
+facilitation. The course shows how group dynamics is applied to
+various participants in both therapeutic and organizational
+settings. The course explores the purpose of group interventions
+as a viable treatment approach and how the dynamics of a group
+impacts its participants.
+MHW-521: Integrating Psychology and
+Christian Theology
+4 credits
+This course explores the historical intersection of faith and
+science and how they apply to a contemporary setting. Various
+models of integration of psychology and Christian theology are
+examined. Students formulate their own understanding of the
+reciprocal relationship between psychology and Christian
+theology and examine implications for a ministry setting.
+Prerequisite: MHW-511.
+MHW-522: Family Development 4 credits
+This course examines the family life cycle, the development of
+individuals within the family, and the family system as a whole.
+It includes a survey of how cognitive, moral, and psychosocial
+developmental theories relate to family development and the
+transitions between family life cycle stages.
+MHW-523: Journey of the Bereaved 4 credits
+This course reviews typical biopsychosocial responses to grief
+and loss. It Identifies and eliminates myths surrounding the grief
+process and thoroughly examines healthy and unhealthy ways of
+coping with loss. The course looks at grief from the shared
+experience of family and community.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 408 © 2017 Grand Canyon University. All Rights Reserved.
+MHW-524: Prevention Throughout the
+Lifespan
+4 credits
+This course covers the different developmental stages and the
+application of prevention strategies throughout the lifespan. The
+course examines evidence-based programs utilized throughout
+the developmental stages.
+MHW-630: Documentation, Research, &
+Information Literacy in Mental
+Health & Wellness
+4 credits
+This course provides a comprehensive overview of mental health
+and wellness practice in a community healthcare setting. The
+importance of documentation, including the maintenance,
+accuracy, and integrity of health care records, as well as the
+ethics and policies concerning documentation is covered. The
+basics of research in the mental health and wellness field, such as
+data collection, interpretation, and the ethical implications of
+research, are covered. Information literacy is also covered, to
+provide a basic framework of common terminology and
+communication in the integration of mental health and medicine.
+MHW-631: Spiritual Formation, Identity, and
+Wellness
+4 credits
+This course examines the physical, emotional, and spiritual health
+of the Christian helper. Focus is on maintaining vitality in
+ministry through healthy practices such as boundaries, spiritual
+disciplines, stress management, and healthy lifestyle practices. In
+addition, this course examines concepts of burnout, compassion
+fatigue, and trauma as it applies to ministry. Students explore the
+importance of self-care that entails a balanced approach to
+ministry.
+MHW-632: Parenting 4 credits
+In this course, students examine the many facets of parenting.
+The historical and theoretical influences of parenting in the
+United States are covered. How parenting changes throughout the
+life span as well as how parenting is different in various family
+contexts is investigated. Research and evidence-based parenting
+practices regarding character development and promoting
+positive behavior are covered as well as how various factors
+affect parenting such as drugs and alcohol, poverty, and medical
+and psychological diagnoses.
+MHW-634: Specific Prevention Topics 4 credits
+This course reviews community and social health topics and the
+involvement of prevention science as the first line of defense.
+The SAMSHA prevention initiative is examined as well as the
+environmental influences on the implementation of effective
+prevention programming.
+MHW-640: Mental Health, Wellness, and
+Health Care Integration
+4 credits
+This course provides a comprehensive understanding of mental
+health, wellness, and health care, including the integration of
+these three fields. The course covers common mental health
+disorders, treatments, and supportive services, as well as an
+integrated focus on the mind and the body. The course examines
+the health challenges often faced by individuals with behavioral
+or mental health disorders, and it reviews appropriate services,
+interventions, preventative services, and treatments to achieve
+and maintain health and wellness.
+MHW-641: Mental Health Issues in Ministry 4 credits
+This course exposes the Christian worker to a wide variety of life
+stressors that are issues needing attention in a ministry context.
+Students develop a practical ministry plan to address these needs.
+Prerequisite: MHW-521.
+MHW-642: Families in Contemporary Society 4 credits
+This course takes a holistic look at the structure and function of
+the family in contemporary society as well as the many societal
+influences that affect the family. It examines how modern
+phenomena such as nontraditional family structures, and the
+proliferation of technology have impacted today’s families and
+the way they interact with other community systems. Modern
+governmental guidelines and ethical challenges, including
+systems such as foster care, are also addressed. Additionally, the
+role of cultural norms in family systems and the importance of
+cultural awareness in working with families in the mental health
+care system is addressed.
+MHW-643: Death & Dying: the Influences of
+Cultural, Spiritual & Sociological
+Factors
+4 credits
+This course explores how culture, spirituality, and society shape
+our understanding and experience of death and dying. While grief
+and loss are universal, how they are conceptualized and practiced
+around the world are largely determined by the confluence of
+these factors. Students become aware of how each of these
+overlapping areas have influenced their own views of death and
+dying as well as grasp a deeper understanding of others who are
+grieving.
+MHW-644: Community Program Development,
+Implementation, and Evaluation
+4 credits
+This course examines the design of effective community-based
+and other prevention programs. The strategies for implementing
+prevention programs and how to conduct effective evaluation of
+prevention programs is reviewed. The differences and interplay
+between intervention and prevention is covered, as well as the
+funding and administration of prevention programs.
+MHW-649Ω: Mental Health and Wellness
+Capstone
+4 credits
+This course provides a practical, real-world exploration of the
+mental health and wellness field. Special focus is given to careers
+in mental health and wellness. The common duties and tasks
+performed by workers in the mental health and wellness field are
+investigated. Concepts covered throughout the program are
+examined through practical application. This course is the last
+course in the program of study; all other course work must be
+completed before this course.
+Percussion Instruments (MIE)
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 409 © 2017 Grand Canyon University. All Rights Reserved.
+MIE-113: Private Applied InstructionSecondary I
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors. Prerequisites: Music Department approval and
+placement audition.
+MIE-115: Private Applied Instruction I 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: Music
+Department approval and placement audition.
+MIE-123: Private Applied InstructionSecondary II
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MIE-125: Private Applied Instruction II 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MIE-115 or
+Music Department approval and placement audition.
+MIE-213: Private Applied InstructionSecondary III
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MIE-215: Private Applied Instruction III 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MIE-125 or
+Music Department approval and placement audition.
+MIE-223: Private Applied InstructionSecondary IV
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MIE-225: Private Applied Instruction IV 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MIE-215 or
+Music Department approval and placement audition.
+MIE-313: Private Applied InstructionSecondary V
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MIE-315: Private Applied Instruction V 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MIE-225 or
+Music Department approval and placement audition.
+MIE-323: Private Applied InstructionSecondary VI
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MIE-325: Private Applied Instruction VI 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MIE-315 or
+Music Department approval and placement audition.
+MIE-390Ω: Junior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's junior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+MIE-413: Private Applied InstructionSecondary VII
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MIE-415: Private Applied Instruction VII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MIE-325 or
+Music Department approval and placement audition.
+MIE-423: Private Applied InstructionSecondary VIII
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MIE-425: Private Applied Instruction VIII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MIE-415 or
+Music Department approval and placement audition.
+MIE-490: Senior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's senior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+Christian Studies (MIN)
+MIN-104: Pastoral Identity Lab 1 credits
+This lab explores pastoral self-reflection, anchoring one’s identity
+in Christ, and preserving one's identity as roles change and
+responsibilities increase in life and ministry. This lab is designed
+to be an interactive, community experience which is not available
+via independent study.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 410 © 2017 Grand Canyon University. All Rights Reserved.
+MIN-114: Spiritual Formation Lab 1 credits
+This lab explores practical application of spiritual formation
+techniques necessary to maintain a vibrant relationship with
+Christ and others within the context of ministry. This lab is
+designed to be an interactive, community experience which is not
+available via independent study.
+MIN-204: Relational Skills Lab 1 credits
+This lab explores the importance of relationships and associated
+skills, such as listening, conversation, hospitality, and conflict
+resolution for life and ministry. This lab is designed to be an
+interactive, community experience which is not available via
+independent study.
+MIN-214: Ministry Skills Lab 1 credits
+This lab focuses on discovering, developing, and practicing skills
+for leading in ministry. Special attention is given to the
+shepherding aspects of pastoral ministry. This lab is designed to
+be an interactive, community experience which is not available
+via independent study.
+MIN-320: Christian Character Formation 4 credits
+This course examines the biblical truths, spiritual disciplines,
+virtues, and habits that contribute to the process of discipleship,
+form Christian character, and result in Christ-likeness. Special
+attention is given to the doctrine of sanctification and teaching
+related to ministerial ethics and the cultivation of Christ-like
+character. Prerequisites: BIB-106 and BIB-107 or BIB-100.
+MIN-430҂: Ministerial Communication 4 credits
+This course is a study of the theory and methods of oral
+communication with emphasis on the development of speaking
+and listening skills for application in ministerial contexts such as
+preaching, teaching, small group discussion, and interpersonal
+communication. Prerequisites: BIB-106, BIB-107, and BIB-355.
+MIN-430HN҂:Ministerial Communication 4 credits
+This course is a study of the theory and methods of oral
+communication with emphasis on the development of speaking
+and listening skills for application in ministerial contexts such as
+preaching, teaching, small group discussion, and interpersonal
+communication. Prerequisites: BIB-106, BIB-107, and BIB-355.
+MIN-480: Pastoral Leadership 4 credits
+This course examines pastoral leadership skills needed to
+effectively navigate ministry. Special attention is given to
+pastoral identity, life management, shepherding and discipling,
+and the biblical qualifications for pastoral/ministerial leadership.
+MIN-494: Ministry Internship 4 credits
+This course consists of an internship experience in an approved
+ministry setting. The course includes reinforcement of all
+program competencies, practical experiences, academic
+journaling, as well as a field experience log, and culminating
+reflection assignment. Students should begin the internship
+application process after completion of 80 credit hours in the
+program. Practicum/field experience hours: 180.
+MIN-500: Enchiridion on Ministry: Purpose,
+Principles, and Practice
+4 credits
+This course orients students to the seminary experience by
+focusing on the principled practices essential to navigating
+faithfully the rigors of graduate theological study and ministry
+life.
+MIN-505: Spiritual Formation and Mentoring 4 credits
+This course is a study of spiritual growth focusing on students’
+own spiritual formation and application through mentoring of
+others.
+MIN-509: Christian Character Formation 4 credits
+This course examines the biblical truths of the gospel and the
+corresponding virtues and habits that contribute to the process of
+discipleship. Students study God's work in the formation of
+Christ-like character as they learn to keep in step with the Spirit
+in all aspects of life. Special attention is given to the doctrine of
+sanctification and teaching related to ministerial ethics and
+character in the Pastoral Epistles. This course requires supervised
+ministry hours. Practicum/field experience hours: 45.
+MIN-510: Christian Character Formation 4 credits
+This course examines the biblical truths of the gospel and the
+corresponding virtues and habits that contribute to the process of
+discipleship. Students study God's work in the formation of
+Christ-like character as they learn to keep in step with the Spirit
+in all aspects of life. Special attention is given to the doctrine of
+sanctification and teaching related to ministerial ethics and
+character in the Pastoral Epistles.
+MIN-511: Foundations of Youth and Family
+Ministry
+4 credits
+This course provides a foundation for ministry to youth and
+families. Students consider biblical foundations for ministry to
+youth and families and how to apply and contextualize those
+foundations for today’s changing world. This course requires
+supervised ministry hours. Practicum/field experience hours: 45.
+MIN-515: Pastoral Care in a Ministry Context 4 credits
+This course equips students to provide effective ministry
+leadership in the areas of pastoral care and counseling in the local
+church. Emphasis is placed on caring for individuals, families,
+and small groups by nurturing spiritual formation with biblical
+wisdom. In addition, this course seeks to equip ministry leaders
+with skills and tools for biblical counseling. This course requires
+supervised ministry hours. Practicum/field experience hours: 45.
+MIN-515GAR:Pastoral Care in a Ministry Context 4 credits
+This course equips students to provide effective ministry
+leadership in the areas of pastoral care and counseling in the local
+church. Emphasis is placed on caring for individuals, families,
+and small groups by nurturing spiritual formation with biblical
+wisdom. In addition, this course seeks to equip ministry leaders
+with skills and tools for biblical counseling. This course requires
+supervised ministry hours. Practicum/field experience hours: 45.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 411 © 2017 Grand Canyon University. All Rights Reserved.
+MIN-524: Evangelism and Discipleship 4 credits
+This course is a practically oriented study of biblical principles
+and practices for faithfully communicating the gospel of Jesus
+Christ to non-Christians and guiding them toward spiritual
+maturity in Christ. Emphasis is placed on understandings,
+disciplines, and habits that facilitate the process of discipleship.
+This course requires supervised ministry hours. Practicum/field
+experience hours: 45.
+MIN-526: Ministerial Ethics 4 credits
+This course examines the biblical and theological foundations of
+Christian ethics along with an analysis of the roles and
+responsibilities of gospel ministry. Significant attention is given
+to self-care, personal morality, and character formation as well as
+ethical concerns unique to ministers as they lead, equip,
+shepherd, and intercede for God’s people.
+MIN-526GAR:Ministerial Ethics 4 credits
+This course examines the biblical and theological foundations of
+Christian ethics along with an analysis of the roles and
+responsibilities of gospel ministry. Significant attention is given
+to self-care, personal morality, and character formation as well as
+ethical concerns unique to ministers as they lead, equip,
+shepherd, and intercede for God’s people.
+MIN-535: Communicating in a 21st Century
+Ministry Context
+4 credits
+This course prepares students to address various aspects of
+communication in a local church ministry setting. Emphasis is
+placed on the various opportunities and challenges to
+communicate the gospel in small groups, Bible study, and
+discipleship programs. In addition, the course addresses the need
+to develop communication skills for a contemporary ministry
+context. This course requires supervised ministry hours.
+Practicum/field experience hours: 45.
+MIN-535GAR:Communicating in a 21st-Century
+Ministry Context
+4 credits
+This course prepares students to address various aspects of
+communication in a local church ministry setting. Emphasis is
+placed on the various opportunities and challenges to
+communicate the gospel in small groups, Bible study, and
+discipleship programs. In addition, the course addresses the need
+to develop communication skills for a contemporary ministry
+context. This course requires supervised ministry hours.
+Practicum/field experience hours: 45.
+MIN-601Ω: Christ-Centered Preaching 4 credits
+This course is an integrative study of biblically sound principles
+and practices for rightly handling God's word for the purpose of
+developing skill in the preparation and delivery of expository
+sermons. Emphasis is placed on the Christological focus of the
+Old and New Testaments and the vital relationship between the
+character of the messenger and responsible exegesis. This course
+is offered in residency for non-traditional students. Prerequisites:
+BIB-610 or BIB-611 and BIB-620 or BIB-621.
+MIN-620: Stages of Development and Faith
+Formation
+4 credits
+This course helps students examine stages of human development
+and their impact on faith formation. Special attention is given to
+developmentally appropriate communication of biblical and
+theological content. Students develop strategies for discipling
+individuals and families. This course requires supervised ministry
+hours. Practicum/field experience hours: 45.
+MIN-630: Mentoring and Counseling Youth 4 credits
+This course is a study of techniques used in mentoring and
+providing a pastoral counseling ministry among youth.
+MIN-650: Conflict, Crisis, and Pastoral Care 4 credits
+This course equips students with basic skills for pastoral care and
+conflict resolution, with special emphasis given to caring for the
+soul of the leader as he or she ministers to people during times of
+crisis. This course requires supervised ministry hours.
+Practicum/field experience hours: 45.
+MIN-655: Leading and Organizing Ministries
+in the Church
+4 credits
+This course furnishes practical training for ministry leaders.
+Emphasis is placed on both the leader’s personal life and the
+organizational dynamics of the local church. In addition, this
+course aims to equip church leaders to manage and lead
+ministries in a multicultural and multigenerational context. This
+course requires supervised ministry hours. Practicum/field
+experience hours: 45.
+MIN-655GAR:Leading and Organizing Ministries
+in the Church
+4 credits
+This course furnishes practical training for ministry leaders.
+Emphasis is placed on both the leader’s personal life and the
+organizational dynamics of the local church. In addition, this
+course aims to equip church leaders to manage and lead
+ministries in a multicultural and multigenerational context. This
+course requires supervised ministry hours. Practicum/field
+experience hours: 45.
+MIN-675: Biblical Leadership and Ministry 4 credits
+This course introduces principles of biblical leadership and
+ministry through an examination of the roles and responsibilities
+of Christian leaders within churches and parachurch
+organizations. Coursework focuses on leadership, administration,
+ministry, and interpersonal relations within particular ministry
+contexts. Emphasis is placed on living a life that exemplifies the
+gospel while leading and organizing the church according to the
+biblical principle. This course requires supervised ministry hours.
+Practicum/field experience hours: 45.
+MIN-690: Ministry Internship 4 credits
+This course consists of an internship experience in an approved
+church or ministerial setting. The course includes reinforcement
+of all program competencies and practical experiences in a
+ministry environment under the guidance and direction of a
+ministry supervisor. Practicum/field experience hours: 180.
+Prerequisites: HTH-611 and HTH-640.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 412 © 2017 Grand Canyon University. All Rights Reserved.
+MIN-807: Disciple Making in the Leadership
+Context
+3 credits
+The course examines the role of leadership in the disciple-making
+process. The interrelationship of disciples and volunteers is
+discussed. Prerequisite: RES-850.
+MIN-812: Theology of Leadership 3 credits
+This course provides an overview of the theories, theorists, and
+theology of leadership. Change management in ministry is
+addressed through the lenses of these theories and theology.
+Prerequisite: RES-850.
+MIN-817: Christian Ministry and Culture 3 credits
+The intersection of Christian ministry and culture is the primary
+focus of this course. Contextualization is explored as a means for
+the Church to remain relevant to the culture and community in
+order to bring about enduring change. Prerequisite: RES-861.
+MIN-822: Trends and Issues in Christian
+Ministry
+3 credits
+Contemporary Christian ministry faces a set of challenges that
+are often unique to postmodern culture. This course explores
+those challenges and the role of the Christian ministry leader in
+mitigating them.
+MIN-827: Practical Considerations in
+Christian Ministry
+3 credits
+This course presents potential applications of topics in Christian
+ministry leadership. Learners connect these ideas to their research
+interests.
+Management Information Systems
+(MIS)
+MIS-600: Applied Analytics for Business 4 credits
+This course introduces the role and value of data analytics in
+meeting the business needs of contemporary organizations.
+Students are introduced to selected foundational business and
+information technology topics that are relevant to analytics
+organizations.
+MIS-602: Innovation in Information
+Technology and Data Management
+4 credits
+This course introduces key issues in managing information
+technology and data within contemporary organizations. Students
+examine the role of leveraging IT and data analytics to drive
+innovation and add value to organizations through addressing
+business and market needs. Challenges regarding technology
+adoption and best practices for utilizing data for organizational
+decision making are also addressed.
+MIS-605: Introduction to Databases 4 credits
+This course introduces the basic role and uses of databases within
+business enterprises. Students examine database design types,
+development, staging, production environments, and maintenance
+of a database structure. Emphasis is on appropriate application
+and implementation of database functions in relation to
+performing data analytics.
+MIS-610: Intermediate Database
+Applications
+4 credits
+This course covers complex characteristics of databases and their
+practical application in a business environment. The course
+examines the main principles and relative advantages of objectoriented and object-relational databases. Students gain working
+knowledge of object-relational features as implemented in
+standard SQL database management systems within a practice
+environment. Prerequisite: MIS-605.
+MIS-615: Statistics for Business Analytics
+Professionals
+4 credits
+The purpose of this course is to prepare students in mathematical,
+probability, and statistical concepts for their upcoming studies in
+business analytics.
+MIS-620: Descriptive and Diagnostic
+Analytics
+4 credits
+This course examines foundational analytics concepts with an
+emphasis on descriptive and diagnostic analytics. Students solve
+business problems by working with selected industry tools and
+methods for describing what happened and diagnosing root
+causes based on available business enterprise data. Prerequisite:
+MIS-615 or SYM-506.
+MIS-640: Financial Decision Making 4 credits
+This course introduces financial management principles relevant
+to information technology departments. Emphasis is on budgeting
+for the development and execution of IT projects and ongoing IT
+processes. Students consider the concept of capitalization and the
+role of transparency, return on investment, and aligning IT efforts
+with an organization’s strategic financial objectives within the IT
+budgeting process. Prerequisites: BUS-600 and MIS-602.
+MIS-650: Performing Analytics Using a
+Statistical Language
+4 credits
+In this course students perform analytics using a statistical
+language. Key topics include working with data, charting data,
+object types, and building statistical models within a business
+environment. Prerequisites: MIS-605 and MIS-615.
+MIS-652: Business Process Analysis 4 credits
+This course introduces the fundamentals of business process
+analysis and its role in driving efficient and innovative
+organizations. Students examine business process mapping,
+workflow, change initiatives, process improvements with
+particular emphasis on effective change initiatives, and adoption
+of IT solutions that solve specific business needs. Prerequisite:
+MIS-602. Prerequisite: MIS-602.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 413 © 2017 Grand Canyon University. All Rights Reserved.
+MIS-655: Data Mining 4 credits
+This course introduces techniques for extracting patterns and
+knowledge from large data sets. Students utilize intelligent
+inferential techniques to interpret patterns in the collected
+information and translate them into actionable items intended to
+solve specific business problems. Prerequisite: MIS-650.
+MIS-657: Information Security and Risk
+Management
+4 credits
+This course examines core issues related to information security
+within the framework of effective IT governance. Students
+evaluate security mechanisms, operational issues, and policies
+and plans related to cybersecurity within organizations. There is
+also emphasis on threat analysis, assessing system vulnerabilities,
+forensics, and recovery. Prerequisite: MIS-602. Prerequisite:
+MIS-602.
+MIS-660: Descriptive and Predictive
+Analytics
+4 credits
+This course examines foundational analytics concepts with an
+emphasis on descriptive and predictive analytics. Students work
+with selected industry tools and methods for describing,
+summarizing, and presenting data and make predictions using
+statistical analysis. There is also emphasis on interpreting
+business requirements in the design of analytical models and
+effective communication of findings through data visualization.
+Prerequisite: MIS-655.
+MIS-661: Predictive Analytics 4 credits
+This course examines foundational analytics concepts with an
+emphasis on predictive analytics. Students work with selected
+industry tools, methods, and techniques to analyze current and
+historical data to make predictions about future or otherwise
+unknown events. Prerequisite: MIS-655.
+MIS-665: Prescriptive Analytics and
+Advanced Topics
+4 credits
+In this course students perform prescriptive analytics and other
+advanced analytics techniques to extract meaning from
+organizational data for the purpose of identifying and
+recommending solutions for specific business needs. Effective
+and persuasive communication of data and decision options to
+drive organizational change is also covered. Prerequisite: MIS661.
+MIS-690Ω: Applied Capstone Project 4 credits
+This course builds upon the techniques and tools presented in
+prior courses in the program. Students undertake an applied
+project focused on a specific area of analytics within an
+organization. Students use critical thinking skills to frame
+analytics problems, build and apply appropriate analytics models,
+and communicate relevant findings within a business setting.
+Prerequisite: MIS-665.
+Marketing (MKT)
+MKT-315: Introduction to Marketing 4 credits
+This course introduces models and practices used by
+contemporary marketers in fast-paced, dynamic domestic and
+global markets including the marketing concept and processes for
+developing, implementing, and assessing the effectiveness of
+marketing plans. Building from a foundational understanding of
+consumer behavior and marketing research, students examine the
+development and implementation of marketing mix strategies and
+tactics with emphasis on integrated marketing communications
+that effectively combine traditional advertising and promotion
+with digital marketing.
+MKT-345: Buyer and Consumer Behavior 4 credits
+This course focuses on a behavioral science approach for
+examining distinct buyer strategies and decision-making
+processes of purchase by organizational buyers and consumers.
+Students evaluate external and internal influences, cross-cultural
+variations, and purchase and post-purchase processes to improve
+customer satisfaction and customer loyalty. Prerequisite: MKT245 or MKT-315.
+MKT-373: Sports Marketing 4 credits
+This course is a study of basic marketing concepts with
+applications to sports organizations, both amateur and
+professional. Topics include promotions and public relations,
+sports consumer behavior, strategic market planning, marketing
+information management, marketing communications, and
+sponsorship. Prerequisites: BUS-232 and MKT-245 or MKT-315.
+MKT-415: Promotion and Advertising 4 credits
+This course provides students with an integrated marketing
+communications perspective. Students develop objectives and
+create ethical communications campaigns that integrate
+advertising and promotional strategies, tactics, budgets, and
+timelines. Prerequisite: MKT-245 or MKT-315.
+MKT-445: Marketing Research and Reporting 4 credits
+This course introduces marketing research processes and tools
+that inform managerial decision making in global business
+environments. Students conduct ethical research by utilizing data
+sources and applying statistical tools and measurement
+techniques. Students engage in independent and collaborative
+research project designs, develop comprehensive marketing
+research plans, and deliver industry-relevant reports and
+presentations. Prerequisites: MKT-245 or MKT-315 and BUS352.
+MKT-450: Marketing Management 4 credits
+This course focuses on applying critical thinking skills to analyze
+and apply marketing strategies and tactics and achieve marketing
+opportunities in the globalized world. Students determine
+environmental factors that affect marketing strategies and apply
+traditional and cutting-edge techniques in promotion, pricing,
+distribution, and product development. Students create and
+manage marketing plans and determine choices that maximize
+profit and increase customer satisfaction and loyalty.
+Prerequisite: MKT-245 or MKT-315.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 414 © 2017 Grand Canyon University. All Rights Reserved.
+MKT-462: Digital Marketing and Advertising 4 credits
+This course provides an integrated marketing communications
+perspective for advertising and promotion using Internet and
+mobile technologies. In this fast-paced and constantly evolving
+environment, students develop objectives and create ethical
+communications campaigns that integrate knowledge of crosschannel and multi-channel consumer behavior with website and
+landing page strategies and tactics, search engine optimization
+and search advertising, social media marketing, and mobility
+marketing. Prerequisite: MKT-245 or MKT-315.
+MKT-465: Sports Retail Management and
+Sales
+4 credits
+This course examines sports retail management, including sports
+merchandizing and sales operations. Essential quality
+management techniques that drive profitability and organizational
+success are also discussed. Students explore current industry
+trends to determine potential innovations and strategies for
+sustaining organizational viability. Prerequisites: BUS-232 and
+MKT-245 or MKT-315.
+MKT-607: Marketing Management 4 credits
+Management of the marketing function, market environmental
+analysis, and marketing planning, strategy, and control are
+fundamentals of marketing management. The course examines
+the marketing process, marketing research, product development
+innovation and diffusion, pricing strategy, distribution value
+drain, advertising and promotion, and strategic marketing issues.
+Emphasis is placed on case study analysis and current academic
+research with a marketing plan as a significant curriculum
+component.
+MKT-650: Services Marketing 4 credits
+This course introduces students to the state-of-the-art research
+and practice in services marketing, with an emphasis on
+discussion of the field's most current services marketing
+concepts, principles and theories, and application of services
+marketing concepts to actual practice through case analysis and
+outside projects. Prerequisite: MKT-607.
+MKT-660: International Marketing 4 credits
+This course provides an analysis of current trends and issues
+facing an international firm’s efforts to manage the marketing
+mix. Comparisons of language, aesthetics, religions, business
+customs, and attitudes on the marketing concept and strategies
+are addressed. Prerequisite: MKT-607.
+MKT-830: The History and Philosophy of
+Marketing
+3 credits
+The course explores the theoretical foundations and supporting
+research of marketing history and philosophy. Legal and ethical
+considerations and emerging marketing strategies are addressed
+in their historical and philosophical context.
+MKT-832: Digital Technology and Consumer
+Behavior
+3 credits
+This course explores current practices in digital communications
+in the context of integrated marketing communications. Learners
+will interact with a multi-year integrated business case as a means
+of exploring applications of marketing.
+MKT-834: Data-Driven Marketing
+Management
+3 credits
+The course discusses the importance of acquiring and harnessing
+data and information for decision making throughout the
+marketing management process. This discussion includes the
+ethical application of data to the creation and evaluation of
+marketing plans leading to competitive advantage.
+MKT-836: Consumer Behaviors in Global
+Marketing
+3 credits
+This course develops a global approach to the ideas and practices
+of marketing and marketing research by considering factors that
+affect consumer behavior. Attention is given to addressing the
+research surrounding culture as a factor in consumer behavior.
+MKT-838: Complexity of Marketing 3 credits
+Business is routinely using marketing strategies to create
+competitive advantage. This course addresses the complexity of
+implementing marketing solutions and the related cultural
+considerations. Learners will interact with a multi-year integrated
+business case to experience the complex interactions associated
+with conducting marketing research and exploiting marketing
+strategies for competitive advantage.
+Music Piano Class (MPC)
+MPC-109: Class Piano (Majors) 1 credits
+This course is designed as class instruction for students with
+limited or no previous piano training. Instruction includes the
+study of piano technique and literature designed to pass Part I of
+the Piano Proficiency Examination.
+MPC-259: Class Piano II 1 credits
+This course is a continuation of MPC-109. It includes passing
+Part II of the Piano Proficiency Examination. Prerequisite: MPC109 or Music Department approval.
+MPC-359: Class Piano III 1 credits
+This course is a continuation of MPC- 259. It includes passing
+Part III of the Piano Proficiency Examination. Prerequisite:
+MPC-259 or Music Department approval.
+MPC-459: Class Piano IV 1 credits
+This course is a continuation of MPC-359. It includes passing
+Part IV of the Piano Proficiency Examination. Prerequisite:
+MPC-359 or Music Department approval.
+String Instruments (MSE)
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 415 © 2017 Grand Canyon University. All Rights Reserved.
+MSE-113: Private Applied Instruction
+Secondary I
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors. Prerequisites: Music Department approval and
+placement audition.
+MSE-115: Private Applied Instruction Major
+I
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: Music
+Department approval and placement audition.
+MSE-123: Private Applied Instruction
+Secondary II
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MSE-125: Private Applied Instruction Major
+II
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MSE-115 or
+Music Department approval and placement audition.
+MSE-213: Private Applied Instruction
+Secondary III
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MSE-215: Private Applied Instruction Major
+III
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MSE-125 or
+Music Department approval and placement audition.
+MSE-223: Private Applied Instruction
+Secondary IV
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MSE-225: Private Applied Instruction Major
+IV
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MSE-215 or
+Music Department approval and placement audition.
+MSE-313: Private Applied Instruction
+Secondary V
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MSE-315: Private Applied Instruction Major
+V
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MSE-225 or
+Music Department approval and placement audition.
+MSE-323: Private Applied Instruction
+Secondary VI
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MSE-325: Private Applied Instruction Major
+VI
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MSE-315 or
+Music Department approval and placement audition.
+MSE-390Ω: Junior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's junior
+year.The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+MSE-413: Private Applied Instruction
+Secondary VII
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MSE-415: Private Applied Instruction Major
+VII
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MSE-325 or
+Music Department approval and placement audition.
+MSE-423: Private Applied Instruction
+Secondary VIII
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MSE-425: Private Applied Instruction Major
+VIII
+2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MSE-415 or
+Music Department approval and placement audition.
+MSE-490: Senior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's senior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+Military Science Leadership
+(MSL)
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 416 © 2017 Grand Canyon University. All Rights Reserved.
+MSL-101N: Introduction to the Army 3 credits
+The MSL-101N course produces a Cadet who accepts the Army
+as a values-based organization and embraces the scholar-athletewarrior ethos; who is familiar with individual roles and
+responsibilities in support of team efforts and problem solving
+processes in military and nonmilitary situations; who
+demonstrates oral and written communication skills, understands
+resilience, and demonstrates a commitment to learning. Live
+Honorably & Build Trust and Communicate and Interact
+Effectively. MSL-101N introduces Cadets to the Army and the
+Profession of Arms. Students will examine the Army Profession
+and what it means to be a professional in the U.S. Army. The
+overall focus is on developing basic knowledge and
+comprehension of the Army Leadership Requirements Model
+while gaining a big picture understanding of the Reserve Officers'
+Training Corps (ROTC) program, its purpose in the Army, and its
+advantages for the student. Cadets also learn how resiliency and
+fitness support their development as Army leaders. As you
+become further acquainted with MSL-101N, you will learn the
+structure of the ROTC Basic Course program consisting of MSL102N, MSL-201N, MSL-202N, Fall and Spring Leadership Labs,
+and Basic Camp (Case by Case basis). The focus is on
+developing basic knowledge and comprehension of Army
+leadership dimensions, attributes, and core leader competencies
+while gaining an understanding of the ROTC program, its
+purpose in the Army, and its advantages for the student.
+MSL-102N: Foundations of Agile and Adaptive
+Leadership
+3 credits
+The MSL I course produces a Cadet who accepts the Army as a
+values-based organization and embraces the scholar-athletewarrior ethos; who is familiar with individual roles and
+responsibilities in support of team efforts and problem solving
+processes in military and non-military situations; who
+demonstrates oral and written communication skills, understands
+resilience, and demonstrates a commitment to learning. Live
+Honorably & Build Trust and Communicate and Interact
+Effectively. MSL102 introduces Cadets to the Army and the
+Profession of Arms. Students will examine the Army Profession
+and what it means to be a professional in the U.S. Army. The
+overall focus is on developing basic knowledge and
+comprehension of the Army Leadership Requirements Model
+while gaining a big picture understanding of the Reserve
+Officers’ Training Corps (ROTC) program, its purpose in the
+Army, and its advantages for the student. Cadets also learn how
+resiliency and fitness supports their development as an Army
+leader. As you become further acquainted with MSL-102N, you
+will learn the structure of the ROTC Basic Course program
+consisting of MSL-101N, 102N, 201N, 202N, Fall and Spring
+Leadership Labs, and Basic Camp (Case by Case basis) . The
+focus is on developing basic knowledge and comprehension of
+Army leadership dimensions, attributes and core leader
+competencies while gaining an understanding of the ROTC
+program, its purpose in the Army, and its advantages for the
+student.
+MSL-201: Innovative Team Leadership 3 credits
+Every Fall. This course explores the dimensions of creative and
+innovative tactical leadership strategies and styles by examining
+team dynamics and two historical leadership theories that form
+the basis of the Army Leadership Requirements Model (trait and
+behavior theories). Students practice aspects of personal
+motivation and team building in the context of planning,
+executing, and assessing team exercises and participating in
+leadership labs. Focus is on continued development of the
+knowledge of leadership values and attributes. The course
+includes 3 hours of lecture/conference, one 2-hour lab of practical
+application, and one 2-day field training exercise.
+MSL-201N: Leadership and Decision Making 3 credits
+The MSL-201N course produces a Cadet grounded in
+foundational leadership doctrine and skills by following and
+leading small units to achieve assigned missions; who applies
+critical thinking and problem solving using Troop Leading
+Procedures (TLP); who comprehends the value of diversity,
+understands the officer's role in leading change, and understands
+the fundamentals of the Army as a profession. MSL-201N adds
+depth to the Cadets understanding of the Adaptability Army
+Learning Area. The outcomes are demonstrated through Critical
+and Creative Thinking and the ability to apply Troop Leading
+Procedures (TLP) to apply Innovative Solutions to Problems. The
+Army Profession is also stressed through leadership forums and a
+leadership self-assessment. Students are then required to apply
+their knowledge outside the classroom in a hands-on,
+performance-oriented environment during Leadership LABs,
+team building exercises, and Field Training Exercises. Cadets
+will be evaluated and their progress managed throughout the
+course; in addition, student's understanding of the course content
+will be monitored, ensuring students comprehend the learning
+objectives and are retaining the lesson content.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 417 © 2017 Grand Canyon University. All Rights Reserved.
+MSL-202N: Army Doctrine and Team
+Development
+3 credits
+MSL-202N focuses on Army doctrine and team development.
+The course begins the journey to understand and demonstrate
+competencies as they relate to Army doctrine. Army Values,
+Teamwork, Warrior Ethos, and their relationship to the Law of
+Land Warfare and philosophy of military service are also
+stressed. The ability to lead and follow is also covered through
+Team Building exercises in small units up to squad level.
+Students are then required to apply their knowledge outside the
+classroom in a hands-on, performance-oriented environment
+during Leadership LABs (team building exercises, LTXs, VBS
+exercises). Includes a 1-hour lab per week taught by MS III
+Cadets. The Army Reserve Officer Training Course (ROTC)
+Basic Course is an academically rigorous 2-year college program
+comprised of four semester courses of instruction, Leadership
+Labs (two sets, Fall/Spring), and the Cadet Basic Camp (Case by
+Case basis) conducted at Fort Knox, KY.: 1. MSL-101N,
+Introduction to the Army 2. MSL-102N, Foundations of Agile
+and Adaptive Leadership 3. MSL-201N, Leadership and
+Decision Making 4.MSL-202N, Army Doctrine and Team
+Development 5. Fall Leadership Lab 6. Spring
+Leadership Lab 7. Basic Camp (Case by Case basis) The focus
+is on developing basic knowledge and comprehension of Army
+leadership attributes and core leader competencies while gaining
+an understanding of the ROTC program, its purpose in the Army,
+and its advantages for the student.
+MSL-301: Adaptive Team Leadership 3 credits
+This course involves the study, practice, and evaluation of
+adaptive leadership skills as students are presented with the
+demands of preparing for the summer Leader Development and
+Assessment Course (LDAC). Challenging scenarios related to
+small-unit tactical operations are used to develop self-awareness
+and critical-thinking skills. Students receive systematic and
+specific feedback on their leadership values, attributes, skills, and
+actions. The course includes 3 hours of lecture/conference, one 2-
+hour lab of practical application, and one 2-day field training
+exercise. Prerequisites: MSL- 101, MSL- 102, MSL-201, and
+MSL- 202; MSL- 205; or prior military service and commitment
+to accept a commission and serve as an officer in the U.S. Army
+on active duty or in a reserve component.
+MSL-301N: Training Management and the
+Warfighting Functions
+3 credits
+MSL-301Nis an academically challenging course where you will
+study, practice, and apply the fundamentals of Army Leadership,
+Officership, Army Values and Ethics, Personal Development, and
+small unit tactics at the platoon level. At the conclusion of this
+course, you will be capable of planning, coordinating, navigating,
+motivating, and leading a squad and platoon in the execution of a
+mission during a classroom PE, a Leadership Lab, or during a
+Field Training Exercise (FTX). You will be required to write peer
+evaluations and receive feedback on your abilities as a leader and
+how to improve those leadership skills that can further develop
+you in to a successful officer. This course includes reading
+assignments, homework assignments, small group assignments,
+briefings, case studies, practical exercises, a mid-term exam, and
+a final exam. You will receive systematic and specific feedback
+on your leader attributes, values, and core leader competencies
+from your instructor, other ROTC cadre, and MSL IV Cadets
+who will evaluate you using the Cadet Officer Evaluation System
+(COER). Successful completion of this course will help prepare
+you for the SROTC Advanced Camp, which you will attend in
+the summer at Fort Knox, KY.
+MSL-302N: Applied Leadership in Small Unit
+Operations
+3 credits
+MSL-302N is an academically challenging course where you will
+study, practice, and apply the fundamentals of Army Leadership,
+Army Values and Ethics, Personal Development, and small unit
+tactics at the platoon level. At the conclusion of this course, you
+will be capable of planning, coordinating, navigating, motivating,
+and leading a squad and platoon in the execution of a mission
+during a classroom PE, a Leadership Lab, or during a Field
+Training Exercise (FTX). You will be required to write peer
+evaluations and receive feedback on your abilities as a leader and
+how to improve those leadership skills that can further develop
+you in to a successful officer. This course includes reading
+assignments, homework assignments, small group assignments,
+briefings, case studies, practical exercises, a mid-term exam, and
+a final exam. You will receive systematic and specific feedback
+on your leader attributes, values, and core leader competencies
+from your instructor, other ROTC cadre, and MSL IV Cadets
+who will evaluate you using the Cadet Officer Evaluation Report
+(COER). Successful completion of this course will help prepare
+you for the SROTC Advanced Camp, which you will attend in
+the summer at Fort Knox, KY.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 418 © 2017 Grand Canyon University. All Rights Reserved.
+MSL-401: Adaptive Leadership 3 credits
+Develop proficiency in planning, executing, and assessing
+complex operations, functioning as a member of a staff, and
+providing leadership-performance feedback to subordinates.
+Students are given situational opportunities to assess risk, make
+sound ethical decisions, and provide coaching and mentoring to
+fellow students. Students are measured by their ability to give
+and receive systematic and specific feedback on leadership
+abilities using the Socratic model of reflective learning. Students
+analyze and evaluate the leadership values, attributes, skills, and
+actions of subordinate students while simultaneously considering
+their own leadership skills. The course includes 3 hours of
+lecture/conference, one 2-hour lab of practical application, and
+one 2-day field training exercise. Prerequisites: MSL-301, MSL302, and commitment to accept a commission and serve as an
+officer in the U.S. Army on active duty or in a reserve
+component.
+MSL-401N: The Army Officer 3 credits
+This is an academically challenging course where you will study,
+practice, develop, and apply critical thinking skills pertaining to
+Army leadership, officer skills, Army Values and ethics, personal
+development, and small unit tactics at platoon level. This course
+includes reading assignments, homework assignments, small
+group assignments, briefings, case studies, practical exercises, a
+mid-term exam, and final exam. You will be assessed on the
+execution of missions during a classroom PE, Leadership Lab, or
+during a Field Training Exercise (FTX). You will receive
+systematic and specific feedback on your leader attributes,
+values, and core leadership competencies from your cadre, PMS,
+and other MSL IV Cadets who will evaluate you using the Cadet
+Officer Evaluation Report (COER). You will be required to write
+peer evaluations and receive feedback on your abilities as a
+leader and how to improve those leader skills. At the conclusion
+of this course, you will be able to plan, coordinate, navigate,
+motivate, and lead a platoon in future operational environments.
+Successful completion of this course will assist in preparing you
+for your BOLC B course and is a mandatory requirement for
+commissioning.
+MSL-402N: Company Grade Leadership 3 credits
+This is an academically challenging course where you will study,
+practice, develop, and apply critical thinking skills pertaining to
+Army leadership, officer skills, Army Values and ethics, personal
+development, and small unit tactics at platoon level. This course
+includes reading assignments, homework assignments, small
+group assignments, briefings, case studies, practical exercises,
+mid-term exam, and a Capstone Exercise in place of the final
+exam. For the Capstone Exercise, you will be required to
+complete an Oral Practicum that will be evaluated on your
+knowledge of the 20 Army Warfighting Challenges (AWFC)
+covered throughout MSL-401N and MSL-402N coursework. In
+addition, you could be assessed on leadership abilities during
+classroom PE, Leadership Labs, or during a Field Training
+Exercise (FTX). You will receive systematic and specific
+feedback on your leader attributes, values, and core leader
+competencies from your cadre, PMS, and other MSL IV Cadets
+who will evaluate you using the Cadet Officer Evaluation Report
+(COER). You will be required to write peer evaluations and
+receive feedback on your abilities as a leader and how to improve
+those leadership skills. At the conclusion of this course, you will
+be able to plan, coordinate, navigate, motivate, and lead a platoon
+in future operational environments. Successful completion of this
+course will assist in preparing you for your BOLC B course and
+is a mandatory requirement for commissioning.
+MSL-499: Independent Study 1 credits
+Students in this course work closely with the Professor of
+Military Science on a special topic. Work may include research,
+readings, and presentations. This course may be repeated once.
+Prerequisite: Instructor approval.
+Music (MUS)
+MUS-111: Diction: Italian 1 credits
+A study of Italian song transliteration, utilizing the International
+Phonetic Alphabet and emphasizing the broad skills of correct
+choice, correct performance of sounds, and performance practice
+of sung Italian. (Preferred default course)
+MUS-112: Diction: French 1 credits
+A study of French song transliteration, utilizing the International
+Phonetic Alphabet and emphasizing the broad skills of correct
+choice, correct performance of sounds, and performance practice
+of sung French. Prerequisite: MUS-111 or Music Department
+approval. (Preferred default course)
+MUS-125: Music Theory I 4 credits
+This course is a study in rhythmic, melodic, and harmonic
+dictation; basic keyboard performance; and sight singing.
+Computer-assisted ear training is utilized. Study is devoted to the
+structure of music which includes harmony, melody, form, and
+rhythm. Skill development in analysis and composition is
+emphasized. The music of the “common practice period” will be
+studied. Prerequisite: Theory Placement Examination.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 419 © 2017 Grand Canyon University. All Rights Reserved.
+MUS-130: Music Theory 3 credits
+Study is devoted to the structure of music, which includes
+harmony, melody, form, and rhythm. Skill development in
+analysis and composition is emphasized. The music of the
+"common practice period" will be studied. Co-requisite: MUS130L.
+MUS-130L: Music Theory I Lab (Aural Skills
+and Musicianship)
+1 credits
+This course is a study in rhythmic, melodic, and harmonic
+dictation; basic keyboard performance; and sight singing.
+Computer-assisted ear training is utilized. Study is devoted to the
+structure of music, which includes: harmony, melody, form, and
+rhythm. Skill development in analysis and composition is
+emphasized. The music of the “common practice period” will be
+studied. Co-requisite: MUS-130.
+MUS-155: Music Theory II 4 credits
+This course emphasizes skill development through analysis and
+composition. Prerequisite: MUS-125.
+MUS-160: Music Theory II 3 credits
+A continuation of MUS-130, this course emphasizes skill
+development through analysis and composition. Prerequisites:
+MUS-130 and MUS-130L or Music Department approval. Corequisite: MUS-160L.
+MUS-160L: Music Theory II Lab (Aural Skills
+and Musicianship)
+1 credits
+A continuation of MUS-130L, this course emphasizes aural skill
+development through practical study in rhythmic, melodic, and
+harmonic dictation; basic keyboard performance; and sight
+singing. Computer-assisted ear training is utilized. Prerequisites:
+MUS-130 and MUS-130L or Music Department approval. Corequisite: MUS-160.
+MUS-210: Music Appreciation 4 credits
+This course introduces the study of the intellectual, emotional,
+and aesthetic nature of music, its history, theory, and literature. It
+explores the major works of great composers and explores the
+elements that contribute to their longevity. Students learn to
+appreciate and critique live performances.
+MUS-210XV: Music Appreciation 4 credits
+This course introduces the study of the intellectual, emotional,
+and aesthetic nature of music, its history, theory, and literature. It
+explores the major works of great composers and explores the
+elements that contribute to their longevity. Students learn to
+appreciate and critique live performances.
+MUS-211: Diction: German 1 credits
+A study of German song transliteration, utilizing the International
+Phonetic Alphabet and emphasizing the broad skills of correct
+choice, correct performance of sounds, and performance practice
+of sung German. Prerequisite: MUS-111 or Music Department
+approval.
+MUS-215: Lyric Diction for Music Educators 1 credits
+This course is an introductory study of the enunciation and
+International Phonetic Alphabet (IPA) transcription of the Italian,
+German, French, and Latin languages for music educators.
+Students are introduced to a rich vocabulary of texts commonly
+used within the repertoire.
+MUS-218: Popular Music in American Society 4 credits
+This course will survey the history of American popular music
+genres. Through understanding styles and forms within the
+context of their origins, popular music is understood in the
+relationship of its functions in society.
+MUS-223҂: Conducting 2 credits
+This course is a study of the fundamentals and techniques of
+conducting. Emphasis is placed on basic conducting skills,
+fundamentals of baton technique, left hand technique, non-verbal
+communication, leadership, conducting terminology,
+transpositions, and score reading.
+MUS223HN҂:
+Conducting 2 credits
+This course is a study of the fundamentals and techniques of
+conducting. Emphasis is placed on basic conducting skills,
+fundamentals of baton technique, left hand technique, non-verbal
+communication, leadership, conducting terminology,
+transpositions, and score reading.
+MUS-227: Music in World Culture 4 credits
+This course is an introduction to the music of the world as a
+means to express different elements of culture, civilization, and
+worldview.
+MUS-260: Music Theory III 4 credits
+This course emphasizes advanced rhythmic, melodic, and
+harmonic dictation; basic keyboard performance; and sight
+singing. Computer-assisted ear training is utilized. Music
+examples are selected from Bach through Wagner. This course
+also includes an advanced study in analysis and part writing
+utilizing modulation and chromatic harmony. Prerequisite: MUS155.
+MUS-262҂: Music Theory III 3 credits
+A continuation of MUS-160, this course emphasizes skill
+development through analysis and composition. Music examples
+are selected from Bach through Wagner. It also includes an
+advanced study in analysis and part writing utilizing modulation
+and chromatic harmony. Prerequisites: MUS-160 and MUS-160L
+or Music Department approval. Co-requisite: MUS-262L.
+MUS-262L: Music Theory III Lab (Aural Skills
+and Musicianship)
+1 credits
+A continuation of MUS-160L, this course is a study in rhythmic,
+melodic, and harmonic dictation; basic keyboard performance;
+and sight singing. Computer-assisted ear training will be utilized.
+Prerequisites: MUS-160 and MUS-160L or Music Department
+approval. Co-requisite: MUS-262.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 420 © 2017 Grand Canyon University. All Rights Reserved.
+MUS-310∆: Choral Literature for Music
+Educators
+2 credits
+This course is a survey study of the composers and choral
+literature appropriate for elementary and secondary school
+ensembles. Major literature; publishers; composers, arrangers,
+and their styles; and common performance and teaching problems
+will be considered.
+MUS-326: Orchestration and Arranging 2 credits
+This course is a study and application in techniques of scoring
+and arranging music for various combinations of musical
+mediums. Includes scoring for strings, woodwinds, brasses,
+percussion, and voices.
+MUS-327: Band Literature for Music
+Educators
+2 credits
+This course is a survey study of the composers and band
+literature appropriate for elementary and secondary school
+ensembles. This course will consider major literature, publishers,
+composers, arrangers, and their styles, as well as common
+performance and teaching problems.
+MUS-331: Choral Methods and Pedagogy 2 credits
+A study of advanced problems in rehearsing and conducting at
+the high school level. An examination and analysis of the
+prevailing choral philosophies, including performance
+techniques, score preparation, rehearsal techniques,
+programming, and administration of the choral program.
+MUS-335: Survey of Jazz 4 credits
+This course will survey the development of jazz music from its
+genesis, transformation, and growth to current postmodern
+practices. The styles are explored through the social identity of
+the music and musicians.
+MUS-351: Music Theory IV 3 credits
+A continuation of MUS-262, this course emphasizes skill
+development through analysis and composition. This course
+includes analysis and composition methods of music of the late
+19th through the 20th century. Prerequisites: MUS-262 and
+MUS-262L or Music Department approval. Co-requisite: MUS351L.
+MUS-351L: Music Theory IV Lab (Aural Skills
+and Musicianship)
+1 credits
+A continuation of MUS-262L, this course is a study in rhythmic,
+melodic, and harmonic dictation; basic keyboard performance;
+and sight singing. Computer-assisted ear training will be utilized.
+Prerequisites: MUS-262 and MUS-262L or Music Department
+approval. Co-requisite: MUS-351.
+MUS-355∆: Music History I 4 credits
+This writing intensive course is a survey of music from primitive
+times to the mid-18th century. It presents the growth of music in
+the Middle Ages and Renaissance through the contrapuntal
+schools, culminating in the work of J. S. Bach and the
+development of opera and oratorio during the baroque period.
+Prerequisite: MUS-125.
+MUS-357: Music Composition Seminar 2 credits
+This course introduces students to the creative processes in music
+composition, building on the study of music theory as a
+foundation for composing original music. Students explore the
+parameters of music and sound by composing original works in
+various styles. Prerequisites: MUS-160 and MUS-160L.
+MUS-359: Composition Using Music
+Technology
+2 credits
+This course will explore the use of music technology as a
+foundation for composing original works in various styles.
+Prerequisites: MUS-160 and MUS-160L.
+MUS-360҂: Music History I 3 credits
+This writing intensive course is a survey of music from primitive
+times to the mid-18th century. It presents the growth of music in
+the Middle Ages and Renaissance through the contrapuntal
+schools, culminating in the work of J. S. Bach and the
+development of opera and oratorio during the baroque period.
+MUS360HN∆҂:
+Music History I 3 credits
+This writing intensive course is a survey of music from primitive
+times to the mid-18th century. It presents the growth of music in
+the Middle Ages and Renaissance through the contrapuntal
+schools, culminating in the work of J. S. Bach and the
+development of opera and oratorio during the baroque period.
+MUS-365∆: Music History II 4 credits
+This writing intensive course is a survey of music from the midl8th century to modern times. Study is devoted to the rise of
+homophonic music, the art song, the nationalistic schools, and the
+principal composers of the classical, romantic, and contemporary
+periods. Prerequisite: MUS-355.
+MUS-369∆҂: Music History II 3 credits
+This writing intensive course is a survey of music from the mid18th century to modern times. Study is devoted to the rise of
+homophonic music, the art song, the nationalistic schools, and the
+principal composers of the classical, romantic, and contemporary
+periods. Prerequisite: MUS-360 or Music Department approval.
+MUS369HN҂:
+Music History II 3 credits
+This writing intensive course is a survey of music from the mid18th century to modern times. Study is devoted to the rise of
+homophonic music, the art song, the nationalistic schools, and the
+principal composers of the classical, romantic, and contemporary
+periods. Prerequisite: MUS-360 or Music Department approval.
+MUS-370∆: Piano Literature I 2 credits
+This course is a survey of baroque and classical periods.
+Emphasis is on learning the standard piano repertoire through
+reading and listening assignments.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 421 © 2017 Grand Canyon University. All Rights Reserved.
+MUS-375∆: Song Literature I 2 credits
+This course is a survey study of the composers, their styles, and
+literature from the beginning of solo song through the early
+romantic period. Practicum/field experience hours: None. This
+course is a survey study of the solo vocal song: representative
+composers, compositional style, and literature from the Baroque
+through the mid-twentieth century. The focus is on early Italian
+song, German Lieder, French mélodie and Russian song.
+MUS-376∆: Song Literature II 2 credits
+This course is a survey study of the composers, their styles, and
+literature from the middle romantic period of solo song through
+the contemporary period. It is a continuation of MUS-375.
+Practicum/field experience hours: None. This course is a survey
+study of the solo vocal song: representative composers,
+compositional style, and literature from the mid-nineteenth
+century through the present, The focus is on English language
+song, late Italian song, song written outside Western Europe and
+the United States, and includes a brief introduction to American
+popular song. MUS-376 is a continuation of MUS-375: Song
+Literature I.
+MUS-377∆: Piano Literature II 2 credits
+This course is a survey of romantic and contemporary periods.
+Emphasis is on learning the standard piano repertoire through
+reading and listening assignments.
+MUS-378∆: Chamber Music Literature 2 credits
+This course is a survey of chamber music literature. Emphasis is
+on learning the standard repertoire through reading and listening
+assignments.
+MUS-379: Symphonic Literature 2 credits
+This course is a survey of symphonic literature. Emphasis is on
+learning the standard repertoire through reading and listening
+assignments.
+MUS-393: Form and Analysis 3 credits
+This course is a study of the various organizational structures in
+music, from motive, phrase, and period, through binary and
+ternary forms to the most complex, such as the variation, rondo,
+and sonata. Works of the masters are analyzed from the
+standpoint of form. Prerequisites: MUS-351 and MUS-351L, or
+MUS-275 or Music Department approval.
+MUS393HN҂:
+Form and Analysis 3 credits
+This course is a study of the various organizational structures in
+music, from motive, phrase, and period, through binary and
+ternary forms to the most complex, such as the variation, rondo,
+and sonata. Works of the masters are analyzed from the
+standpoint of form. Prerequisites: MUS-351 and MUS-351L, or
+MUS-275 or Music Department approval.
+MUS-394: Counterpoint 3 credits
+This course is a survey of contrapuntal practice from the 18th
+century. Background reference is made to early polyphonic
+music. Emphasis is given to 16th century species counterpoint
+and to analyzing and writing inventions and fugues in the 18th
+century style of J. S. Bach. An introduction is provided for the
+use of counterpoint in 20th century composition. Prerequisites:
+MUS-351 and MUS-351L, or MUS-275.
+MUS-406: Jazz Techniques 1 credits
+This course is a study of major jazz techniques and styles,
+including repertoire, instrumentation, improvisation, innovations,
+and major jazz ensembles.
+MUS-417: Collaborative Piano I 2 credits
+This course is an introduction to collaborative and accompanying
+techniques and repertoire. Emphasis is placed on effective
+personal practice and preparation methods and ensemble
+rehearsal techniques. Collaborative skills of shared musical
+leadership, ensemble balance, and other performance issues are
+addressed through master class and private coaching of repertoire
+prepared as part of required assignments in vocal and/or
+instrumental studios. Score study, sight-reading, as well as
+techniques for dealing with orchestral piano reductions are also
+covered. Prerequisite: Advanced Standing or Music Department
+approval.
+MUS-418: Collaborative Piano II 2 credits
+This course is a continuation to Collaborative Piano I.
+Collaborative and accompanying techniques and repertoire
+continue to be developed; collaborative skills of shared musical
+leadership, ensemble balance, and other performance issues are
+addressed through master class and private coaching of repertoire
+prepared as part of required assignments in vocal and/or
+instrumental studios. Score study, sight-reading, as well as
+techniques for dealing with orchestral piano reductions are also
+covered. Prerequisite: MUS-417 or Music Department approval.
+MUS-427: Piano Pedagogy I 2 credits
+This course is a study of beginner fundamentals of piano
+teaching. It includes survey, analysis, classification, and
+evaluation of beginning piano methods. Principles of studio
+management and planning are introduced. This course includes
+observation and supervised teaching in the Piano Laboratory
+Program, and both individual and group lesson settings.
+Prerequisite: MUS-377 or Music Department approval.
+MUS-428: Piano Pedagogy II 2 credits
+This course is a study of intermediate/early advanced
+fundamentals of piano teaching. It includes survey of, analysis,
+classification, and evaluation of beginning piano methods.
+Emphasis is also placed on studio management and planning.
+This course includes observation and supervised teaching in the
+Piano Laboratory Program, and both individual and group lesson
+settings. Prerequisite: MUS-427 or Music Department approval.
+MUS-451: Advanced Choral Conducting 2 credits
+This course is a study of advanced techniques of choral
+conducting. Rehearsal techniques, score reading, artistic
+interpretation, baton technique, and rehearsal techniques will be
+explored. Prerequisite: MUS-223.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 422 © 2017 Grand Canyon University. All Rights Reserved.
+MUS451HN҂:
+Advanced Choral Conducting 2 credits
+This course is a study of advanced techniques of choral
+conducting. Rehearsal techniques, score reading, artistic
+interpretation, baton technique, and rehearsal techniques will be
+explored. Prerequisite: MUS-223.
+MUS-452҂: Advanced Instrumental
+Conducting
+2 credits
+This course is a study of advanced techniques of instrumental
+conducting. Rehearsal techniques, score reading, artistic
+interpretation, baton technique, and rehearsal techniques will be
+explored. Prerequisite: MUS-223 or Music Department approval.
+MUS452HN҂:
+Advanced Instrumental
+Conducting
+2 credits
+This course is a study of advanced techniques of instrumental
+conducting. Rehearsal techniques, score reading, artistic
+interpretation, baton technique, and rehearsal techniques will be
+explored. Prerequisite: MUS-223 or Music Department approval.
+MUS-453: Advanced Conducting 2 credits
+This course is a study of advanced techniques of conducting.
+Rehearsal techniques, score reading, artistic interpretation, baton
+technique, and programming will be explored. Prerequisite:
+MUS-223.
+MUS-455: Vocal Pedagogy 2 credits
+This course is an exploration of voice science and pedagogy for
+voice instruction. Students will be required to demonstrate
+pedagogical application.
+MUS-457: Instrumental Pedagogy 2 credits
+This course is a study of teaching instrumental music in the
+private music studio. The instruction is generally at the beginner
+level. This course includes observation in both individual and
+group lesson settings. Prerequisite: Advanced Standing or Music
+Department approval. Prerequisite: Advanced Standing or Music
+Department approval.
+MUS-490: Senior Seminar 2 credits
+This capstone course provides students an opportunity to develop
+their skills in an area of interest. Students will complete an
+independent project under faculty supervision.
+Music Applied Voice (MVA)
+MVA-119: Private Voice Study I 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors. Prerequisites: Music Department approval and
+placement audition.
+MVA-120: Private Voice Study Majors I 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: Music
+Department approval and placement audition.
+MVA-129: Private Voice Study II 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MVA-130: Private Voice Study Majors II 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MVA-120 or
+Music Department approval and placement audition.
+MVA-219: Private Voice Study III 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MVA-220: Private Voice Study Majors III 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MVA-130 or
+Music Department approval and placement audition.
+MVA-229: Private Voice Study IV 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MVA-230: Private Voice Study Majors IV 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MVA-220 or
+Music Department approval and placement audition.
+MVA-319: Private Voice Study V 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MVA-320: Private Voice Study Majors V 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MVA-230 or
+Music Department approval and placement audition.
+MVA-329: Private Voice Study VI 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MVA-330: Private Voice Study Majors VI 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MVA-320 or
+Music Department approval and placement audition.
+MVA-390Ω: Junior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's junior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 423 © 2017 Grand Canyon University. All Rights Reserved.
+MVA-419: Private Voice Study VII 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MVA-420: Private Voice Study Majors VII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MVA-330 or
+Music Department approval and placement audition.
+MVA-429: Private Voice Study VIII 1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+non-music majors.
+MVA-430: Private Voice Study Majors VIII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MVA-420 or
+Music Department approval and placement audition.
+MVA-490Ω: Senior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's senior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+Music Voice Class (MVC)
+MVC-109: Class Voice (Majors) 1 credits
+This course is class instruction for students with limited or no
+previous voice training. Instruction includes the study of vocal
+technique and is designed to pass Part I of the Vocal Proficiency
+Examination. The voice proficiency requirements are identified
+in the music handbook.
+Woodwind Instruments (MWE)
+MWE-113: Private Applied InstructionSecondary I
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors. Prerequisites: Music Department approval and
+placement audition.
+MWE-115: Private Applied Instruction I 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: Music
+Department approval and placement audition.
+MWE-123: Private Applied InstructionSecondary II
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MWE-125: Private Applied Instruction II 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MWE-115 or
+Music Department approval and placement audition.
+MWE-213: Private Applied InstructionSecondary III
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MWE-215: Private Applied Instruction III 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MWE-125 or
+Music Department approval and placement audition.
+MWE-223: Private Applied InstructionSecondary IV
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MWE-225: Private Applied Instruction IV 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MWE-215 or
+Music Department approval and placement audition.
+MWE-313: Private Applied InstructionSecondary V
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MWE-315: Private Applied Instruction V 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MWE-225 or
+Music Department approval and placement audition.
+MWE-323: Private Applied InstructionSecondary VI
+1 credits
+This course is the applied private study for music majors in their
+secondary instrument or area, and/or the applied private study for
+nonmusic majors.
+MWE-325: Private Applied Instruction VI 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MWE-315 or
+Music Department approval and placement audition.
+------------------
+∆ Writing intensive course |  Fulfills General Education requirement | ҂ Honors Major Course | Ω Non-Transferable
+------------------
+Spring 2023 Academic Catalog 424 © 2017 Grand Canyon University. All Rights Reserved.
+MWE-390Ω: Junior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's junior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
+MWE-413: Private Applied InstructionSecondary VII
+1 credits
+This course includes instruction in the major instrument.
+Emphasis is on advanced technique and literature.
+MWE-415: Private Applied Instruction VII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MWE-325 or
+Music Department approval and placement audition.
+MWE-423: Private Applied InstructionSecondary VIII
+1 credits
+This course is the private applied study for music majors in their
+secondary instrument or area, and/or private applied study for
+non-music majors.
+MWE-425: Private Applied Instruction VIII 2 credits
+This course is the private applied study required for music majors
+in their major instrument or area. Prerequisites: MWE-415 or
+Music Department approval and placement audition.
+MWE-490: Senior Recital 0 credits
+A formal, public recital, sponsored by the music department, in
+which the student presents a solo recital of a length appropriate to
+the major. The recital is to be given in the student's senior year.
+The student must concurrently be enrolled in the appropriate
+level of private instruction. Co-Requisite: The student must
+concurrently be enrolled in the appropriate level of private
+instruction.
