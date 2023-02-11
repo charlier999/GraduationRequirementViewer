@@ -19,7 +19,7 @@ import com.gradview.exception.NoRowsFoundException;
 
 public class AccProgramMajorCreditsDAO 
 {
-     private static final Logger logger = LoggerFactory.getLogger(AccProgramMajorCreditsDAO.class);
+    private static final Logger logger = LoggerFactory.getLogger(AccProgramMajorCreditsDAO.class);
     private static final String TABLENAME = "acc-program-major-credits";
 	public static final String COL_PROGRAMID = "programID";
     public static final String COL_CREDITS = "credits";
