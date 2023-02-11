@@ -205,8 +205,8 @@ public class AccProgramClassesDAO
     }
 
     /**
-     * Delets the inputed {@link AccProgramClassesDAM program class} from the {@value #TABLENAME} table using both of {@link AccProgramClassesDAM}'s competency ID
-     *  to select the database entry to delete. 
+     * Delets the inputed {@link AccProgramClassesDAM program class} from the {@value #TABLENAME} table using both of {@link AccProgramClassesDAM}'s ClassID 
+     *  and ProgramID to select the database entry to delete. 
      * @param input The {@link AccProgramClassesDAM} to delete into the {@value #TABLENAME} table. Requires competencyID property.
      * @return boolean Status of deletion. True: {@link AccProgramClassesDAM program class} was deleted from the {@value #TABLENAME} table. 
      *          False: {@link AccProgramClassesDAM program class} was NOT deleted from the {@value #TABLENAME} table.
