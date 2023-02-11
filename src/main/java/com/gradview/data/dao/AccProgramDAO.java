@@ -166,7 +166,7 @@ public class AccProgramDAO
 
     /** 
      * Inserts the {@link AccProgramDAM program} into the {@value #TABLENAME} table.
-     * @param acccompetency The {@link AccProgramDAM program} to insert into the {@value #TABLENAME} table.
+     * @param input The {@link AccProgramDAM program} to insert into the {@value #TABLENAME} table.
      * @return boolean Status of creation. True: {@link AccProgramDAM program} was added to the {@value #TABLENAME} table. 
      *          False: {@link AccProgramDAM program} was NOT added to the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
@@ -216,7 +216,7 @@ public class AccProgramDAO
     /** 
      * Updates the {@link AccProgramDAM program} into the {@value #TABLENAME} table using the {@link AccProgramDAM}'s ID 
      *  to select the database entry to update. 
-     * @param acccompetency The {@link AccProgramDAM program} to update into the {@value #TABLENAME} table. Requires competencyID property.
+     * @param input The {@link AccProgramDAM program} to update into the {@value #TABLENAME} table.
      * @return boolean Status of update. True: {@link AccProgramDAM program} was updated in the {@value #TABLENAME} table. 
      *          False: {@link AccProgramDAM program} was NOT updated in the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
@@ -266,7 +266,7 @@ public class AccProgramDAO
     /**
      * Delets the inputed {@link AccProgramDAM program} from the {@value #TABLENAME} table using both of {@link AccProgramDAM}'s ID
      *  to select the database entry to delete. 
-     * @param input The {@link AccProgramDAM} to delete into the {@value #TABLENAME} table. Requires competencyID property.
+     * @param input The {@link AccProgramDAM} to delete into the {@value #TABLENAME} table.
      * @return boolean Status of deletion. True: {@link AccProgramDAM program} was deleted from the {@value #TABLENAME} table. 
      *          False: {@link AccProgramDAM program} was NOT deleted from the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.

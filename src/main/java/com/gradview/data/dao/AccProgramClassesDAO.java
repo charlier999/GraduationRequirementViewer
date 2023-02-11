@@ -158,7 +158,7 @@ public class AccProgramClassesDAO
 
     /** 
      * Inserts the {@link AccProgramClassesDAM program class} into the {@value #TABLENAME} table.
-     * @param acccompetency The {@link AccProgramClassesDAM program class} to insert into the {@value #TABLENAME} table.
+     * @param input The {@link AccProgramClassesDAM program class} to insert into the {@value #TABLENAME} table.
      * @return boolean Status of creation. True: {@link AccProgramClassesDAM program class} was added to the {@value #TABLENAME} table. 
      *          False: {@link AccProgramClassesDAM program class} was NOT added to the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
@@ -207,7 +207,7 @@ public class AccProgramClassesDAO
     /**
      * Delets the inputed {@link AccProgramClassesDAM program class} from the {@value #TABLENAME} table using both of {@link AccProgramClassesDAM}'s ClassID 
      *  and ProgramID to select the database entry to delete. 
-     * @param input The {@link AccProgramClassesDAM} to delete into the {@value #TABLENAME} table. Requires competencyID property.
+     * @param input The {@link AccProgramClassesDAM} to delete into the {@value #TABLENAME} table.
      * @return boolean Status of deletion. True: {@link AccProgramClassesDAM program class} was deleted from the {@value #TABLENAME} table. 
      *          False: {@link AccProgramClassesDAM program class} was NOT deleted from the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.

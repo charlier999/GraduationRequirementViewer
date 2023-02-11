@@ -158,7 +158,7 @@ public class AccProgramElectivesCreditsDAO
 
     /** 
      * Inserts the {@link AccProgramElectivesCreditsDAM program elective credits} into the {@value #TABLENAME} table.
-     * @param acccompetency The {@link AccProgramElectivesCreditsDAM program elective credits} to insert into the {@value #TABLENAME} table.
+     * @param input The {@link AccProgramElectivesCreditsDAM program elective credits} to insert into the {@value #TABLENAME} table.
      * @return boolean Status of creation. True: {@link AccProgramElectivesCreditsDAM program elective credits} was added to the {@value #TABLENAME} table. 
      *          False: {@link AccProgramElectivesCreditsDAM program elective credits} was NOT added to the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
@@ -207,7 +207,7 @@ public class AccProgramElectivesCreditsDAO
     /** 
      * Updates the {@link AccProgramElectivesCreditsDAM program elective credits} into the {@value #TABLENAME} table using the {@link AccProgramElectivesCreditsDAM}'s ProgramID 
      *  to select the database entry to update. 
-     * @param acccompetency The {@link AccProgramElectivesCreditsDAM program elective credits} to update into the {@value #TABLENAME} table. Requires competencyID property.
+     * @param input The {@link AccProgramElectivesCreditsDAM program elective credits} to update into the {@value #TABLENAME} table.
      * @return boolean Status of update. True: {@link AccProgramElectivesCreditsDAM program elective credits} was updated in the {@value #TABLENAME} table. 
      *          False: {@link AccProgramElectivesCreditsDAM program elective credits} was NOT updated in the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
@@ -256,7 +256,7 @@ public class AccProgramElectivesCreditsDAO
     /**
      * Delets the inputed {@link AccProgramElectivesCreditsDAM program elective credits} from the {@value #TABLENAME} table using both of {@link AccProgramElectivesCreditsDAM}'s ProgramID
      *  to select the database entry to delete. 
-     * @param input The {@link AccProgramElectivesCreditsDAM} to delete into the {@value #TABLENAME} table. Requires competencyID property.
+     * @param input The {@link AccProgramElectivesCreditsDAM} to delete into the {@value #TABLENAME} table.
      * @return boolean Status of deletion. True: {@link AccProgramElectivesCreditsDAM program elective credits} was deleted from the {@value #TABLENAME} table. 
      *          False: {@link AccProgramElectivesCreditsDAM program elective credits} was NOT deleted from the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
