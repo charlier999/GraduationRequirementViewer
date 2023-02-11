@@ -273,6 +273,15 @@ public class AccClassDAO
         return false;
     }
 
+    /**
+     * Delets the inputed {@link AccClassDAM class} from the {@value #TABLENAME} table using the {@link AccClassDAM class'} ID 
+     *  to select the database entry to delete. 
+     * @param input The {@link AccClassDAM} to delete into the {@value #TABLENAME} table. Requires ID property.
+     * @return boolean Status of deletion. True: {@link AccClassDAM} was deleted from the {@value #TABLENAME} table. 
+     *          False: {@link AccClassDAM } was NOT deleted from the {@value #TABLENAME} table.
+     * @throws DataAccessException An access exception occured.
+     * @throws Exception Catch all for any exception.
+     */
     public boolean delete( AccClassDAM input ) throws DataAccessException
 	{
 		logger.info( "delete: Started." );
