@@ -161,7 +161,7 @@ public class AccClassDAO
 		{
 			logger.error( "search: Exception occured." );
 			// Print a Stack Trace if an exception occurs.
-			ex.printStackTrace();
+			throw ex;
 		}
 		logger.info( "search: Returns " + output.size() + " resulting rows." );
 		// Return batteries list.

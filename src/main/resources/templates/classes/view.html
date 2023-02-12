@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="layouts/defaultTemplate">
+	<head>
+		<meta charset="UTF-8">
+		<title>View Class</title>
+	</head>
+	<body>
+		<div layout:fragment="content">
+			<div th:each="class : ${classes}">
+                <div>
+                    <div th:text="${'Name: ' + class.name}">Class Name</div>
+                    <div th:text="${'Number: ' + class.number}">Class Name</div>
+                    <div th:text="${'Description: ' + class.description}">Class Name</div>
+                    <div th:text="${'Credits: ' + class.credits}">Class Name</div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
