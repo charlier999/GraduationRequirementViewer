@@ -10,9 +10,26 @@
 		<div layout:fragment="content">
             <div id="classes-links">
                 <ul>
-                    <li><a href="class/search">Class Search</a></li>
+                    
                 </ul>
             </div>
+			<div class="form-div search-div">
+				<form th:action="@{/class/search}" th:object="${searchVals}" method="PoSt">
+					<div class="form-row">
+						<div class="col-md-6 form-group">
+							<label>Search For Class</label>
+							<select class="form-control" th:field="*{tableHeader}">
+								<option value="number">Number</option>
+								<option value="name">Name</option>
+								<option value="description">Description</option>
+							</select>
+						</div>
+						<div class="col-md-6 form-group">
+							<input type="text" class="form-control" th:field="*{querry}" th:classappend="${#fields.hasErrors('querry')} ? 'error-field'">
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>

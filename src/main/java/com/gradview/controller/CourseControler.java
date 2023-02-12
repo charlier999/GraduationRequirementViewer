@@ -1,5 +1,6 @@
 package com.gradview.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -9,11 +10,14 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccClass;
 import com.gradview.service.ClassService;
+import com.gradview.ui.ufo.UFOClassSearch;;
 
 @Controller
 public class CourseControler 
@@ -31,8 +35,44 @@ public class CourseControler
     public String displayHome(Model model)
     {
         logger.info("displayHome: Has started at mapping `/class");
+        model.addAttribute("searchVals", new UFOClassSearch());
         logger.info("displayHome: Returning view classes/home");
         return "classes/home";       
+    }
+
+    @PostMapping("/class/search")
+    public String doSearch(@ModelAttribute UFOClassSearch search, Model model)
+    {
+        logger.info("doSearch: Has started at post mapping `/class/search`");
+        List<AccClass> output = new ArrayList<>();
+        try
+        {
+            output = classService.search(search);
+            model.addAttribute("classes", output);
+            model.addAttribute("searchVals", search);
+            logger.info("doSearch: Classes are being returned to view 'classes/searchResults'");
+            return "classes/searchResults";
+        }
+        catch ( DataAccessException e )
+        {
+            logger.error("doSearch: DataAccessException occured");
+            e.printStackTrace();
+            return "error";
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.warn("doSearch: NoRowsFoundException occured");
+            model.addAttribute("classes", output);
+            model.addAttribute("searchVals", new UFOClassSearch());
+            logger.info("doSearch: Classes are being returned to view 'classes/searchResults'");
+            return "classes/searchResults";
+        }
+        catch ( Exception e )
+        {
+            logger.error("doSearch: Exception occured");
+            e.printStackTrace();
+            return "error";
+        }
     }
     
     /**
