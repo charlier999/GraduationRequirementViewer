@@ -38,29 +38,6 @@ public class CourseImportService
     // @Autowired
     // private AccGeneralEducationCompetencyDAO accGeneralEducationCompetencyDAO;
 
-
-    
-    /**
-     * Constructor of the Course Import Service
-     * @throws FileNotFoundException
-     */
-    // public CourseImportService()
-    // {
-    //     accClassDAO = new AccClassDAO();
-    //     try
-    //     {
-    //         logger.info("Constructor: Starting");
-    //         this.courseSteamA = new FileInputStream(ResourceUtils.getFile("classpath:static/RawCourseDescriptions/CourseDescriptions_A.txt"));
-    //         logger.info("Constructor: File loaded.");
-    //         if(RUNIMPORT) importClassesWithoutRequisites();
-    //     }
-    //     catch ( FileNotFoundException e )
-    //     {
-    //         logger.info("Constructor: File not found.");
-    //         e.printStackTrace();
-    //     }
-    // }
-
     public void importClassesWithoutRequisites() throws FileNotFoundException
     {
         logger.info("importClassesWithoutRequisites: Starting");
@@ -91,7 +68,7 @@ public class CourseImportService
     private List<String> retrieveLinesFromFile() throws FileNotFoundException
     {
         logger.info("retrieveLinesFromFile: Starting");
-        this.courseSteamA = new FileInputStream(ResourceUtils.getFile("classpath:static/RawCourseDescriptions/CourseDescriptions_A.txt"));
+        this.courseSteamA = new FileInputStream(ResourceUtils.getFile("classpath:static/RawCourseDescriptions/CourseDescriptions_C.txt"));
         Scanner sc = new Scanner(this.courseSteamA);
         List<String> output = new ArrayList<>();
         logger.info("retrieveLinesFromFile: Iterating Through File");
@@ -124,16 +101,24 @@ public class CourseImportService
             // If the 6th char is equal to ':''
             if(chars.length > 4)
             {
-                if(subCount == 0 && chars[7] == ':') // This finds the 
+                if(subCount == 0) // This finds the 
                 {
-                    // Pull Course Number from char array
-                    String line = "";
-                    for(int j = 0; j < 7; j++)
+                    logger.info("clumpLines: Count " + i);
+                    if(chars[7] == ':')
                     {
-                        line += chars[j];
+                        // Pull Course Number from char array
+                        String line = "";
+                        for(int j = 0; j < 7; j++)
+                        {
+                            line += chars[j];
+                        }
+                        // Add course number to clump
+                        clump.add(line);
                     }
-                    // Add course number to clump
-                    clump.add(line);
+                    else
+                    {
+                        logger.info("null");
+                    }
                 }
                 // If the first 4 chars are ' '
                 if(subCount > 0 && chars[0] == ' ' && chars[1] == ' ' && chars[2] == ' ' && chars[3] == ' ' )

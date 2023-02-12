@@ -1,9 +1,9 @@
-BHS-240: 
+BHS-240: 
     Group Dynamics and Process 
     4 credits
     This course provides a broad understanding of group development stages, group dynamics, group counseling theories, and ethical standards pertaining to group work. In addition, this course explores theoretical approaches to group work. The course also addresses the growth and development of group members.
 
-BHS-240XV: 
+BHS-240: 
     Group Dynamics and Process 
     4 credits
     This course provides a broad understanding of group development stages, group dynamics, group counseling theories, and ethical standards pertaining to group work. In addition, this course explores theoretical approaches to group work. The course also addresses the growth and development of group members.
@@ -99,7 +99,7 @@ BHS-485:
     This course provides an overview of a variety of assessments commonly used to diagnose disorders in early childhood. Students learn the importance of ongoing assessment, assessment in a variety of settings, and the importance of the caregiver-child relationship in assessment. Students are provided an overview of common disorders found in early childhood, and how the DC: 0- 5 is used to accurately identify early childhood disorders. Students understand the role of cultural and familial influence on assessment and diagnosis. 
     Prerequisite: BHS-480.
 
-BHS-490Ω: 
+BHS-490: 
     Professional Capstone Project
     4 credits
     The capstone project is a culmination of the learning experiences while a student is within the behavioral health science program at Grand Canyon University’s College of Humanities and Social Sciences. Students prepare a written proposal for a communitybased behavioral health organization related to the student’s specific area of focus. The proposal includes the name, geographical location, identified service gap, target populations, types of service/treatments, potential challenges, ethical considerations, and supervision/oversight considerations. The professional capstone project proposal needs to reflect synthesis and integration of course content. This capstone course needs to be completed at the end of program. 
@@ -219,7 +219,7 @@ BIB-650:
     4 credits
     This course is a study of the basic principles of evangelical biblical interpretation, exegesis, and application, especially in the context of ministry, including an introduction to the use of biblical language tools.
 
-BIB-650GAR: 
+BIB-650: 
     Biblical Hermeneutics 
     4 credits
     This course is a study of the basic principles of evangelical biblical interpretation, exegesis, and application, especially in the context of ministry, including an introduction to the use of biblical language tools.
@@ -725,7 +725,7 @@ BIT-417:
     This writing-intensive course examines the role of governance and ethics within information technology. Topics include understanding and satisfying Sarbanes/Oxley, preparing for an information technology audit, complying with government regulations such as HIPAA, and understanding data-privacy issues. Students examine real-world case studies. 
     Prerequisite: BIT-200, BIT-205, CST-110, or CST-111.
 
-BIT417:
+BIT-417:
     IT Governance and Ethics 
     4 credits
     This writing intensive course examines the role of governance and ethics within information technology. Topics include understanding and satisfying Sarbanes/Oxley, preparing for an information technology audit, complying with government regulations such as HIPAA, and understanding data-privacy issues. Students examine real-world case studies. 

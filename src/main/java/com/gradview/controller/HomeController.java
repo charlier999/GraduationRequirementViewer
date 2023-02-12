@@ -29,7 +29,7 @@ public class HomeController
 	public String displayHome( Model model, HttpServletResponse httpResponse ) throws FileNotFoundException
 	{
 		logger.info( "displayLogin: Has started at mapping '/home'." );
-		// Display the Login Form View
+		//cis.importClassesWithoutRequisites();
 		logger.info( "displayLogin: Returning view 'home'." );
 		return "home";
 	}
