@@ -23,12 +23,25 @@ public class CourseControler
     private ClassService classService;
 
     /**
+     * Displays the class home page.
+     * @param model
+     * @return
+     */
+    @GetMapping("/class")
+    public String displayHome(Model model)
+    {
+        logger.info("displayHome: Has started at mapping `/class");
+        logger.info("displayHome: Returning view classes/home");
+        return "classes/home";       
+    }
+    
+    /**
      * Displays the class page from the url paramater number.
      * @param number the class number to retrieve class from.
      * @param model
      * @return view
      */
-    @GetMapping("/class/{number}")
+    @GetMapping("/class/number/{number}")
     public String displayClass(@PathVariable("number") String number, Model model)
     {
         logger.info("displayClass: Has started at mapping `/class/{number}");
