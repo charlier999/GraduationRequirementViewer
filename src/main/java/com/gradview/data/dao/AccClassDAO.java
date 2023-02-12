@@ -4,7 +4,6 @@ package com.gradview.data.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +12,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.InvalidResultSetAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.gradview.data.dam.AccClassDAM;
 import com.gradview.exception.NoRowsFoundException;
@@ -21,20 +20,17 @@ import com.gradview.exception.NoRowsFoundException;
 /**
  * Accesses and interacts with {@value #TABLENAME} table.
  */
-@Component
+@Repository
 public class AccClassDAO 
 {
     private static final Logger logger = LoggerFactory.getLogger(AccClassDAO.class);
-	private static final String TABLENAME = "acc-class";
+	private static final String TABLENAME = "`acc-class`";
 	public static final String COL_ID = "id";
     public static final String COL_NAME = "name";
     public static final String COL_DESCRIPTION = "description";
     public static final String COL_NUMBER = "number";
     public static final String COL_CREDITS = "credits";
 
-    @Autowired
-	private DataSource dataSource;
-    
     @Autowired
 	private JdbcTemplate jdbcTemplate;
 

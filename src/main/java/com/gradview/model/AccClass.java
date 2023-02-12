@@ -131,6 +131,8 @@ public class AccClass
 		this.checkGenEdProps();
 	}
 
+	public AccClass(){};
+
 	/**
 	 * Checks to see if isGenEd is false and sets genEdCompID to -1, baOfArts to
 	 * FALSE, and baOfScience to FALSE.
