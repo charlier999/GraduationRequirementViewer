@@ -22,6 +22,12 @@ public class CourseControler
     @Autowired
     private ClassService classService;
 
+    /**
+     * Displays the class page from the url paramater number.
+     * @param number the class number to retrieve class from.
+     * @param model
+     * @return view
+     */
     @GetMapping("/class/{number}")
     public String displayClass(@PathVariable("number") String number, Model model)
     {
