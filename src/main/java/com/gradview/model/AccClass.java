@@ -3,6 +3,8 @@
  */
 package com.gradview.model;
 
+import com.gradview.data.dam.AccClassDAM;
+
 /**
  * The representation of the academic class.
  * 
@@ -132,6 +134,15 @@ public class AccClass
 	}
 
 	public AccClass(){};
+
+	/**
+	 * Converts {@link AccClass} to {@link AccClassDAM}
+	 * @return {@link AccClassDAM}
+	 */
+	public AccClassDAM toDAM()
+	{
+		return new AccClassDAM( this.getName(),  this.getDescription(),  this.getNumber(),  this.getCredits());
+	}
 
 	/**
 	 * Checks to see if isGenEd is false and sets genEdCompID to -1, baOfArts to

@@ -3,6 +3,8 @@
  */
 package com.gradview.data.dam;
 
+import com.gradview.model.AccClass;
+
 /**
  * Represents the "acc-class" table columns.
  * 
@@ -61,6 +63,15 @@ public class AccClassDAM
 		this.description = description;
 		this.number = number;
 		this.credits = credits;
+	}
+
+	/**
+	 * Converts {@link AccClassDAM} to {@link AccClass}
+	 * @return {@link AccClass}
+	 */
+	public AccClass toAccClass()
+	{
+		return new AccClass(this.id, this.name, this.description, this.number, this.credits, false, id, null, false, false);
 	}
 
 	/**

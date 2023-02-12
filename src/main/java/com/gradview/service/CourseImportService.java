@@ -192,9 +192,6 @@ public class CourseImportService
         List<AccClass> output = new ArrayList<>();
         // Iterate through input list
         logger.info("clumpListToClassWithoutPrereq: Iterating through input list");
-        clumpToClassWithoutPrereq(input.get(32));
-        clumpToClassWithoutPrereq(input.get(33));
-        clumpToClassWithoutPrereq(input.get(34));
         for(int i = 0; i < input.size(); i++)
         {
             // Add Class to output list.
@@ -262,11 +259,7 @@ public class CourseImportService
         logger.info("classModelToDAM: Iterating through input list");
         for(int i = 0; i < input.size(); i++)
         {
-            output.add(new AccClassDAM(
-                input.get(i).getName(), 
-                input.get(i).getDescription(), 
-                input.get(i).getNumber(), 
-                input.get(i).getCredits()));
+            output.add(input.get(i).toDAM());
         }
         logger.info("classModelToDAM: Iteration Complete");
         logger.info("classModelToDAM: Returning AccClassDAM");
