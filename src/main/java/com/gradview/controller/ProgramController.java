@@ -18,6 +18,7 @@ import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccProgram;
 import com.gradview.service.ProgramImportService;
 import com.gradview.ui.ufo.UFOFileSelect;
+import com.gradview.ui.ufo.UFOProgramSearch;
 
 @Controller
 public class ProgramController 
@@ -26,10 +27,19 @@ public class ProgramController
     @Autowired
     private ProgramImportService programImportService;
     
+    @GetMapping("/program")
+    public String displayHome(Model model)
+    {
+        logger.info("displayHome: Has started at mapping `/program`");
+        model.addAttribute("searchVals", new UFOProgramSearch());
+        logger.info("displayHome: Returning view programs/home");
+        return "programs/home";       
+    }
+
     @GetMapping("/program/import")
     public String displayProgramImportPage(Model model)
     {
-        logger.info("displayClassImportPage: Has started at mapping `/program/import");
+        logger.info("displayProgramImportPage: Has started at mapping `/program/import");
         List<String> fileNames = new ArrayList<>();
         // Retreive list of files
         try
@@ -44,7 +54,7 @@ public class ProgramController
         // attach list of files to model
         model.addAttribute("filenames", fileNames);
         model.addAttribute("formObject", new UFOFileSelect());
-        logger.info("displayClassImportPage: Returning view program/importTool");
+        logger.info("displayProgramImportPage: Returning view program/importTool");
         return "programs/importTool"; 
     }
 
