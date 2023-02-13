@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="layouts/defaultTemplate">
+	<head>
+		<meta charset="UTF-8">
+		<title>View Program</title>
+	</head>
+	<body>
+		<div layout:fragment="content">
+
+			<div th:each="program : ${programs}">
+                <div>
+                    <div th:text="${'Name: ' + program.name}"></div>
+                    <div th:text="${'Description: ' + program.description}"></div>
+                    <div th:text="${'Level: ' + program.level}"></div>
+					<div th:text="${'General Education Credits: ' + program.genEdMinCredits + '-' + program.genEdMaxCredits}"></div>
+					<div th:text="${'Elective Credits: ' + program.electiveMinCredits + '-' + program.electiveMaxCredits}"></div>
+					<div th:text="${'Major Credits: ' + program.majorMinCredits}"></div>
+					<div th:text="${'Total Credits: ' + program.totalMinCredits}"></div>
+				</div>
+            </div>
+		</div>
+	</body>
+</html>

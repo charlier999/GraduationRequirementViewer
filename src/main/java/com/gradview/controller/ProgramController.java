@@ -12,6 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.gradview.data.dam.AccProgramDAM;
@@ -19,6 +20,7 @@ import com.gradview.data.dao.AccProgramDAO;
 import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccProgram;
 import com.gradview.service.ProgramImportService;
+import com.gradview.service.ProgramService;
 import com.gradview.ui.ufo.UFOFileSelect;
 import com.gradview.ui.ufo.UFOProgramSearch;
 
@@ -30,6 +32,8 @@ public class ProgramController
     private ProgramImportService programImportService;
     @Autowired
     private AccProgramDAO accProgramDAO;
+    @Autowired
+    private ProgramService programService;
     
     @GetMapping("/program")
     public String displayHome(Model model)
@@ -75,6 +79,39 @@ public class ProgramController
         }
     }
 
+    @GetMapping("/program/name/{name}")
+    public String displayProgram(@PathVariable("name") String name, Model model)
+    {
+        logger.info("displayProgram: Has started at mapping `/program/name/{name}");
+        List<AccProgram> output = new ArrayList<>();
+        logger.info("displayProgram: " + name + " requested to be viewed");
+        try
+        {
+            output = programService.getProgramsByName(name);
+        }
+        catch ( DataAccessException e )
+        {
+            logger.error("displayProgram: DataAccessException occured");
+            e.printStackTrace();
+            return "error";
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.warn("displayProgram: NoRowsFoundException occured");
+            e.printStackTrace();
+            return "error";
+        }
+        catch ( Exception e )
+        {
+            logger.error("displayProgram: Exception occured");
+            e.printStackTrace();
+            return "error";
+        }
+        model.addAttribute("programs", output);
+        logger.info("displayProgram: Program is being returned to view 'programs/view'");
+        return "programs/view";
+    }
+
     @GetMapping("/program/import")
     public String displayProgramImportPage(Model model)
     {
@@ -87,8 +124,8 @@ public class ProgramController
         }
         catch ( IOException e )
         {
-            // TODO Auto-generated catch block
             e.printStackTrace();
+            return "error";
         }
         // attach list of files to model
         model.addAttribute("filenames", fileNames);
