@@ -3,6 +3,12 @@
  */
 package com.gradview.model;
 
+import com.gradview.data.dam.AccProgramDAM;
+import com.gradview.data.dam.AccProgramElectivesCreditsDAM;
+import com.gradview.data.dam.AccProgramGeneralEducationCreditsDAM;
+import com.gradview.data.dam.AccProgramMajorCreditsDAM;
+import com.gradview.data.dam.AccProgramTotalCreditsDAM;
+
 /**
  * The representation of the academic program.
  * 
@@ -10,6 +16,15 @@ package com.gradview.model;
  */
 public class AccProgram
 {
+	public static final String LEVEL_GRAD_CERT = "Graduate Certificate of Completion";
+	public static final String LEVEL_BACHELOR = "Bachelor";
+	public static final String LEVEL_MINOR = "Minor";
+	public static final String LEVEL_BRIDGE2MASTER = "Bridge to Master";
+	public static final String LEVEL_MASTER = "Master";
+	public static final String LEVEL_DOCTOR = "Doctor";
+	public static final String BA_ART = "Bachelor of Arts";
+	public static final String BA_SCI = "Bachelor of Science";
+
 	/**
 	 * The ID number of the program.
 	 */
@@ -147,6 +162,54 @@ public class AccProgram
 		this.majorMaxCredits = majorMaxCredits;
 		this.totalMinCredits = totalMinCredits;
 		this.requiredMajorClasses = requiredMajorClasses;
+	}
+
+	public AccProgram(){}
+
+	/**
+	 * Retruns the program as a {@link AccProgramDAM}
+	 * @return {@link AccProgramDAM}
+	 */
+	public AccProgramDAM toProgramDAM()
+	{
+		return new AccProgramDAM(this.id,this. name, this.description, 
+				this.level, this.baOfArts, this.baOfScience);
+	}
+
+	/**
+	 * Returns the programs Gen Ed credit details as a {@link AccProgramGeneralEducationCreditsDAM}
+	 * @return {@link AccProgramGeneralEducationCreditsDAM}
+	 */
+	public AccProgramGeneralEducationCreditsDAM toGenEdCredDAM()
+	{
+		return new AccProgramGeneralEducationCreditsDAM(this.id, this.genEdMinCredits, this.genEdMaxCredits);
+	}
+
+	/**
+	 * Retuns the program's Elective credit details as a {@link AccProgramElectivesCreditsDAM}
+	 * @return {@link AccProgramElectivesCreditsDAM}
+	 */
+	public AccProgramElectivesCreditsDAM toElectivCredeDAM()
+	{
+		return new AccProgramElectivesCreditsDAM(this.id,this.electiveMinCredits, this.electiveMaxCredits);
+	}
+
+	/**
+	 * Returns the program's Major credit details as a {@link AccProgramMajorCreditsDAM}
+	 * @return {@link AccProgramMajorCreditsDAM}
+	 */
+	public AccProgramMajorCreditsDAM toMajorCredDAM()
+	{
+		return new AccProgramMajorCreditsDAM(this.id, this.majorMinCredits);
+	}
+
+	/**
+	 * Returns the program's Total credit details as a {@link AccProgramTotalCreditsDAM}
+	 * @return {@link AccProgramTotalCreditsDAM}
+	 */
+	public AccProgramTotalCreditsDAM toTotalCredDAM()
+	{
+		return new AccProgramTotalCreditsDAM(this.id, this.totalMinCredits);
 	}
 
 	/**

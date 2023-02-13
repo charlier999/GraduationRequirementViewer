@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="layouts/defaultTemplate">
+	<head>
+		<meta charset="UTF-8">
+		<title>Classes</title>
+	</head>
+	<body>
+		<div th:fragment="header">
+			<div align="center">
+				<h1>GCU Requirement Viewer</h1>
+			</div>
+			<div class="navbar">
+				<nav class="navbar navbar-default">
+					<!-- Collection of nav links and other content for toggling -->
+					<div id="navbarCollapse" class="collapse navbar-collapse">
+						<label>Navbar</label>
+						<ul class="nav navbar-nav">
+							<li><a href="/home">Home</a></li>
+							<li><a href="/class">Class Home</a></li>
+							<li><a href="/program">Program Home</a></li>
+							<li><a href="/test">Testing Home</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			
+			<!-- Page Title and Logo -->
+			
+			<br/><br/>
+		</div>
+		<div layout:fragment="content">
+            <div class="form-div search-div">
+				<form th:action="@{/program/search}" th:object="${searchVals}" method="PoSt">
+					<div class="form-row">
+						<div class="col-md-6 form-group">
+							<label>Search For Programs</label>
+							<select class="form-control" th:field="*{tableHeader}">
+								<option value="name">Name</option>
+							</select>
+						</div>
+						<div class="col-md-6 form-group">
+							<input type="text" class="form-control" th:field="*{querry}" th:classappend="${#fields.hasErrors('querry')} ? 'error-field'">
+						</div>
+						<input type="submit" value="Submit" class="form-input-submit">
+					</div>
+				</form>
+			</div>
+            <div th:if="${not #lists.isEmpty(programs)}" class="table-div search-results-programs">
+                <label>Search Results</label>
+                <table class="search-results-programs-table">
+                    <tr class="search-results-programs-header-row">
+                        <td class="search-results-programs-header">Name</td>
+                    </tr>
+                    <tr th:each="program : ${programs}" class="search-results-programs-row">
+                        <td class="search-results-programs-data">
+                            <a th:href="@{/program/name/{name}(name=${program.name})}" th:text="${program.name}"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	</body>
+</html>
