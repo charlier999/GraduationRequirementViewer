@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="layouts/defaultTemplate">
+	<head>
+		<meta charset="UTF-8">
+		<title>Class Import</title>
+	</head>
+	<body>
+		<div layout:fragment="content">
+			<div>
+				Import Classes
+			</div>
+            <div class="form-div search-div search-classes">
+				<form th:action="@{/class/import}" th:object="${formObject}" method="PoSt">
+					<div class="form-row">
+						<div class="col-md-6 form-group">
+							<label>Available Files to Import</label>
+							<select class="form-control" th:field="${formObject.filename}">
+                                <div th:each="filename : ${filenames}" class="fileSelect-div-option-filename">
+                                    <option th:value="${filename}" th:text="${filename}" class="fileSelect-option-filename"></option>
+                                </div>
+							</select>
+						</div>
+                        <input type="submit" value="Submit" class="fileSelect-input-submit">
+					</div>
+				</form>
+			</div>
+			<div th:if="${not #lists.isEmpty(classes)}" class="table-div search-results-classes">
+                <label>Results</label>
+                <table class="search-results-classes-table">
+                    <tr class="search-results-classes-header-row">
+                        <td class="search-results-classes-header">Number</td>
+                        <td class="search-results-classes-header">Name</td>
+                    </tr>
+                    <tr th:each="class : ${classes}" class="search-results-classes-row">
+                        <td class="search-results-classes-data">
+                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+                        </td>
+                        <td class="search-results-classes-data">
+                            <div th:text="${class.name}">Class Name</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	</body>
+</html>

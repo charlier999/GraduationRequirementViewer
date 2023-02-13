@@ -1,5 +1,6 @@
 package com.gradview.controller;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,10 +15,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.gradview.data.dao.AccClassDAO;
 import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccClass;
 import com.gradview.service.ClassService;
-import com.gradview.ui.ufo.UFOClassSearch;;
+import com.gradview.service.CourseImportService;
+import com.gradview.ui.ufo.UFOClassSearch;
+import com.gradview.ui.ufo.UFOFileSelect;;
 
 @Controller
 public class CourseControler 
@@ -25,6 +29,8 @@ public class CourseControler
     private static final Logger logger = LoggerFactory.getLogger( CourseControler.class );
     @Autowired
     private ClassService classService;
+    @Autowired
+    private CourseImportService courseImportService;
 
     /**
      * Displays the class home page.
@@ -111,5 +117,75 @@ public class CourseControler
             e.printStackTrace();
             return "error";
         }
+    }
+
+    @PostMapping("/class/import")
+    public String doClassImport(@ModelAttribute UFOFileSelect fileSelect, Model model)
+    {
+        logger.info("doClassImport: Has started at mapping `/class/import");
+        List<String> fileNames = new ArrayList<>();
+        List<AccClass> classes = new ArrayList<>();
+        // Retreive list of files
+        try
+        {
+            
+            // Retrive list of formated files
+            fileNames = courseImportService.retrieveFormatedFiles();
+            // Import selected file
+            courseImportService.importClassesWithoutRequisites(fileSelect.getFilename());
+            // Pull letter segement
+            char[] chars = fileSelect.getFilename().toCharArray();
+            // 
+            classes = classService.search(new UFOClassSearch(String.valueOf(chars[19]) + "__-___", AccClassDAO.COL_NUMBER));
+            
+        }
+        catch ( IOException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch ( DataAccessException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch ( NoRowsFoundException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch ( Exception e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        // attach list of files to model
+        model.addAttribute("filenames", fileNames);
+        model.addAttribute("classes", classes);
+        model.addAttribute("formObject", fileSelect);
+        logger.info("doClassImport: Returning view classes/importTool");
+        return "classes/importTool"; 
+    }
+
+    @GetMapping("/class/import")
+    public String displayClassImportPage(Model model)
+    {
+        logger.info("displayClassImportPage: Has started at mapping `/class/import");
+        List<String> fileNames = new ArrayList<>();
+        // Retreive list of files
+        try
+        {
+            fileNames = courseImportService.retrieveFormatedFiles();
+        }
+        catch ( IOException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        // attach list of files to model
+        model.addAttribute("filenames", fileNames);
+        model.addAttribute("formObject", new UFOFileSelect());
+        logger.info("displayClassImportPage: Returning view classes/importTool");
+        return "classes/importTool"; 
     }
 }

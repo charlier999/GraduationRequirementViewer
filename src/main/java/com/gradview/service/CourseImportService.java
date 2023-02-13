@@ -1,7 +1,9 @@
 package com.gradview.service;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +12,8 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.io.Resource;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
@@ -23,8 +27,9 @@ public class CourseImportService
 {
     private static final Logger logger = LoggerFactory.getLogger(CourseImportService.class);
     //private static final boolean RUNIMPORT = true;
-    private InputStream courseSteamA;
-    // AccClass DAOs
+   
+    @Autowired
+    private ApplicationContext applicationContext;
 
     @Autowired
     private AccClassDAO accClassDAO;
@@ -38,11 +43,25 @@ public class CourseImportService
     // @Autowired
     // private AccGeneralEducationCompetencyDAO accGeneralEducationCompetencyDAO;
 
-    public void importClassesWithoutRequisites() throws FileNotFoundException
+    public List<String> retrieveFormatedFiles() throws IOException
+    {
+        logger.info("retrieveFormatedFiles: Starting");
+        logger.info("retrieveFormatedFiles: Retrieveing Resources");
+        Resource[] resources = applicationContext.getResources("classpath:static/RawCourseDescriptions/*");
+        List<String> output = new ArrayList<>();
+        for(int i = 0; i < resources.length; i++)
+        {
+            output.add(resources[i].getFilename());
+        }
+        logger.info("retrieveFormatedFiles: Returning file names");
+        return output;
+    }
+
+    public void importClassesWithoutRequisites(String fileName) throws FileNotFoundException
     {
         logger.info("importClassesWithoutRequisites: Starting");
         logger.info("importClassesWithoutRequisites: Retrieve lines from file");
-        List<String> lines = this.retrieveLinesFromFile();
+        List<String> lines = this.retrieveLinesFromFile(fileName);
         logger.info("importClassesWithoutRequisites: Lines Retreived");
         logger.info("importClassesWithoutRequisites: Clump Lines");
         List<List<String>> clumpedLines = this.clumpLines(lines);
@@ -57,7 +76,6 @@ public class CourseImportService
         this.insertClassesToDB(classesDAM);
         logger.info("importClassesWithoutRequisites: All classDAMs have been inserted");
         logger.info("importClassesWithoutRequisites: Finished");
-        
     }
 
     /**
@@ -65,11 +83,11 @@ public class CourseImportService
      * @return List< String > of all lines from the file.
      * @throws FileNotFoundException
      */
-    private List<String> retrieveLinesFromFile() throws FileNotFoundException
+    private List<String> retrieveLinesFromFile(String fileName) throws FileNotFoundException
     {
         logger.info("retrieveLinesFromFile: Starting");
-        this.courseSteamA = new FileInputStream(ResourceUtils.getFile("classpath:static/RawCourseDescriptions/CourseDescriptions_C.txt"));
-        Scanner sc = new Scanner(this.courseSteamA);
+         
+        Scanner sc = new Scanner(new FileInputStream(ResourceUtils.getFile("classpath:static/RawCourseDescriptions/" + fileName)));
         List<String> output = new ArrayList<>();
         logger.info("retrieveLinesFromFile: Iterating Through File");
         while(sc.hasNext())
