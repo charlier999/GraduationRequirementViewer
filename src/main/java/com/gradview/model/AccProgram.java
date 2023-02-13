@@ -10,6 +10,15 @@ package com.gradview.model;
  */
 public class AccProgram
 {
+	public static final String LEVEL_GRAD_CERT = "Graduate Certificate of Completion";
+	public static final String LEVEL_BACHELOR = "Bachelor";
+	public static final String LEVEL_MINOR = "Minor";
+	public static final String LEVEL_BRIDGE2MASTER = "Bridge to Master";
+	public static final String LEVEL_MASTER = "Master";
+	public static final String LEVEL_DOCTOR = "Doctor";
+	public static final String BA_ART = "Bachelor of Arts";
+	public static final String BA_SCI = "Bachelor of Science";
+
 	/**
 	 * The ID number of the program.
 	 */
@@ -148,6 +157,8 @@ public class AccProgram
 		this.totalMinCredits = totalMinCredits;
 		this.requiredMajorClasses = requiredMajorClasses;
 	}
+
+	public AccProgram(){}
 
 	/**
 	 * @return the id

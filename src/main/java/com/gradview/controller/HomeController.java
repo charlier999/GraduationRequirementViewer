@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.gradview.service.CourseImportService;
+import com.gradview.service.ProgramImportService;
 
 @Controller
 public class HomeController
@@ -20,6 +21,8 @@ public class HomeController
 
 	@Autowired
 	CourseImportService cis;
+	@Autowired
+	ProgramImportService pis;
 	
 	/**
 	 * Displays the home page.
@@ -30,6 +33,7 @@ public class HomeController
 	{
 		logger.info( "displayLogin: Has started at mapping '/home'." );
 		//cis.importClassesWithoutRequisites();
+		pis.importProgramsWithoutClasses();
 		logger.info( "displayLogin: Returning view 'home'." );
 		return "home";
 	}
