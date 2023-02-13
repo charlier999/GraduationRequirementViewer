@@ -7,6 +7,29 @@
 		<title>Classes</title>
 	</head>
 	<body>
+		<div th:fragment="header">
+			<div align="center">
+				<h1>GCU Requirement Viewer</h1>
+			</div>
+			<div class="navbar">
+				<nav class="navbar navbar-default">
+					<!-- Collection of nav links and other content for toggling -->
+					<div id="navbarCollapse" class="collapse navbar-collapse">
+						<label>Navbar</label>
+						<ul class="nav navbar-nav">
+							<li><a href="/home">Home</a></li>
+							<li><a href="/class">Class Home</a></li>
+							<li><a href="/program">Program Home</a></li>
+							<li><a href="/test">Testing Home</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			
+			<!-- Page Title and Logo -->
+			
+			<br/><br/>
+		</div>
 		<div layout:fragment="content">
             <div class="form-div search-div search-classes">
 				<form th:action="@{/class/search}" th:object="${searchVals}" method="PoSt">
