@@ -2,6 +2,7 @@ package com.gradview.service;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,8 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.core.io.Resource;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
@@ -29,6 +32,8 @@ public class ProgramImportService
     private InputStream courseSteam;
 
     @Autowired
+    private ApplicationContext applicationContext;
+    @Autowired
     private AccProgramDAO accProgramDAO;
     @Autowired
     private AccProgramElectivesCreditsDAO accProgramElectivesCreditsDAO;
@@ -39,12 +44,25 @@ public class ProgramImportService
     @Autowired
     private AccProgramTotalCreditsDAO accProgramTotalCreditsDAO;
 
+    public List<String> retrieveFormatedFiles() throws IOException
+    {
+        logger.info("retrieveFormatedFiles: Starting");
+        logger.info("retrieveFormatedFiles: Retrieveing Resources");
+        Resource[] resources = applicationContext.getResources("classpath:static/ProgramsNoClasses/*");
+        List<String> output = new ArrayList<>();
+        for(int i = 0; i < resources.length; i++)
+        {
+            output.add(resources[i].getFilename());
+        }
+        logger.info("retrieveFormatedFiles: Returning file names");
+        return output;
+    }
 
-    public void importProgramsWithoutClasses() throws FileNotFoundException
+    public void importProgramsWithoutClasses(String filename) throws FileNotFoundException
     {
         logger.info("importProgramsWithoutClasses: Starting");
         logger.info("importProgramsWithoutClasses: Retrieve lines from file");
-        List<String> lines = this.retrieveLinesFromFile();
+        List<String> lines = this.retrieveLinesFromFile(filename);
         logger.info("importProgramsWithoutClasses: Lines Retreived");
         logger.info("importProgramsWithoutClasses: Clump Lines");
         List<List<String>> clumpedLines = this.clumpLines(lines);
@@ -63,10 +81,10 @@ public class ProgramImportService
      * @return List< String > of all lines from the file.
      * @throws FileNotFoundException
      */
-    private List<String> retrieveLinesFromFile() throws FileNotFoundException
+    private List<String> retrieveLinesFromFile(String filename) throws FileNotFoundException
     {
         logger.info("retrieveLinesFromFile: Starting");
-        this.courseSteam = new FileInputStream(ResourceUtils.getFile("classpath:static/ProgramsNoClasses/CollegeOfArtsAndMedia.txt"));
+        this.courseSteam = new FileInputStream(ResourceUtils.getFile("classpath:static/ProgramsNoClasses/" + filename));
         Scanner sc = new Scanner(this.courseSteam);
         List<String> output = new ArrayList<>();
         logger.info("retrieveLinesFromFile: Iterating Through File");

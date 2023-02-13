@@ -33,7 +33,7 @@ public class HomeController
 	{
 		logger.info( "displayLogin: Has started at mapping '/home'." );
 		//cis.importClassesWithoutRequisites();
-		pis.importProgramsWithoutClasses();
+		//pis.importProgramsWithoutClasses();
 		logger.info( "displayLogin: Returning view 'home'." );
 		return "home";
 	}
