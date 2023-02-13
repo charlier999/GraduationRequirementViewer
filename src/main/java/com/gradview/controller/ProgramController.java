@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.gradview.data.dam.AccProgramDAM;
+import com.gradview.data.dao.AccProgramDAO;
 import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccProgram;
 import com.gradview.service.ProgramImportService;
@@ -26,6 +28,8 @@ public class ProgramController
     private static final Logger logger = LoggerFactory.getLogger( ProgramController.class );
     @Autowired
     private ProgramImportService programImportService;
+    @Autowired
+    private AccProgramDAO accProgramDAO;
     
     @GetMapping("/program")
     public String displayHome(Model model)
@@ -34,6 +38,41 @@ public class ProgramController
         model.addAttribute("searchVals", new UFOProgramSearch());
         logger.info("displayHome: Returning view programs/home");
         return "programs/home";       
+    }
+
+    @PostMapping("/program/search")
+    public String doSearch(@ModelAttribute UFOProgramSearch search, Model model)
+    {
+        logger.info("doSearch: Has started at post mapping `/class/search`");
+        List<AccProgramDAM> output = new ArrayList<>();
+        try
+        {
+            output = accProgramDAO.search(search.getTableHeader(), "%" + search.getQuerry() + "%");
+            model.addAttribute("programs", output);
+            model.addAttribute("searchVals", search);
+            logger.info("doSearch: Programs are being returned to view 'programs/searchResults'");
+            return "programs/searchResults";
+        }
+        catch ( DataAccessException e )
+        {
+            logger.error("doSearch: DataAccessException occured");
+            e.printStackTrace();
+            return "error";
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.warn("doSearch: NoRowsFoundException occured");
+            model.addAttribute("programs", output);
+            model.addAttribute("searchVals", new UFOProgramSearch());
+            logger.info("doSearch: Programs are being returned to view 'programs/searchResults'");
+            return "programs/searchResults";
+        }
+        catch ( Exception e )
+        {
+            logger.error("doSearch: Exception occured");
+            e.printStackTrace();
+            return "error";
+        }
     }
 
     @GetMapping("/program/import")
