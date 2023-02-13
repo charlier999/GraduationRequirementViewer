@@ -58,7 +58,7 @@ public class ProgramImportService
         return output;
     }
 
-    public void importProgramsWithoutClasses(String filename) throws FileNotFoundException
+    public List<AccProgram> importProgramsWithoutClasses(String filename) throws FileNotFoundException
     {
         logger.info("importProgramsWithoutClasses: Starting");
         logger.info("importProgramsWithoutClasses: Retrieve lines from file");
@@ -74,6 +74,7 @@ public class ProgramImportService
         insertPrograms(programs);
         logger.info("importProgramsWithoutClasses: All programs have been inserted");
         logger.info("importProgramsWithoutClasses: Finished");
+        return programs;
     }
 
     /**
