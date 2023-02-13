@@ -4,8 +4,6 @@ package com.gradview.data.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,16 +20,13 @@ import com.gradview.exception.NoRowsFoundException;
 public class AccProgramDAO 
 {
     private static final Logger logger = LoggerFactory.getLogger(AccProgramDAO.class);
-    private static final String TABLENAME = "acc-program";
+    private static final String TABLENAME = "`acc-program`";
 	public static final String COL_ID = "id";
     public static final String COL_NAME = "name";
     public static final String COL_DESCRIPTION = "description";
     public static final String COL_LEVEL = "level";
     public static final String COL_BAOFARTS = "ba-of-arts";
     public static final String COL_BAOFSCIENCE = "ba-of-science";
-    
-    @Autowired
-	private DataSource dataSource;
     
     @Autowired
 	private JdbcTemplate jdbcTemplate;
@@ -178,8 +173,8 @@ public class AccProgramDAO
     {
         logger.info( "create: Started." );
 		// Create SQL query.
-		String sqlQuery = "INSERT INTO " + TABLENAME + "(" + COL_NAME + ", " + COL_DESCRIPTION + ", " + COL_LEVEL + ", " 
-                        + COL_BAOFARTS  + ", " + COL_BAOFSCIENCE + ") VALUES(?,?,?,?,?)";
+		String sqlQuery = "INSERT INTO " + TABLENAME + "(" + COL_NAME + ", " + COL_DESCRIPTION + ", " + COL_LEVEL + ", `" 
+                        + COL_BAOFARTS  + "`, `" + COL_BAOFSCIENCE + "`) VALUES(?,?,?,?,?)";
 		// Exception catch.
 		try
 		{
@@ -229,7 +224,7 @@ public class AccProgramDAO
         logger.info( "update: Started." );
 		// Create SQL query.
 		String sqlQuery = "UPDATE " + TABLENAME + " SET " + COL_NAME + " = ?, " + COL_DESCRIPTION + " = ?, "
-                            + COL_LEVEL + " = ?, " + COL_BAOFARTS + " = ?, " + COL_BAOFSCIENCE + " = ?, "  + "WHERE " + COL_ID + " = ?";
+                            + COL_LEVEL + " = ?, `" + COL_BAOFARTS + "` = ?, `" + COL_BAOFSCIENCE + "` = ?, "  + "WHERE " + COL_ID + " = ?";
 		// Exception catch.
 		try
 		{

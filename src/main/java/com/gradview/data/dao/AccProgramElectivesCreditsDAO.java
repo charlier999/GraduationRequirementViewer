@@ -4,8 +4,6 @@ package com.gradview.data.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +20,10 @@ import com.gradview.exception.NoRowsFoundException;
 public class AccProgramElectivesCreditsDAO 
 {
     private static final Logger logger = LoggerFactory.getLogger(AccProgramElectivesCreditsDAO.class);
-    private static final String TABLENAME = "acc-program-electives-credits";
+    private static final String TABLENAME = "`acc-program-electives-credits`";
 	public static final String COL_PROGRAMID = "programID";
     public static final String COL_MINIMUM = "minimum";
     public static final String COL_MAXIMUM = "maximum";
-    @Autowired
-	private DataSource dataSource;
     
     @Autowired
 	private JdbcTemplate jdbcTemplate;

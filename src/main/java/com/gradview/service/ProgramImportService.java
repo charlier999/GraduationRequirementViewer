@@ -10,6 +10,7 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
@@ -52,6 +53,7 @@ public class ProgramImportService
         List<AccProgram> programs = this.clumpLinesToPrograms(clumpedLines);
         logger.info("importProgramsWithoutClasses: Clumps have been converted to programs");
         logger.info("importProgramsWithoutClasses: Inserting programs into the database");
+        insertPrograms(programs);
         logger.info("importProgramsWithoutClasses: All programs have been inserted");
         logger.info("importProgramsWithoutClasses: Finished");
     }
@@ -356,5 +358,44 @@ public class ProgramImportService
     {
         logger.info("getIntInString: Runs");
         return Integer.parseInt(input.replaceAll("\\D+", ""));
+    }
+
+
+    private void insertPrograms(List<AccProgram> input)
+    {
+        logger.info("insertPrograms: Starting");
+        logger.info("insertPrograms: Iterating thorugh program list");
+        for(int i = 0; i <input.size(); i++)
+        {
+            logger.info("insertPrograms: Inserting program " + i);
+            try
+            {
+                // Insert base program
+                accProgramDAO.create(input.get(i).toProgramDAM());
+                // Retreive program ID by name
+                input.get(i).setId(
+                    accProgramDAO.search(AccProgramDAO.COL_NAME, input.get(i).getName())
+                    .get(0).getId());
+                // Insert gen-ed credits
+                accProgramGeneralEducationCreditsDAO.create(input.get(i).toGenEdCredDAM());
+                // Insert Major credits
+                accProgramMajorCreditsDAO.create(input.get(i).toMajorCredDAM());
+                // Insert Elective credits
+                accProgramElectivesCreditsDAO.create(input.get(i).toElectivCredeDAM());
+                // Insert total credits
+                accProgramTotalCreditsDAO.create(input.get(i).toTotalCredDAM());
+            }
+            catch ( DataAccessException e )
+            {
+                logger.error("insertClassesToDB: Data Access Exception Occured. Printing Stack Trace");
+                e.printStackTrace();
+            }
+            catch ( Exception e )
+            {
+                logger.error("insertClassesToDB: Exception Occured. Printing Stack Trace");
+                e.printStackTrace();
+            }
+        }
+        logger.info("insertPrograms: Finished");
     }
 }
