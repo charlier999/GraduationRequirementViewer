@@ -319,18 +319,19 @@ public class ProgramImportService
         // Convert input string to chars
         char[] charaters = input.toCharArray();
         String output = null;
-        for(int i = 0; i < charaters.length; i++)
-        {
-            // If char is not ' '
-            if(charaters[i] != ' ')
-            {
-                // Sets output to input substring begining index = iterator - 1
-                output = input.substring((i--));
-                // Break from loop
-                logger.info("removeIndentFromString: end of indent found");
-                break;
-            }
-        }
+        output = input.trim();
+        // for(int i = 0; i < charaters.length; i++)
+        // {
+        //     // If char is not ' '
+        //     if(charaters[i] != ' ')
+        //     {
+        //         // Sets output to input substring begining index = iterator - 1
+        //         output = input.substring((i--));
+        //         // Break from loop
+        //         logger.info("removeIndentFromString: end of indent found");
+        //         break;
+        //     }
+        // }
         // If output was not filled
         if(output == null)
         {
@@ -351,6 +352,7 @@ public class ProgramImportService
         logger.info("getLineCreditRange: Starting Input: " + input);
         // Get the index of the "-" in input string
         int dashInd = input.indexOf("-");
+        if(dashInd < 0) return new int[] {0, 0};
         // Retrieve string value of credit minimum 
         String creditMinS = input.substring((dashInd-2), dashInd);
         // Retrieve string value of credit maximum 
