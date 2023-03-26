@@ -40,6 +40,32 @@ public class ProgramController
     {
         logger.info("displayHome: Has started at mapping `/program`");
         model.addAttribute("searchVals", new UFOProgramSearch());
+
+        List<AccProgramDAM> output = new ArrayList<>();
+        try
+        {
+            output = accProgramDAO.search(AccProgramDAO.COL_ID ,"%");
+            model.addAttribute("programs", output);
+        }
+        catch ( DataAccessException e )
+        {
+            logger.error("doSearch: DataAccessException occured");
+            e.printStackTrace();
+            return "error";
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.warn("doSearch: NoRowsFoundException occured");
+            model.addAttribute("programs", output);
+            model.addAttribute("searchVals", new UFOProgramSearch());
+        }
+        catch ( Exception e )
+        {
+            logger.error("doSearch: Exception occured");
+            e.printStackTrace();
+            return "error";
+        }
+
         logger.info("displayHome: Returning view programs/home");
         return "programs/home";       
     }
