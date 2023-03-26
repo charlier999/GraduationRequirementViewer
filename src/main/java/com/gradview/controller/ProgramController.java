@@ -195,6 +195,7 @@ public class ProgramController
         model.addAttribute("filenames", fileNames);
         model.addAttribute("programs", programs);
         model.addAttribute("formObject", fileSelect);
+        model.addAttribute("logs", this.programImportService.getLogs());
         logger.info("doProgramImport: Returning view program/importTool");
         return "programs/importTool"; 
     }

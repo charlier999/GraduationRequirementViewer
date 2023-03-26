@@ -3,6 +3,8 @@
  */
 package com.gradview.model;
 
+import java.util.Arrays;
+
 import com.gradview.data.dam.AccProgramDAM;
 import com.gradview.data.dam.AccProgramElectivesCreditsDAM;
 import com.gradview.data.dam.AccProgramGeneralEducationCreditsDAM;
@@ -165,6 +167,19 @@ public class AccProgram
 	}
 
 	public AccProgram(){}
+
+	
+
+	@Override
+	public String toString()
+	{
+		return "AccProgram [id=" + id + ", name=" + name + ", description=" + description + ", level=" + level
+				+ ", baOfArts=" + baOfArts + ", baOfScience=" + baOfScience + ", genEdMinCredits=" + genEdMinCredits
+				+ ", genEdMaxCredits=" + genEdMaxCredits + ", electiveMinCredits=" + electiveMinCredits
+				+ ", electiveMaxCredits=" + electiveMaxCredits + ", majorMinCredits=" + majorMinCredits
+				+ ", majorMaxCredits=" + majorMaxCredits + ", totalMinCredits=" + totalMinCredits
+				+ ", requiredMajorClasses=" + Arrays.toString( requiredMajorClasses ) + "]";
+	}
 
 	/**
 	 * Retruns the program as a {@link AccProgramDAM}

@@ -49,7 +49,9 @@
 					</div>
 				</form>
 			</div>
+			
 			<div th:if="${not #lists.isEmpty(programs)}" class="table-div search-results-programs">
+				<hr>
                 <label>Import Results</label>
                 <table class="search-results-programs-table">
                     <tr class="search-results-programs-header-row">
@@ -62,6 +64,32 @@
                     </tr>
                 </table>
             </div>
+			<div th:if="${not #lists.isEmpty(logs)}" class="table-div import-results-logs">
+				<hr>
+				<label>Logs</label>
+				<table class="import-results-logs-table">
+					<tr class="import-results-logs-header-row">
+						<td class="import-results-logs-header">Level</td>
+						<td class="import-results-logs-header">File Location</td>
+						<td class="import-results-logs-header">Method Location</td>
+						<td class="import-results-logs-header">Message</td>
+					</tr>
+					<tr th:each="log : ${logs}" class="import-results-logs-row">
+						<td class="import-results-logs-data">
+							<div th:text="${log.messageLevel}"></div>
+						</td>
+						<td class="import-results-logs-data">
+							<div th:text="${log.fileLocation}"></div>
+						</td>
+						<td class="import-results-logs-data">
+							<div th:text="${log.methodLocation}"></div>
+						</td>
+						<td class="import-results-logs-data">
+							<div th:text="${log.message}"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>

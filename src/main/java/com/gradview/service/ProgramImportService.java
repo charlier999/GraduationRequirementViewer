@@ -31,6 +31,9 @@ public class ProgramImportService
     //private static final boolean RUNIMPORT = true;
     private InputStream courseSteam;
 
+    private ComponentLogger compLogger = new ComponentLogger("gradview.service.ProgramImportService");
+
+
     @Autowired
     private ApplicationContext applicationContext;
     @Autowired
@@ -44,8 +47,14 @@ public class ProgramImportService
     @Autowired
     private AccProgramTotalCreditsDAO accProgramTotalCreditsDAO;
 
+    public List<LogMessage> getLogs()
+    {
+        return this.compLogger.getLogs();
+    }
+
     public List<String> retrieveFormatedFiles() throws IOException
     {
+        
         logger.info("retrieveFormatedFiles: Starting");
         logger.info("retrieveFormatedFiles: Retrieveing Resources");
         Resource[] resources = applicationContext.getResources("classpath:static/ProgramsNoClasses/*");
@@ -60,20 +69,21 @@ public class ProgramImportService
 
     public List<AccProgram> importProgramsWithoutClasses(String filename) throws FileNotFoundException
     {
-        logger.info("importProgramsWithoutClasses: Starting");
-        logger.info("importProgramsWithoutClasses: Retrieve lines from file");
+        compLogger.clear();
+        compLogger.info("importProgramsWithoutClasses", "Starting");
+        compLogger.info("importProgramsWithoutClasses", "Retrieve lines from file");
         List<String> lines = this.retrieveLinesFromFile(filename);
-        logger.info("importProgramsWithoutClasses: Lines Retreived");
-        logger.info("importProgramsWithoutClasses: Clump Lines");
+        compLogger.info("importProgramsWithoutClasses", "Lines Retreived");
+        compLogger.info("importProgramsWithoutClasses", "Clump Lines");
         List<List<String>> clumpedLines = this.clumpLines(lines);
-        logger.info("importProgramsWithoutClasses: Lines have been clumped");
-        logger.info("importProgramsWithoutClasses: Convert clumpted lines to programs");
+        compLogger.info("importProgramsWithoutClasses", "Lines have been clumped");
+        compLogger.info("importProgramsWithoutClasses", "Convert clumpted lines to programs");
         List<AccProgram> programs = this.clumpLinesToPrograms(clumpedLines);
-        logger.info("importProgramsWithoutClasses: Clumps have been converted to programs");
-        logger.info("importProgramsWithoutClasses: Inserting programs into the database");
+        compLogger.info("importProgramsWithoutClasses", "Clumps have been converted to programs");
+        compLogger.info("importProgramsWithoutClasses", "Inserting programs into the database");
         insertPrograms(programs);
-        logger.info("importProgramsWithoutClasses: All programs have been inserted");
-        logger.info("importProgramsWithoutClasses: Finished");
+        compLogger.info("importProgramsWithoutClasses", "All programs have been inserted");
+        compLogger.info("importProgramsWithoutClasses", "Finished");
         return programs;
     }
 
@@ -84,18 +94,18 @@ public class ProgramImportService
      */
     private List<String> retrieveLinesFromFile(String filename) throws FileNotFoundException
     {
-        logger.info("retrieveLinesFromFile: Starting");
+        compLogger.info("retrieveLinesFromFile", "Starting");
         this.courseSteam = new FileInputStream(ResourceUtils.getFile("classpath:static/ProgramsNoClasses/" + filename));
         Scanner sc = new Scanner(this.courseSteam);
         List<String> output = new ArrayList<>();
-        logger.info("retrieveLinesFromFile: Iterating Through File");
+        compLogger.info("retrieveLinesFromFile", "Iterating Through File");
         while(sc.hasNext())
         {
             output.add(sc.nextLine());
         }
         sc.close();
-        logger.info("retrieveLinesFromFile: Iteration complete.");
-        logger.info("retrieveLinesFromFile: Returning List of lines.");
+        compLogger.info("retrieveLinesFromFile", "Iteration complete.");
+        compLogger.info("retrieveLinesFromFile", "Returning List of lines.");
         return output;
     }
 
@@ -106,13 +116,13 @@ public class ProgramImportService
      */
     private List<List<String>> clumpLines(List<String> input)
     {
-        logger.info("clumpLines: Starting");
+        compLogger.info("clumpLines", "Starting");
         List<List< String > > output = new ArrayList<List<String>>();
         List<String> clump = new ArrayList<>();
-        logger.info("clumpLines: Iterating through input List");
+        compLogger.info("clumpLines", "Iterating through input List");
         for(int i = 0; i < input.size(); i++)
         {
-            logger.info("clumpLines: Iteration " + i);
+            logger.debug("clumpLines Iteration " + i);
             // If blank line
             if(input.get(i).length() == 0)
             {
@@ -128,7 +138,7 @@ public class ProgramImportService
                 clump.add(removeIndentFromString(input.get(i)));
             }
         }
-        logger.info("clumpLines: Returning output List<List<String>>");
+        compLogger.info("clumpLines", "Returning output List<List<String>>");
         return output;
     }
 
@@ -139,12 +149,12 @@ public class ProgramImportService
      */
     private List<AccProgram> clumpLinesToPrograms(List<List<String>> input)
     {
-        logger.info("clumpLinesToPrograms: Starting");
+        compLogger.info("clumpLinesToPrograms", "Starting");
         List<AccProgram> output = new ArrayList<>();
-        logger.info("clumpLinesToPrograms: Iterating through input List");
+        compLogger.info("clumpLinesToPrograms", "Iterating through input List");
         for(int i = 0; i < input.size(); i++)
         {
-            logger.info("clumpLinesToPrograms: Clump Iteration " + i);
+            logger.debug("clumpLinesToPrograms: Clump Iteration " + i);
             AccProgram program = new AccProgram();
             for(int j = 0; j < input.get(i).size(); j++)
             {
@@ -226,12 +236,17 @@ public class ProgramImportService
                         // Set total minimum credits
                         program.setTotalMinCredits(this.getIntInString(input.get(i).get(j)));
                     }
+                    else
+                    {
+                        compLogger.warn("clumpLinesToPrograms", 
+                            "Program `" + program.getName() + "`'s Program Level is not a known level.");
+                    }
                 }
             }
             output.add(program);
 
         }
-        logger.info("clumpLinesToPrograms: Returning");
+        compLogger.info("clumpLinesToPrograms", "Returning");
         return output;
     }
 
@@ -305,7 +320,11 @@ public class ProgramImportService
         {
             return AccProgram.LEVEL_DOCTOR;
         }
-        return null;
+        else
+        {
+            compLogger.warn("findProgramLevelInString", "Input `" + input + "` is not a known program level.");
+            return null;
+        }
     }
 
     /**
@@ -384,15 +403,21 @@ public class ProgramImportService
 
     private void insertPrograms(List<AccProgram> input)
     {
-        logger.info("insertPrograms: Starting");
-        logger.info("insertPrograms: Iterating thorugh program list");
+        compLogger.info("insertPrograms","Starting");
+        compLogger.info("insertPrograms","Iterating thorugh program list");
         for(int i = 0; i <input.size(); i++)
         {
             logger.info("insertPrograms: Inserting program " + i);
             try
             {
+                if(!this.validateProgram(input.get(i)))
+                {
+                    compLogger.warn("insertPrograms", 
+                    "Invalid Program. Program Iteration: "+ i);
+                }
                 // Insert base program
                 accProgramDAO.create(input.get(i).toProgramDAM());
+                // Check 
                 // Retreive program ID by name
                 input.get(i).setId(
                     accProgramDAO.search(AccProgramDAO.COL_NAME, input.get(i).getName())
@@ -408,15 +433,46 @@ public class ProgramImportService
             }
             catch ( DataAccessException e )
             {
-                logger.error("insertClassesToDB: Data Access Exception Occured. Printing Stack Trace");
+                compLogger.error("insertPrograms","Data Access Exception Occured on Program `"+ input.get(i).getName() + "`. Message: " + e.getMessage());
+                logger.error("insertPrograms: Data Access Exception Occured. Printing Stack Trace");
                 e.printStackTrace();
             }
             catch ( Exception e )
             {
-                logger.error("insertClassesToDB: Exception Occured. Printing Stack Trace");
+                compLogger.error("insertPrograms","Exception Occured.");
+                logger.error("insertPrograms: Exception Occured. Printing Stack Trace");
                 e.printStackTrace();
             }
         }
-        logger.info("insertPrograms: Finished");
+        compLogger.info("insertPrograms","Finished");
+    }
+
+    private boolean validateProgram(AccProgram program)
+    {
+        if(program == null)
+        {
+            compLogger.warn("validateProgram", "Program is null.");
+            return false;
+        }
+        else 
+        {
+            boolean critNullFound = false;
+            if(program.getName() == null)
+            {
+                critNullFound = true;
+                compLogger.warn("validateProgram", "Program is null.");
+            }
+            if(program.getDescription() == null)
+            {
+                critNullFound = true;
+                compLogger.warn("validateProgram", "Program is null.");
+            }
+            if(critNullFound)
+            {
+                compLogger.warn("validateProgram", "Program contains null values. Program: " + program.toString());
+                return false;
+            }
+        }
+        return true;
     }
 }
