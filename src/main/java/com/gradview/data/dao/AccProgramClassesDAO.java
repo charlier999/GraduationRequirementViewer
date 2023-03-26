@@ -23,6 +23,7 @@ public class AccProgramClassesDAO
     private static final String TABLENAME = "acc-program-classes";
 	public static final String COL_PROGRAMID = "programID";
     public static final String COL_CLASSID = "classID";
+    public static final String COL_CLASSNUMBER = "classNumber";
     
     @Autowired
 	private JdbcTemplate jdbcTemplate;
@@ -54,7 +55,7 @@ public class AccProgramClassesDAO
 			{
 				rowsFound = true;
 				// Add rows to output list.
-				output.add( new AccProgramClassesDAM(srs.getInt(COL_PROGRAMID), srs.getInt(COL_CLASSID)));
+				output.add( new AccProgramClassesDAM(srs.getInt(COL_PROGRAMID), srs.getInt(COL_CLASSID), srs.getString(COL_CLASSNUMBER)));
 			}
 			if ( !rowsFound )
 			{
@@ -119,7 +120,7 @@ public class AccProgramClassesDAO
 			{
 				rowsFound = true;
 				// Add rows to output list.
-				output.add( new AccProgramClassesDAM(srs.getInt(COL_PROGRAMID), srs.getInt(COL_CLASSID)));
+				output.add( new AccProgramClassesDAM(srs.getInt(COL_PROGRAMID), srs.getInt(COL_CLASSID), srs.getString(COL_CLASSNUMBER)));
 			}
 			if ( !rowsFound )
 			{
@@ -165,13 +166,13 @@ public class AccProgramClassesDAO
     {
         logger.info( "create: Started." );
 		// Create SQL query.
-		String sqlQuery = "INSERT INTO " + TABLENAME + "(" + COL_PROGRAMID + ", " + COL_CLASSID + ") VALUES(?,?)";
+		String sqlQuery = "INSERT INTO " + TABLENAME + "(" + COL_PROGRAMID + ", " + COL_CLASSID + ", " + COL_CLASSNUMBER + ") VALUES(?,?,?)";
 		// Exception catch.
 		try
 		{
 			// Run SQL Query.
 			logger.info( "create: SQL querry started running." );
-			int rows = jdbcTemplate.update(sqlQuery, input.getProgramID(), input.getClassID());
+			int rows = jdbcTemplate.update(sqlQuery, input.getProgramID(), input.getClassID(), input.getClassNumber());
             if ( rows == 1 )
 			{
 				logger.info( "create: Insert Success" );
@@ -213,12 +214,16 @@ public class AccProgramClassesDAO
     public boolean delete( AccProgramClassesDAM input ) throws DataAccessException
 	{
 		logger.info( "delete: Started." );
+		String sqlQ = "";
 		// Create sql statement.
-		String sqlQ = "DELETE FROM " + TABLENAME + "WHERE " + COL_PROGRAMID + " = ? AND " + COL_CLASSID + " = ?";
+		if(input.getClassID() != -1) sqlQ = "DELETE FROM " + TABLENAME + "WHERE " + COL_PROGRAMID + " = ? AND " + COL_CLASSID + " = ?";
+		else sqlQ = "DELETE FROM " + TABLENAME + "WHERE " + COL_PROGRAMID + " = ? AND " + COL_CLASSNUMBER + " = ?";
 		try
 		{
+			int rows = -1;
 			// delete
-			int rows = this.jdbcTemplate.update( sqlQ, input.getProgramID(), input.getClassID() );
+			if(input.getClassID() != -1) rows = this.jdbcTemplate.update( sqlQ, input.getProgramID(), input.getClassID() );
+			else rows = this.jdbcTemplate.update( sqlQ, input.getProgramID(), input.getClassNumber() );
 			if ( rows == 1 )
 			{
 				logger.info( "delete: Delete Successful." );
