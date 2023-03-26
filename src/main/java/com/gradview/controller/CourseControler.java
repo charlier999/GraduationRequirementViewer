@@ -48,6 +48,31 @@ public class CourseControler
     {
         logger.info("displayHome: Has started at mapping `/class");
         model.addAttribute("searchVals", new UFOClassSearch());
+        List<AccClass> output = new ArrayList<>();
+        try
+        {
+            output = classService.search(new UFOClassSearch("%", AccClassDAO.COL_NUMBER));
+            model.addAttribute("classes", output);
+        }
+        catch ( DataAccessException e )
+        {
+            logger.error("displayHome: DataAccessException occured");
+            e.printStackTrace();
+            return "error";
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.warn("displayHome: NoRowsFoundException occured");
+            model.addAttribute("classes", output);
+            model.addAttribute("searchVals", new UFOClassSearch());
+        }
+        catch ( Exception e )
+        {
+            logger.error("displayHome: Exception occured");
+            e.printStackTrace();
+            return "error";
+        }
+
         logger.info("displayHome: Returning view classes/home");
         return "classes/home";       
     }
