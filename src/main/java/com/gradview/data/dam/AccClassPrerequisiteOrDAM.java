@@ -1,11 +1,11 @@
 package com.gradview.data.dam;
 
 /**
- * Represents the "acc-class-prerequisite-and" table columns.
+ * Represents the "acc-class-prerequisite-or" table columns.
  * 
  * @author Charles Davis
  */
-public class AccClassPrerequisiteAndDAM 
+public class AccClassPrerequisiteOrDAM 
 {
     /**
      * The ID number of the prerequisite.
@@ -23,7 +23,7 @@ public class AccClassPrerequisiteAndDAM
      * @param prerequisiteID	
      * @param requiredClassID
      */
-    public AccClassPrerequisiteAndDAM( int prerequisiteID, int requiredClassID )
+    public AccClassPrerequisiteOrDAM( int prerequisiteID, int requiredClassID )
     {
         this.prerequisiteID	= prerequisiteID;
         this.requiredClassID = requiredClassID;
@@ -33,7 +33,7 @@ public class AccClassPrerequisiteAndDAM
      * Class only constructor
      * @param requiredClassID
      */
-    public AccClassPrerequisiteAndDAM(int requiredClassID)
+    public AccClassPrerequisiteOrDAM(int requiredClassID)
     {;
         this.requiredClassID = requiredClassID;
     }
@@ -41,7 +41,7 @@ public class AccClassPrerequisiteAndDAM
     /**
      * Default Constructor
      */
-    public AccClassPrerequisiteAndDAM(){}
+    public AccClassPrerequisiteOrDAM(){}
 
     public int getPrerequisiteID()
     {
