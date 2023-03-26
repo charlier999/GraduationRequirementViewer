@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,11 +18,14 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
+import com.gradview.data.dam.AccProgramClassesDAM;
 import com.gradview.data.dao.AccProgramDAO;
 import com.gradview.data.dao.AccProgramElectivesCreditsDAO;
 import com.gradview.data.dao.AccProgramGeneralEducationCreditsDAO;
 import com.gradview.data.dao.AccProgramMajorCreditsDAO;
 import com.gradview.data.dao.AccProgramTotalCreditsDAO;
+import com.gradview.exception.NoRowsFoundException;
+import com.gradview.model.AccClass;
 import com.gradview.model.AccProgram;
 
 @Service
@@ -46,6 +50,8 @@ public class ProgramImportService
     private AccProgramMajorCreditsDAO accProgramMajorCreditsDAO;
     @Autowired
     private AccProgramTotalCreditsDAO accProgramTotalCreditsDAO;
+    @Autowired
+    private ClassService classService;
 
     public List<LogMessage> getLogs()
     {
@@ -54,10 +60,9 @@ public class ProgramImportService
 
     public List<String> retrieveFormatedFiles() throws IOException
     {
-        
         logger.info("retrieveFormatedFiles: Starting");
         logger.info("retrieveFormatedFiles: Retrieveing Resources");
-        Resource[] resources = applicationContext.getResources("classpath:static/ProgramsNoClasses/*");
+        Resource[] resources = applicationContext.getResources("classpath:static/ProgramsWithClasses/*");
         List<String> output = new ArrayList<>();
         for(int i = 0; i < resources.length; i++)
         {
@@ -67,7 +72,7 @@ public class ProgramImportService
         return output;
     }
 
-    public List<AccProgram> importProgramsWithoutClasses(String filename) throws FileNotFoundException
+    public List<AccProgram> importPrograms(String filename) throws FileNotFoundException
     {
         compLogger.clear();
         compLogger.info("importProgramsWithoutClasses", "Starting");
@@ -95,7 +100,7 @@ public class ProgramImportService
     private List<String> retrieveLinesFromFile(String filename) throws FileNotFoundException
     {
         compLogger.info("retrieveLinesFromFile", "Starting");
-        this.courseSteam = new FileInputStream(ResourceUtils.getFile("classpath:static/ProgramsNoClasses/" + filename));
+        this.courseSteam = new FileInputStream(ResourceUtils.getFile("classpath:static/ProgramsWithClasses/" + filename));
         Scanner sc = new Scanner(this.courseSteam);
         List<String> output = new ArrayList<>();
         compLogger.info("retrieveLinesFromFile", "Iterating Through File");
@@ -155,100 +160,163 @@ public class ProgramImportService
         for(int i = 0; i < input.size(); i++)
         {
             logger.debug("clumpLinesToPrograms: Clump Iteration " + i);
-            AccProgram program = new AccProgram();
-            for(int j = 0; j < input.get(i).size(); j++)
-            {
-                if(j == 0) // If first line
-                {
-                    // Set program name
-                    program.setName(input.get(i).get(j));
-                    // Set program level
-                    program.setLevel(this.findProgramLevelInString(input.get(i).get(j)));
-                    // Seach Name for BA of art or sci
-                    boolean[] artSci = this.isBaArtOrSci(input.get(i).get(j));
-                    // Set Program Ba of Art
-                    program.setBaOfArts(artSci[0]);
-                    // Set Program Ba of Sci
-                    program.setBaOfScience(artSci[1]);
-                    // Iterate once
-                    j++;
-                }
-                if(j == 1) // If second line
-                {
-                    // Set program description
-                    program.setDescription(input.get(i).get(j));
-                    // Iterate twice
-                    j = j + 2;
-                }
-                else // line 2+
-                {
-                    // If program level is bachelors
-                    if(program.getLevel().equals(AccProgram.LEVEL_BACHELOR))
-                    {
-                        // Get credit type
-                        boolean[] creditType = this.isCreditType(input.get(i).get(j));
-                        if(creditType[3]) // Program total 
-                        {
-                            // Set total minimum credits
-                            program.setTotalMinCredits(this.getIntInString(input.get(i).get(j)));
-                        }
-                        else if(creditType[1]) // Major
-                            {
-                                // Set major credits
-                                program.setMajorMinCredits(this.getIntInString(input.get(i).get(j)));
-                                program.setMajorMaxCredits(program.getMajorMinCredits());
-                            }
-                        else // The other three
-                        {
-                            int[] creditRange = this.getLineCreditRange(input.get(i).get(j));
-                            if(creditType[0]) // Gen ed
-                            {
-                                // Set gen ed credits
-                                program.setGenEdMinCredits(creditRange[0]);
-                                program.setGenEdMaxCredits(creditRange[1]);
-                            }
-                            
-                            else if(creditType[2]) // Elective
-                            {
-                                // Set elective credits
-                                program.setElectiveMinCredits(creditRange[0]);
-                                program.setElectiveMaxCredits(creditRange[1]);
-                            }
-                        }
-                    }
-                    else if( // Program is other levels
-                        program.getLevel().equals(AccProgram.LEVEL_GRAD_CERT) ||
-                        program.getLevel().equals(AccProgram.LEVEL_BRIDGE2MASTER) ||
-                        program.getLevel().equals(AccProgram.LEVEL_DOCTOR) ||
-                        program.getLevel().equals(AccProgram.LEVEL_MASTER) ||
-                        program.getLevel().equals(AccProgram.LEVEL_MINOR)
-                        )
-                    {
-                        // Set gen ed credits
-                        program.setGenEdMinCredits(0);
-                        program.setGenEdMaxCredits(0);
-                        // Set major credits
-                        program.setMajorMinCredits(0);
-                        program.setMajorMaxCredits(0);
-                        // Set elective credits
-                        program.setElectiveMinCredits(0);
-                        program.setElectiveMaxCredits(0);
-                        // Set total minimum credits
-                        program.setTotalMinCredits(this.getIntInString(input.get(i).get(j)));
-                    }
-                    else
-                    {
-                        compLogger.warn("clumpLinesToPrograms", 
-                            "Program `" + program.getName() + "`'s Program Level is not a known level.");
-                    }
-                }
-            }
-            output.add(program);
-
+            output.add(this.clumpToProgram(input.get(i)));
         }
         compLogger.info("clumpLinesToPrograms", "Returning");
         return output;
     }
+
+    /**
+     * Converts a string clump to a Program Object
+     * @param clump
+     * @return
+     */
+    private AccProgram clumpToProgram(List<String> clump)
+    {
+        AccProgram program = new AccProgram();
+        for(int j = 0; j < clump.size(); j++)
+        {
+            if(j == 0) // If first line
+            {
+                // Set program name
+                program.setName(clump.get(j));
+                // Set program level
+                program.setLevel(this.findProgramLevelInString(clump.get(j)));
+                // Seach Name for BA of art or sci
+                boolean[] artSci = this.isBaArtOrSci(clump.get(j));
+                // Set Program Ba of Art
+                program.setBaOfArts(artSci[0]);
+                // Set Program Ba of Sci
+                program.setBaOfScience(artSci[1]);
+                // Iterate once
+                j++;
+            }
+            if(j == 1) // If second line
+            {
+                // Set program description
+                program.setDescription(clump.get(j));
+                // Iterate twice
+                j = j + 2;
+            }
+            else if(j == 3)
+            {
+                // If program level is bachelors
+                if(program.getLevel().equals(AccProgram.LEVEL_BACHELOR))
+                {
+                    // Get credit type
+                    boolean[] creditType = this.isCreditType(clump.get(j));
+                    if(creditType[3]) // Program total 
+                    {
+                        // Set total minimum credits
+                        program.setTotalMinCredits(this.getIntInString(clump.get(j)));
+                    }
+                    else if(creditType[1]) // Major
+                    {
+                        // Set major credits
+                        program.setMajorMinCredits(this.getIntInString(clump.get(j)));
+                        program.setMajorMaxCredits(program.getMajorMinCredits());
+                    }
+                    else // The other three
+                    {
+                        int[] creditRange = this.getLineCreditRange(clump.get(j));
+                        if(creditType[0]) // Gen ed
+                        {
+                            // Set gen ed credits
+                            program.setGenEdMinCredits(creditRange[0]);
+                            program.setGenEdMaxCredits(creditRange[1]);
+                        }
+                        
+                        else if(creditType[2]) // Elective
+                        {
+                            // Set elective credits
+                            program.setElectiveMinCredits(creditRange[0]);
+                            program.setElectiveMaxCredits(creditRange[1]);
+                        }
+                    }
+                }
+                else if( // Program is other levels
+                    program.getLevel().equals(AccProgram.LEVEL_GRAD_CERT) ||
+                    program.getLevel().equals(AccProgram.LEVEL_BRIDGE2MASTER) ||
+                    program.getLevel().equals(AccProgram.LEVEL_DOCTOR) ||
+                    program.getLevel().equals(AccProgram.LEVEL_MASTER) ||
+                    program.getLevel().equals(AccProgram.LEVEL_MINOR)
+                    )
+                {
+                    // Set gen ed credits
+                    program.setGenEdMinCredits(0);
+                    program.setGenEdMaxCredits(0);
+                    // Set major credits
+                    program.setMajorMinCredits(0);
+                    program.setMajorMaxCredits(0);
+                    // Set elective credits
+                    program.setElectiveMinCredits(0);
+                    program.setElectiveMaxCredits(0);
+                    // Set total minimum credits
+                    program.setTotalMinCredits(this.getIntInString(clump.get(j)));
+                }
+                else
+                {
+                    compLogger.warn("clumpLinesToPrograms", 
+                        "Program `" + program.getName() + "`'s Program Level is not a known level.");
+                }
+            }
+            else if(clump.get(j).equals("Program Classes"))
+            {
+                j++; // Move to class list
+                //Pull class ids from list and assign it to program object
+                program.setRequiredMajorClasses(this.getRequiredClassIDsFromString(clump.get(j)));
+            }
+        }
+        return program;
+    }
+
+    private int[] getRequiredClassIDsFromString(String input)
+    {
+        List<Integer> output = new ArrayList<>();
+        // split string by comma
+        List<String> splitNumbers = Arrays.asList(input.split(","));
+        // Iterate through splits
+        for(int i = 0; i < splitNumbers.size(); i++)
+        {
+            if(splitNumbers.get(i).length() != 7)
+            {
+                compLogger.warn("getRequiredClassIDsFromString", splitNumbers.get(i) + " is not a valid class number.");
+            }
+            else
+            {
+                try
+                {
+                    // Get basic class info from course number
+                    List<AccClass> classes = this.classService.getBasicClassByNumber(splitNumbers.get(i));
+                    // Loop thorugh found classes
+                    for (AccClass accClass : classes) 
+                    {
+                        // Add class id to output list
+                        output.add(accClass.getId());
+                    }
+                }
+                catch ( DataAccessException e )
+                {
+                    compLogger.error("getRequiredClassIDsFromString", splitNumbers.get(i) + " caused DataAccessException. Message: " + e.getMessage());
+                }
+                catch ( NoRowsFoundException e )
+                {
+                    compLogger.warn("getRequiredClassIDsFromString", splitNumbers.get(i) + " not in database.");
+                }
+                catch ( Exception e )
+                {
+                    compLogger.error("getRequiredClassIDsFromString", splitNumbers.get(i) + " caused Exception. Message: " + e.getMessage());
+                }
+            }
+        }
+        Integer[] res = output.toArray(new Integer[output.size()]);
+        int[] finalRes = new int[res.length];
+        for(int i = 0; i <res.length; i++)
+        {
+            finalRes[i] = res[i].intValue();
+        }
+        return finalRes;
+    } 
 
     /**
      * Checks string for Credit type strings

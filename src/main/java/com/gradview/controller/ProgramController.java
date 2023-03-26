@@ -173,7 +173,7 @@ public class ProgramController
             // Retrive list of formated files
             fileNames = programImportService.retrieveFormatedFiles();
             // Import selected file
-            programs = programImportService.importProgramsWithoutClasses(fileSelect.getFilename());
+            programs = programImportService.importPrograms(fileSelect.getFilename());
             
         }
         catch ( IOException e )
