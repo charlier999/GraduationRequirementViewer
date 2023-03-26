@@ -19,7 +19,7 @@ import org.springframework.stereotype.Repository;
 public class AccClassPrerequisiteOrDAO
 {
     private static final Logger logger = LoggerFactory.getLogger(AccClassPrerequisiteOrDAO.class);
-	private static final String TABLENAME = "`acc-class-prerequisite-and`";
+	private static final String TABLENAME = "`acc-class-prerequisite-or`";
 	public static final String COL_PREREQUISITEID = "prerequisiteID";
     public static final String COL_REQUIRED_CLASSID = "requiredClassID";
 

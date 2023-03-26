@@ -127,12 +127,38 @@ public class CourseControler
     {
         logger.info("doPrerequisiteImport: Has started at mapping `/class/importPrerequisite`");
         List<String> fileNames = new ArrayList<>();
+        List<AccClass> classes = new ArrayList<>();
+        List<LogMessage> logs = new ArrayList<>();
         // Retreive list of files
         try
         {
+            
+            // Retrive list of formated files
             fileNames = courseImportService.retrieveFormatedFiles();
+            // Import selected file
+            logs = courseImportService.importPrerequisites(fileSelect.getFilename());
+            // Pull letter segement
+            char[] chars = fileSelect.getFilename().toCharArray();
+            // 
+            classes = classService.search(new UFOClassSearch(String.valueOf(chars[19]) + "__-___", AccClassDAO.COL_NUMBER));
+            
         }
         catch ( IOException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch ( DataAccessException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch ( NoRowsFoundException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        catch ( Exception e )
         {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -140,6 +166,8 @@ public class CourseControler
         // attach list of files to model
         model.addAttribute("filenames", fileNames);
         model.addAttribute("formObjectClass", fileSelect);
+        model.addAttribute("classes", classes);
+        model.addAttribute("logs", logs);
         model.addAttribute("formObjectPrerequisite", new UFOFileSelect());
         logger.info("doPrerequisiteImport: Returning view classes/importTool");
         return "classes/importTool"; 

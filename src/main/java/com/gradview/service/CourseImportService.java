@@ -391,7 +391,7 @@ public class CourseImportService
      */
     private void importAllPrerequisitesFromClumps(List<List<String>> input) throws DataAccessException, Exception
     {
-        this.compLogger.info("importPrerequisites","Starting");
+        this.compLogger.info("importPrerequisites","Starting with " + input.size() + " entries");
         // Iterate through input list
         this.compLogger.info("importPrerequisites","Iterating through input list");
         for(int i = 0; i < input.size(); i++)
@@ -412,25 +412,38 @@ public class CourseImportService
         if(this.clumpContainsPrerequistes(input))
         {
             String classNumber = input.get(0); // Course Number
+            if(classNumber.equals("ACC-360"))
+            {
+                this.logger.debug("");
+            }
             List<String> classNumbers = new ArrayList<>();
             // Check for class existing
             if(this.doesClassExist(classNumber))
             {
                 boolean nextClassOr = false;
                 boolean nextClassAnd = false;
-                int count = 0;
+                int count = 13;
+                int infCount = 0;
+                int maxSize = input.get(4).length();
+                char[] devChars = input.get(4).toCharArray();
                 // Loop until period
-                while(input.get(4).charAt(count) != '.')
+                while(input.get(4).charAt(count) != '.' )
                 {
+                    // Inf Loop Protection
+                    if(infCount > maxSize)
+                    {
+                        this.compLogger.error("importPrerequisites", "Root Course:`" + classNumber + "` caused a infinite loop.");
+                        break;
+                    }
                     // If white space
                     if(input.get(4).charAt(count) == ' ') count++;
                     // If the first character of a class number
                     if(Character.isUpperCase(input.get(4).charAt(count)))
                     {
                         // Pull class number from sting and add it to the list
-                        classNumbers.add(input.get(4).substring(count, (count + 6)));
+                        classNumbers.add(input.get(4).substring(count, (count + 7)));
                         // Move count up by six
-                        count = count + 6;
+                        count = count + 7;
                         if(nextClassAnd) // if next class And flag true
                         {
                             this.insertAndPrerequisets(classNumbers, classNumber);
@@ -453,20 +466,28 @@ public class CourseImportService
                         nextClassOr = false;
                     }
                     // If or
-                    if(input.get(4).substring(count, (count + 1)).equals("or"))
+                    if(maxSize > (count + 2))
                     {
-                        // Iterate past or
-                        count = count + 2;
-                        nextClassOr = true;
+                        String tempOrStirng = input.get(4).substring(count, (count + 2));
+                        if(tempOrStirng.equals("or"))
+                        {
+                            // Iterate past or
+                            count = count + 2;
+                            nextClassOr = true;
+                        }
                     }
                     // If and
-                    if(input.get(4).substring(count, (count + 2)).equals("and"))
+                    if(maxSize > (count + 3))
                     {
-                        // Iterate past or
-                        count = count + 3;
-                        nextClassAnd = true;
+                        String tempAndStirng = input.get(4).substring(count, (count + 3));
+                        if(tempAndStirng.equals("and"))
+                        {
+                            // Iterate past and
+                            count = count + 3;
+                            nextClassAnd = true;
+                        }
                     }
-
+                    infCount++;
                 }
             }
             else
@@ -513,8 +534,8 @@ public class CourseImportService
         if(input.size() == 5) // If input has prerequiste line
         {
             String prerequisteCheck = input.get(4).substring(0, 13);
-            if(prerequisteCheck.equals("Prerequisites:") 
-                || prerequisteCheck.equals("Prerequisite: "))
+            if(prerequisteCheck.equals("Prerequisite:") 
+                || prerequisteCheck.equals("Prerequisites: "))
                 return true; 
         }
         return false;
@@ -532,13 +553,14 @@ public class CourseImportService
     {
         // Get class 
         AccClassDAM tempRootClass = this.getClassDAM(rootClass);
-        int prerequsitID = this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()));
-        if(prerequsitID != -1) 
+        if(!this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()))) 
         {
             this.compLogger.warn("insertAndPrerequisets", "Prerequsite not created");
             return false;// If insert key not found.
         }
-    
+        // Get prerequisiteID
+        List<AccClassPrerequisiteDAM> classList = this.accClassPrerequisiteDAO.search(AccClassPrerequisiteDAO.COL_CLASSID, "" + tempRootClass.getId());
+        int prerequsitID = classList.get(classList.size()-1).getId();
         // Loop through prereqs
         for(int i = 0; i < prereqs.size(); i++)
         {
@@ -551,7 +573,7 @@ public class CourseImportService
             }
             else
             {
-                this.compLogger.warn("insertAndPrerequisets", "Course `" + prereqs.get(i) + "` does not exist.");
+                this.compLogger.warn("insertAndPrerequisets", "Root Course's:`" + rootClass + "` Course `" + prereqs.get(i) + "` does not exist.");
             }
         }
         return true;  
@@ -569,12 +591,14 @@ public class CourseImportService
     {
         // Get class 
         AccClassDAM tempRootClass = this.getClassDAM(rootClass);
-        int prerequsitID = this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()));
-        if(prerequsitID != -1) 
+        if(!this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()))) 
         {
             this.compLogger.warn("insertOrPrerequisets", "Prerequsite not created");
             return false;// If insert key not found.
         }
+        // Get prerequisiteID
+        List<AccClassPrerequisiteDAM> classList = this.accClassPrerequisiteDAO.search(AccClassPrerequisiteDAO.COL_CLASSID, "" + tempRootClass.getId());
+        int prerequsitID = classList.get(classList.size()-1).getId();
     
         // Loop through prereqs
         for(int i = 0; i < prereqs.size(); i++)
@@ -588,7 +612,7 @@ public class CourseImportService
             }
             else
             {
-                this.compLogger.warn("insertOrPrerequisets", "Course `" + prereqs.get(i) + "` does not exist.");
+                this.compLogger.warn("insertOrPrerequisets", "Root Course's:`" + rootClass + "` Course `" + prereqs.get(i) + "` does not exist.");
             }
         }
         return true; 
