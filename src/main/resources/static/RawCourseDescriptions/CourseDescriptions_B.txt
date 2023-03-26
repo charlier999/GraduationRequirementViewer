@@ -10,7 +10,7 @@ BHS-240:
 
 BHS-320: 
     Ethics of Behavioral Health Science 
-        4 credits
+    4 credits
     This writing-intensive course provides a broad understanding of ethics, legal standards, and responsibilities in behavioral health. Students explore basic ethical concepts, legislation, and current trends in behavioral health ethics. This course pays special attention to technology and its effects on lawmaking and ethics in behavioral health. Important goals of this course are to help students develop a comprehensive understanding of the history and current application of ethics in the behavioral health field.
 
 BHS-320: 
@@ -564,7 +564,8 @@ BIO-440:
     Prerequisites: BIO-457, CHM-360 and CHM-360L.
 
 BIO-457: 
-    Genetics 4 credits
+    Genetics 
+    4 credits
     This writing intensive course provides a comprehensive examination of the principles of heredity and variation, including Mendelian, molecular, and population genetics. Students explore topics such as gene mapping, DNA structure and replication, population genetics, and molecular change. 
     Prerequisites: BIO181 and BIO-181L.
 

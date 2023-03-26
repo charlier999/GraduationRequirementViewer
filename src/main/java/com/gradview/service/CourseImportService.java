@@ -181,7 +181,16 @@ public class CourseImportService
                     }
                     else
                     {
-                        this.compLogger.warn("clumpLines", "Count " + i + " Has an misformated course number: `" + input.get(i) + "`");
+                        String line = "";
+                        for(int j = 0; j < chars.length; j++)
+                        {
+                            line += chars[j];
+                        }
+                        this.compLogger.warn("clumpLines", "Count " + i + " Has an misformated course number: `" + line + "`");
+                        // Attempt cleanup
+                        line = line.substring(0, 7) + ":";
+                        this.compLogger.warn("clumpLines", "Count " + i + " Course Number cleanup Attempt: `" + line + "`");
+                        clump.add(line);
                     }
                 }
                 // If the first 4 chars are ' '
@@ -258,44 +267,69 @@ public class CourseImportService
      */
     private AccClass clumpToClassWithoutPrereq(List<String> input)
     {
-        // Create output class
-        AccClass output = new AccClass();
-        // Set class properties
-        output.setNumber(input.get(0)); // Course Number
-        output.setName(input.get(1)); // Course Name
-        // If credits are < 10
-        if(input.get(2).length() == 9)
+        try
         {
-            // Retrieve the first charater
-            String subCredit = input.get(2).substring(0, 1);
-            // Convert first charater to int
-            int credit = Integer.parseInt(subCredit);
-            // Set credits in class
-            output.setCredits(credit);
+            if(input.size() == 0 || input.size() == 1 || input.size() == 2)
+            {
+                logger.error("clumpToClassWithoutPrereq: " + input.toString());
+                this.compLogger.warn("clumpToClassWithoutPrereq", "Class:`"+ input.get(0) +"` is missing rows.");
+            }
+            // Create output class
+            AccClass output = new AccClass();
+            // Set class properties
+            output.setNumber(input.get(0)); // Course Number
+            output.setName(input.get(1)); // Course Name
+            // If credits are < 10
+            if(input.get(2).length() == 9)
+            {
+                // Retrieve the first charater
+                String subCredit = input.get(2).substring(0, 1);
+                // Convert first charater to int
+                int credit = Integer.parseInt(subCredit);
+                // Set credits in class
+                output.setCredits(credit);
+            }
+            // If credits are >= 10 
+            else if(input.get(2).length() == 10)
+            {
+                // Retrieve the first two charaters
+                String subCredit = input.get(2).substring(0, 2);
+                // Convert first two charaters to int
+                int credit = Integer.parseInt(subCredit);
+                // Set credits in class
+                output.setCredits(credit);  
+            }
+            else if(input.get(2).length() == 11)
+            {
+                // Retrieve the first two charaters
+                //String subCredit = input.get(2).substring(0, 2);
+                // Convert first two charaters to int
+                //int credit = Integer.parseInt(subCredit);
+                // Set credits in class
+                //TODO: Reformat credit value to double.
+                output.setCredits(-5);  
+            }
+            else
+            {
+                this.compLogger.warn("clumpToClassWithoutPrereq", "Class:`"+ output.getNumber() +"`Credits misformated: " + input.get(2));
+            }
+            // Set the description
+            output.setDescription(input.get(3) );
+            // Check clump size
+            if(input.size() == 5) // If clump has prereqs
+            {
+                // Amend the description with prerequisites added to it.
+                output.setDescription(output.getDescription() + " " + input.get(4) );
+            }
+            return output;
         }
-        // If credits are >= 10 
-        else if(input.get(2).length() == 10)
+        catch(IndexOutOfBoundsException ex)
         {
-            // Retrieve the first two charaters
-            String subCredit = input.get(2).substring(0, 2);
-            // Convert first two charaters to int
-            int credit = Integer.parseInt(subCredit);
-            // Set credits in class
-            output.setCredits(credit);  
+            logger.error("clumpToClassWithoutPrereq: " + input.toString());
+            this.compLogger.warn("clumpToClassWithoutPrereq", "Class:`"+ input.get(0) +"` is missing rows.");
+            ex.printStackTrace();
+            return new AccClass();
         }
-        else
-        {
-            this.compLogger.warn("clumpToClassWithoutPrereq", "Class:`"+ output.getNumber() +"`Credits misformated: " + input.get(2));
-        }
-        // Set the description
-        output.setDescription(input.get(3) );
-        // Check clump size
-        if(input.size() == 5) // If clump has prereqs
-        {
-            // Amend the description with prerequisites added to it.
-            output.setDescription(output.getDescription() + " " + input.get(4) );
-        }
-        return output;
     }
 
     /**

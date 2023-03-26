@@ -815,7 +815,7 @@ DFP-311:
 
 DFP-331: 
     Visual Storytelling 4 
-    credits
+    0 credits
     This course focuses on the elements that make up almost all storytelling. Students are encouraged to discover and develop their unique voices as writers and storytellers, while understanding the critical importance of working as part of a creative team. This course emphasizes the use of traditional storytelling, classic mythology, and the ways in which these devices apply to contemporary media.
 
 DFP-331:

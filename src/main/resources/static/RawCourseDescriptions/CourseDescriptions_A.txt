@@ -393,7 +393,7 @@ AES-294:
     Every Spring. Leadership Laboratory (LLAB) is a dynamic and integrated grouping of leadership developmental activities designed to meet the needs and expectations of prospective Air Force second lieutenants and complement the AFROTC academic program. Continuation of AES-202 with an emphasis on preparation for field training. 
     Co-requisite: AES-203.
 
-AES-294B: 
+AES-294: 
     Air Force Physical Fitness 
     2 credits
     Every Spring. Leadership Laboratory (LLAB) is a dynamic and integrated grouping of leadership developmental activities designed to meet the needs and expectations of prospective Air Force second lieutenants and complement the AFROTC academic program. Continuation of AES-202 with an emphasis on preparation for field training. 
@@ -494,8 +494,8 @@ ANP-635:
     This course covers preventive health care practices and integrates cultural and spiritual considerations, environmental factors, genetic influences, and national public health objectives. Emphasis is placed on development of the advanced practice registered nurse-patient relationship to enhance the effectiveness of patient education, counseling, and promotion of healthy lifestyle changes. Learners explore concepts relevant to acute care, including integration of the family and patient support systems into care. Specific emphasis is placed on clinical diagnostic reasoning and interpretation and the development of differential diagnoses based on clinical practice guidelines. Learners examine professional and patient community resources and evaluate the use of integrative healing strategies in assisting patients to achieve health goals using evidence-based research. This course includes a required 3-day, on-campus experience.
     Prerequisite: NUR-634.
 
-ANP-635 
-    On-Campus Experience I 
+ANP-635: 
+    On-Campus Experience I
     0 credits
     This course covers preventive health care practices and integrates cultural and spiritual considerations, environmental factors, genetic influences, and national public health objectives. Emphasis is placed on development of the advanced practice registered nurse-patient relationship to enhance the effectiveness of patient education, counseling, and promotion of healthy lifestyle changes. Learners explore concepts relevant to acute care, including integration of the family and patient support systems into care. Specific emphasis is placed on clinical diagnostic reasoning and interpretation and the development of differential diagnoses based on clinical practice guidelines. Learners examine professional and patient community resources and evaluate the use of integrative healing strategies in assisting patients to achieve health goals using evidence-based research. This course includes a required 3-day, on-campus experience.
     Prerequisite: NUR-634.
@@ -518,7 +518,7 @@ ANP-654:
     This course serves as the final synthesis of evidenced-based theory and research related to care of complex, acute, and critically ill adult-gerontological and frail elderly patients with comorbidities. Learners continue to build on prior knowledge and synthesize data from a variety of health resources related to the care of the acutely ill patient. Utilizing a systems framework, learners further develop appropriate clinical judgment and decision-making skills regarding appropriate recommendations and treatments related to alterations in different systems as they develop an evidence-based plan of care for adult-gerontological patients. Practicum experiences emphasize the physiological and psychosocial impact of acute and critical illness on patients, family, and community, and prepare the Adult Gerontology Acute Care Nurse Practitioner in the diagnosis and management of chronic, exacerbated, acute, and life-threatening health problems. This course includes a required 2-day, on-campus experience. Practicum/field experience hours: 225. 
     Prerequisite: ANP-652.
 
-ANP-654 
+ANP-654: 
     On-Campus Experience II
     0 credits
     This course serves as the final synthesis of evidenced-based theory and research related to care of complex, acute, and critically ill adult-gerontological and frail elderly patients with comorbidities. Learners continue to build on prior knowledge and synthesize data from a variety of health resources related to the care of the acutely ill patient. Utilizing a systems framework, learners further develop appropriate clinical judgment and decision-making skills regarding appropriate recommendations and treatments related to alterations in different systems as they develop an evidence-based plan of care for adult-gerontological patients. Practicum experiences emphasize the physiological and psychosocial impact of acute and critical illness on patients, family, and community, and prepare the Adult Gerontology Acute Care Nurse Practitioner in the diagnosis and management of chronic, exacerbated, acute, and life-threatening health problems. This course includes a required 2-day, on-campus experience. 
