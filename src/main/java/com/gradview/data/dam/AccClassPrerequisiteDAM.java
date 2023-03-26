@@ -5,58 +5,63 @@ package com.gradview.data.dam;
  * 
  * @author Charles Davis
  */
-public class AccClassPrerequisiteDAM
+public class AccClassPrerequisiteDAM 
 {
-	/**
-	 * The ID of the Class.
-	 */
-	private int classID;
-	/**
-	 * The ID of the Class required to take the Class.
-	 */
-	private int requireClassID;
+    /**
+     * The ID number of the prerequisite.
+     * Default = -1
+     */
+    private int id = -1;
+    /**
+     * The ID number of the class the the prerequisite applies to.
+     * Default = -1
+     */
+    private int classID = -1;
+    
+    /**
+     * Full Constructor
+     * @param id
+     * @param classID
+     */
+    public AccClassPrerequisiteDAM( int id, int classID )
+    {
+        this.id = id;
+        this.classID = classID;
+    }
 
-	/**
-	 * @param classID        - The ID of the Class.
-	 * @param requireClassID - The ID of the Class required to take the Class.
-	 */
-	public AccClassPrerequisiteDAM( int classID, int requireClassID )
-	{
-		super();
-		this.classID = classID;
-		this.requireClassID = requireClassID;
-	}
+    /**
+     * Class only constructor
+     * @param classID
+     */
+    public AccClassPrerequisiteDAM(int classID)
+    {;
+        this.classID = classID;
+    }
 
-	/**
-	 * @return the classID
-	 */
-	public int getClassID()
-	{
-		return classID;
-	}
+    /**
+     * Default Constructor
+     */
+    public AccClassPrerequisiteDAM(){}
 
-	/**
-	 * @param classID the classID to set
-	 */
-	public void setClassID( int classID )
-	{
-		this.classID = classID;
-	}
+    public int getId()
+    {
+        return id;
+    }
 
-	/**
-	 * @return the requireClassID
-	 */
-	public int getRequireClassID()
-	{
-		return requireClassID;
-	}
+    public void setId( int id )
+    {
+        this.id = id;
+    }
 
-	/**
-	 * @param requireClassID the requireClassID to set
-	 */
-	public void setRequireClassID( int requireClassID )
-	{
-		this.requireClassID = requireClassID;
-	}
+    public int getClassID()
+    {
+        return classID;
+    }
 
+    public void setClassID( int classID )
+    {
+        this.classID = classID;
+    }
+
+    
 }

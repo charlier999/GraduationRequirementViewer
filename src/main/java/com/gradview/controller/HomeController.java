@@ -24,6 +24,12 @@ public class HomeController
 	@Autowired
 	ProgramImportService pis;
 	
+	@GetMapping("/")
+	public String rootRedirect(Model model, HttpServletResponse httpResponse ) throws FileNotFoundException
+	{
+		return this.displayHome(model, httpResponse);
+	}
+	
 	/**
 	 * Displays the home page.
 	 * @throws FileNotFoundException

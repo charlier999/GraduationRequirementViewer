@@ -1,10 +1,10 @@
 package com.gradview.data.dao;
 
+import com.gradview.data.dam.AccClassPrerequisiteDAM;
+import com.gradview.exception.NoRowsFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.sql.DataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,28 +13,21 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.InvalidResultSetAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-import com.gradview.data.dam.AccClassPrerequisiteDAM;
-import com.gradview.exception.NoRowsFoundException;
-
-@Component
-public class AccClassPrerequisiteDAO 
+@Repository
+public class AccClassPrerequisiteDAO
 {
     private static final Logger logger = LoggerFactory.getLogger(AccClassPrerequisiteDAO.class);
-    private static final String TABLENAME = "acc-class-prerequisite";
-	public static final String COL_CLASSID = "classID";
-    public static final String COL_REQCLASSID = "required-classID";
+	private static final String TABLENAME = "`acc-class-prerequisite`";
+	public static final String COL_ID = "id";
+    public static final String COL_CLASSID = "name";
 
-    @Autowired
-	private DataSource dataSource;
-    
     @Autowired
 	private JdbcTemplate jdbcTemplate;
 
-    
     /** 
-     * Retrieves a list of all {@link AccClassPrerequisiteDAM class prerequisites} from {@value #TABLENAME}
+     * Retrieves a list of all classes prerequistes from {@value #TABLENAME}
      * @return List< {@link AccClassPrerequisiteDAM} >
      * @throws NoRowsFoundException No rows were found in the table.
      * @throws DataAccessException An access exception occured.
@@ -61,7 +54,7 @@ public class AccClassPrerequisiteDAO
 			{
 				rowsFound = true;
 				// Add rows to output list.
-				output.add( new AccClassPrerequisiteDAM(srs.getInt(COL_CLASSID), srs.getInt(COL_REQCLASSID)));
+				output.add( new AccClassPrerequisiteDAM(srs.getInt(COL_ID), srs.getInt(COL_CLASSID)));
 			}
 			if ( !rowsFound )
 			{
@@ -95,8 +88,9 @@ public class AccClassPrerequisiteDAO
 		return output;
     }
 
+
     /** 
-     * Searches for {@link AccClassPrerequisiteDAM class prerequisites} in the requested column for the query in the {@value #TABLENAME} table.
+     * Searches for {@link AccClassPrerequisiteDAM classes} in the requested column for the query in the {@value #TABLENAME} table.
      * @param colName The column to search for the query in.
      * @param query The value to search in the column for.
      * @return List< {@link AccClassPrerequisiteDAM} >
@@ -126,7 +120,7 @@ public class AccClassPrerequisiteDAO
 			{
 				rowsFound = true;
 				// Add rows to output list.
-				output.add( new AccClassPrerequisiteDAM(srs.getInt(COL_CLASSID), srs.getInt(COL_REQCLASSID)));
+				output.add( new AccClassPrerequisiteDAM(srs.getInt(COL_ID), srs.getInt(COL_CLASSID)));
 			}
 			if ( !rowsFound )
 			{
@@ -153,32 +147,33 @@ public class AccClassPrerequisiteDAO
 		{
 			logger.error( "search: Exception occured." );
 			// Print a Stack Trace if an exception occurs.
-			ex.printStackTrace();
+			throw ex;
 		}
 		logger.info( "search: Returns " + output.size() + " resulting rows." );
 		// Return batteries list.
 		return output;
     }
 
+    
     /** 
-     * Inserts the {@link AccClassPrerequisiteDAM class prerequisite} into the {@value #TABLENAME} table.
-     * @param accClass The {@link AccClassPrerequisiteDAM class prerequisite} to insert into the {@value #TABLENAME} table.
-     * @return boolean Status of creation. True: {@link AccClassPrerequisiteDAM Class prerequisite} was added to the {@value #TABLENAME} table. 
-     *          False: {@link AccClassPrerequisiteDAM Class prerequisite} was NOT added to the {@value #TABLENAME} table.
+     * Inserts the {@link AccClassPrerequisiteDAM class} into the {@value #TABLENAME} table.
+     * @param accClassPrerequisiteDAM The {@link AccClassPrerequisiteDAM} to insert into the {@value #TABLENAME} table. Does NOT use the ID property.
+     * @return boolean Status of creation. True: {@link AccClassPrerequisiteDAM Class} was added to the {@value #TABLENAME} table. 
+     *          False: {@link AccClassPrerequisiteDAM Class} was NOT added to the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
      * @throws Exception Catch all for any exception.
      */
-    public boolean create( AccClassPrerequisiteDAM input) throws DataAccessException, Exception
+    public boolean create( AccClassPrerequisiteDAM accClassPrerequisiteDAM) throws DataAccessException, Exception
     {
         logger.info( "create: Started." );
 		// Create SQL query.
-		String sqlQuery = "INSERT INTO " + TABLENAME + "(" + COL_CLASSID + ", " + COL_REQCLASSID +  ") VALUES(?,?)";
+		String sqlQuery = "INSERT INTO " + TABLENAME + "(" + COL_CLASSID + ") VALUES(?)";
 		// Exception catch.
 		try
 		{
 			// Run SQL Query.
 			logger.info( "create: SQL querry started running." );
-			int rows = jdbcTemplate.update(sqlQuery, input.getClassID(), input.getRequireClassID());
+			int rows = jdbcTemplate.update(sqlQuery, accClassPrerequisiteDAM.getClassID());
             if ( rows == 1 )
 			{
 				logger.info( "create: Insert Success" );
@@ -209,11 +204,11 @@ public class AccClassPrerequisiteDAO
     }
 
     /**
-     * Delets the inputed {@link AccClassPrerequisiteDAM class prerequisite} from the {@value #TABLENAME} table using both of {@link AccClassPrerequisiteDAM}'s class IDs 
+     * Delets the inputed {@link AccClassPrerequisiteDAM class} from the {@value #TABLENAME} table using the {@link AccClassPrerequisiteDAM class'} ID 
      *  to select the database entry to delete. 
      * @param input The {@link AccClassPrerequisiteDAM} to delete into the {@value #TABLENAME} table. Requires ID property.
-     * @return boolean Status of deletion. True: {@link AccClassPrerequisiteDAM Class prerequisite} was deleted from the {@value #TABLENAME} table. 
-     *          False: {@link AccClassPrerequisiteDAM Class prerequisite} was NOT deleted from the {@value #TABLENAME} table.
+     * @return boolean Status of deletion. True: {@link AccClassPrerequisiteDAM} was deleted from the {@value #TABLENAME} table. 
+     *          False: {@link AccClassPrerequisiteDAM } was NOT deleted from the {@value #TABLENAME} table.
      * @throws DataAccessException An access exception occured.
      * @throws Exception Catch all for any exception.
      */
@@ -221,11 +216,11 @@ public class AccClassPrerequisiteDAO
 	{
 		logger.info( "delete: Started." );
 		// Create sql statement.
-		String sqlQ = "DELETE FROM " + TABLENAME + "WHERE " + COL_CLASSID + " = ? AND " + COL_REQCLASSID + " = ?";
+		String sqlQ = "DELETE FROM " + TABLENAME + "WHERE " + COL_ID + " = ? ";
 		try
 		{
 			// delete
-			int rows = this.jdbcTemplate.update( sqlQ, input.getClassID(), input.getRequireClassID() );
+			int rows = this.jdbcTemplate.update( sqlQ, input.getId() );
 			if ( rows == 1 )
 			{
 				logger.info( "delete: Delete Successful." );
@@ -254,6 +249,4 @@ public class AccClassPrerequisiteDAO
 	    logger.info( "delete: Returns false." );
 		return false;
 	}
-
-
 }
