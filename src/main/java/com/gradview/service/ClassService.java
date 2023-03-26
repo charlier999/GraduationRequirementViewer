@@ -10,9 +10,16 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
 import com.gradview.data.dam.AccClassDAM;
+import com.gradview.data.dam.AccClassPrerequisiteAndDAM;
+import com.gradview.data.dam.AccClassPrerequisiteDAM;
+import com.gradview.data.dam.AccClassPrerequisiteOrDAM;
 import com.gradview.data.dao.AccClassDAO;
+import com.gradview.data.dao.AccClassPrerequisiteAndDAO;
+import com.gradview.data.dao.AccClassPrerequisiteDAO;
+import com.gradview.data.dao.AccClassPrerequisiteOrDAO;
 import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccClass;
+import com.gradview.model.AccClassPrerequisite;
 import com.gradview.ui.ufo.UFOClassSearch;
 
 @Service
@@ -22,6 +29,12 @@ public class ClassService
 
     @Autowired
     private AccClassDAO accClassDAO;
+    @Autowired
+    private AccClassPrerequisiteDAO accClassPrerequisiteDAO;
+    @Autowired
+    private AccClassPrerequisiteAndDAO accClassPrerequisiteAndDAO;
+    @Autowired
+    private AccClassPrerequisiteOrDAO accClassPrerequisiteOrDAO;
 
     /**
      * Retrieves all classes by thier number
@@ -42,10 +55,18 @@ public class ClassService
             List<AccClassDAM> response = accClassDAO.search(AccClassDAO.COL_NUMBER, input);
             logger.info("getClassByNumber: Results found " + response.size());
             logger.info("getClassByNumber: Converting DAM to Class");
-            for(int i = 0; i < response.size(); i++)
+            for(int classCount = 0; classCount < response.size(); classCount++)
             {
-                output.add(response.get(i).toAccClass());
-            }
+                output.add(response.get(classCount).toAccClass());
+            } 
+            // Get Prerequisites
+            for(int classCount = 0; classCount < output.size(); classCount++)
+            {
+                // Set prerequisites by searching for prerequisites using class id
+                output.get(classCount).setPrerequisites(this.getClassPrerequisitesByClassID(output.get(classCount).getId()));
+            } 
+
+
             logger.info("getClassByNumber: Conversion Complete");
             logger.info("getClassByNumber: Returning list");
             
@@ -65,6 +86,48 @@ public class ClassService
             logger.error("getClassByNumber: Exception occured: " + e);
             throw e;
         }
+        return output;
+    }
+    
+    /**
+     * Retrieves a list of basic class info from a list of classIDs
+     * @param classIDs The list of classIDs to retrieve basic class info from.
+     * @return List< {@link AccClass} >
+     */
+    public List<AccClass> getBasicClassesByClassIDs(List<Integer> classIDs)
+    {
+        List<AccClass> output = new ArrayList<>();
+        for(int i = 0; i < classIDs.size(); i++)
+        {
+            try
+            {
+                logger.info("getClassByNumber: Searching for " + classIDs.get(i));
+                List<AccClassDAM> response = accClassDAO.search(AccClassDAO.COL_ID, Integer.toString(classIDs.get(i)));
+                logger.info("getClassByNumber: Results found " + response.size());
+                logger.info("getClassByNumber: Converting DAM to Class");
+                for(int classCount = 0; classCount < response.size(); classCount++)
+                {
+                    output.add(response.get(classCount).toAccClass());
+                } 
+                logger.info("getClassByNumber: Conversion Complete");
+                logger.info("getClassByNumber: Returning list");
+                
+            }
+            catch ( DataAccessException e )
+            {
+                logger.error("getClassByNumber: Data Access Exception occured: " + e);
+                throw e;
+            }
+            catch ( NoRowsFoundException e )
+            {
+                logger.warn("getClassByNumber: No Rows Found Exception occured: " + e);
+            }
+            catch ( Exception e )
+            {
+                logger.error("getClassByNumber: Exception occured: " + e);
+            }
+        }
+
         return output;
     }
 
@@ -124,6 +187,69 @@ public class ClassService
             throw e;
         }
         logger.info("search: Returning list");
+        return output;
+    }
+
+
+    private List<AccClassPrerequisite> getClassPrerequisitesByClassID(int classID) throws DataAccessException, Exception
+    {
+        List<AccClassPrerequisite> output = new ArrayList<>();
+        try
+        {
+            // Get prerequsites
+            List<AccClassPrerequisiteDAM> prerequisiteDAMs =  
+                this.accClassPrerequisiteDAO.search(AccClassPrerequisiteDAO.COL_CLASSID, Integer.toString(classID));
+
+            // Convert DAM to nonDAM prerequisite
+            for(int preReqCount = 0; preReqCount < prerequisiteDAMs.size(); preReqCount++)
+            {
+                output.add(prerequisiteDAMs.get(preReqCount).toAccClassPrerequisite());
+            }
+            // Find Ands and Ors for prereques
+            for(int preReqCount = 0; preReqCount < output.size(); preReqCount++)
+            {
+                try
+                {
+                    // Find And PreReqs
+                    List<AccClassPrerequisiteAndDAM> prerequisiteAndDAMs = 
+                        this.accClassPrerequisiteAndDAO.search(AccClassPrerequisiteAndDAO.COL_PREREQUISITEID, 
+                            Integer.toString(output.get(preReqCount).id));
+                    if(prerequisiteAndDAMs.size() > 0) output.get(preReqCount).andOr = true;
+                    // Loop through found And PreReqs
+                    for(int preReqAndCount = 0; preReqAndCount < prerequisiteAndDAMs.size(); preReqAndCount++)
+                    {
+                        // Add and prereq classes
+                        output.get(preReqCount).classIDs.add(prerequisiteAndDAMs.get(preReqAndCount).getRequiredClassID());
+                    }
+                }
+                catch ( NoRowsFoundException e )
+                {
+                    logger.info("getClassByNumber: Class has no AND prerequisites.");
+                    try
+                    {
+                        // Find And PreReqs
+                        List<AccClassPrerequisiteOrDAM> prerequisiteOrDAMs = 
+                            this.accClassPrerequisiteOrDAO.search(AccClassPrerequisiteOrDAO.COL_PREREQUISITEID, 
+                                Integer.toString(output.get(preReqCount).id));
+                        if(prerequisiteOrDAMs.size() > 0) output.get(preReqCount).andOr = false;
+                        // Loop through found And PreReqs
+                        for(int preReqOrCount = 0; preReqOrCount < prerequisiteOrDAMs.size(); preReqOrCount++)
+                        {
+                            // Add and prereq classes
+                            output.get(preReqCount).classIDs.add(prerequisiteOrDAMs.get(preReqOrCount).getRequiredClassID());
+                        }
+                    }
+                    catch ( NoRowsFoundException ex )
+                    {
+                        logger.warn("getClassByNumber: Class has no AND or OR prerequisites.");
+                    }
+                }
+            } // End of And Ors for loop
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.info("getClassByNumber: Class has no prerequisites.");
+        }
         return output;
     }
 }

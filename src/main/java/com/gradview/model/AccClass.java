@@ -3,6 +3,9 @@
  */
 package com.gradview.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.gradview.data.dam.AccClassDAM;
 
 /**
@@ -43,10 +46,6 @@ public class AccClass
 	 */
 	private int genEdCompID;
 	/**
-	 * The prerequisite classes required to take the class.
-	 */
-	private int[] prerequisiteClassIDs;
-	/**
 	 * The class is general education class for the bachelors of arts. isGenED:TRUE
 	 * is required or is auto set to FALSE.
 	 */
@@ -56,6 +55,10 @@ public class AccClass
 	 * isGenED:TRUE is required or is auto set to FALSE.
 	 */
 	private boolean baOfScience;
+	/**
+	 * Contains the prerequsites for the class
+	 */
+	private List<AccClassPrerequisite> prerequisites;
 
 	/**
 	 * @param id                   - The ID number of the class.
@@ -69,8 +72,6 @@ public class AccClass
 	 * @param genEdCompID          - The ID number representing the general
 	 *                             education competency. isGenED:TRUE is required or
 	 *                             is auto set to -1.
-	 * @param prerequisiteClassIDs - The prerequisite classes required to take the
-	 *                             class.
 	 * @param baOfArts             - The class is general education class for the
 	 *                             bachelors of science. isGenED:TRUE is required or
 	 *                             is auto set to FALSE.
@@ -79,7 +80,7 @@ public class AccClass
 	 *                             auto set to FALSE.
 	 */
 	public AccClass( int id, String name, String description, String number, int credits, boolean isGenEd,
-			int genEdCompID, int[] prerequisiteClassIDs, boolean baOfArts, boolean baOfScience )
+			int genEdCompID,  boolean baOfArts, boolean baOfScience )
 	{
 		super();
 		this.id = id;
@@ -89,9 +90,9 @@ public class AccClass
 		this.credits = credits;
 		this.isGenEd = isGenEd;
 		this.genEdCompID = genEdCompID;
-		this.prerequisiteClassIDs = prerequisiteClassIDs;
 		this.baOfArts = baOfArts;
 		this.baOfScience = baOfScience;
+		this.prerequisites = new ArrayList<>();
 
 		this.checkGenEdProps();
 	}
@@ -107,8 +108,6 @@ public class AccClass
 	 * @param genEdCompID          - The ID number representing the general
 	 *                             education competency. isGenED:TRUE is required or
 	 *                             is auto set to -1.
-	 * @param prerequisiteClassIDs - The prerequisite classes required to take the
-	 *                             class.
 	 * @param baOfArts             - The class is general education class for the
 	 *                             bachelors of science. isGenED:TRUE is required or
 	 *                             is auto set to FALSE.
@@ -117,7 +116,7 @@ public class AccClass
 	 *                             auto set to FALSE.
 	 */
 	public AccClass( String name, String description, String number, int credits, boolean isGenEd, int genEdCompID,
-			int[] prerequisiteClassIDs, boolean baOfArts, boolean baOfScience )
+			boolean baOfArts, boolean baOfScience )
 	{
 		super();
 		this.name = name;
@@ -126,14 +125,17 @@ public class AccClass
 		this.credits = credits;
 		this.isGenEd = isGenEd;
 		this.genEdCompID = genEdCompID;
-		this.prerequisiteClassIDs = prerequisiteClassIDs;
 		this.baOfArts = baOfArts;
 		this.baOfScience = baOfScience;
+		this.prerequisites = new ArrayList<>();
 
 		this.checkGenEdProps();
 	}
 
-	public AccClass(){};
+	public AccClass()
+	{
+		this.prerequisites = new ArrayList<>();
+	}
 
 	/**
 	 * Converts {@link AccClass} to {@link AccClassDAM}
@@ -276,24 +278,6 @@ public class AccClass
 	}
 
 	/**
-	 * NOTE: isGenED:TRUE is required or is auto set to -1.
-	 * 
-	 * @return the prerequisiteClassIDs
-	 */
-	public int[] getPrerequisiteClassIDs()
-	{
-		return prerequisiteClassIDs;
-	}
-
-	/**
-	 * @param prerequisiteClassIDs the prerequisiteClassIDs to set
-	 */
-	public void setPrerequisiteClassIDs( int[] prerequisiteClassIDs )
-	{
-		this.prerequisiteClassIDs = prerequisiteClassIDs;
-	}
-
-	/**
 	 * @return the baOfArts
 	 */
 	public boolean isBaOfArts()
@@ -329,6 +313,16 @@ public class AccClass
 	{
 		this.baOfScience = baOfScience;
 		this.checkGenEdProps();
+	}
+
+	public List< AccClassPrerequisite > getPrerequisites()
+	{
+		return prerequisites;
+	}
+
+	public void setPrerequisites( List< AccClassPrerequisite > prerequisites )
+	{
+		this.prerequisites = prerequisites;
 	}
 
 }

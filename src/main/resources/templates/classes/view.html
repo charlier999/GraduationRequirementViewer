@@ -37,6 +37,32 @@
                     <div th:text="${'Number: ' + class.number}">Class Name</div>
                     <div th:text="${'Description: ' + class.description}">Class Name</div>
                     <div th:text="${'Credits: ' + class.credits}">Class Name</div>
+					<table th:if="${not #lists.isEmpty(class.prerequisites)}">
+						<thead>
+							<tr>
+								<th>And/Or</th>
+								<th>Class IDs</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr th:each="prerequisite : ${class.prerequisites}">
+								<td th:text="${prerequisite.andOr ? 'AND' : 'OR'}"></td>
+								<td>
+									<ul>
+										<div th:each="reqClass : ${requiredClasses}">
+											<div th:each="classID : ${prerequisite.classIDs}">
+												<a 
+													th:if="${classID == reqClass.id}"
+													th:href="@{/class/number/{number}(number=${reqClass.number})}" 
+													th:text="${reqClass.number}">
+												</a>
+											</div>
+										</div>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
                 </div>
             </div>
 		</div>

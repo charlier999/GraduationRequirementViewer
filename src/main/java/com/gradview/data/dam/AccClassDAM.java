@@ -75,7 +75,7 @@ public class AccClassDAM
 	 */
 	public AccClass toAccClass()
 	{
-		return new AccClass(this.id, this.name, this.description, this.number, this.credits, false, id, null, false, false);
+		return new AccClass(this.id, this.name, this.description, this.number, this.credits, false, -1, false, false);
 	}
 
 	/**

@@ -2,7 +2,9 @@ package com.gradview.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.gradview.data.dao.AccClassDAO;
 import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccClass;
+import com.gradview.model.AccClassPrerequisite;
 import com.gradview.service.ClassService;
 import com.gradview.service.CourseImportService;
 import com.gradview.service.LogMessage;
@@ -97,8 +100,26 @@ public class CourseControler
         logger.info("displayClass: Number: " + number + " requested to be viewed");
         try
         {
-            List<AccClass> output = classService.getClassByNumber(number);
-            model.addAttribute("classes", output);
+            List<AccClass> classes = classService.getClassByNumber(number);
+            model.addAttribute("classes", classes);
+            
+            // Get List of class numbers from prerequisites
+            List<Integer> requiredClassIDs = new ArrayList<>();
+            for(AccClass accClass : classes)
+            {
+                List<AccClassPrerequisite> prerequisites = accClass.getPrerequisites();
+                 
+                for (AccClassPrerequisite prerequisite : prerequisites) 
+                {
+                    requiredClassIDs.addAll(prerequisite.classIDs);
+                }
+            }
+            // Remove duplicates
+            Set<Integer> setClassIDs = new HashSet<Integer>(requiredClassIDs);
+            requiredClassIDs = new ArrayList<>(setClassIDs);
+            // Get basic class info from class id list
+            List<AccClass> requiredClasses = classService.getBasicClassesByClassIDs(requiredClassIDs);
+            model.addAttribute("requiredClasses", requiredClasses);
             logger.info("displayClass: Class is being returned to view 'classes/view'");
             return "classes/view";
         }

@@ -1,5 +1,7 @@
 package com.gradview.data.dam;
 
+import com.gradview.model.AccClassPrerequisite;
+
 /**
  * Represents the "acc-class-prerequisite" table columns.
  * 
@@ -42,6 +44,14 @@ public class AccClassPrerequisiteDAM
      * Default Constructor
      */
     public AccClassPrerequisiteDAM(){}
+
+    public AccClassPrerequisite toAccClassPrerequisite()
+    {
+        AccClassPrerequisite output = new AccClassPrerequisite();
+        output.id = this.id;
+        output.rootClassID = this.classID;
+        return output;
+    }
 
     public int getId()
     {
