@@ -132,7 +132,7 @@ public class CourseControler
             // Retrive list of formated files
             fileNames = courseImportService.retrieveFormatedFiles();
             // Import selected file
-            courseImportService.importClassesWithoutRequisites(fileSelect.getFilename());
+            courseImportService.importClasses(fileSelect.getFilename());
             // Pull letter segement
             char[] chars = fileSelect.getFilename().toCharArray();
             // 

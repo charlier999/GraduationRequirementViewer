@@ -65,6 +65,10 @@ public class AccClassDAM
 		this.credits = credits;
 	}
 
+	public AccClassDAM()
+	{
+	}
+
 	/**
 	 * Converts {@link AccClassDAM} to {@link AccClass}
 	 * @return {@link AccClass}

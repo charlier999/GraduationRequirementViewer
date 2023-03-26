@@ -17,7 +17,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
 import com.gradview.data.dam.AccClassDAM;
+import com.gradview.data.dam.AccClassPrerequisiteAndDAM;
+import com.gradview.data.dam.AccClassPrerequisiteDAM;
+import com.gradview.data.dam.AccClassPrerequisiteOrDAM;
 import com.gradview.data.dao.AccClassDAO;
+import com.gradview.data.dao.AccClassPrerequisiteAndDAO;
+import com.gradview.data.dao.AccClassPrerequisiteDAO;
+import com.gradview.data.dao.AccClassPrerequisiteOrDAO;
+import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccClass;
 
 @Service
@@ -32,8 +39,14 @@ public class CourseImportService
     @Autowired
     private AccClassDAO accClassDAO;
 
-    // @Autowired
-    // private AccClassPrerequisiteDAO accClassPrerequisiteDAO;
+    @Autowired
+    private AccClassPrerequisiteDAO accClassPrerequisiteDAO;
+
+    @Autowired
+    private AccClassPrerequisiteAndDAO accClassPrerequisiteAndDAO;
+
+    @Autowired
+    private AccClassPrerequisiteOrDAO accClassPrerequisiteOrDAO;
 
     // @Autowired
     // private AccGeneralEducationClassesDAO accGeneralEducationClassesDAO;
@@ -55,25 +68,55 @@ public class CourseImportService
         return output;
     }
 
-    public void importClassesWithoutRequisites(String fileName) throws FileNotFoundException
+    public void importPrerequisites(String filename) throws FileNotFoundException
     {
-        logger.info("importClassesWithoutRequisites: Starting");
-        logger.info("importClassesWithoutRequisites: Retrieve lines from file");
-        List<String> lines = this.retrieveLinesFromFile(fileName);
-        logger.info("importClassesWithoutRequisites: Lines Retreived");
-        logger.info("importClassesWithoutRequisites: Clump Lines");
+        logger.info("importPrerequisites: Starting");
+
+        logger.info("importPrerequisites: Retrieve lines from file");
+        List<String> lines = this.retrieveLinesFromFile(filename);
+        logger.info("importPrerequisites: Lines Retreived");
+
+        logger.info("importPrerequisites: Clump Lines");
         List<List<String>> clumpedLines = this.clumpLines(lines);
-        logger.info("importClassesWithoutRequisites: Lines have been clumped");
-        logger.info("importClassesWithoutRequisites: Convert clumpted lines to classes");
+        logger.info("importPrerequisites: Lines have been clumped");
+        
+        logger.info("importPrerequisites: Import Prerequistes Started");
+        try
+        {
+            this.importAllPrerequisitesFromClumps(clumpedLines);
+        }
+        catch ( Exception e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        logger.info("importPrerequisites: Import Prerequistes Finished");
+    }
+
+    public void importClasses(String fileName) throws FileNotFoundException
+    {
+        logger.info("importClasses: Starting");
+
+        logger.info("importClasses: Retrieve lines from file");
+        List<String> lines = this.retrieveLinesFromFile(fileName);
+        logger.info("importClasses: Lines Retreived");
+
+        logger.info("importClasses: Clump Lines");
+        List<List<String>> clumpedLines = this.clumpLines(lines);
+        logger.info("importClasses: Lines have been clumped");
+
+        logger.info("importClasses: Convert clumpted lines to classes");
         List<AccClass> classes = this.clumpListToClassWithoutPrereq(clumpedLines);
-        logger.info("importClassesWithoutRequisites: Clumps have been converted to classes");
-        logger.info("importClassesWithoutRequisites: Converting classes to classDAMs");
+        logger.info("importClasses: Clumps have been converted to classes");
+
+        logger.info("importClasses: Converting classes to classDAMs");
         List<AccClassDAM> classesDAM = this.classModelListToDAMList(classes);
-        logger.info("importClassesWithoutRequisites: Classes have been converted to classDAMs");
-        logger.info("importClassesWithoutRequisites: Inserting classDAMs into the database");
+        logger.info("importClasses: Classes have been converted to classDAMs");
+
+        logger.info("importClasses: Inserting classDAMs into the database");
         this.insertClassesToDB(classesDAM);
-        logger.info("importClassesWithoutRequisites: All classDAMs have been inserted");
-        logger.info("importClassesWithoutRequisites: Finished");
+        logger.info("importClasses: All classDAMs have been inserted");
+        logger.info("importClasses: Finished");
     }
 
     /**
@@ -297,5 +340,221 @@ public class CourseImportService
         logger.info("insertClassesToDB: Finished");
     }
 
+    /**
+     * Imports prerequistes for classe
+     * @param input
+     * @throws Exception
+     * @throws DataAccessException
+     */
+    private void importAllPrerequisitesFromClumps(List<List<String>> input) throws DataAccessException, Exception
+    {
+        logger.info("importPrerequisites: Starting");
+        // Iterate through input list
+        logger.info("importPrerequisites: Iterating through input list");
+        for(int i = 0; i < input.size(); i++)
+        {
+            this.importPrerequisites(input.get(i));
+        }
+        logger.info("importPrerequisites: Iterating finished.");
+    }
 
+    /**
+     * Imports Prerequisites from list of strings
+     * @param input
+     * @throws Exception
+     * @throws DataAccessException
+     */
+    private void importPrerequisites(List<String> input) throws DataAccessException, Exception
+    {
+        if(this.clumpContainsPrerequistes(input))
+        {
+            String classNumber = input.get(0); // Course Number
+            List<String> classNumbers = new ArrayList<>();
+            // Check for class existing
+            if(this.doesClassExist(classNumber))
+            {
+                boolean nextClassOr = false;
+                boolean nextClassAnd = false;
+                int count = 0;
+                // Loop until period
+                while(input.get(4).charAt(count) != '.')
+                {
+                    // If white space
+                    if(input.get(4).charAt(count) == ' ') count++;
+                    // If the first character of a class number
+                    if(Character.isUpperCase(input.get(4).charAt(count)))
+                    {
+                        // Pull class number from sting and add it to the list
+                        classNumbers.add(input.get(4).substring(count, (count + 6)));
+                        // Move count up by six
+                        count = count + 6;
+                        if(nextClassAnd) // if next class And flag true
+                        {
+                            this.insertAndPrerequisets(classNumbers, classNumber);
+                            classNumbers.clear(); // Clear out list of class numbers
+                            nextClassAnd = false;
+                        }
+                        if(nextClassOr) // if next class or flag true
+                        {
+                            this.insertOrPrerequisets(classNumbers, classNumber);
+                            classNumbers.clear(); // Clear out list of class numbers
+                            nextClassOr = false;
+                        }
+                    }
+                    // If comma
+                    if(input.get(4).charAt(count) == ',') count++;
+                    // If ;
+                    if(input.get(4).charAt(count) == ';')
+                    {
+                        nextClassAnd = false;
+                        nextClassOr = false;
+                    }
+                    // If or
+                    if(input.get(4).substring(count, (count + 1)).equals("or"))
+                    {
+                        // Iterate past or
+                        count = count + 2;
+                        nextClassOr = true;
+                    }
+                    // If and
+                    if(input.get(4).substring(count, (count + 2)).equals("and"))
+                    {
+                        // Iterate past or
+                        count = count + 3;
+                        nextClassAnd = true;
+                    }
+
+                }
+            }
+        }
+    }
+
+    /**
+     * Checks to see if the class exists
+     * @param classNumber
+     * @return
+     */
+    private boolean doesClassExist(String classNumber)
+    {
+        try
+        {
+            return this.accClassDAO.search(AccClassDAO.COL_NUMBER, classNumber).size() > 0;
+        }
+        catch ( DataAccessException e )
+        {
+            e.printStackTrace();
+            return false;
+        }
+        catch ( NoRowsFoundException e )
+        {
+            return false;
+        }
+        catch ( Exception e )
+        {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * Checks to see if the clump has prerequistes
+     * @param input
+     * @return
+     */
+    private boolean clumpContainsPrerequistes(List<String> input)
+    {
+        if(input.size() == 5) // If input has prerequiste line
+        {
+            String prerequisteCheck = input.get(4).substring(0, 13);
+            if(prerequisteCheck.equals("Prerequisites:") 
+                || prerequisteCheck.equals("Prerequisite: "))
+                return true; 
+        }
+        return false;
+    }
+
+    /**
+     * Inserts prerequisites into the And table linked to the root class
+     * @param prereqs List of prerequisits to link to root class
+     * @param rootClass class to link prerequisites to
+     * @return result
+     * @throws DataAccessException
+     * @throws Exception
+     */
+    private boolean insertAndPrerequisets(List<String> prereqs, String rootClass) throws DataAccessException, Exception
+    {
+        // Get class 
+        AccClassDAM tempRootClass = this.getClassDAM(rootClass);
+        int prerequsitID = this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()));
+        if(prerequsitID != -1) return false;// If insert key not found.
+    
+        // Loop through prereqs
+        for(int i = 0; i < prereqs.size(); i++)
+        {
+            // Get class 
+            AccClassDAM tempClass = this.getClassDAM(prereqs.get(i));
+            if(tempClass != null) // If Not null
+            {
+                // Insert Prerequsite And DAM
+                this.accClassPrerequisiteAndDAO.create(new AccClassPrerequisiteAndDAM(prerequsitID, tempClass.getId()));
+            }
+        }
+        return true;  
+    }
+
+    /**
+     * Inserts prerequisites into the or table linked to the root class
+     * @param prereqs List of prerequisits to link to root class
+     * @param rootClass class to link prerequisites to
+     * @return result
+     * @throws DataAccessException
+     * @throws Exception
+     */
+    private boolean insertOrPrerequisets(List<String> prereqs, String rootClass)  throws DataAccessException, Exception
+    {
+        // Get class 
+        AccClassDAM tempRootClass = this.getClassDAM(rootClass);
+        int prerequsitID = this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()));
+        if(prerequsitID != -1) return false;// If insert key not found.
+    
+        // Loop through prereqs
+        for(int i = 0; i < prereqs.size(); i++)
+        {
+            // Get class 
+            AccClassDAM tempClass = this.getClassDAM(prereqs.get(i));
+            if(tempClass != null) // If Not null
+            {
+                // Insert Prerequsite And DAM
+                this.accClassPrerequisiteOrDAO.create(new AccClassPrerequisiteOrDAM(prerequsitID, tempClass.getId()));
+            }
+        }
+        return true; 
+    }
+
+    /**
+     * Gets the ClassDAM from the database
+     * @param classNumber
+     * @return
+     */
+    private AccClassDAM getClassDAM(String classNumber)
+    {
+        try
+        {
+            return this.accClassDAO.search(AccClassDAO.COL_NUMBER, classNumber).get(0);
+        }
+        catch ( DataAccessException e )
+        {
+            e.printStackTrace();
+            return null;
+        }
+        catch ( NoRowsFoundException e )
+        {
+            return null;
+        }
+        catch ( Exception e )
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
 }

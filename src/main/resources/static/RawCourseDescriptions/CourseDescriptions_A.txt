@@ -38,7 +38,7 @@ ACC-361:
     Intermediate Managerial Accounting
     4 credits
     This course explores intermediate managerial accounting concepts. Students analyze cost behavior, value inventory using multiple costing methods, prepare budgets and evaluate variances, and use financial data and nonfinancial measures to analyze performance. 
-    Prerequisites: ACC-260, ACC-335 and, BUS-352.
+    Prerequisites: ACC-260, ACC-335 and BUS-352.
 
 ACC-370: 
     Intermediate Accounting I 
@@ -92,7 +92,7 @@ ACC-491:
     Auditing 
     4 credits
     Auditing is an examination of generally accepted auditing standards, procedures involved in the auditing process, and ethical issues faced by the auditor. Through class discussions, practical applications, and case studies, students learn the responsibilities of the independent public auditor in the expression of opinion within the guidelines set by the AICPA’s Code of Professional Ethics. Topics include the nature and types of audits, auditor responsibilities and legal liabilities, audit reports, auditing procedures, ethical issues, contemporary issues in auditing, and the Sarbanes-Oxley Act of 2002. 
-    Prerequisites: ACC-260 or ACC-350, and ACC-370.
+    Prerequisites: ACC-260 or ACC-350; and ACC-370.
 
 ACC-502: 
     Accounting Practices 
@@ -144,13 +144,13 @@ ACC-660:
     Advanced Financial Accounting 
     4 credits
     This course is an exploration of advanced topics in financial accounting and reporting, including recognition, measurement, and valuation issues affecting organizations. 
-    Prerequisite: ACC650.
+    Prerequisite: ACC-650.
 
 ACC-667: 
     Advanced Audit 
     4 credits
     This course provides an overview of auditing concepts related to forensic accounting, the internal audit function, operational auditing, and auditing information systems. In addition, students will become familiar with fraudulent financial reporting and the prevention and detection of irregularities. 
-    Prerequisites: ACC616, and BUS-623.
+    Prerequisites: ACC-616, and BUS-623.
 
 ACC-668: 
     Advanced Taxation 
@@ -162,7 +162,7 @@ ACC-670:
     Advanced Financial Statement Analysis
     4 credits
     This course covers in-depth analysis and interpretation of corporate financial reports. Students examine the form, content, and general accounting principles governing the construction of financial statements. There is particular emphasis on the analysis and interpretation of financial data as well as on the utility and limitations of financial accounting data. 
-    Prerequisites: ACC-650 or ACC-653, and ACC-660.
+    Prerequisites: ACC-650 or ACC-653; and ACC-660.
 
 ACC-680: 
     Auditing and Data Analytics Core 
@@ -280,7 +280,7 @@ ADV-250:
     Advanced Design Fundamentals 
     4 credits
     This course builds on design fundamentals by increasing students’ understanding of content development and production methods within the advertising design process. Students will create and produce advertising campaigns and products of various scope and size. Technology requirement: Students are responsible for providing their own laptop that is capable of running the Adobe Creative Cloud. Verify required technical specifications in the University Policy Handbook available on www.gcu.edu. 
-    Prerequisite: ADV-110, DDN-110.
+    Prerequisite: ADV-110 and DDN-110.
 
 ADV-260: 
     Advertising Copywriting 
@@ -302,7 +302,7 @@ ADV-350:
     Digital Advertising Communication 
     4 credits
     This writing intensive course explores integrated marketing communications and the development of marketing and advertising messages across digital platforms. Students focus on current trends in online advertising, social media platforms, and relevant emerging technologies. Technology requirement: Students are responsible for providing their own laptop that is capable of running the Adobe Creative Cloud. Verify required technical specifications in the University Policy Handbook available on www.gcu.edu. 
-    Prerequisite: DDN-110 or DDN-115, ADV-260.
+    Prerequisite: DDN-110 or DDN-115; and ADV-260.
 
 ADV-350:
     Digital Advertising Communication 
@@ -332,7 +332,7 @@ ADV-471:
     Design Studio III 
     4 credits
     Working with industry-based projects, students act as art directors to concept, develop, and produce interactive and multiplatform advertising solutions within a highly collaborative environment. Working in teams, students strengthen their process of collaboration from initial project identification through to final production. Technology requirement: Students are responsible for providing their own laptop that is capable of running the Adobe Creative Cloud. Verify required technical specifications in the University Policy Handbook available on www.gcu.edu.
-    Prerequisite: ADV-350, ADV-456.
+    Prerequisite: ADV-350 and ADV-456.
 
 AES-101: 
     Air Force Today I 
@@ -355,7 +355,7 @@ AES-104:
     Leadership Laboratory 
     0 credits
     Every Spring. Leadership Laboratory (LLAB) is a dynamic and integrated grouping of leadership developmental activities designed to meet the needs and expectations of prospective Air Force second lieutenants and complement the AFROTC academic program. It is a student planned, organized, and executed practicum conducted under the supervision of the detachment commander and commandant of cadets.
-    Prerequisites: AES-104 is a continuation of AES-102 with more in-depth emphasis on learning the environments and dynamics of an Air Force officer. Co-Requisite: AES-103. 
+    Prerequisites: AES-104. Co-Requisite: AES-103. 
 
 AES-201: 
     Evolution of USAF Air/Space Power
@@ -379,7 +379,7 @@ AES-203:
     Evolution of USAF Air/Space Power
     2 credits
     Every Spring. Continuation of AES-201. The course provides students with knowledge level understanding for general element and employment of air and space power. Furthermore, it discusses the importance of Air Force Core Values with use of operational examples and historical Air Force leaders. Continues to develop communication skills. Topics include: the Air Force mission and organization, modern joint expeditionary Airmen, officer opportunities, and professionalism. 
-    Prerequisite: AES-201 or department approval. Co-Requisites: Leadership Laboratory (AES-204) is mandatory for AFROTC cadets and complements this course by providing cadets with followership and leadership experiences.
+    Prerequisite: AES-201. Co-Requisites: Leadership Laboratory (AES-204) is mandatory for AFROTC cadets and complements this course by providing cadets with followership and leadership experiences.
 
 AES-204: 
     Leadership Laboratory 
@@ -522,7 +522,7 @@ ANP-654
     On-Campus Experience II
     0 credits
     This course serves as the final synthesis of evidenced-based theory and research related to care of complex, acute, and critically ill adult-gerontological and frail elderly patients with comorbidities. Learners continue to build on prior knowledge and synthesize data from a variety of health resources related to the care of the acutely ill patient. Utilizing a systems framework, learners further develop appropriate clinical judgment and decision-making skills regarding appropriate recommendations and treatments related to alterations in different systems as they develop an evidence-based plan of care for adult-gerontological patients. Practicum experiences emphasize the physiological and psychosocial impact of acute and critical illness on patients, family, and community, and prepare the Adult Gerontology Acute Care Nurse Practitioner in the diagnosis and management of chronic, exacerbated, acute, and life-threatening health problems. This course includes a required 2-day, on-campus experience. 
-    Prerequisite: ANP-652. Arts Education (ARE)
+    Prerequisite: ANP-652.
 
 ARE-337: 
     Integrated Arts Methods and Assessment in the Elementary School
@@ -532,164 +532,163 @@ ARE-337:
 ARE-480: 
     Student Teaching: Arts Education 
     12 credits
-    Teacher candidates are engaged in the student teaching experience that includes practical classroom experiences, research, analysis, and teaching to support the creation of a Student Teaching Performance of Evaluation (STEP). Fingerprint clearance required. 
-    Prerequisites: Successful completion of all courses in POS and content area; a 2.8 GPA; successful completion of NES or your state’s mandated content area exams; and approval and placement by the College of Education Office of Clinical Practice. All paperwork for student teaching must be submitted by the due date the semester prior to student teaching. Fingerprint clearance required.
+    Teacher candidates are engaged in the student teaching experience that includes practical classroom experiences, research, analysis, and teaching to support the creation of a Student Teaching Performance of Evaluation (STEP). Fingerprint clearance required.
 
 ATP-214: 
     Care, Treatment, and Prevention of Athletic Injuries
     3 credits
     This course provides students with a basic knowledge and understanding of the principles of sports medicine, the care and treatment of athletic trauma, and the use of proper conditioning principles for the prevention of injury. 
-    Prerequisites: BIO-155 and BIO-155L or BIO-201 and BIO-201L, or BIO-210 and BIO210L. Co-Requisite: ATP-214L.
+    Prerequisites: BIO-155 and BIO210; BIO-155L, BIO-201 or BIO-210. Co-Requisite: ATP-214.
 
 ATP-214: 
     Care, Treatment, and Prevention of Athletic Injuries Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course and provides students with a basic knowledge and understanding of the principles of sports medicine, the care and treatment of athletic trauma, safety and its importance in related settings, and the use of proper conditioning principles in the prevention of injury. 
-    Prerequisites: BIO-155 and BIO-155L or BIO-201 and BIO-201L, or BIO-210 and BIO-210L. CoRequisite: ATP-214.
+    Prerequisites: BIO-155, BIO-155L, BIO-201, and BIO-210. CoRequisite: ATP-214.
 
 ATP-256: 
     Health Promotion and Wellness Protection
     4 credits
     This course includes the study of the general principles of health maintenance and promotion. Students learn the role of exercise, including flexibility, strength training, and cardiovascular conditioning in maintaining a healthy lifestyle. Topics include nutrition and dietary requirements for health and weight management. Students administer testing procedures to obtain baseline data regarding a patient's level of general health and use this data to design a program specific to the performance and health goals of the patient. In addition, this course reviews the basics of evidence-based practice in athletic training.
-    Prerequisites: BIO-201 and BIO-201L.
+    Prerequisites: BIO-201.
 
 ATP-301: 
     Recognition and Evaluation of Injuries I
     3 credits
     This course provides students with the specific knowledge and practical skills required to perform proper evaluation of the upper and lower body. Students learn to palpate body and soft tissue structures, and perform active, passive, and resistive range of motion testing, neurological testing, and special ligament tests for the major synovial joints in the body. Students are provided multiple opportunities to reinforce their knowledge with handson practice. 
-    Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301L.
+    Prerequisites: ATP-214, ATP-214L, and BIO-202. CoRequisite: ATP-301.
 
 ATP-301: 
     Recognition and Evaluation of Injuries I
     3 credits
     This course provides students with the specific knowledge and practical skills required to perform proper evaluation of the upper and lower body. Students learn to palpate body and soft tissue structures, and perform active, passive, and resistive range of motion testing, neurological testing, and special ligament tests for the major synovial joints in the body. Students are provided multiple opportunities to reinforce their knowledge with handson practice. 
-    Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301L.
+    Prerequisites: ATP-214, ATP-214L, and BIO-202. CoRequisite: ATP-301.
 
 ATP-301: 
     Recognition and Evaluation of Injuries I Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course and provides students with the specific knowledge and practical skills required to perform proper evaluation of the lower body. Students learn to palpate body and soft tissue structures, and perform active, passive, and resistive range of motion testing, neurological testing, and special ligament tests for the major synovial joints in the body. Students are provided multiple opportunities to reinforce their knowledge with handson practice. 
-    Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301.
+    Prerequisites: ATP-214, ATP-214L, and BIO-202. CoRequisite: ATP-301.
 
 ATP-301:
     Recognition and Evaluation of Injuries I Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course and provides students with the specific knowledge and practical skills required to perform proper evaluation of the lower body. Students learn to palpate body and soft tissue structures, and perform active, passive, and resistive range of motion testing, neurological testing, and special ligament tests for the major synovial joints in the body. Students are provided multiple opportunities to reinforce their knowledge with handson practice. 
-    Prerequisites: ATP-214, ATP-214L, BIO-202, BIO202L, and acceptance into the Athletic Training program. CoRequisite: ATP-301.
+    Prerequisites: ATP-214, ATP-214L, and BIO-202. CoRequisite: ATP-301.
 
 ATP-302: 
     Recognition and Evaluation of Injuries II
     3 credits
     Building on concepts from ATP-301, this course provides students the opportunity to further analyze and apply skills in the areas related to the components of injury evaluation of the upper extremity, including history taking, inspection, palpation, joint movement, manual muscle testing, joint stability tests, neurological testing, and formulation of both a clinical and a differential diagnoses. 
-    Prerequisites: ATP-301, ATP-301L, ATP315, and ATP-315L. Co-Requisite: ATP-302L.
+    Prerequisites: ATP-301, ATP-301L, and ATP-315. Co-Requisite: ATP-302.
 
 ATP-302: 
     Recognition and Evaluation of Injuries II
     3 credits
     Building on concepts from ATP-301, this course provides students the opportunity to further analyze and apply skills in the areas related to the components of injury evaluation of the upper extremity, including history taking, inspection, palpation, joint movement, manual muscle testing, joint stability tests, neurological testing, and formulation of both a clinical and a differential diagnoses. 
-    Prerequisites: ATP-301, ATP-301L, ATP315, and ATP-315L. Co-Requisite: ATP-302L.
+    Prerequisites: ATP-301, ATP-301L, and ATP-315. Co-Requisite: ATP-302.
 
 ATP-302: 
     Recognition and Evaluation of Injuries II Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course and provides students with specific knowledge and practical skills required to perform proper evaluation of the upper extremity. This course also allows students to demonstrate differences between on-field and clinical evaluations, including history taking, inspection, palpation, joint movement, manual muscle testing, joint stability tests, neurological testing, and formulation of both a clinical and a differential diagnosis. Students are provided multiple opportunities to reinforce their knowledge with hands-on practice. 
-    Prerequisites: ATP-301, ATP301L, ATP-315, and ATP-315L. Co-Requisite: ATP-302.
+    Prerequisites: ATP-301, ATP301L, and ATP-315. Co-Requisite: ATP-302.
 
 ATP-302:
     Recognition and Evaluation of Injuries II Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course and provides students with specific knowledge and practical skills required to perform proper evaluation of the upper extremity. This course also allows students to demonstrate differences between on-field and clinical evaluations, including history taking, inspection, palpation, joint movement, manual muscle testing, joint stability tests, neurological testing, and formulation of both a clinical and a differential diagnosis. Students are provided multiple opportunities to reinforce their knowledge with hands-on practice. 
-    Prerequisites: ATP-301, ATP301L, ATP-315, and ATP-315L. Co-Requisite: ATP-302.
+    Prerequisites: ATP-301, ATP301L, and ATP-315. Co-Requisite: ATP-302.
 
 ATP-310: 
     Injury Prevention and Wellness Clinical
     4 credits
     This course provides a clinical setting in which athletic training students clinically apply and demonstrate proficiency in athletic training skills. In this clinical course, students select, apply, evaluate, and modify appropriate standard protective equipment, taping, wrapping, bracing, padding, and other custom devices for the patient. Students administer testing procedures to obtain baseline data regarding a patient's level of general health (including nutritional habits, physical activity status, and body composition) and use these data to design, implement, evaluate, and modify a program specific to the performance and health goals of the patient. This includes instructing the patient in the proper performance of the activities, recognizing the warning signs and symptoms of potential injuries and illnesses that may occur, and explaining the role of exercise in maintaining overall health and the prevention of diseases. Students are assigned to a preceptor who provides supervision on a daily basis through constant visual and auditory interaction, providing feedback to students on their progression. The mode of delivery is student-tostudent demonstration and a clinical exam testing students' proficiency at a clinical site (high school, college, or professional) on true patients. Practicum/field experience hours: 150. 
-    Prerequisites: ATP-214, ATP-214L, ATP-256, BIO-202, BIO-202L, and acceptance into the Athletic Training program.
+    Prerequisites: ATP-214, ATP-214L, ATP-256, and BIO-202.
 
 ATP-315: 
     Emergency Care for Acute Injuries 
     3 credits
     This course includes the study of the proper techniques in caring for patients by recognizing catastrophic and emergent conditions and treating appropriately. Students learn establishing and maintaining an airway, maintaining neutral spine alignment with an athlete wearing protective equipment, wound management, immobilization, transfer techniques including spine boarding, core body temperature, and caring for athletes with conditions such as asthma and diabetes. Students are prepared to complete Emergency Cardiac Care (ECC) certification upon completion of the course. 
-    Prerequisites: BIO-202, BIO-202L, and acceptance into the Athletic Training program. Co-Requisite: ATP-315L.
+    Prerequisites: BIO-202. Co-Requisite: ATP-315.
 
 ATP-315: 
     Emergency Care for Acute Injuries Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course, including the study of the proper techniques in caring for a patient by recognizing catastrophic and emergent conditions and treating appropriately. Students demonstrate establishing and maintaining an airway, maintaining neutral spine alignment with an athlete wearing protective equipment, wound management, immobilization, transfer techniques including spine boarding, core body temperature, and caring for athletes with conditions such as asthma and diabetes. 
-    Prerequisites: BIO-202, BIO-202L, and acceptance into the Athletic Training program. Co-Requisite: ATP-315.
+    Prerequisites: BIO-202. Co-Requisite: ATP-315.
 
 ATP-320: 
     Emergency Care and Lower Extremity Evaluation Clinical
     4 credits
     This course provides a clinical setting in which athletic training students clinically apply and demonstrate proficiency in athletic training skills. In this clinical course, students perform a comprehensive clinical examination of a patient with a lower extremity condition. This exam incorporates clinical reasoning in the selection of assessment procedures and interpretation of findings in order to formulate a diagnosis or differential diagnosis, determine underlying impairments, and identify activity limitations and participation restrictions. Based on the assessment data and consideration of the patient's goals, students provide the appropriate initial care and establish overall treatment goals. In addition, students also clinically evaluate and manage a patient with an emergency injury or condition to include the assessment of vital signs and level of consciousness, activation of emergency action plan, secondary assessment, diagnosis, and provision of the appropriate emergency care (e.g., CPR, AED, supplemental oxygen, airway adjunct, splinting, spinal stabilization, control of bleeding). Students are assigned to a preceptor who provides supervision on a daily basis through constant visual and auditory interaction, providing feedback to students on their progression. The mode of delivery is student-tostudent demonstration and a clinical exam testing students’ proficiency at a clinical site (high school, college, or professional) on true patients. Practicum/field experience hours: 150. 
-    Prerequisites: ATP-301, ATP-301L, ATP-310, ATP-315, and ATP-315L.
+    Prerequisites: ATP-301, ATP-310, and ATP-315.
 
 ATP-322: 
     Therapeutic Modalities 
     3 credits
     This course is a study of various therapeutic modalities that aid in the healing process of injuries. The course covers the theory behind and proper use of these modalities. 
-    Prerequisites: ATP301 and ATP-301L. Co-Requisite: ATP-322L.
+    Prerequisites: ATP301. Co-Requisite: ATP-322.
 
 ATP-322: 
     Therapeutic Modalities Lab 
     1 credits
     This lab complements and supports the principles taught in the lecture course. Students develop practical applications of therapeutic modality techniques. 
-    Prerequisites: ATP-301 and ATP-301L. Co-Requisite: ATP-322.
+    Prerequisites: ATP-301. Co-Requisite: ATP-322.
 
 ATP-330: 
     Therapeutic Modalities and Upper Extremity Techniques Clinical
     4 credits
     This course provides a clinical setting in which athletic training students clinically apply and demonstrate proficiency in athletic training skills. In this clinical course, students perform a comprehensive clinical examination of a patient with an upper extremity, head, neck, thorax, and spine injury or condition. This exam incorporates clinical reasoning in the selection of assessment procedures and interpretation of findings in order to formulate a diagnosis or differential diagnosis, determine underlying impairments, and identify activity limitations and participation restrictions. Based on the assessment data and consideration of the patient's goals, students provide the appropriate initial care, including appropriate therapeutic modalities, and establish overall treatment goals. Students are assigned to a preceptor who provides supervision on a daily basis through constant visual and auditory interaction, providing feedback to students on their progression. The mode of delivery is student-to-student demonstration and a clinical exam testing students’ proficiency at a clinical site (high school, college, or professional) on true patients. Practicum/field experience hours: 150. 
-    Prerequisites: ATP-302, ATP-302L, ATP-320, ATP-322, and ATP-322L.
+    Prerequisites: ATP-302, ATP-320, and ATP-322.
 
 ATP-360: 
     Theory of Prescribing Exercise 
     3 credits
     This course covers the specific and applied use of exercise in prevention of injury, improvement of performance, and recovery from disability and dysfunction, including specific exercise routines, kinesiological principles, history and scope of rehabilitating exercise, abnormal clinical kinesiology, examination procedures, and reconditioning of specific disorders.
-    Prerequisites: ATP-302, ATP-302L, ATP-322, and ATP-322L. Co-Requisite: ATP-360L.
+    Prerequisites: ATP-302, and ATP-322. Co-Requisite: ATP-360.
 
 ATP-360: 
     Theory of Prescribing Exercise 
     3 credits
     This course covers the specific and applied use of exercise in prevention of injury, improvement of performance, and recovery from disability and dysfunction, including specific exercise routines, kinesiological principles, history and scope of rehabilitating exercise, abnormal clinical kinesiology, examination procedures, and reconditioning of specific disorders.
-    Prerequisites: ATP-302, ATP-302L, ATP-322, and ATP-322L. Co-Requisite: ATP-360L.
+    Prerequisites: ATP-302, and ATP-322. Co-Requisite: ATP-360.
 
 ATP-360: 
     Theory of Prescribing Exercise Lab 
     1 credits
     This lab complements and supports the principles taught in the lecture course. Practical applications and experiments include exercise prescription and rehabilitation techniques. 
-    Prerequisites: ATP-302, ATP-302L, ATP-322, and ATP-322L. Co-Requisite: ATP-360.
+    Prerequisites: ATP-302, and ATP-322. Co-Requisite: ATP-360.
 
 ATP-401: 
     General Medical Conditions 
     3 credits
     This course provides a broad discussion of general medical conditions and associated pathologies of the physically active, as well as information applicable to athletes, coaches, and athletic trainers of all levels. This course covers evaluation techniques and equipment for all body systems, conditions, and special populations. 
-    Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401L.
+    Prerequisites: ATP-360. CoRequisite: ATP-401.
 
 ATP-401: 
     General Medical Conditions
     3 credits
     This course provides a broad discussion of general medical conditions and associated pathologies of the physically active, as well as information applicable to athletes, coaches, and athletic trainers of all levels. This course covers evaluation techniques and equipment for all body systems, conditions, and special populations. 
-    Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401L.
+    Prerequisites: ATP-360. CoRequisite: ATP-401.
 
 ATP-401: 
     General Medical Conditions Lab 
     1 credits
     This lab complements and supports principles taught in the lecture course and provides a broad discussion of general medical conditions and associated pathologies of the physically active, as well as information applicable to athletes, coaches, and athletic trainers of all levels. This course covers evaluation techniques and equipment for all body systems, conditions, and special populations. 
-    Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401.
+    Prerequisites: ATP-360. CoRequisite: ATP-401.
 
 ATP-401:
     General Medical Conditions Lab
     1 credits
     This lab complements and supports principles taught in the lecture course and provides a broad discussion of general medical conditions and associated pathologies of the physically active, as well as information applicable to athletes, coaches, and athletic trainers of all levels. This course covers evaluation techniques and equipment for all body systems, conditions, and special populations. 
-    Prerequisites: ATP-360 and ATP-360L. CoRequisite: ATP-401.
+    Prerequisites: ATP-360. CoRequisite: ATP-401.
 
 ATP-402: 
     Pharmacology and Advanced Therapeutic Interventions
     4 credits
     This course examines current theories and practices of pharmacology and epidemiology of drug use as related to athletic training and sports medicine. The course also examines how to appropriately create a plan of care for a patient utilizing therapeutic modalities, rehabilitation, and pharmacologic interventions. 
-    Prerequisites: ATP-322, ATP-322L, ATP-360, ATP-360L, ATP-401, and ATP-401L.
+    Prerequisites: ATP-322, ATP-360, and ATP-401.
 
 ATP-420: 
     Health Care Administration in Athletic Training
@@ -701,13 +700,13 @@ ATP-440:
     Therapeutic Interventions Clinical 
     4 credits
     This course provides a clinical setting in which athletic training students clinically apply and demonstrate proficiency in athletic training skills. In this clinical course, students perform a comprehensive clinical examination of a patient. Based on the assessment data and consideration of the patient's goals, the student creates and implements a therapeutic intervention that targets these treatment goals to include, as appropriate, therapeutic modalities, medications (with physician involvement as necessary), and rehabilitative techniques and procedures. Students integrate and interpret various forms of standardized documentation, including both patient-oriented and clinicianoriented outcome measures, to recommend activity level, make return-to-play decisions, maximize patient outcomes and progress in the treatment plan, and analyze injury data to formulate a prevention program. Students are assigned to a preceptor who provides supervision on a daily basis through constant visual and auditory interaction, providing feedback to students on their progression. The mode of delivery is student-to-student demonstration and a clinical exam testing students' proficiency at a clinical site (high school, college, or professional) on true patients. Practicum/field experience hours: 150. 
-    Prerequisites: ATP-330, ATP-360, and ATP-360L.
+    Prerequisites: ATP-330, and ATP-360.
 
 ATP-450: 
     General Medicine and Health Care Administration Clinical
     4 credits
     This course provides a clinical setting in which athletic training students clinically apply and demonstrate proficiency in athletic training skills. Students develop, implement, and monitor prevention strategies for at-risk individuals (e.g., persons with asthma or diabetes, a previous history of heat illness, or sickle cell trait) and large groups to allow safe physical activity in a variety of conditions. This includes obtaining and interpreting data related to potentially hazardous environmental conditions, monitoring body functions (e.g., blood glucose, peak expiratory flow, hydration status), and making the appropriate recommendations for individual safety and activity status. Students also demonstrate the ability to recognize and refer atrisk individuals and individuals with psychosocial disorders or mental health emergencies. Students also demonstrate appropriate documentation and policy/procedure strategies. As part of this clinical experience, students will participate in a minimum of four weeks at an immersive clinical rotation. This rotation allows the student to partake in the totality of care associated with professional practice. Per CAATE Standard 55, “Clinical education may begin prior to or extend beyond the institution’s academic calendar.” The student’s clinical immersion site will be selected by the program. Students are assigned to a preceptor who provides supervision on a daily basis through constant visual and auditory interaction, providing feedback to students on their progression. The mode of delivery is student-to-student demonstration and a clinical exam testing students’ proficiency at a clinical site (high school, college, or professional) on true patients. Practicum/field experience hours: 150. 
-    Prerequisites: ATP-401, ATP-401L, and ATP-440. CoRequisite: ATP-420.
+    Prerequisites: ATP-401, and ATP-440. CoRequisite: ATP-420.
 
 ATP-460: 
     Advanced Athletic Training Clinical
@@ -719,7 +718,7 @@ ATP-480:
     Athletic Training Capstone 
     3 credits
     This writing-intensive capstone course serves as a culmination of the learning experiences during the athletic training education program at Grand Canyon University. Students are challenged to demonstrate higher level thinking, review evidence-based literature, and display athletic training professional behaviors. Students have the opportunity to identify a clinical practice problem, search the literature, and propose an evidence-based solution that results in practice improvement. 
-    Prerequisites: ATP402, ATP-420, and ATP-450.
+    Prerequisites: ATP-402, ATP-420, and ATP-450.
 
 ATP-485: 
     Athletic Training Board of Certification Exam Preparation
@@ -731,13 +730,13 @@ ATP-500:
     Foundations of Professional Practice and Athletic Training
     2 credits
     This course provides students with an introduction to the foundations of professional athletic training practice. Students learn about the various health professions that comprise the sports medicine team and the appropriate communication strategies in patient care. These concepts are rooted in rules, regulations, and profession documents that comprise the athletic trainer’s scope of practice and standards of care. Students also learn about injury and illness prevention strategies such as health and wellness, nutrition, athletic taping and bracing, and sports regulations (NCAA, NAIA, etc.). Lastly, students learn about the Core Competencies: patient-centered care, interprofessional education (IPE), evidence-based practice, quality improvement, and health care informatics. 
-    Prerequisite: Formal acceptance into the MS – Athletic Training program. Co-Requisite: ATP-500L. 
+    Co-Requisite: ATP-500. 
 
 ATP-500: 
     Foundations of Professional Practice and Athletic Training Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course. This course encompasses: the principles of health and wellness, injury and illness prevention basics, nutrition planning, taping, bracing and padding for the extremities and spine, communication strategies in sports medicine, and sportsspecific equipment fitting. 
-    Prerequisite: Formal acceptance into the MS – Athletic Training program. Co-Requisite: ATP-500.
+    Co-Requisite: ATP-500.
 
 ATP-510: 
     Evaluation, Diagnosis, and Pathophysiology of General Medical Conditions
@@ -748,19 +747,19 @@ ATP-515:
     Emergency Management for Athletic Trainers
     3 credits
     This course includes the study of the proper techniques for managing patients with acute or emergent conditions. Students learn to perform a primary and secondary survey, as well as triage medical emergencies. Skills and knowledge instructed in this course include establishing and maintaining an airway, maintaining neutral spine alignment with an athlete wearing protective equipment, wound management, immobilization, management of shock, anaphylaxis, mental health emergencies, transfer techniques including spine boarding, core body temperature, and caring for athletes with systemic conditions. All this content is founded in the development of an Emergency Action Plan. 
-    Prerequisite: Formal acceptance into the MS – Athletic Training program. Co-Requisite: ATP-515L.
+    Co-Requisite: ATP-515.
 
 ATP-515: 
     Response to Emergent and Immediate Injuries and Illnesses Lab
     1 credits
     This lab complements and supports the principles taught in the lecture course. This course encompasses: establishing and maintaining an airway, maintaining neutral spine alignment with an athlete wearing protective equipment, wound management, immobilization, management of shock, anaphylaxis, mental health emergencies, transfer techniques including spine boarding, core body temperature, and caring for athletes with systemic conditions. 
-    Prerequisite: Formal acceptance into the MS – Athletic Training program. Co-Requisite: ATP-515.
+    Co-Requisite: ATP-515.
 
 ATP-520: 
     Therapeutic Interventions I - Therapeutic Modalities
     3 credits
     This course is a study of various therapeutic modalities that aid in the healing process of injuries. Students learn the theories of pain relief and management, the phases of the healing process, and the viscoelastic properties of tissue. These concepts are woven into each of the electrophysical agents taught in this course such as manual therapies, electrical stimulation, cryotherapy, thermotherapy, ultrasound, diathermy, LASER, and other contemporary modalities. The course also covers treatment planning, goal setting, and the appropriate prescription of therapeutic agents. 
-    Prerequisite: ATP-500. Co-Requisite: ATP520L.
+    Prerequisite: ATP-500. Co-Requisite: ATP520.
 
 ATP-520: 
     Therapeutic Interventions I - Therapeutic Modalities Lab
@@ -772,7 +771,7 @@ ATP-521:
     Therapeutic Interventions II - Rehabilitation
     3 credits
     This course covers the specific and applied use of manual therapies and therapeutic exercises. Students are introduced to the principles of rehabilitation, including, exercise prescription, injury prevention programs, clinical evaluation, collecting and analyzing patient-rated outcome measures to make clinical decisions, and developing a plan of care, to include objective return to play criteria. Students in this course are prepared to work with members of the sports medicine team, through interprofessional collaboration, to optimize patient-centered care, function, and return to play. This course has a foundation in the ICF model to guide patient care to address all contextual and personal factors in the rehabilitation process. 
-    Prerequisite: ATP520. Co-Requisite: ATP-521L.
+    Prerequisite: ATP-520. Co-Requisite: ATP-521.
 
 ATP-521: 
     Therapeutic Interventions II - Rehabilitation Lab

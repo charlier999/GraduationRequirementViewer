@@ -12,6 +12,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.InvalidResultSetAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
 import org.springframework.stereotype.Repository;
 
@@ -158,12 +162,11 @@ public class AccClassPrerequisiteDAO
     /** 
      * Inserts the {@link AccClassPrerequisiteDAM class} into the {@value #TABLENAME} table.
      * @param accClassPrerequisiteDAM The {@link AccClassPrerequisiteDAM} to insert into the {@value #TABLENAME} table. Does NOT use the ID property.
-     * @return boolean Status of creation. True: {@link AccClassPrerequisiteDAM Class} was added to the {@value #TABLENAME} table. 
-     *          False: {@link AccClassPrerequisiteDAM Class} was NOT added to the {@value #TABLENAME} table.
+     * @return int The primary key id of the inserted prerequisite
      * @throws DataAccessException An access exception occured.
      * @throws Exception Catch all for any exception.
      */
-    public boolean create( AccClassPrerequisiteDAM accClassPrerequisiteDAM) throws DataAccessException, Exception
+    public int create( AccClassPrerequisiteDAM accClassPrerequisiteDAM) throws DataAccessException, Exception
     {
         logger.info( "create: Started." );
 		// Create SQL query.
@@ -173,18 +176,21 @@ public class AccClassPrerequisiteDAO
 		{
 			// Run SQL Query.
 			logger.info( "create: SQL querry started running." );
-			int rows = jdbcTemplate.update(sqlQuery, accClassPrerequisiteDAM.getClassID());
+			SqlParameterSource parameters = new MapSqlParameterSource().addValue("classid", accClassPrerequisiteDAM.getClassID());
+			KeyHolder keyHolder = new GeneratedKeyHolder();
+			int rows = jdbcTemplate.update(sqlQuery, parameters, keyHolder);
             if ( rows == 1 )
 			{
 				logger.info( "create: Insert Success" );
+				int primaryKeyID = keyHolder.getKey().intValue();
 				logger.info( "create: Returns true." );
-				return true;
+				return primaryKeyID;
 			}
 			else
 			{
 				logger.error( "create: Insert Failed" );
-				logger.info( "create: Returns false." );
-				return false;
+				logger.info( "create: Returns -1." );
+				return -1;
 			}
 		}
 		catch ( DataAccessException e )
@@ -199,8 +205,8 @@ public class AccClassPrerequisiteDAO
 			ex.printStackTrace();
 		}
         logger.error("create: Failed to Insert.");
-        logger.info("create: Returns false.");
-        return false;
+        logger.info("create: Returns -1.");
+        return -1;
     }
 
     /**
