@@ -4,8 +4,6 @@ package com.gradview.data.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,9 +25,6 @@ public class AccGeneralEducationClassesDAO
     public static final String COL_COMPETENCYID = "competencyID";
     public static final String COL_BAOFARTS = "ba-of-arts";
     public static final String COL_BAOFSCIENCE = "ba-of-science";
-
-    @Autowired
-	private DataSource dataSource;
     
     @Autowired
 	private JdbcTemplate jdbcTemplate;

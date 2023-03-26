@@ -4,8 +4,6 @@ package com.gradview.data.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,9 +23,6 @@ public class AccProgramClassesDAO
     private static final String TABLENAME = "acc-program-classes";
 	public static final String COL_PROGRAMID = "programID";
     public static final String COL_CLASSID = "classID";
-    
-    @Autowired
-	private DataSource dataSource;
     
     @Autowired
 	private JdbcTemplate jdbcTemplate;

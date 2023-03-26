@@ -4,8 +4,6 @@ package com.gradview.data.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +26,7 @@ public class AccGeneralEducationCompetencyDAO
     public static final String COL_DESCRIPTION = "description";
     public static final String COL_MINCREDITS = "minimum-credits";
     public static final String COL_MAXCREDITS = "maximum-credits";
-    
-    @Autowired
-	private DataSource dataSource;
+
     
     @Autowired
 	private JdbcTemplate jdbcTemplate;
