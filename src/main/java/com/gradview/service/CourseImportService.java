@@ -31,7 +31,8 @@ import com.gradview.model.AccClass;
 public class CourseImportService 
 {
     private static final Logger logger = LoggerFactory.getLogger(CourseImportService.class);
-    //private static final boolean RUNIMPORT = true;
+    
+    private ComponentLogger compLogger = new ComponentLogger("gradview.service.CourseImportService");
    
     @Autowired
     private ApplicationContext applicationContext;
@@ -68,8 +69,9 @@ public class CourseImportService
         return output;
     }
 
-    public void importPrerequisites(String filename) throws FileNotFoundException
+    public List<LogMessage> importPrerequisites(String filename) throws FileNotFoundException
     {
+        this.compLogger.clear(); // Clear comp logs
         logger.info("importPrerequisites: Starting");
 
         logger.info("importPrerequisites: Retrieve lines from file");
@@ -91,10 +93,12 @@ public class CourseImportService
             e.printStackTrace();
         }
         logger.info("importPrerequisites: Import Prerequistes Finished");
+        return this.compLogger.getLogs();
     }
 
-    public void importClasses(String fileName) throws FileNotFoundException
+    public List<LogMessage> importClasses(String fileName) throws FileNotFoundException
     {
+        this.compLogger.clear(); // Clear comp logs
         logger.info("importClasses: Starting");
 
         logger.info("importClasses: Retrieve lines from file");
@@ -117,6 +121,7 @@ public class CourseImportService
         this.insertClassesToDB(classesDAM);
         logger.info("importClasses: All classDAMs have been inserted");
         logger.info("importClasses: Finished");
+        return this.compLogger.getLogs();
     }
 
     /**
@@ -126,18 +131,18 @@ public class CourseImportService
      */
     private List<String> retrieveLinesFromFile(String fileName) throws FileNotFoundException
     {
-        logger.info("retrieveLinesFromFile: Starting");
+        this.compLogger.info("retrieveLinesFromFile", "Starting");
          
         Scanner sc = new Scanner(new FileInputStream(ResourceUtils.getFile("classpath:static/RawCourseDescriptions/" + fileName)));
         List<String> output = new ArrayList<>();
-        logger.info("retrieveLinesFromFile: Iterating Through File");
+        this.compLogger.info("retrieveLinesFromFile","Iterating Through File");
         while(sc.hasNext())
         {
             output.add(sc.nextLine());
         }
         sc.close();
-        logger.info("retrieveLinesFromFile: Iteration complete.");
-        logger.info("retrieveLinesFromFile: Returning List of lines.");
+        this.compLogger.info("retrieveLinesFromFile","Iteration complete.");
+        this.compLogger.info("retrieveLinesFromFile","Returning List of lines.");
         return output;
     }
 
@@ -148,11 +153,11 @@ public class CourseImportService
      */
     private List<List<String>> clumpLines(List<String> input)
     {
-        logger.info("clumpLines: Starting");
+        this.compLogger.info("clumpLines","Starting");
         List<List< String > > output = new ArrayList<List<String>>();
         ArrayList<String> clump = new ArrayList<>();
         int subCount = 0;
-        logger.info("clumpLines: Iterating through input List");
+        this.compLogger.info("clumpLines","Iterating through input List");
         for(int i = 0; i < input.size(); i++)
         {
             // Split input iteration to char array.
@@ -162,7 +167,7 @@ public class CourseImportService
             {
                 if(subCount == 0) // This finds the 
                 {
-                    logger.info("clumpLines: Count " + i);
+                    //this.compLogger.info("clumpLines","Count " + i);
                     if(chars[7] == ':')
                     {
                         // Pull Course Number from char array
@@ -176,7 +181,7 @@ public class CourseImportService
                     }
                     else
                     {
-                        logger.info("null");
+                        this.compLogger.warn("clumpLines", "Count " + i + " Has an misformated course number: `" + input.get(i) + "`");
                     }
                 }
                 // If the first 4 chars are ' '
@@ -221,7 +226,7 @@ public class CourseImportService
             // Iterate subcount
             subCount++;
         }
-        logger.info("clumpLines: Returning output List<List<String>>");
+        this.compLogger.info("clumpLines","Returning output List<List<String>>");
         return output;
     }    
 
@@ -232,17 +237,17 @@ public class CourseImportService
      */
     private List<AccClass> clumpListToClassWithoutPrereq(List<List<String>> input)
     {
-        logger.info("clumpListToClassWithoutPrereq: Starting");
+        this.compLogger.info("clumpListToClassWithoutPrereq","Starting");
         List<AccClass> output = new ArrayList<>();
         // Iterate through input list
-        logger.info("clumpListToClassWithoutPrereq: Iterating through input list");
+        this.compLogger.info("clumpListToClassWithoutPrereq","Iterating through input list");
         for(int i = 0; i < input.size(); i++)
         {
             // Add Class to output list.
             output.add(clumpToClassWithoutPrereq(input.get(i)));
         }
-        logger.info("clumpListToClassWithoutPrereq: Iterating finished.");
-        logger.info("clumpListToClassWithoutPrereq: Returning Course List");
+        this.compLogger.info("clumpListToClassWithoutPrereq","Iterating finished.");
+        this.compLogger.info("clumpListToClassWithoutPrereq","Returning Course List");
         return output;
     }
 
@@ -278,6 +283,10 @@ public class CourseImportService
             // Set credits in class
             output.setCredits(credit);  
         }
+        else
+        {
+            this.compLogger.warn("clumpToClassWithoutPrereq", "Class:`"+ output.getNumber() +"`Credits misformated: " + input.get(2));
+        }
         // Set the description
         output.setDescription(input.get(3) );
         // Check clump size
@@ -296,7 +305,7 @@ public class CourseImportService
      */
     private List<AccClassDAM> classModelListToDAMList(List<AccClass> input)
     {
-        logger.info("classModelToDAM: Starting");
+        this.compLogger.info("classModelToDAM","Starting");
         // Create output list.
         List<AccClassDAM> output = new ArrayList<>();
         // Iterate through input list
@@ -305,8 +314,8 @@ public class CourseImportService
         {
             output.add(input.get(i).toDAM());
         }
-        logger.info("classModelToDAM: Iteration Complete");
-        logger.info("classModelToDAM: Returning AccClassDAM");
+        this.compLogger.info("classModelToDAM","Iteration Complete");
+        this.compLogger.info("classModelToDAM","Returning AccClassDAM");
         return output;
     }
 
@@ -316,9 +325,9 @@ public class CourseImportService
      */
     private void insertClassesToDB(List<AccClassDAM> input)
     {
-        logger.info("insertClassesToDB: Starting");
+        this.compLogger.info("insertClassesToDB","Starting");
         // Iterate through classes
-        logger.info("insertClassesToDB: Iterating through input list");
+        this.compLogger.info("insertClassesToDB","Iterating through input list");
         for(int i = 0; i < input.size(); i++)
         {
             try
@@ -327,17 +336,17 @@ public class CourseImportService
             }
             catch ( DataAccessException e )
             {
-                logger.error("insertClassesToDB: Data Access Exception Occured. Printing Stack Trace");
+                this.compLogger.error("insertClassesToDB","Data Access Exception Occured. Printing Stack Trace");
                 e.printStackTrace();
             }
             catch ( Exception e )
             {
-                logger.error("insertClassesToDB: Exception Occured. Printing Stack Trace");
+                this.compLogger.error("insertClassesToDB","Exception Occured. Printing Stack Trace");
                 e.printStackTrace();
             }
         }
-        logger.info("insertClassesToDB: All classes inserted");
-        logger.info("insertClassesToDB: Finished");
+        this.compLogger.info("insertClassesToDB","All classes inserted");
+        this.compLogger.info("insertClassesToDB","Finished");
     }
 
     /**
@@ -348,14 +357,14 @@ public class CourseImportService
      */
     private void importAllPrerequisitesFromClumps(List<List<String>> input) throws DataAccessException, Exception
     {
-        logger.info("importPrerequisites: Starting");
+        this.compLogger.info("importPrerequisites","Starting");
         // Iterate through input list
-        logger.info("importPrerequisites: Iterating through input list");
+        this.compLogger.info("importPrerequisites","Iterating through input list");
         for(int i = 0; i < input.size(); i++)
         {
             this.importPrerequisites(input.get(i));
         }
-        logger.info("importPrerequisites: Iterating finished.");
+        this.compLogger.info("importPrerequisites","Iterating finished.");
     }
 
     /**
@@ -426,6 +435,10 @@ public class CourseImportService
 
                 }
             }
+            else
+            {
+                this.compLogger.warn("importPrerequisites", "Root Course:`" + classNumber + "` does not exist.");
+            }
         }
     }
 
@@ -486,7 +499,11 @@ public class CourseImportService
         // Get class 
         AccClassDAM tempRootClass = this.getClassDAM(rootClass);
         int prerequsitID = this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()));
-        if(prerequsitID != -1) return false;// If insert key not found.
+        if(prerequsitID != -1) 
+        {
+            this.compLogger.warn("insertAndPrerequisets", "Prerequsite not created");
+            return false;// If insert key not found.
+        }
     
         // Loop through prereqs
         for(int i = 0; i < prereqs.size(); i++)
@@ -497,6 +514,10 @@ public class CourseImportService
             {
                 // Insert Prerequsite And DAM
                 this.accClassPrerequisiteAndDAO.create(new AccClassPrerequisiteAndDAM(prerequsitID, tempClass.getId()));
+            }
+            else
+            {
+                this.compLogger.warn("insertAndPrerequisets", "Course `" + prereqs.get(i) + "` does not exist.");
             }
         }
         return true;  
@@ -515,7 +536,11 @@ public class CourseImportService
         // Get class 
         AccClassDAM tempRootClass = this.getClassDAM(rootClass);
         int prerequsitID = this.accClassPrerequisiteDAO.create(new AccClassPrerequisiteDAM(tempRootClass.getId()));
-        if(prerequsitID != -1) return false;// If insert key not found.
+        if(prerequsitID != -1) 
+        {
+            this.compLogger.warn("insertOrPrerequisets", "Prerequsite not created");
+            return false;// If insert key not found.
+        }
     
         // Loop through prereqs
         for(int i = 0; i < prereqs.size(); i++)
@@ -526,6 +551,10 @@ public class CourseImportService
             {
                 // Insert Prerequsite And DAM
                 this.accClassPrerequisiteOrDAO.create(new AccClassPrerequisiteOrDAM(prerequsitID, tempClass.getId()));
+            }
+            else
+            {
+                this.compLogger.warn("insertOrPrerequisets", "Course `" + prereqs.get(i) + "` does not exist.");
             }
         }
         return true; 
@@ -557,4 +586,6 @@ public class CourseImportService
             return null;
         }
     }
+
+
 }

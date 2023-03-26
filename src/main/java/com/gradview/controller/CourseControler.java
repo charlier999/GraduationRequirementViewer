@@ -20,6 +20,8 @@ import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccClass;
 import com.gradview.service.ClassService;
 import com.gradview.service.CourseImportService;
+import com.gradview.service.LogMessage;
+import com.gradview.service.ComponentLogger;
 import com.gradview.ui.ufo.UFOClassSearch;
 import com.gradview.ui.ufo.UFOFileSelect;;
 
@@ -27,6 +29,7 @@ import com.gradview.ui.ufo.UFOFileSelect;;
 public class CourseControler 
 {
     private static final Logger logger = LoggerFactory.getLogger( CourseControler.class );
+    private ComponentLogger compLogger = new ComponentLogger("gradview.controller.CourseControler");
     @Autowired
     private ClassService classService;
     @Autowired
@@ -148,6 +151,7 @@ public class CourseControler
         logger.info("doClassImport: Has started at mapping `/class/importClasses");
         List<String> fileNames = new ArrayList<>();
         List<AccClass> classes = new ArrayList<>();
+        List<LogMessage> logs = new ArrayList<>();
         // Retreive list of files
         try
         {
@@ -155,7 +159,7 @@ public class CourseControler
             // Retrive list of formated files
             fileNames = courseImportService.retrieveFormatedFiles();
             // Import selected file
-            courseImportService.importClasses(fileSelect.getFilename());
+            logs = courseImportService.importClasses(fileSelect.getFilename());
             // Pull letter segement
             char[] chars = fileSelect.getFilename().toCharArray();
             // 
@@ -185,6 +189,7 @@ public class CourseControler
         // attach list of files to model
         model.addAttribute("filenames", fileNames);
         model.addAttribute("classes", classes);
+        model.addAttribute("logs", logs);
         model.addAttribute("formObjectClass", fileSelect);
         model.addAttribute("formObjectPrerequisite", new UFOFileSelect());
         logger.info("doClassImport: Returning view classes/importTool");

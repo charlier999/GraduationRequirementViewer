@@ -72,8 +72,8 @@
 					</form>
 				</div>
 			</div>
-			<hr>
 			<div th:if="${not #lists.isEmpty(classes)}" class="table-div import-results-classes">
+				<hr>
 				<label>Results</label>
 				<table class="import-results-classes-table">
 					<tr class="import-results-classes-header-row">
@@ -86,6 +86,32 @@
 						</td>
 						<td class="import-results-classes-data">
 							<div th:text="${class.name}">Class Name</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<hr>
+			<div th:if="${not #lists.isEmpty(logs)}" class="table-div import-results-logs">
+				<label>Logs</label>
+				<table class="import-results-logs-table">
+					<tr class="import-results-logs-header-row">
+						<td class="import-results-logs-header">Level</td>
+						<td class="import-results-logs-header">File Location</td>
+						<td class="import-results-logs-header">Method Location</td>
+						<td class="import-results-logs-header">Message</td>
+					</tr>
+					<tr th:each="log : ${logs}" class="import-results-logs-row">
+						<td class="import-results-logs-data">
+							<div th:text="${log.messageLevel}"></div>
+						</td>
+						<td class="import-results-logs-data">
+							<div th:text="${log.fileLocation}"></div>
+						</td>
+						<td class="import-results-logs-data">
+							<div th:text="${log.methodLocation}"></div>
+						</td>
+						<td class="import-results-logs-data">
+							<div th:text="${log.message}"></div>
 						</td>
 					</tr>
 				</table>
