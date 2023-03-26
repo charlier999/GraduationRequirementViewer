@@ -31,41 +31,65 @@
 			<br/><br/>
 		</div>
 		<div layout:fragment="content">
-			<div>
-				Import Classes
-			</div>
-            <div class="form-div search-div search-classes">
-				<form th:action="@{/class/import}" th:object="${formObject}" method="PoSt">
-					<div class="form-row">
-						<div class="col-md-6 form-group">
-							<label>Available Files to Import</label>
-							<select class="form-control" th:field="${formObject.filename}">
-                                <div th:each="filename : ${filenames}" class="fileSelect-div-option-filename">
-                                    <option th:value="${filename}" th:text="${filename}" class="fileSelect-option-filename"></option>
-                                </div>
-							</select>
+			<div id="div class-import">
+				<div>
+					Import Classes
+				</div>
+				<div class="form-div import-div import-classes">
+					<form th:action="@{/class/importClasses}" th:object="${formObjectClass}" method="PoSt">
+						<div class="form-row">
+							<div class="col-md-6 form-group">
+								<label>Available Files to Import</label>
+								<select class="form-control" th:field="${formObjectClass.filename}">
+									<div th:each="filename : ${filenames}" class="fileSelect-div-option-filename">
+										<option th:value="${filename}" th:text="${filename}" class="fileSelect-option-filename"></option>
+									</div>
+								</select>
+							</div>
+							<input type="submit" value="Submit" class="fileSelect-input-submit">
 						</div>
-                        <input type="submit" value="Submit" class="fileSelect-input-submit">
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
-			<div th:if="${not #lists.isEmpty(classes)}" class="table-div search-results-classes">
-                <label>Results</label>
-                <table class="search-results-classes-table">
-                    <tr class="search-results-classes-header-row">
-                        <td class="search-results-classes-header">Number</td>
-                        <td class="search-results-classes-header">Name</td>
-                    </tr>
-                    <tr th:each="class : ${classes}" class="search-results-classes-row">
-                        <td class="search-results-classes-data">
-                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
-                        </td>
-                        <td class="search-results-classes-data">
-                            <div th:text="${class.name}">Class Name</div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+			<br>
+			<div id="div prerequisite-import">
+				<div>
+					Import Prerequisites
+				</div>
+				<div class="form-div import-div import-classes">
+					<form action="@{/class/importPrerequisite}" th:object="${formObjectPrerequisite}" method="post">
+						<div class="form-row">
+							<div class="col-md-6 form-group">
+								<label>Available Files to Import</label>
+								<select class="form-control" th:field="${formObjectPrerequisite.filename}">
+									<div th:each="filename : ${filenames}" class="fileSelect-div-option-filename">
+										<option th:value="${filename}" th:text="${filename}" class="fileSelect-option-filename"></option>
+									</div>
+								</select>
+							</div>
+							<input type="submit" value="Submit" class="fileSelect-input-submit">
+						</div>
+					</form>
+				</div>
+			</div>
+			<hr>
+			<div th:if="${not #lists.isEmpty(classes)}" class="table-div import-results-classes">
+				<label>Results</label>
+				<table class="import-results-classes-table">
+					<tr class="import-results-classes-header-row">
+						<td class="import-results-classes-header">Number</td>
+						<td class="import-results-classes-header">Name</td>
+					</tr>
+					<tr th:each="class : ${classes}" class="import-results-classes-row">
+						<td class="import-results-classes-data">
+							<a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+						</td>
+						<td class="import-results-classes-data">
+							<div th:text="${class.name}">Class Name</div>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>

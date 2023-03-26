@@ -119,10 +119,33 @@ public class CourseControler
         }
     }
 
-    @PostMapping("/class/import")
+    @PostMapping("/class/importPrerequisite")
+    public String doPrerequisiteImport(@ModelAttribute UFOFileSelect fileSelect, Model model)
+    {
+        logger.info("doPrerequisiteImport: Has started at mapping `/class/importPrerequisite`");
+        List<String> fileNames = new ArrayList<>();
+        // Retreive list of files
+        try
+        {
+            fileNames = courseImportService.retrieveFormatedFiles();
+        }
+        catch ( IOException e )
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        // attach list of files to model
+        model.addAttribute("filenames", fileNames);
+        model.addAttribute("formObjectClass", fileSelect);
+        model.addAttribute("formObjectPrerequisite", new UFOFileSelect());
+        logger.info("doPrerequisiteImport: Returning view classes/importTool");
+        return "classes/importTool"; 
+    }
+
+    @PostMapping("/class/importClasses")
     public String doClassImport(@ModelAttribute UFOFileSelect fileSelect, Model model)
     {
-        logger.info("doClassImport: Has started at mapping `/class/import");
+        logger.info("doClassImport: Has started at mapping `/class/importClasses");
         List<String> fileNames = new ArrayList<>();
         List<AccClass> classes = new ArrayList<>();
         // Retreive list of files
@@ -162,7 +185,8 @@ public class CourseControler
         // attach list of files to model
         model.addAttribute("filenames", fileNames);
         model.addAttribute("classes", classes);
-        model.addAttribute("formObject", fileSelect);
+        model.addAttribute("formObjectClass", fileSelect);
+        model.addAttribute("formObjectPrerequisite", new UFOFileSelect());
         logger.info("doClassImport: Returning view classes/importTool");
         return "classes/importTool"; 
     }
@@ -184,7 +208,8 @@ public class CourseControler
         }
         // attach list of files to model
         model.addAttribute("filenames", fileNames);
-        model.addAttribute("formObject", new UFOFileSelect());
+        model.addAttribute("formObjectClass", new UFOFileSelect());
+        model.addAttribute("formObjectPrerequisite", new UFOFileSelect());
         logger.info("displayClassImportPage: Returning view classes/importTool");
         return "classes/importTool"; 
     }
