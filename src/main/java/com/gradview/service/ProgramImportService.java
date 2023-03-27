@@ -19,6 +19,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
 import com.gradview.data.dam.AccProgramClassesDAM;
+import com.gradview.data.dam.AccProgramDAM;
+import com.gradview.data.dao.AccProgramClassesDAO;
 import com.gradview.data.dao.AccProgramDAO;
 import com.gradview.data.dao.AccProgramElectivesCreditsDAO;
 import com.gradview.data.dao.AccProgramGeneralEducationCreditsDAO;
@@ -42,6 +44,8 @@ public class ProgramImportService
     private ApplicationContext applicationContext;
     @Autowired
     private AccProgramDAO accProgramDAO;
+    @Autowired
+    private AccProgramClassesDAO accProgramClassesDAO;
     @Autowired
     private AccProgramElectivesCreditsDAO accProgramElectivesCreditsDAO;
     @Autowired
@@ -75,20 +79,26 @@ public class ProgramImportService
     public List<AccProgram> importPrograms(String filename) throws FileNotFoundException
     {
         compLogger.clear();
-        compLogger.info("importProgramsWithoutClasses", "Starting");
-        compLogger.info("importProgramsWithoutClasses", "Retrieve lines from file");
+        compLogger.info("importPrograms", "Starting");
+        compLogger.info("importPrograms", "Retrieve lines from file");
         List<String> lines = this.retrieveLinesFromFile(filename);
-        compLogger.info("importProgramsWithoutClasses", "Lines Retreived");
-        compLogger.info("importProgramsWithoutClasses", "Clump Lines");
+        compLogger.info("importPrograms", "Lines Retreived");
+        compLogger.info("importPrograms", "Clump Lines");
         List<List<String>> clumpedLines = this.clumpLines(lines);
-        compLogger.info("importProgramsWithoutClasses", "Lines have been clumped");
-        compLogger.info("importProgramsWithoutClasses", "Convert clumpted lines to programs");
+        compLogger.info("importPrograms", "Lines have been clumped");
+        compLogger.info("importPrograms", "Convert clumpted lines to programs");
         List<AccProgram> programs = this.clumpLinesToPrograms(clumpedLines);
-        compLogger.info("importProgramsWithoutClasses", "Clumps have been converted to programs");
-        compLogger.info("importProgramsWithoutClasses", "Inserting programs into the database");
-        insertPrograms(programs);
-        compLogger.info("importProgramsWithoutClasses", "All programs have been inserted");
-        compLogger.info("importProgramsWithoutClasses", "Finished");
+        compLogger.info("importPrograms", "Clumps have been converted to programs");
+        compLogger.info("importPrograms", "Inserting programs into the database");
+        this.insertPrograms(programs);
+        compLogger.info("importPrograms", "All programs have been inserted");
+        compLogger.info("importPrograms", "Getting programIDs from inserted programs.");
+        programs = this.updateProgramModelsWithIDs(programs);
+        compLogger.info("importPrograms", "ProgramIDs have been found");
+        compLogger.info("importPrograms", "Inserting program required classes Starting");
+        this.insertRequiredPrograms(programs);
+        compLogger.info("importPrograms", "Inserting program required classes Complete");
+        compLogger.info("importPrograms", "Finished");
         return programs;
     }
 
@@ -403,22 +413,8 @@ public class ProgramImportService
     private String removeIndentFromString(String input)
     {
         logger.info("removeIndentFromString: Starting");
-        // Convert input string to chars
-        char[] charaters = input.toCharArray();
         String output = null;
         output = input.trim();
-        // for(int i = 0; i < charaters.length; i++)
-        // {
-        //     // If char is not ' '
-        //     if(charaters[i] != ' ')
-        //     {
-        //         // Sets output to input substring begining index = iterator - 1
-        //         output = input.substring((i--));
-        //         // Break from loop
-        //         logger.info("removeIndentFromString: end of indent found");
-        //         break;
-        //     }
-        // }
         // If output was not filled
         if(output == null)
         {
@@ -542,5 +538,102 @@ public class ProgramImportService
             }
         }
         return true;
+    }
+
+    /**
+     * Updates programs with id numbers found in the databas
+     * @param programs The list of programs to update id numbers of
+     * @return The list of updated programs
+     */
+    private List<AccProgram> updateProgramModelsWithIDs(List<AccProgram> programs)
+    {
+        compLogger.info("updateProgramModelsWithIDs","Starting");
+        compLogger.info("updateProgramModelsWithIDs","Iterating through programs");
+        for(int programCount = 0; programCount < programs.size(); programCount++)
+        {
+            AccProgram tempProgram = programs.get(programCount);
+            try
+            {
+                List< AccProgramDAM > foundPrograms = this.accProgramDAO.search(AccProgramDAO.COL_NAME, tempProgram.getName());
+                if(foundPrograms.size() > 1) // If more then one program found
+                {
+                    compLogger.warn("updateProgramModelsWithIDs",
+                        "More then one program returned with the name of : " + tempProgram.getName());
+                }
+                else // If one program is found
+                {
+                    // Set tempProgram's ID to id found in search.
+                    tempProgram.setId(foundPrograms.get(0).getId());
+                }
+            }
+            catch ( DataAccessException e )
+            {
+                compLogger.error("updateProgramModelsWithIDs",
+                        "DataAccessException occured with Program: `" + tempProgram.getName() + "` Message: " + e.getMessage());
+            }
+            catch ( NoRowsFoundException e )
+            {
+                compLogger.warn("updateProgramModelsWithIDs",
+                        "More then one program returned with the name of : " + tempProgram.getName());
+            }
+            catch ( Exception e )
+            {
+                compLogger.error("updateProgramModelsWithIDs",
+                    "Exception occured with Program: `" + tempProgram.getName() + "` Message: " + e.getMessage());
+            }
+            programs.set(programCount, tempProgram);
+        }
+        // Return found IDs
+        return programs;
+    }
+
+
+    private void insertRequiredPrograms(List<AccProgram> programs)
+    {
+        compLogger.info("insertRequiredPrograms","Starting");
+        for (AccProgram accProgram : programs) 
+        {
+            int[] reqClassIDs = accProgram.getRequiredMajorClasses();
+            if(reqClassIDs == null)
+            {
+                compLogger.warn("insertRequiredPrograms",
+                    "Program `" + accProgram.getName() + "` has no required Classes.");
+            }
+            else
+            {
+                List<AccProgramClassesDAM> programClassesDAMs = new ArrayList<>();
+                for (int classID : reqClassIDs) 
+                {
+                    AccProgramClassesDAM tempClass = new AccProgramClassesDAM(accProgram.getId(), classID);
+                    programClassesDAMs.add(tempClass);
+                }
+                for (AccProgramClassesDAM programClassesDAM : programClassesDAMs)
+                {
+                    try
+                    {
+                        this.accProgramClassesDAO.create(programClassesDAM);
+                    }
+                    catch ( DataAccessException e )
+                    {
+                        compLogger.error("insertRequiredPrograms",
+                            "Data Access Exception Occured on Program Class`"
+                            + programClassesDAM.getProgramID() + " " 
+                            + programClassesDAM.getClassID() +"`. Message: " + e.getMessage());
+                        logger.error("insertRequiredPrograms: Data Access Exception Occured. Printing Stack Trace");
+                        e.printStackTrace();
+                    }
+                    catch ( Exception e )
+                    {
+                        compLogger.error("insertRequiredPrograms",
+                            "Exception Occured on Program Class`"
+                            + programClassesDAM.getProgramID() + " " 
+                            + programClassesDAM.getClassID() +"`. Message: " + e.getMessage());
+                        logger.error("insertRequiredPrograms: Exception Occured. Printing Stack Trace");
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+        compLogger.info("insertRequiredPrograms","Finished");
     }
 }
