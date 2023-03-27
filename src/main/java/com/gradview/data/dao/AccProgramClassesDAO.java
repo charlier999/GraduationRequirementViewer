@@ -20,7 +20,7 @@ import com.gradview.exception.NoRowsFoundException;
 public class AccProgramClassesDAO 
 {
     private static final Logger logger = LoggerFactory.getLogger(AccProgramClassesDAO.class);
-    private static final String TABLENAME = "acc-program-classes";
+    private static final String TABLENAME = "`acc-program-classes`";
 	public static final String COL_PROGRAMID = "programID";
     public static final String COL_CLASSID = "classID";
     
