@@ -9,11 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
+import com.gradview.data.dam.AccProgramClassesDAM;
 import com.gradview.data.dam.AccProgramDAM;
 import com.gradview.data.dam.AccProgramElectivesCreditsDAM;
 import com.gradview.data.dam.AccProgramGeneralEducationCreditsDAM;
 import com.gradview.data.dam.AccProgramMajorCreditsDAM;
 import com.gradview.data.dam.AccProgramTotalCreditsDAM;
+import com.gradview.data.dao.AccProgramClassesDAO;
 import com.gradview.data.dao.AccProgramDAO;
 import com.gradview.data.dao.AccProgramElectivesCreditsDAO;
 import com.gradview.data.dao.AccProgramGeneralEducationCreditsDAO;
@@ -28,6 +30,8 @@ public class ProgramService
     private static final Logger logger = LoggerFactory.getLogger(ProgramService.class);
     @Autowired
     private AccProgramDAO accProgramDAO;
+    @Autowired
+    private AccProgramClassesDAO accProgramClassesDAO;
     @Autowired
     private AccProgramElectivesCreditsDAO accProgramElectivesCreditsDAO;
     @Autowired
@@ -59,6 +63,7 @@ public class ProgramService
                 logger.info("getProgramByName: Iteration " + i);
                 AccProgram program = new AccProgram();
                 // pull information from programDAMs
+                program.setId(programDAMs.get(i).getId());
                 program.setBaOfArts(programDAMs.get(i).isBaOfArts());
                 program.setBaOfScience(programDAMs.get(i).isBaOfScience());
                 program.setName(programDAMs.get(i).getName());
@@ -87,6 +92,24 @@ public class ProgramService
                 List<AccProgramTotalCreditsDAM> accProgramTotalCreditsDAMs =
                     accProgramTotalCreditsDAO.search(AccProgramTotalCreditsDAO.COL_PROGRAMID, ""+(programDAMs.get(i).getId()));
                 program.setTotalMinCredits(accProgramTotalCreditsDAMs.get(0).getCredits()); 
+                try
+                {
+                    logger.info("getProgramByName: Retrieving AccProgramClassesDAM");
+                    List<AccProgramClassesDAM> accProgramClassesDAMs =
+                    accProgramClassesDAO.search(AccProgramClassesDAO.COL_PROGRAMID, Integer.toString(program.getId()));
+                    int[] classIDs = new int[accProgramClassesDAMs.size()];
+                    for(int j = 0; j <accProgramClassesDAMs.size(); j++)
+                    {
+                        classIDs[j] = accProgramClassesDAMs.get(j).getClassID();
+                    }
+                    program.setRequiredMajorClasses(classIDs);
+
+                }
+                catch ( NoRowsFoundException e )
+                {
+                    logger.warn("getProgramByName: No Rows Found Exception occured: " + e);
+                }
+
                 output.add(program);   
                 logger.info("getProgramByName: Iteration " + i + " Complete");
             }

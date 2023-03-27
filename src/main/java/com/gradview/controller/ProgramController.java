@@ -2,7 +2,10 @@ package com.gradview.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +21,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.gradview.data.dam.AccProgramDAM;
 import com.gradview.data.dao.AccProgramDAO;
 import com.gradview.exception.NoRowsFoundException;
+import com.gradview.model.AccClass;
 import com.gradview.model.AccProgram;
+import com.gradview.service.ClassService;
 import com.gradview.service.ProgramImportService;
 import com.gradview.service.ProgramService;
 import com.gradview.ui.ufo.UFOFileSelect;
@@ -34,6 +39,8 @@ public class ProgramController
     private AccProgramDAO accProgramDAO;
     @Autowired
     private ProgramService programService;
+    @Autowired
+    private ClassService classService;
     
     @GetMapping("/program")
     public String displayHome(Model model)
@@ -110,10 +117,31 @@ public class ProgramController
     {
         logger.info("displayProgram: Has started at mapping `/program/name/{name}");
         List<AccProgram> output = new ArrayList<>();
+        List<AccClass> classes = new ArrayList<>();
         logger.info("displayProgram: " + name + " requested to be viewed");
         try
         {
             output = programService.getProgramsByName(name);
+            if(output != null)
+            {
+                for( int i = 0; i < output.size(); i++)
+                {
+
+                    int[] classIDsInt = output.get(i).getRequiredMajorClasses();
+                    Integer[] classIDsInteger = Arrays.stream(classIDsInt).boxed().toArray(Integer[]::new);
+                    List<Integer> classIDList = new ArrayList<Integer>(Arrays.asList(classIDsInteger));
+                    Set<Integer> set = new HashSet<>(classIDList);
+                    classIDList.clear();
+                    classIDList.addAll(set);
+                    classes = this.classService.getBasicClassesByClassIDs(classIDList);
+                    classIDsInt = classIDList.stream().mapToInt(j -> j).toArray();
+                    output.get(i).setRequiredMajorClasses(classIDsInt);
+                }
+            }
+            else
+            {
+                logger.info("displayProgram: " + name + " cannot be found");
+            }
         }
         catch ( DataAccessException e )
         {
@@ -134,6 +162,7 @@ public class ProgramController
             return "error";
         }
         model.addAttribute("programs", output);
+        model.addAttribute("reqClasses", classes);
         logger.info("displayProgram: Program is being returned to view 'programs/view'");
         return "programs/view";
     }
