@@ -175,7 +175,7 @@ public class ProgramController
         // Retreive list of files
         try
         {
-            fileNames = programImportService.retrieveFormatedFiles();
+            fileNames = programImportService.retrieveVertSliceFiles();
         }
         catch ( IOException e )
         {
@@ -200,9 +200,10 @@ public class ProgramController
         {
             
             // Retrive list of formated files
-            fileNames = programImportService.retrieveFormatedFiles();
+            fileNames = programImportService.retrieveVertSliceFiles();
             // Import selected file
-            programs = programImportService.importPrograms(fileSelect.getFilename());
+            //programs = programImportService.importPrograms(fileSelect.getFilename());
+            programImportService.importVertSliceProgram(fileSelect.getFilename());
             
         }
         catch ( IOException e )

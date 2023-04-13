@@ -62,6 +62,20 @@ public class ProgramImportService
         return this.compLogger.getLogs();
     }
 
+    public List<String> retrieveVertSliceFiles() throws IOException
+    {
+        logger.info("retrieveVertSliceFiles: Starting");
+        logger.info("retrieveVertSliceFiles: Retrieveing Resources");
+        Resource[] resources = applicationContext.getResources("classpath:static/VSlice/*");
+        List<String> output = new ArrayList<>();
+        for(int i = 0; i < resources.length; i++)
+        {
+            output.add(resources[i].getFilename());
+        }
+        logger.info("retrieveVertSliceFiles: Returning file names");
+        return output;
+    }
+
     public List<String> retrieveFormatedFiles() throws IOException
     {
         logger.info("retrieveFormatedFiles: Starting");
@@ -76,8 +90,36 @@ public class ProgramImportService
         return output;
     }
 
+    public AccProgram importVertSliceProgram(String filename) throws FileNotFoundException
+    {
+        filename = "VSlice/" + filename;
+        compLogger.clear();
+        compLogger.info("importVertSliceProgram", "Starting");
+        compLogger.info("importVertSliceProgram", "Retrieve lines from file");
+        List<String> lines = this.retrieveLinesFromFile(filename);
+        compLogger.info("importVertSliceProgram", "Lines Retreived");
+        compLogger.info("importVertSliceProgram", "Clump Lines");
+        List<List<String>> clumpedLines = this.clumpLines(lines);
+        compLogger.info("importVertSliceProgram", "Lines have been clumped");
+        compLogger.info("importVertSliceProgram", "Convert clumpted lines to programs");
+        //List<AccProgram> programs = this.clumpLinesToPrograms(clumpedLines);
+        compLogger.info("importVertSliceProgram", "Clumps have been converted to programs");
+        compLogger.info("importVertSliceProgram", "Inserting programs into the database");
+        //this.insertPrograms(programs);
+        compLogger.info("importVertSliceProgram", "All programs have been inserted");
+        compLogger.info("importVertSliceProgram", "Getting programIDs from inserted programs.");
+        //programs = this.updateProgramModelsWithIDs(programs);
+        compLogger.info("importVertSliceProgram", "ProgramIDs have been found");
+        compLogger.info("importVertSliceProgram", "Inserting program required classes Starting");
+        //this.insertRequiredPrograms(programs);
+        compLogger.info("importVertSliceProgram", "Inserting program required classes Complete");
+        compLogger.info("importVertSliceProgram", "Finished");
+        return null;
+    }
+
     public List<AccProgram> importPrograms(String filename) throws FileNotFoundException
     {
+        filename = "ProgramsWithClasses/" + filename;
         compLogger.clear();
         compLogger.info("importPrograms", "Starting");
         compLogger.info("importPrograms", "Retrieve lines from file");
@@ -110,7 +152,7 @@ public class ProgramImportService
     private List<String> retrieveLinesFromFile(String filename) throws FileNotFoundException
     {
         compLogger.info("retrieveLinesFromFile", "Starting");
-        this.courseSteam = new FileInputStream(ResourceUtils.getFile("classpath:static/ProgramsWithClasses/" + filename));
+        this.courseSteam = new FileInputStream(ResourceUtils.getFile("classpath:static/" + filename));
         Scanner sc = new Scanner(this.courseSteam);
         List<String> output = new ArrayList<>();
         compLogger.info("retrieveLinesFromFile", "Iterating Through File");
@@ -139,10 +181,11 @@ public class ProgramImportService
         {
             logger.debug("clumpLines Iteration " + i);
             // If blank line
-            if(input.get(i).length() == 0)
+            if(this.removeComment(input.get(i)).length() == 0)
             {
+
                 // Add clump to output list
-                output.add(clump);
+                if(clump.size() > 0) output.add(clump);
                 // Create new clump list. If you don't, you get a bunch of the same clump 
                 //  because a new memory assignment is needed for each clump.
                 clump = new ArrayList<>();
@@ -150,7 +193,7 @@ public class ProgramImportService
             else // If not blank line
             {
                 // Add line to clump
-                clump.add(removeIndentFromString(input.get(i)));
+                clump.add(this.removeIndentFromString(this.removeComment(input.get(i))));
             }
         }
         compLogger.info("clumpLines", "Returning output List<List<String>>");
@@ -635,5 +678,17 @@ public class ProgramImportService
             }
         }
         compLogger.info("insertRequiredPrograms","Finished");
+    }
+
+    /**
+     * Removes the comment from a String.
+     * @param input The string containing a comment.
+     * @return The inputed string without the comment.
+     */
+    private String removeComment(String input)
+    {
+        int commentIndex = input.indexOf("//");
+        if (commentIndex != -1) input = input.substring(0, commentIndex);
+        return input;
     }
 }
