@@ -46,15 +46,15 @@ public class ClassService
      */
     public List<AccClass> getClassByNumber(String input) throws NoRowsFoundException, DataAccessException, Exception
     {
-        logger.info("getClassByNumber: Starting");
+        logger.debug("getClassByNumber: Starting");
         List<AccClass> output = new ArrayList<>();
         
         try
         {
-            logger.info("getClassByNumber: Searching for " + input);
+            logger.debug("getClassByNumber: Searching for " + input);
             List<AccClassDAM> response = accClassDAO.search(AccClassDAO.COL_NUMBER, input);
-            logger.info("getClassByNumber: Results found " + response.size());
-            logger.info("getClassByNumber: Converting DAM to Class");
+            logger.debug("getClassByNumber: Results found " + response.size());
+            logger.debug("getClassByNumber: Converting DAM to Class");
             for(int classCount = 0; classCount < response.size(); classCount++)
             {
                 output.add(response.get(classCount).toAccClass());
@@ -67,8 +67,8 @@ public class ClassService
             } 
 
 
-            logger.info("getClassByNumber: Conversion Complete");
-            logger.info("getClassByNumber: Returning list");
+            logger.debug("getClassByNumber: Conversion Complete");
+            logger.debug("getClassByNumber: Returning list");
             
         }
         catch ( DataAccessException e )
@@ -99,36 +99,36 @@ public class ClassService
      */
     public List<AccClass> getBasicClassByNumber(String input) throws NoRowsFoundException, DataAccessException, Exception
     {
-        logger.info("getClassByNumber: Starting");
+        logger.debug("getBasicClassByNumber: Starting");
         List<AccClass> output = new ArrayList<>();
         
         try
         {
-            logger.info("getClassByNumber: Searching for " + input);
+            logger.debug("getBasicClassByNumber: Searching for " + input);
             List<AccClassDAM> response = accClassDAO.search(AccClassDAO.COL_NUMBER, input);
-            logger.info("getClassByNumber: Results found " + response.size());
-            logger.info("getClassByNumber: Converting DAM to Class");
+            logger.debug("getBasicClassByNumber: Results found " + response.size());
+            logger.debug("getBasicClassByNumber: Converting DAM to Class");
             for(int classCount = 0; classCount < response.size(); classCount++)
             {
                 output.add(response.get(classCount).toAccClass());
             } 
-            logger.info("getClassByNumber: Conversion Complete");
-            logger.info("getClassByNumber: Returning list");
+            logger.debug("getBasicClassByNumber: Conversion Complete");
+            logger.debug("getBasicClassByNumber: Returning list");
             
         }
         catch ( DataAccessException e )
         {
-            logger.error("getClassByNumber: Data Access Exception occured: " + e);
+            logger.error("getBasicClassByNumber: Data Access Exception occured: " + e);
             throw e;
         }
         catch ( NoRowsFoundException e )
         {
-            logger.warn("getClassByNumber: No Rows Found Exception occured: " + e);
+            logger.warn("getBasicClassByNumber: No Rows Found Exception occured: " + e);
             throw e;
         }
         catch ( Exception e )
         {
-            logger.error("getClassByNumber: Exception occured: " + e);
+            logger.error("getBasicClassByNumber: Exception occured: " + e);
             throw e;
         }
         return output;
@@ -146,30 +146,30 @@ public class ClassService
         {
             try
             {
-                logger.info("getClassByNumber: Searching for " + classIDs.get(i));
+                logger.debug("getBasicClassesByClassIDs: Searching for " + classIDs.get(i));
                 List<AccClassDAM> response = accClassDAO.search(AccClassDAO.COL_ID, Integer.toString(classIDs.get(i)));
-                logger.info("getClassByNumber: Results found " + response.size());
-                logger.info("getClassByNumber: Converting DAM to Class");
+                logger.debug("getBasicClassesByClassIDs: Results found " + response.size());
+                logger.debug("getBasicClassesByClassIDs: Converting DAM to Class");
                 for(int classCount = 0; classCount < response.size(); classCount++)
                 {
                     output.add(response.get(classCount).toAccClass());
                 } 
-                logger.info("getClassByNumber: Conversion Complete");
-                logger.info("getClassByNumber: Returning list");
+                logger.debug("getBasicClassesByClassIDs: Conversion Complete");
+                logger.debug("getBasicClassesByClassIDs: Returning list");
                 
             }
             catch ( DataAccessException e )
             {
-                logger.error("getClassByNumber: Data Access Exception occured: " + e);
+                logger.error("getBasicClassesByClassIDs: Data Access Exception occured: " + e);
                 throw e;
             }
             catch ( NoRowsFoundException e )
             {
-                logger.warn("getClassByNumber: No Rows Found Exception occured: " + e);
+                logger.warn("getBasicClassesByClassIDs: No Rows Found Exception occured: " + e);
             }
             catch ( Exception e )
             {
-                logger.error("getClassByNumber: Exception occured: " + e);
+                logger.error("getBasicClassesByClassIDs: Exception occured: " + e);
             }
         }
 
@@ -186,7 +186,7 @@ public class ClassService
      */
     public List<AccClass> search(UFOClassSearch search) throws DataAccessException, NoRowsFoundException, Exception
     {
-        logger.info("search: Starting");
+        logger.debug("search: Starting");
         List<AccClass> output = new ArrayList<>();
         try
         {
@@ -208,13 +208,13 @@ public class ClassService
                 throw new Exception();
             }
             
-            logger.info("search: Results found " + response.size());
-            logger.info("search: Converting DAM to Class");
+            logger.debug("search: Results found " + response.size());
+            logger.debug("search: Converting DAM to Class");
             for(int i = 0; i < response.size(); i++)
             {
                 output.add(response.get(i).toAccClass());
             }
-            logger.info("search: Conversion Complete");
+            logger.debug("search: Conversion Complete");
         }
         catch ( DataAccessException e )
         {
@@ -231,7 +231,7 @@ public class ClassService
             logger.error("search: Exception occured: " + e);
             throw e;
         }
-        logger.info("search: Returning list");
+        logger.debug("search: Returning list");
         return output;
     }
 
@@ -269,7 +269,7 @@ public class ClassService
                 }
                 catch ( NoRowsFoundException e )
                 {
-                    logger.info("getClassByNumber: Class has no AND prerequisites.");
+                    logger.debug("getClassPrerequisitesByClassID: Class has no AND prerequisites.");
                     try
                     {
                         // Find And PreReqs
@@ -286,14 +286,14 @@ public class ClassService
                     }
                     catch ( NoRowsFoundException ex )
                     {
-                        logger.warn("getClassByNumber: Class has no AND or OR prerequisites.");
+                        logger.warn("getClassPrerequisitesByClassID: Class has no AND or OR prerequisites.");
                     }
                 }
             } // End of And Ors for loop
         }
         catch ( NoRowsFoundException e )
         {
-            logger.info("getClassByNumber: Class has no prerequisites.");
+            logger.debug("getClassPrerequisitesByClassID: Class has no prerequisites.");
         }
         return output;
     }
