@@ -1,0 +1,119 @@
+Bachelor of Science in Software Development
+    Students who earn the Bachelor of Science in Software Development degree are able to work with web technologies, mobile technologies, and today’s cloud platforms. They attain proficiency in several programming languages and web application frameworks. The technology courses that make up the Software Development degree coursework ensure graduates have a well-rounded understanding of the topics listed below and provide the students with solid skills in communication, teamwork, initiative, self-confidence, and a strong work ethic.
+    Degree Requirements 
+        Total General Education 34-40 credits
+        Total Software Development Major 60 credits
+        Total Electives 20-26 credits
+        Total Bachelor of Science in Software Development 120 credits
+    Software Development Major
+        CST-120 Introduction to Web Development 4 credits
+        CST-105 Computer Programming I 4 credits
+        CST-150 Programming in C# I 4 credits
+        CST-239 Programming in Java II 4 credits
+        CST-250 Programming in C# II 4 credits
+        CST-345 Database Design & Development 4 credits
+        CST-321 Operating Systems Fundamentals 4 credits
+        CST-201 Algorithms and Data Structures 4 credits
+        CST-339 Programming in Java III 4 credits
+        CST-350 Programming in C# III 4 credits
+        CST-391 JavaScript Web Application Development 4 credits
+        CST-323 Cloud Computing 4 credits
+        CST-326 Written and Verbal Communication for Software Development 4 credits
+        CST-451Ω Senior Project I 2 credits
+        CST-407 Application Security Foundations 4 credits
+        CST-452Ω Senior Project II 2 credits Software Development Major 60 credits
+
+Courses:
+    CST-105: 
+        Computer Programming I 
+        4 credits
+        This course introduces the fundamental concepts and syntax of the Java programming language. The course focuses on object oriented techniques in Java with an emphasis on problem solving and fundamental algorithms.
+
+    CST-120: 
+        Introduction to Web Development 
+        4 credits
+        This course introduces the fundamental concepts and syntax of the web development languages including HTML, CSS, and JavaScript. The course focuses on foundation required to build complex dynamic web applications.
+
+    CST-150: 
+        Programming in C# I
+        4 credits
+        This course provides an introduction to the fundamentals of C# programming language. The course covers program design and development, debugging techniques, structured and object oriented programming and basic GUI elements.
+
+    CST-201: 
+        Algorithms and Data Structures 
+        4 credits
+        This course covers classical algorithms and data structures, with an emphasis on implementation and application in solving real world computational problems. The course focuses on algorithms for sorting, searching, string processing, and graphs. Students learn basic strategies to evaluate divide-and-conquer, recursive backtracking, and algorithm efficiency. Hands-on activities focus on writing code that implements concepts and algorithm implementation techniques. 
+        Prerequisite: CST-210 or CST-239 or CST-135 or CST-250 or CST-227.
+
+    CST-239: 
+        Programming in Java II 
+        4 credits
+        This course focuses on software development using the Java programming language. The course focuses on advanced object oriented techniques in Java along with advanced topics including file I/O, generics, collections, multi-threading, networking, and unit testing. 
+        Prerequisite: CST-105.
+
+    CST-250: 
+        Programming in C# II 
+        4 credits
+        This course combines coverage of advanced features of the C# programming language with building complex desktop applications. Students acquire advanced techniques in managing program flow, the application lifecycle, security, and data access.
+        Prerequisite: CST-150 or CST-117.
+
+    CST-321: 
+        Operating Systems Fundamentals 
+        4 credits
+        This course is an introduction to UNIX-derived open-source operating systems. Students explore the history and development trends in open-source OS. The course covers the file system, user commands and utilities, graphical user interfaces, editors, manual pages, and shells. 
+        Prerequisite: CST-239 or CST-135 or CST-250 or CST-227.
+
+    CST-323: 
+        Cloud Computing 
+        4 credits
+        This course examines cloud computing and its transformative impact on the IT industry. Students develop applications using a Software-as-a-Service (SaaS) model. The course examines the most important APIs used in leading industry cloud service providers. Students will learn how to use the cloud as the infrastructure for existing and new services. 
+        Prerequisite: CST-339.
+
+    CST-326: 
+        Written and Verbal Communication for Software Development
+        4 credits
+        This course focuses on gathering User Stories and decomposing them into a requirements document, design spec, and technically managing activities associated with software development. Topics cover the managerial aspect of the software development life cycle, delivery, and integration. Hands-on activities focus on communication using professional Agile-based project management software to implement a system for planning, tracking, and auditing the use of resources within the context of a software project. This is a writing intensive course. 
+        Prerequisite: CST-239 or CST-135 or CST-250 or CST-227.
+
+    CST-339: 
+        Programming in Java III 
+        4 credits
+        This course focuses on the development of dynamic web applications using the Spring framework and the Java programming language. Students employ design and programming methodologies to develop secure, high performance, database driven applications. 
+        Prerequisite: CST-239 or CST-135.
+
+    CST-345: 
+        Database Design & Development
+        4 credits
+        This course provides students with the technical skills required to design and implement a database solution using both relational and non-relational databases. Students use data definition language (DDL) to create and delete database objects, and data manipulation language (DML) to access and manipulate those objects. Students gain hands-on experience with database design, data normalization, SQL sub-queries, creating and using views, understanding and working with data dictionaries, and loading and unloading databases. The laboratory reinforces and expands learning of principles introduced in the lecture. Hands-on activities focus on writing code that implements concepts discussed in the lecture course, specifically creating databases and SQL queries. 
+        Prerequisite: CST-105 or CST-150.
+
+    CST-350: 
+        Programming in C# III 
+        4 credits
+        This course focuses on the development of dynamic web applications using the ASP.NET framework and the C# programming language. Students employ design and programming methodologies to develop secure, high performance, database driven applications. 
+        Prerequisite: CST-250 or CST-227.
+
+    CST-391: 
+        JavaScript Web Application Development
+        4 credits
+        Using current development trends, students examine several front-end and back-end frameworks used to build web applications. Students learn how to program these modern frameworks, as well as how to integrate them using traditional enterprise technologies. 
+        Prerequisites: CST-120 and CST-135 and CST-236.
+
+    CST-407: 
+        Application Security Foundations 
+        4 credits
+        This course examines security principles for application developers. The course also examines common security vulnerabilities found in modern dynamic web applications, secure programming practices, and how to avoid and illuminate the common security vulnerabilities. 
+        Prerequisite: CST-350 or CST-247 or CST-339 or CST-341 or CST-235 or CST-391.
+
+    CST-451: 
+        Senior Project I 
+        2 credits
+        The first capstone course provides students the opportunity to work in teams to tackle real world applied research and design projects in their chosen area of interest. Students develop a project proposal, conduct a feasibility study, learn to protect intellectual property, develop teamwork skills, budgets, and a schedule for completing the project. Students conduct extensive research, integrate information from multiple sources, and work with a mentor through multiple cycles of feedback and revisions. Students use this course to further develop technical writing and business presentation skills. This is a writing intensive course.
+        Prerequisite: CST-339 or CST-341 or CST-235 or CST-350 or CST-247 or CST-391.
+
+    CST-452: 
+        Senior Project II 
+        2 credits
+        The second capstone course provides students the opportunity to implement and present the applied research project designed, planned, and started in the first capstone course. The capstone project is a culmination of the learning experiences while a student in the Computer Science program. Students conduct extensive research, integrate information from multiple sources, and work with a mentor through multiple cycles of feedback and revision. This is a writing intensive course.  Prerequisite: Successful completion of CST-451 with a grade of C or better.
+        Prerequisite: CST-451.
+
