@@ -412,10 +412,6 @@ public class CourseImportService
         if(this.clumpContainsPrerequistes(input))
         {
             String classNumber = input.get(0); // Course Number
-            if(classNumber.equals("ACC-360"))
-            {
-                this.logger.debug("");
-            }
             List<String> classNumbers = new ArrayList<>();
             // Check for class existing
             if(this.doesClassExist(classNumber))
@@ -425,7 +421,6 @@ public class CourseImportService
                 int count = 13;
                 int infCount = 0;
                 int maxSize = input.get(4).length();
-                char[] devChars = input.get(4).toCharArray();
                 // Loop until period
                 while(input.get(4).charAt(count) != '.' )
                 {
