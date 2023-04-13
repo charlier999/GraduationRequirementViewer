@@ -244,7 +244,7 @@ public class CourseImportService
      * @param input The list of a list of strings containg Course information.
      * @return List of {@link AccClass}es
      */
-    private List<AccClass> clumpListToClassWithoutPrereq(List<List<String>> input)
+    public List<AccClass> clumpListToClassWithoutPrereq(List<List<String>> input)
     {
         this.compLogger.info("clumpListToClassWithoutPrereq","Starting");
         List<AccClass> output = new ArrayList<>();
@@ -337,7 +337,7 @@ public class CourseImportService
      * @param input list of {@link AccClass}es to be converted to {@link AccClassDAM}es.
      * @return list of {@link AccClassDAM}es.
      */
-    private List<AccClassDAM> classModelListToDAMList(List<AccClass> input)
+    public List<AccClassDAM> classModelListToDAMList(List<AccClass> input)
     {
         this.compLogger.info("classModelToDAM","Starting");
         // Create output list.
@@ -357,7 +357,7 @@ public class CourseImportService
      * Inserts all classes in input list into the database.
      * @param input The list of {@link AccClassDAM}s to be instered into the database.
      */
-    private void insertClassesToDB(List<AccClassDAM> input)
+    public void insertClassesToDB(List<AccClassDAM> input)
     {
         this.compLogger.info("insertClassesToDB","Starting");
         // Iterate through classes
@@ -389,7 +389,7 @@ public class CourseImportService
      * @throws Exception
      * @throws DataAccessException
      */
-    private void importAllPrerequisitesFromClumps(List<List<String>> input) throws DataAccessException, Exception
+    public void importAllPrerequisitesFromClumps(List<List<String>> input) throws DataAccessException, Exception
     {
         this.compLogger.info("importPrerequisites","Starting with " + input.size() + " entries");
         // Iterate through input list
@@ -502,7 +502,7 @@ public class CourseImportService
      * @param classNumber
      * @return
      */
-    private boolean doesClassExist(String classNumber)
+    public boolean doesClassExist(String classNumber)
     {
         try
         {
