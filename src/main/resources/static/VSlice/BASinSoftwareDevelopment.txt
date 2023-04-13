@@ -33,6 +33,7 @@ Bachelor of Science in Software Development
         CST-452 Senior Project II 2 credits Software Development Major 60 credits
 
 Courses:
+
     CST-105: 
         Computer Programming I 
         4 credits
