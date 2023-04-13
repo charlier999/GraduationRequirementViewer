@@ -14,7 +14,7 @@ Bachelor of Science in Software Development
         Total Software Development Major 60 credits
         Total Electives 20-26 credits
         Total Bachelor of Science in Software Development 120 credits
-    Software Development Major
+    Required Courses
         CST-120 Introduction to Web Development 4 credits
         CST-105 Computer Programming I 4 credits
         CST-150 Programming in C# I 4 credits
