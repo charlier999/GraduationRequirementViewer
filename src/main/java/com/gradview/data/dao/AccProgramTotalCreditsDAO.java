@@ -35,7 +35,7 @@ public class AccProgramTotalCreditsDAO
      */
     public List< AccProgramTotalCreditsDAM > getAll() throws NoRowsFoundException, DataAccessException, Exception
     {
-        logger.info( "getAll: Started." );
+        logger.debug( "getAll: Started." );
 		// Create SQL query.
 		String sqlQuery = "SELECT * FROM " + TABLENAME;
 		// Create results list.
@@ -44,12 +44,12 @@ public class AccProgramTotalCreditsDAO
 		try
 		{
 			// Run SQL Query.
-			logger.info( "getAll: SQL querry started running." );
+			logger.debug( "getAll: SQL querry started running." );
 			SqlRowSet srs = jdbcTemplate.queryForRowSet( sqlQuery );
 			// Create rowsFound check value.
 			boolean rowsFound = false;
 			// Loop through all resulting rows.
-			logger.info( "getAll: Looping through the resulting row set." );
+			logger.debug( "getAll: Looping through the resulting row set." );
 			while ( srs.next() )
 			{
 				rowsFound = true;
@@ -83,7 +83,7 @@ public class AccProgramTotalCreditsDAO
 			// Print a Stack Trace if an exception occurs.
 			ex.printStackTrace();
 		}
-		logger.info( "getAll: Returns " + output.size() + " resulting rows." );
+		logger.debug( "getAll: Returns " + output.size() + " resulting rows." );
 		// Return batteries list.
 		return output;
     }
@@ -99,8 +99,8 @@ public class AccProgramTotalCreditsDAO
      */
     public List< AccProgramTotalCreditsDAM > search(String colName, String query) throws NoRowsFoundException, DataAccessException, Exception
     {
-        logger.info( "search: Started." );
-        logger.info( "search: Column:" + colName + ", Query: " + query);
+        logger.debug( "search: Started." );
+        logger.debug( "search: Column:" + colName + ", Query: " + query);
 		// Create SQL query.
 		String sqlQuery = "SELECT * FROM " + TABLENAME + " WHERE " + colName + " LIKE '" + query + "'";
 		// Create results list.
@@ -109,12 +109,12 @@ public class AccProgramTotalCreditsDAO
 		try
 		{
 			// Run SQL Query.
-			logger.info( "search: SQL querry started running." );
+			logger.debug( "search: SQL querry started running." );
 			SqlRowSet srs = jdbcTemplate.queryForRowSet( sqlQuery );
 			// Create rowsFound check value.
 			boolean rowsFound = false;
 			// Loop through all resulting rows.
-			logger.info( "search: Looping through the resulting row set." );
+			logger.debug( "search: Looping through the resulting row set." );
 			while ( srs.next() )
 			{
 				rowsFound = true;
@@ -148,7 +148,7 @@ public class AccProgramTotalCreditsDAO
 			// Print a Stack Trace if an exception occurs.
 			ex.printStackTrace();
 		}
-		logger.info( "search: Returns " + output.size() + " resulting rows." );
+		logger.debug( "search: Returns " + output.size() + " resulting rows." );
 		// Return batteries list.
 		return output;
     }
@@ -163,25 +163,25 @@ public class AccProgramTotalCreditsDAO
      */
     public boolean create( AccProgramTotalCreditsDAM input) throws DataAccessException, Exception
     {
-        logger.info( "create: Started." );
+        logger.debug( "create: Started." );
 		// Create SQL query.
 		String sqlQuery = "INSERT INTO " + TABLENAME + "(" + COL_PROGRAMID + ", " + COL_CREDITS + ") VALUES(?,?)";
 		// Exception catch.
 		try
 		{
 			// Run SQL Query.
-			logger.info( "create: SQL querry started running." );
+			logger.debug( "create: SQL querry started running." );
 			int rows = jdbcTemplate.update(sqlQuery, input.getProgramID(), input.getCredits());
             if ( rows == 1 )
 			{
-				logger.info( "create: Insert Success" );
-				logger.info( "create: Returns true." );
+				logger.debug( "create: Insert Success" );
+				logger.debug( "create: Returns true." );
 				return true;
 			}
 			else
 			{
 				logger.error( "create: Insert Failed" );
-				logger.info( "create: Returns false." );
+				logger.debug( "create: Returns false." );
 				return false;
 			}
 		}
@@ -197,7 +197,7 @@ public class AccProgramTotalCreditsDAO
 			ex.printStackTrace();
 		}
         logger.error("create: Failed to Insert.");
-        logger.info("create: Returns false.");
+        logger.debug("create: Returns false.");
         return false;
     }
 
@@ -211,25 +211,25 @@ public class AccProgramTotalCreditsDAO
      */
     public boolean update( AccProgramTotalCreditsDAM input) throws DataAccessException, Exception
     {
-        logger.info( "update: Started." );
+        logger.debug( "update: Started." );
 		// Create SQL query.
 		String sqlQuery = "UPDATE " + TABLENAME + " SET " + COL_CREDITS + " = ?, " + "WHERE " + COL_PROGRAMID + " = ?";
 		// Exception catch.
 		try
 		{
 			// Run SQL Query.
-			logger.info( "update: SQL querry started running." );
+			logger.debug( "update: SQL querry started running." );
 			int rows = jdbcTemplate.update(sqlQuery, input.getCredits(), input.getProgramID());
             if ( rows == 1 )
 			{
-				logger.info( "update: Update Success" );
-				logger.info( "update: Returns true." );
+				logger.debug( "update: Update Success" );
+				logger.debug( "update: Returns true." );
 				return true;
 			}
 			else
 			{
 				logger.error( "update: Update Failed" );
-				logger.info( "update: Returns false." );
+				logger.debug( "update: Returns false." );
 				return false;
 			}
 		}
@@ -245,7 +245,7 @@ public class AccProgramTotalCreditsDAO
 			ex.printStackTrace();
 		}
         logger.error("update: Failed to Update.");
-        logger.info("update: Returns false.");
+        logger.debug("update: Returns false.");
         return false;
     }
 
@@ -260,7 +260,7 @@ public class AccProgramTotalCreditsDAO
      */
     public boolean delete( AccProgramTotalCreditsDAM input ) throws DataAccessException
 	{
-		logger.info( "delete: Started." );
+		logger.debug( "delete: Started." );
 		// Create sql statement.
 		String sqlQ = "DELETE FROM " + TABLENAME + "WHERE " + COL_PROGRAMID + " = ?";
 		try
@@ -269,14 +269,14 @@ public class AccProgramTotalCreditsDAO
 			int rows = this.jdbcTemplate.update( sqlQ, input.getProgramID() );
 			if ( rows == 1 )
 			{
-				logger.info( "delete: Delete Successful." );
-				logger.info( "delete: Returns true." );
+				logger.debug( "delete: Delete Successful." );
+				logger.debug( "delete: Returns true." );
 				return true;
 			}
 			else
 			{
 				logger.error( "delete: Delete Failed." );
-				logger.info( "delete: Returns false." );
+				logger.debug( "delete: Returns false." );
 				return false;
 			}
 		}
@@ -292,7 +292,7 @@ public class AccProgramTotalCreditsDAO
 			ex.printStackTrace();
 		}
 		logger.error( "delete: Delete Failed." );
-	    logger.info( "delete: Returns false." );
+	    logger.debug( "delete: Returns false." );
 		return false;
 	}    
 }
