@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +20,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
+import com.gradview.data.dam.AccClassDAM;
 import com.gradview.data.dam.AccProgramClassesDAM;
 import com.gradview.data.dam.AccProgramDAM;
 import com.gradview.data.dao.AccProgramClassesDAO;
@@ -56,6 +59,8 @@ public class ProgramImportService
     private AccProgramTotalCreditsDAO accProgramTotalCreditsDAO;
     @Autowired
     private ClassService classService;
+    @Autowired
+    private CourseImportService courseImportService;
 
     public List<LogMessage> getLogs()
     {
@@ -90,7 +95,7 @@ public class ProgramImportService
         return output;
     }
 
-    public AccProgram importVertSliceProgram(String filename) throws FileNotFoundException
+    public List<AccProgram> importVertSliceProgram(String filename) throws FileNotFoundException
     {
         filename = "VSlice/" + filename;
         compLogger.clear();
@@ -101,20 +106,27 @@ public class ProgramImportService
         compLogger.info("importVertSliceProgram", "Clump Lines");
         List<List<String>> clumpedLines = this.clumpLines(lines);
         compLogger.info("importVertSliceProgram", "Lines have been clumped");
-        compLogger.info("importVertSliceProgram", "Convert clumpted lines to programs");
-        //List<AccProgram> programs = this.clumpLinesToPrograms(clumpedLines);
+        compLogger.info("importVertSliceProgram", "Import Courses");
+        this.courseImportService.insertClassesToDB(
+            this.courseImportService.classModelListToDAMList(
+                this.courseImportService.clumpListToClassWithoutPrereq(
+                    this.pullCourseClumps(clumpedLines))
+            ));
+        compLogger.info("importVertSliceProgram", "Import Courses Complete");
+        compLogger.info("importVertSliceProgram", "Pull Program From Clumps");
+        List<AccProgram> programs = this.clumpLinesToPrograms(this.pullProgramClumps(clumpedLines));
         compLogger.info("importVertSliceProgram", "Clumps have been converted to programs");
         compLogger.info("importVertSliceProgram", "Inserting programs into the database");
-        //this.insertPrograms(programs);
+        this.insertPrograms(programs);
         compLogger.info("importVertSliceProgram", "All programs have been inserted");
         compLogger.info("importVertSliceProgram", "Getting programIDs from inserted programs.");
-        //programs = this.updateProgramModelsWithIDs(programs);
+        programs = this.updateProgramModelsWithIDs(programs);
         compLogger.info("importVertSliceProgram", "ProgramIDs have been found");
         compLogger.info("importVertSliceProgram", "Inserting program required classes Starting");
-        //this.insertRequiredPrograms(programs);
+        this.insertRequiredPrograms(programs);
         compLogger.info("importVertSliceProgram", "Inserting program required classes Complete");
         compLogger.info("importVertSliceProgram", "Finished");
-        return null;
+        return programs;
     }
 
     public List<AccProgram> importPrograms(String filename) throws FileNotFoundException
@@ -194,10 +206,50 @@ public class ProgramImportService
             {
                 // Add line to clump
                 clump.add(this.removeIndentFromString(this.removeComment(input.get(i))));
+                if(i == input.size() -1) output.add(clump);
             }
         }
+
         compLogger.info("clumpLines", "Returning output List<List<String>>");
         return output;
+    }
+
+    private List<List<String>> pullProgramClumps(List<List<String>> input)
+    {
+        compLogger.info("pullProgramClumps", "Starting");
+        List<List<String>> output = new ArrayList<>();
+        for(int i = 0; i < input.size(); i++)
+        {
+            logger.debug("pullProgramClumps: Clump Iteration " + i);
+            if(input.get(i).size() > 5) output.add(input.get(i));
+            else if (input.get(i).size() == 1 && input.get(i).get(0).equals("Courses:")) break;
+        }
+        compLogger.info("pullProgramClumps", "Returning");
+        return output;
+    }
+
+    private List<List<String>> pullCourseClumps(List<List<String>> input)
+    {
+        compLogger.info("pullCourseClumps", "Starting");
+        List<List<String>> output = new ArrayList<>();
+        Boolean isCoursesReached = false;
+        for(int i = 0; i < input.size(); i++)
+        {
+            logger.debug("pullCourseClumps: Clump Iteration " + i);
+            if(input.get(i).get(0).equals("Courses:")) isCoursesReached = true;
+            else if(isCoursesReached) 
+            {
+                if(input.get(i).get(0).charAt(3) == '-')
+                {
+                    String courseNumber = input.get(i).get(0);
+                    courseNumber = courseNumber.replace(":", "");
+                    input.get(i).set(0, courseNumber);
+                }
+                output.add(input.get(i));
+            }
+        }
+        compLogger.info("pullCourseClumps", "Returning");
+        return output; 
     }
 
     /**
@@ -227,6 +279,8 @@ public class ProgramImportService
     private AccProgram clumpToProgram(List<String> clump)
     {
         AccProgram program = new AccProgram();
+        List<Integer> requiredCourses = new ArrayList<>();
+        Boolean reachedCourseList = false;
         for(int j = 0; j < clump.size(); j++)
         {
             if(j == 0) // If first line
@@ -251,7 +305,7 @@ public class ProgramImportService
                 // Iterate twice
                 j = j + 2;
             }
-            else if(j == 3)
+            if(j > 3 && !reachedCourseList)
             {
                 // If program level is bachelors
                 if(program.getLevel().equals(AccProgram.LEVEL_BACHELOR))
@@ -288,12 +342,12 @@ public class ProgramImportService
                     }
                 }
                 else if( // Program is other levels
-                    program.getLevel().equals(AccProgram.LEVEL_GRAD_CERT) ||
-                    program.getLevel().equals(AccProgram.LEVEL_BRIDGE2MASTER) ||
-                    program.getLevel().equals(AccProgram.LEVEL_DOCTOR) ||
-                    program.getLevel().equals(AccProgram.LEVEL_MASTER) ||
-                    program.getLevel().equals(AccProgram.LEVEL_MINOR)
-                    )
+                program.getLevel().equals(AccProgram.LEVEL_GRAD_CERT) ||
+                program.getLevel().equals(AccProgram.LEVEL_BRIDGE2MASTER) ||
+                program.getLevel().equals(AccProgram.LEVEL_DOCTOR) ||
+                program.getLevel().equals(AccProgram.LEVEL_MASTER) ||
+                program.getLevel().equals(AccProgram.LEVEL_MINOR)
+                )
                 {
                     // Set gen ed credits
                     program.setGenEdMinCredits(0);
@@ -310,56 +364,61 @@ public class ProgramImportService
                 else
                 {
                     compLogger.warn("clumpLinesToPrograms", 
-                        "Program `" + program.getName() + "`'s Program Level is not a known level.");
+                    "Program `" + program.getName() + "`'s Program Level is not a known level.");
                 }
             }
-            else if(clump.get(j).equals("Program Classes"))
+            else if(reachedCourseList)
             {
-                j++; // Move to class list
                 //Pull class ids from list and assign it to program object
-                program.setRequiredMajorClasses(this.getRequiredClassIDsFromString(clump.get(j)));
+                this.getRequiredClassIDFromString(clump.get(j));
+                requiredCourses.add(this.getRequiredClassIDsFromString(clump.get(j))[0]);
             }
+            if(clump.get(j).equals("Required Courses")) reachedCourseList = true;
         }
+        Object[] uncastArr = requiredCourses.toArray();
+        int[] intArr = new int[uncastArr.length];
+        for(int i = 0; i < uncastArr.length; i++)
+        {
+            intArr[i] = (int) uncastArr[i];
+        }
+        program.setRequiredMajorClasses(intArr);
         return program;
     }
 
+    /**
+     * 
+     * @param input
+     * @return
+     */
     private int[] getRequiredClassIDsFromString(String input)
     {
         List<Integer> output = new ArrayList<>();
-        // split string by comma
-        List<String> splitNumbers = Arrays.asList(input.split(","));
+        List<String> courseNumbers = this.getRequiredClassIDFromString(input);
         // Iterate through splits
-        for(int i = 0; i < splitNumbers.size(); i++)
+        for(int i = 0; i < courseNumbers.size(); i++)
         {
-            if(splitNumbers.get(i).length() != 7)
+            try
             {
-                compLogger.warn("getRequiredClassIDsFromString", splitNumbers.get(i) + " is not a valid class number.");
+                // Get basic class info from course number
+                List<AccClass> classes = this.classService.getBasicClassByNumber(courseNumbers.get(i));
+                // Loop thorugh found classes
+                for (AccClass accClass : classes) 
+                {
+                    // Add class id to output list
+                    output.add(accClass.getId());
+                }
             }
-            else
+            catch ( DataAccessException e )
             {
-                try
-                {
-                    // Get basic class info from course number
-                    List<AccClass> classes = this.classService.getBasicClassByNumber(splitNumbers.get(i));
-                    // Loop thorugh found classes
-                    for (AccClass accClass : classes) 
-                    {
-                        // Add class id to output list
-                        output.add(accClass.getId());
-                    }
-                }
-                catch ( DataAccessException e )
-                {
-                    compLogger.error("getRequiredClassIDsFromString", splitNumbers.get(i) + " caused DataAccessException. Message: " + e.getMessage());
-                }
-                catch ( NoRowsFoundException e )
-                {
-                    compLogger.warn("getRequiredClassIDsFromString", splitNumbers.get(i) + " not in database.");
-                }
-                catch ( Exception e )
-                {
-                    compLogger.error("getRequiredClassIDsFromString", splitNumbers.get(i) + " caused Exception. Message: " + e.getMessage());
-                }
+                compLogger.error("getRequiredClassIDsFromString", courseNumbers.get(i) + " caused DataAccessException. Message: " + e.getMessage());
+            }
+            catch ( NoRowsFoundException e )
+            {
+                compLogger.warn("getRequiredClassIDsFromString", courseNumbers.get(i) + " not in database.");
+            }
+            catch ( Exception e )
+            {
+                compLogger.error("getRequiredClassIDsFromString", courseNumbers.get(i) + " caused Exception. Message: " + e.getMessage());
             }
         }
         Integer[] res = output.toArray(new Integer[output.size()]);
@@ -371,6 +430,15 @@ public class ProgramImportService
         return finalRes;
     } 
 
+    private List<String> getRequiredClassIDFromString(String input)
+    {
+        List<String> output = new ArrayList<>();
+        Pattern regexPattern = Pattern.compile("[a-zA-Z]{3}-\\d{3}(:|[a-zA-Z]{1,2}:|)");
+        Matcher matcher = regexPattern.matcher(input);
+        while(matcher.find()) output.add(input.substring(matcher.start(), matcher.end()));
+        return output;
+    }
+
     /**
      * Checks string for Credit type strings
      * @param input String to check for credit types
@@ -378,13 +446,13 @@ public class ProgramImportService
      */
     private boolean[] isCreditType(String input)
     {
-        logger.info("isCreditType: Starting");
+        logger.debug("isCreditType: Starting");
         boolean[] output = {false, false, false, false};
         if(input.contains("General Education")) output[0] = true;
         if(input.contains("Major")) output[1] = true;
         if(input.contains("Electives")) output[2] = true;
         if(input.contains("Bachelor")) output[3] = true;
-        logger.info("isCreditType: Returning "+ output[0] + "," + output[1] + "," + output[2] + "," + output[3]);
+        logger.debug("isCreditType: Returning "+ output[0] + "," + output[1] + "," + output[2] + "," + output[3]);
         return output;
     }
 
@@ -395,7 +463,7 @@ public class ProgramImportService
      */
     private boolean[] isBaArtOrSci(String input)
     {
-        logger.info("isBaArtOrSci: Starting");
+        logger.debug("isBaArtOrSci: Starting");
         boolean[] output =  {false,false};
         if(input.contains(AccProgram.BA_ART))
         {
@@ -405,7 +473,7 @@ public class ProgramImportService
         {
             output = new boolean[] {false,true};
         }
-        logger.info("isBaArtOrSci: Returning " + output[0] + "," + output[1]);
+        logger.debug("isBaArtOrSci: Returning " + output[0] + "," + output[1]);
         return output;
     }
 
@@ -416,7 +484,7 @@ public class ProgramImportService
      */
     private String findProgramLevelInString(String input)
     {
-        logger.info("findProgramLevelInString: Starting");
+        logger.debug("findProgramLevelInString: Starting");
         if(input.contains(AccProgram.LEVEL_BACHELOR))
         {
             return AccProgram.LEVEL_BACHELOR;
@@ -455,16 +523,16 @@ public class ProgramImportService
      */
     private String removeIndentFromString(String input)
     {
-        logger.info("removeIndentFromString: Starting");
+        logger.debug("removeIndentFromString: Starting");
         String output = null;
         output = input.trim();
         // If output was not filled
         if(output == null)
         {
-            logger.info("removeIndentFromString: Returning " + input);
+            logger.debug("removeIndentFromString: Returning " + input);
             return input;
         }
-        logger.info("removeIndentFromString: Returning " + output);
+        logger.debug("removeIndentFromString: Returning " + output);
         return output;
     }
 
@@ -475,7 +543,7 @@ public class ProgramImportService
      */
     private int[] getLineCreditRange(String input)
     {
-        logger.info("getLineCreditRange: Starting Input: " + input);
+        logger.debug("getLineCreditRange: Starting Input: " + input);
         // Get the index of the "-" in input string
         int dashInd = input.indexOf("-");
         if(dashInd < 0) return new int[] {0, 0};
@@ -490,7 +558,7 @@ public class ProgramImportService
         // Create output array
         int[] output = {creditMinI, creditMaxI};
         // Return output
-        logger.info("getLineCreditRange: Returning");
+        logger.debug("getLineCreditRange: Returning");
         return output;
     }
 
@@ -503,7 +571,7 @@ public class ProgramImportService
      */
     private int getIntInString(String input)
     {
-        logger.info("getIntInString: Runs");
+        logger.debug("getIntInString: Runs");
         return Integer.parseInt(input.replaceAll("\\D+", ""));
     }
 

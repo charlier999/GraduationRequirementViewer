@@ -203,7 +203,7 @@ public class ProgramController
             fileNames = programImportService.retrieveVertSliceFiles();
             // Import selected file
             //programs = programImportService.importPrograms(fileSelect.getFilename());
-            programImportService.importVertSliceProgram(fileSelect.getFilename());
+            programs = programImportService.importVertSliceProgram(fileSelect.getFilename());
             
         }
         catch ( IOException e )
