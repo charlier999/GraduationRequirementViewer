@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -412,77 +414,120 @@ public class CourseImportService
         if(this.clumpContainsPrerequistes(input))
         {
             String classNumber = input.get(0); // Course Number
-            List<String> classNumbers = new ArrayList<>();
             // Check for class existing
             if(this.doesClassExist(classNumber))
             {
-                boolean nextClassOr = false;
-                boolean nextClassAnd = false;
-                int count = 13;
-                int infCount = 0;
-                int maxSize = input.get(4).length();
-                // Loop until period
-                while(input.get(4).charAt(count) != '.' )
+                if(input.get(4).contains("Prerequisite:") || input.get(4).contains("Prerequisites:"))
                 {
-                    // Inf Loop Protection
-                    if(infCount > maxSize)
+                    List<String> classNumbers = new ArrayList<>();
+                    Boolean isAndPreReq = false;
+                    Boolean isOrPreReq = false;
+                    String tempClassNumber = "";
+                    char[] devChars = input.get(4).toCharArray();
+                    // Find : at end of Prerequisite:/Prerequisites:
+                    int colonInd = input.get(4).indexOf(":");
+                    for(int i = colonInd; i < input.get(4).length(); i++)
                     {
-                        this.compLogger.error("importPrerequisites", "Root Course:`" + classNumber + "` caused a infinite loop.");
-                        break;
-                    }
-                    // If white space
-                    if(input.get(4).charAt(count) == ' ') count++;
-                    // If the first character of a class number
-                    if(Character.isUpperCase(input.get(4).charAt(count)))
-                    {
-                        // Pull class number from sting and add it to the list
-                        classNumbers.add(input.get(4).substring(count, (count + 7)));
-                        // Move count up by six
-                        count = count + 7;
-                        if(nextClassAnd) // if next class And flag true
+                        // If the first character after Prerequisite:/Prerequisites: is ' ' and class numbers list is empty
+                        if(input.get(4).charAt(i) == ' ' && tempClassNumber == "")
                         {
-                            this.insertAndPrerequisets(classNumbers, classNumber);
-                            classNumbers.clear(); // Clear out list of class numbers
-                            nextClassAnd = false;
+                            // do nothing 
                         }
-                        if(nextClassOr) // if next class or flag true
+                        // If comma
+                        else if(input.get(4).charAt(i) == ',' && tempClassNumber != "")
                         {
-                            this.insertOrPrerequisets(classNumbers, classNumber);
-                            classNumbers.clear(); // Clear out list of class numbers
-                            nextClassOr = false;
+                            // Check for course number with regex
+                            Matcher matcher = Pattern.compile("[a-zA-Z]{3}-\\d{3}(:|[a-zA-Z]{1,2}:|)").matcher(tempClassNumber);
+                            if(matcher.find()) // find course number and add to classNumber list
+                            {
+                                classNumbers.add(tempClassNumber);
+                                tempClassNumber = "";
+                            }
                         }
-                    }
-                    // If comma
-                    if(input.get(4).charAt(count) == ',') count++;
-                    // If ;
-                    if(input.get(4).charAt(count) == ';')
-                    {
-                        nextClassAnd = false;
-                        nextClassOr = false;
-                    }
-                    // If or
-                    if(maxSize > (count + 2))
-                    {
-                        String tempOrStirng = input.get(4).substring(count, (count + 2));
-                        if(tempOrStirng.equals("or"))
+                        // if current char is . or ;
+                        else if(input.get(4).charAt(i) == 'o' || input.get(4).charAt(i) == 'r')
                         {
-                            // Iterate past or
-                            count = count + 2;
-                            nextClassOr = true;
+                            tempClassNumber += input.get(4).charAt(i);
+                            if(tempClassNumber.equals("or"))
+                            {
+                                isOrPreReq = true;
+                                tempClassNumber = "";
+                            }
                         }
-                    }
-                    // If and
-                    if(maxSize > (count + 3))
-                    {
-                        String tempAndStirng = input.get(4).substring(count, (count + 3));
-                        if(tempAndStirng.equals("and"))
+                        // If characters a, n or d 
+                        else if(
+                            input.get(4).charAt(i) == 'a' 
+                            || input.get(4).charAt(i) == 'n'
+                            || input.get(4).charAt(i) == 'd'
+                            )
                         {
-                            // Iterate past and
-                            count = count + 3;
-                            nextClassAnd = true;
+                            tempClassNumber += input.get(4).charAt(i);
+                            if(tempClassNumber.equals("and"))
+                            {
+                                isOrPreReq = true;
+                                tempClassNumber = "";
+                            }
+                        }
+                        else if(
+                            (
+                                input.get(4).charAt(i) == '.' 
+                                || input.get(4).charAt(i) == ';'
+                                || input.get(4).charAt(i) == ' '
+                            ) 
+                            && tempClassNumber != ""
+                            )
+                        {
+                                // Check for course number with regex
+                                Matcher matcher = Pattern.compile("[a-zA-Z]{3}-\\d{3}(:|[a-zA-Z]{1,2}:|)").matcher(tempClassNumber);
+                                if(matcher.find()) // find course number and add to classNumber list
+                                {
+                                    classNumbers.add(tempClassNumber);
+                                    tempClassNumber = "";
+                                }
+                                // If there is only one course number in the lest
+                                if(classNumbers.size() == 1) isAndPreReq = true;
+                                
+                                // if prerequsites are not the same value
+                                if(isAndPreReq != isOrPreReq)
+                                {
+                                    if(isAndPreReq) 
+                                    {
+                                        this.insertAndPrerequisets(classNumbers, classNumber);
+                                        isAndPreReq = false;
+                                        classNumbers = new ArrayList<>();
+                                    }
+                                    else if(isOrPreReq) 
+                                    {
+                                        this.insertOrPrerequisets(classNumbers, classNumber);
+                                        isOrPreReq = false;
+                                        classNumbers = new ArrayList<>();
+                                    }
+                                    else
+                                    {
+                                        logger.error("importPrerequisites: Prerequisite list and/or not defined.");
+                                    }
+                                }
+                                else
+                                {
+                                    logger.error("importPrerequisites: Prerequisite list and/or is the same values.");
+                                }
+                            }
+                        else if(input.get(4).charAt(i) == ' ' && tempClassNumber.length() > 3)
+                        {
+                            // Check for course number with regex
+                            Matcher matcher = Pattern.compile("[a-zA-Z]{3}-\\d{3}(:|[a-zA-Z]{1,2}:|)").matcher(tempClassNumber);
+                            if(matcher.find()) // find course number and add to classNumber list
+                            {
+                                classNumbers.add(tempClassNumber);
+                                tempClassNumber = "";
+                            }
+                        }
+                        // If characters o or r 
+                        else if(input.get(4).charAt(i) != ':')
+                        {
+                            tempClassNumber += input.get(4).charAt(i);
                         }
                     }
-                    infCount++;
                 }
             }
             else

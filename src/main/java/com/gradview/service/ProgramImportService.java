@@ -111,6 +111,16 @@ public class ProgramImportService
                     this.pullCourseClumps(clumpedLines))
             ));
         compLogger.info("importVertSliceProgram", "Import Courses Complete");
+        compLogger.info("importVertSliceProgram", "Import Courses' Prerequistes Start");
+        try
+        {
+            this.courseImportService.importAllPrerequisitesFromClumps(this.pullCourseClumps(clumpedLines));
+        }        
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        compLogger.info("importVertSliceProgram", "Import Courses' Prerequistes Finished");
         compLogger.info("importVertSliceProgram", "Pull Program From Clumps");
         List<AccProgram> programs = this.clumpLinesToPrograms(this.pullProgramClumps(clumpedLines));
         compLogger.info("importVertSliceProgram", "Clumps have been converted to programs");
@@ -318,6 +328,7 @@ public class ProgramImportService
                     else if(creditType[1]) // Major
                     {
                         // Set major credits
+                        logger.info("clumpToProgram: clump["+j+"]: " + clump.get(j));
                         program.setMajorMinCredits(this.getIntInString(clump.get(j)));
                         program.setMajorMaxCredits(program.getMajorMinCredits());
                     }
@@ -371,7 +382,7 @@ public class ProgramImportService
                 this.getRequiredClassIDFromString(clump.get(j));
                 requiredCourses.add(this.getRequiredClassIDsFromString(clump.get(j))[0]);
             }
-            if(clump.get(j).equals("Required Courses")) reachedCourseList = true;
+            if(clump.get(j).equals("Required Major Courses")) reachedCourseList = true;
         }
         Object[] uncastArr = requiredCourses.toArray();
         int[] intArr = new int[uncastArr.length];
@@ -447,7 +458,8 @@ public class ProgramImportService
         logger.debug("isCreditType: Starting");
         boolean[] output = {false, false, false, false};
         if(input.contains("General Education")) output[0] = true;
-        if(input.contains("Major")) output[1] = true;
+        if(!input.contains("Required Major Courses"))
+            if(input.contains("Major")) output[1] = true;
         if(input.contains("Electives")) output[2] = true;
         if(input.contains("Bachelor")) output[3] = true;
         logger.debug("isCreditType: Returning "+ output[0] + "," + output[1] + "," + output[2] + "," + output[3]);
@@ -570,7 +582,15 @@ public class ProgramImportService
     private int getIntInString(String input)
     {
         logger.debug("getIntInString: Runs");
-        return Integer.parseInt(input.replaceAll("\\D+", ""));
+        try
+        {
+            return Integer.parseInt(input.replaceAll("\\D+", ""));
+        }
+        catch (NumberFormatException ex)
+        {
+            logger.error("getIntInString: Number format excpetion occured with input: " + input);
+            throw ex;
+        }
     }
 
 
