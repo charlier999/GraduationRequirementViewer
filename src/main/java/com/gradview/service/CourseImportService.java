@@ -485,10 +485,10 @@ public class CourseImportService
                                     tempClassNumber = "";
                                 }
                                 // If there is only one course number in the lest
-                                if(classNumbers.size() == 1) isAndPreReq = true;
+                                if(classNumbers.size() == 1 && input.get(4).charAt(i) == '.') isAndPreReq = true;
                                 
                                 // if prerequsites are not the same value
-                                if(isAndPreReq != isOrPreReq)
+                                if((isAndPreReq && !isOrPreReq) || (!isAndPreReq && isOrPreReq))
                                 {
                                     if(isAndPreReq) 
                                     {
@@ -509,7 +509,14 @@ public class CourseImportService
                                 }
                                 else
                                 {
-                                    logger.error("importPrerequisites: Prerequisite list and/or is the same values.");
+                                    if(isAndPreReq && isOrPreReq)
+                                    {
+                                        logger.error("importPrerequisites: Prerequisite list and/or flags are both true.");
+                                    }
+                                    else
+                                    {
+                                        logger.warn("importPrerequisites: Prerequisite list and/or flags are both false.");
+                                    }
                                 }
                             }
                         else if(input.get(4).charAt(i) == ' ' && tempClassNumber.length() > 3)
