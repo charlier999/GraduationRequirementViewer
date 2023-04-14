@@ -59,12 +59,16 @@
                 <table class="classes-table">
                     <tr class="classes-header-row">
                         <td class="classes-header">Number</td>
+						<td class="classes-header">Credits</td>
                         <td class="classes-header">Name</td>
                     </tr>
                     <tr th:each="class : ${classes}" class="classes-row">
                         <td class="classes-data">
                             <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
                         </td>
+						<td>
+							<div th:text="${class.credits}">Credits</div>
+						</td>
                         <td class="classes-data">
                             <div th:text="${class.name}">Class Name</div>
                         </td>
