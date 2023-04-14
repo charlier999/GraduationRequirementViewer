@@ -1,0 +1,231 @@
+// This is a comment. All content on the line is ignored by the interpreter after the "//".
+//
+// For courses with additional letters after the 3 numbers use the following legend:
+// ###-###L = Lab course
+// ###-###HN = Honers course.
+// If you find additional letters after the course number that are not in the legend,
+//  just add it to the list above.
+
+Bachelor of Science in Applied Technology 
+    Grand Canyon University’s Bachelor of Science in Applied Technology prepares students for professions in Information Technology such as IT Project Manager, network Support Specialist, and Technology Trainer. Students take courses in networking, security, database systems, and information technology process management. The curriculum includes intensive, project-based courses that help students develop skills in project management and communication within the profession. This program focuses on problem-solving using technology, with hands-on activities designed to provide students technical experience required in the workplace.
+    Degree Requirements
+        Total General Education 34-40 credits
+        Total Applied Technology Major 40 credits
+        Total Electives 40-46 credits
+        Total Bachelor of Science in Applied Technology 120 credits
+    Required Major Courses
+        CST-111 Introduction to Computer Science and Information Technology 4 credits
+        SYM-400 Introduction to Database Structures 4 credits
+        STG-390 Professionalism in Science & Technology-Communications, Conduct and Ethics 4 credits
+        SYM-408 Relational Databases for Business Applications 4 credits
+        BIT-415 IT Project Management 4 credits
+        MGT-325 Managing Business Communications and Change 4 credits
+        ITT-415 IT Business Case Planning for Global Enterprise 4 credits
+        CYB-300 Fundamentals in Cyber Security 4 credits
+        BIT-310 Information Systems Design and Development 4 credits
+        ITT-455 IT Project 4 credits
+//Applied Technology Major 40 credits
+
+Courses:
+
+// Prerequisites of Prerequisites
+MAT-110:
+    Basics of Algebra 
+    4 credits
+    This course is designed to build students' understanding of, and skill in, basic algebraic practices and procedures. Students learn to manipulate mathematical operations involving real and complex numbers. Topics include solving and graphing equations and inequalities, solving systems of equations, operations on functions, use of real and complex number systems, solving rational functions, and solving exponential and logarithmic functions. Emphasis will be placed on algebraic processes and building a framework for future courses.
+
+MAT-134: 
+    Applications of Algebra 
+    4 credits
+    This course explores applications of algebraic concepts. Integers, fractions, decimals, percents, and ratios are studied within the real and complex number systems. Students learn to solve linear equations and inequalities; rational and exponential expressions; linear systems; and quadratic, exponential, and logarithmic equations. Estimation techniques and principles of number theory are explored. Emphasis is placed on developing students’ understanding of number representation and skill in the application of numerical operations to solving real-world problems. Prerequisite: Grade of C or better in MAT-110.
+    Prerequisite: MAT-110.
+
+MAT-154:
+    Applications of College Algebra 
+    4 credits
+    This course is designed to prepare learners to integrate fundamental mathematical concepts with the critical and quantitative thinking needed to solve workplace-related problems. The course is founded upon a functional and technological approach to algebra. Topics include functions and their graphs; polynomial, rational, exponential, and logarithmic functions; algebraic and exponential equations; and probability. Emphasis is placed on developing students’ understanding of mathematical representation and logical reasoning to solve real world problems. Prerequisite: Grade of C or better in MAT-110.
+    Prerequisite: MAT-110
+
+MAT-261: 
+    Pre-Calculus 
+    4 credits
+    This course presents the fundamentals of algebra and trigonometry with some applications; it provides the background and introduction for the study of calculus. Topics include review of linear equations and inequalities in one and multiple variables; functions and their graphs; polynomial, rational, exponential, logarithmic, and trigonometric functions; systems of equations and matrices; and sequences and series. Slope and rate of change are introduced to set up the concepts of limits and derivatives. There is an emphasis on both an understanding of the mathematical concepts involved as well as their applications to the principles and real-world problems encountered in science and engineering. Technology is utilized to facilitate problem analysis and graphing. 
+    Prerequisite: MAT-134 or MAT-154.
+
+//MAT-261XV: 
+//    Pre-Calculus 
+//    4 credits
+//    This course presents the fundamentals of algebra and trigonometry with some applications; it provides the background and introduction for the study of calculus. Topics include review of linear equations and inequalities in one and multiple variables; functions and their graphs; polynomial, rational, exponential, logarithmic, and trigonometric functions; systems of equations and matrices; and sequences and series. Slope and rate of change are introduced to set up the concepts of limits and derivatives. There is an emphasis on both an understanding of the mathematical concepts involved as well as their applications to the principles and real-world problems encountered in science and engineering. Technology is utilized to facilitate problem analysis and graphing. 
+//    Prerequisite: MAT-134 or MAT-154.
+
+//Prerequisite courses below sorted in alphabetical order
+
+BIT-200: 
+    Introduction to Computer Technology
+    4 credits
+    This course provides the foundation of core knowledge within the field of information technology. Topics include technology centric organizations, the type and role of fundamental information technology systems, data management to include privacy and security, e-business and m-business, hardware, software, and computer networks.
+
+//BIT-415 included in major courses
+
+CST-105: 
+    Computer Programming I 
+    4 credits
+    This course introduces the fundamental concepts and syntax of the Java programming language. The course focuses on object oriented techniques in Java with an emphasis on problem solving and fundamental algorithms.
+
+CST-110: // Not found in catalog
+    Unlisted Course
+    0 credits
+    This course is not available.
+
+CST-111: 
+    Introduction to Computer Science and Information Technology
+    4 credits
+    This course provides a foundation for programming and problem solving using computer programming, as well as an introduction to the academic discipline of IT. Topics include variables, expressions, functions, control structures, and pervasive IT themes: IT history, organizational issues, and relationship of IT to other computing disciplines. The course prepares students for advanced concepts and techniques in programming and information technology, including object-oriented design, data structures, computer systems, and networks. The laboratory reinforces and expands learning of principles introduced in the lecture. Hands-on activities focus on writing code that implements concepts discussed in lecture and on gaining initial exposure to common operating systems, enterprise architectures, and tools commonly used by IT professionals. 
+    Prerequisite: MAT-154 or MAT-261.
+
+CST-125: // Not found in catalog
+    Unlisted Course
+    0 credits
+    This course is not available.
+
+CST-126: // Not found in catalog
+    Unlisted Course
+    0 credits
+    This course description is not available.
+
+CST-220: // Not found in catalog
+    Unlisted Course
+    0 credits
+    This course description is not available.
+
+CST-221: 
+    Operating Systems Concepts 
+    4 credits
+    This course is an introduction to UNIX-derived open-source operating systems. Students explore the history and development trends in open-source OS. The course covers the file system, user commands and utilities, graphical user interfaces, editors, manual pages, and shells. 
+    Prerequisite: CST-135 or CST-239.
+
+CST-326: 
+    Written and Verbal Communication for Software Development
+    4 credits
+    This course focuses on gathering User Stories and decomposing them into a requirements document, design spec, and technically managing activities associated with software development. Topics cover the managerial aspect of the software development life cycle, delivery, and integration. Hands-on activities focus on communication using professional Agile-based project management software to implement a system for planning, tracking, and auditing the use of resources within the context of a software project. This is a writing intensive course. 
+    Prerequisite: CST-239, CST-135, CST-250 or CST-227.
+
+CYB-220: 
+    Cyber Law and Privacy in a Digital Age
+    4 credits
+    The Internet Age has introduced myriad legal challenges on a global level. Students will explore the emerging specialty within law that is cyber law. Topics will expose the reality that our legal system has evolved in a physical and visual world, but cyber space is largely invisible and virtual. Students will learn that past legal decisions or legal precedence has been important in our system and reasoning by analogy has been used extensively. In many cases the laws applied in the physical realm do not translate equally well into cyber space. This course will discuss the importance of this area introduce legal issues that need to be addressed.
+
+ITT-111: 
+    Introduction to Information Technology
+    4 credits
+    This course provides an introduction to the role of computing technology within business and corporate environments. Introductions to concepts, terminologies, and a wide use of relevant daily software and tools relevant to any career in the information technology field. Topics include: Technology integrated academics, digital networking concepts, systems administration and maintenance, information security, database and transactional systems, cloud technologies, scripting, and project management. 
+    Prerequisite: MAT-154 or MAT-261.
+
+ITT-116: 
+    Platforms and Network Technologies
+    4 credits
+    This course exposes students to the fundamentals of networks and networking in IT. It then builds deeper understanding of how networks work, including the topics of LANs, WANs, service providers, packets, hubs, routers, switches, and Internet protocols. The laboratory reinforces and expands learning of principles introduced in the lecture. Hands-on activities focus on setting up and configuring local and enterprise networks, experimenting with various topologies, and scalability planning with routers and switches. Prerequisite: CST-111 or ITT-111 or CST-105 or acceptance into the bootcamp program.
+    Prerequisite: CST-111, ITT-111, or CST-105.
+
+ITT-116HN: 
+    Platforms and Network Technologies
+    4 credits
+    This course exposes students to the fundamentals of networks and networking in IT. It then builds deeper understanding of how networks work, including the topics of LANs, WANs, service providers, packets, hubs, routers, switches, and Internet protocols. The laboratory reinforces and expands learning of principles introduced in the lecture. Hands-on activities focus on setting up and configuring local and enterprise networks, experimenting with various topologies, and scalability planning with routers and switches. Prerequisite: CST-111 or ITT-111 or CST-105 or acceptance into the bootcamp program.
+    Prerequisite: CST-111, ITT-111, or CST-105.
+
+ITT-120: // Not found in catalog
+    Unlisted Course
+    0 credits
+    This course description is not available.
+
+ITT-121: 
+    System Administration and Maintenance
+    4 credits
+    This course introduces students to system administration and maintenance as well as platform technologies. The course surveys operating systems, applications, administrative activities and domains, computer architecture and organization, and computing infrastructures. The laboratory reinforces and expands learning of principles introduced in the lecture. Hands-on activities focus on developing practical skills in configuring computer systems, deploying enterprise applications, managing user permissions, and remote administration. 
+    Prerequisite: ITT-116.
+
+ITT-307: 
+    Cybersecurity Foundations 
+    4 credits
+    This course builds upon knowledge already acquired in the areas of system architecture and operating systems and focuses on the core issues of information security. Students learn fundamental concepts of information security including data encryption, security awareness, legal and ethical issues, operational issues, security policies, and attack types; while expanding on the coverage to include security domains, forensics, security services, threat analysis, and vulnerabilities assessments. Prerequisite: ITT-120, ITT-121, CST-125, CST-126, CST-220, or CST-221 or acceptance into the bootcamp program.
+    Prerequisite: ITT-120, ITT-121, CST-125, CST-126, CST-220, or CST-221.
+
+ITT-307HN: 
+    Cybersecurity Foundations 
+    4 credits
+    This course builds upon knowledge already acquired in the areas of system architecture and operating systems and focuses on the core issues of information security. Students learn fundamental concepts of information security including data encryption, security awareness, legal and ethical issues, operational issues, security policies, and attack types; while expanding on the coverage to include security domains, forensics, security services, threat analysis, and vulnerabilities assessments. Prerequisite: ITT-120, ITT-121, CST-125, CST-126, CST-220, or CST-221 or acceptance into the bootcamp program.
+    Prerequisite: ITT-120, ITT-121, CST-125, CST-126, CST-220, or CST-221.
+
+//ITT-415 included in major courses
+
+ITT-430: 
+    Security Driven Systems Administration
+    4 credits
+    This course covers the design, management, and maintenance of virtual enterprise and datacenter infrastructure. Students learn to use appropriate tools such as request tracking, monitoring, configuration management, virtualization, and scripting to administer and defend systems using documented, repeatable processes. Emphasis will be placed on volume management, directory services, and network-based authentication and file systems. Students develop automatic procedures for installations and file distribution. 
+    Prerequisites: MAT-154 and ITT-307.
+
+SYM-400: 
+    Introduction to Database Structures
+    4 credits
+    This course examines the design, development, implementation, and maintenance of relational database structures. Emphasis is on appropriate application and implementation. 
+    Prerequisite: BIT-200, BIT-205, CST-110, CST-111, CST-105 or ITT-111.
+
+STG-390: 
+    Professionalism in Science & Technology-Communications, Conduct and Ethics
+    4 credits
+    This course provides an insight into professional communications and conduct associated with careers in science, engineering and technology. Students learn about the changing modes of communication in these disciplines recognizing the advances in digital communications. They gain practical experience developing and supporting a thesis or position through written, oral, and visual presentations prepared and delivered individually and in groups. Students will explore concepts and issues in professional ethics and conduct such as privacy, discrimination, workplace etiquette, cyber-ethics, network and data security, identity theft, ownership rights and intellectual property. This is a writing intensive course.
+
+STG-390HN
+    Professionalism in Science & Technology-Communications, Conduct and Ethics
+    4 credits
+    This course provides an insight into professional communications and conduct associated with careers in science, engineering and technology. Students learn about the changing modes of communication in these disciplines recognizing the advances in digital communications. They gain practical experience developing and supporting a thesis or position through written, oral, and visual presentations prepared and delivered individually and in groups. Students will explore concepts and issues in professional ethics and conduct such as privacy, discrimination, workplace etiquette, cyber-ethics, network and data security, identity theft, ownership rights and intellectual property. This is a writing intensive course.
+
+SYM-408: 
+    Relational Databases for Business Applications
+    4 credits
+    This course covers the characteristics of object-relational and NoSQL databases and their application in business. The course also focuses on the main principles of object-oriented, object relational, and NoSQL databases, and their relative advantages. Students gain working knowledge of object-relational features as implemented in standard SQL database management systems. Students also learn to manage unstructured and semi-structured data with XML. 
+    Prerequisite: SYM-400.
+
+BIT-415: 
+    IT Project Management
+    4 credits
+    This course examines information technology project management. Topics include the reasons why IT projects fail, the business cost of IT failure, managing IT teams, outsourcing, virtual teams, scope definition, project scheduling, risk mitigation, and leading successful projects. Additional topics focus on using project management to build an analytics organization. 
+    Prerequisite: BIT-200, BIT-205, CST-111 or ITT-111.
+
+MGT-325:
+    Managing Business Communications and Change
+    4 credits
+    This course focuses on communication skills and strategies required to be successful in diverse, dispersed, and global organizations. Students examine various approaches of effective and persuasive business communication at all levels of an organization, including the use of contemporary channels and the challenges of technologically mediated communication to convey important information leading to the facilitation of organizational change in today's dynamic workplace.
+
+ITT-415: 
+    IT Business Case Planning for Global Enterprise
+    4 credits
+    This course prepares students to plan and implement IT systems that take into account business realities, objectives, and constraints associated with domestic and international business activities. The course exposes the key computational, analytical, and decision-making tools used by businesses. Students also develop an understanding of the social, cultural drivers of successful IT investments, and their effect on business strategy and models. A special emphasis is placed on the symbiotic relationship between information technology and business and on international case studies, as manifested in information pricing, technological lock-in and network effects. 
+....Prerequisite: CST-326, BIT-415 or CYB-220.
+
+ITT-415HN: 
+    IT Business Case Planning for Global Enterprise
+    4 credits
+    This course prepares students to plan and implement IT systems that take into account business realities, objectives, and constraints associated with domestic and international business activities. The course exposes the key computational, analytical, and decision-making tools used by businesses. Students also develop an understanding of the social, cultural drivers of successful IT investments, and their effect on business strategy and models. A special emphasis is placed on the symbiotic relationship between information technology and business and on international case studies, as manifested in information pricing, technological lock-in and network effects. 
+    Prerequisite: CST-326 or BIT-415.
+
+CYB-300: 
+    Fundamentals in Cybersecurity 
+    4 credits
+    This course provides a fundamental understanding of the importance of cybersecurity through a broad range of cybersecurity topics. The course introduces core concepts and terminology used in cybersecurity and information systems security. Students learn concepts related to identifying common attack vectors, threats, preventive tools, and keeping information secure as it travels across a network. Students also gain a basic understanding of how cybersecurity threats and social engineering impact society.
+
+BIT-310: 
+    Information Systems Design and Development
+    4 credits
+    This course introduces key aspects of information systems development within the context of business information systems. Students focus on systems development with an emphasis on the system development life cycle, including requirements analysis and traceability, feasibility, and cost-benefit analysis. Systems development, deployment, and post-implementation processes are also addressed.
+
+ITT-455:
+    IT Project
+    4 credits
+    This course provides students the opportunity to work in teams to tackle real world applied research and design projects in their chosen area of interest. Students develop a project proposal, conduct a feasibility study, learn to protect intellectual property, develop teamwork skills, budgets, and a schedule for completing the project. Students conduct extensive research, integrate information from multiple sources, and work with a mentor through multiple cycles of feedback and revisions. Students implement and present the applied research project. Students use this course to further develop technical writing and business presentation skills. This is a writing intensive course.
+    Prerequisite: ITT-415 or ITT-430.
+
+
+
+//SYM-400 included in major courses
+
