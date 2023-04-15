@@ -34,9 +34,9 @@
 			<div th:each="class : ${classes}">
                 <div>
                     <div th:text="${'Name: ' + class.name}">Class Name</div>
-                    <div th:text="${'Number: ' + class.number}">Class Name</div>
-                    <div th:text="${'Description: ' + class.description}">Class Name</div>
-                    <div th:text="${'Credits: ' + class.credits}">Class Name</div>
+                    <div th:text="${'Number: ' + class.number}">Class Number</div>
+                    <div th:text="${'Description: ' + class.description}">Class Description</div>
+                    <div th:text="${'Credits: ' + class.credits}">Class Credits</div>
 					<table th:if="${not #lists.isEmpty(class.prerequisites)}">
 						<thead>
 							<tr>

@@ -53,12 +53,16 @@
                 <table class="search-results-classes-table">
                     <tr class="search-results-classes-header-row">
                         <td class="search-results-classes-header">Number</td>
+						<td class="search-results-classes-header">Credits</td>
                         <td class="search-results-classes-header">Name</td>
                     </tr>
                     <tr th:each="class : ${classes}" class="search-results-classes-row">
                         <td class="search-results-classes-data">
                             <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
                         </td>
+						<td class="search-results-classes-data">
+							<div th:text="${class.credits}">Course Credits</div>
+						</td>
                         <td class="search-results-classes-data">
                             <div th:text="${class.name}">Class Name</div>
                         </td>

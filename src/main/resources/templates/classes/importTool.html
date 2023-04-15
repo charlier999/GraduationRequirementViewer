@@ -76,18 +76,22 @@
 				<hr>
 				<label>Results</label>
 				<table class="import-results-classes-table">
-					<tr class="import-results-classes-header-row">
-						<td class="import-results-classes-header">Number</td>
-						<td class="import-results-classes-header">Name</td>
-					</tr>
-					<tr th:each="class : ${classes}" class="import-results-classes-row">
-						<td class="import-results-classes-data">
-							<a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+					<tr class="classes-header-row">
+                        <td class="classes-header">Number</td>
+						<td class="classes-header">Credits</td>
+                        <td class="classes-header">Name</td>
+                    </tr>
+                    <tr th:each="class : ${classes}" class="classes-row">
+                        <td class="classes-data">
+                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+                        </td>
+						<td>
+							<div th:text="${class.credits}">Credits</div>
 						</td>
-						<td class="import-results-classes-data">
-							<div th:text="${class.name}">Class Name</div>
-						</td>
-					</tr>
+                        <td class="classes-data">
+                            <div th:text="${class.name}">Class Name</div>
+                        </td>
+                    </tr>
 				</table>
 			</div>
 			<hr>
