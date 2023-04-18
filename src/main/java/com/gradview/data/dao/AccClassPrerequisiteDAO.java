@@ -58,13 +58,13 @@ public class AccClassPrerequisiteDAO
 			}
 			if ( !rowsFound )
 			{
-				logger.warn( "getAll: No rows were found." );
+				logger.debug( "getAll: No rows were found." );
 				throw new NoRowsFoundException( "No rows found in " + TABLENAME + " table." );
 			}
 		}
 		catch ( NoRowsFoundException e )
 		{
-			logger.warn( "getAll: NoRowsFoundException occured." );
+			logger.debug( "getAll: NoRowsFoundException occured." );
 			throw e;
 		}
 		catch ( InvalidResultSetAccessException e )
@@ -124,13 +124,13 @@ public class AccClassPrerequisiteDAO
 			}
 			if ( !rowsFound )
 			{
-				logger.warn( "search: No rows were found." );
+				logger.debug( "search: No rows were found." );
 				throw new NoRowsFoundException( "No rows found in " + TABLENAME + " table." );
 			}
 		}
 		catch ( NoRowsFoundException e )
 		{
-			logger.warn( "search: NoRowsFoundException occured." );
+			logger.debug( "search: NoRowsFoundException occured." );
 			throw e;
 		}
 		catch ( InvalidResultSetAccessException e )
@@ -235,7 +235,7 @@ public class AccClassPrerequisiteDAO
 		}
 		catch ( DataAccessException e )
 		{
-			logger.warn( "delete: DataAccessException occured." );
+			logger.error( "delete: DataAccessException occured." );
 			throw e;
 		}
 		catch ( Exception ex )
