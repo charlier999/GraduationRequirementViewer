@@ -73,14 +73,7 @@
 				console.log("Staring");
 				google.charts.load('current', {packages:["orgchart"]});
 				google.charts.setOnLoadCallback(drawChart);
-				
-				// Yes, the compiler says that this causes a problem.
-				// It is not a problem. the compiler is wrong.
-				var chartData = [[${programChartData}]]
-				console.log('Program Chart Data: ', chartData);
-				chartData = JSON.parse(chartData);
-				console.log('Program Chart JSON Data: ', chartData);
-				
+
 				function drawChart() 
 				{
 					var data = new google.visualization.DataTable();
@@ -89,8 +82,9 @@
 					data.addColumn('string', 'PreRequisiteOf');
 		  
 					// For each orgchart box, provide the name, manager, and tooltip to show.
-					
-					data.addRows(chartData);
+					// Yes, the compiler says that this causes a problem.
+					// It is not a problem. the compiler is wrong.
+					data.addRows(JSON.parse([[${programChartData}]]));
 		  
 					// Create the chart.
 					var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));

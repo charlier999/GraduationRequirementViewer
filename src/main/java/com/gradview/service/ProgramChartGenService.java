@@ -40,7 +40,7 @@ public class ProgramChartGenService
 
         // Get Required course information
         List<AccClass> requiredClasses = this.getClassListFromIDs(program.getRequiredMajorClasses());
-
+        // Add required courses to OrgChart
         for(AccClass classI : requiredClasses)
         {
             orgChart = this.addBranchToOrgChart(orgChart, program.getName(), classI.getNumber()+":"+classI.getName());
