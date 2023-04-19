@@ -48,10 +48,17 @@ public class ProgramController
         logger.info("displayHome: Has started at mapping `/program`");
         model.addAttribute("searchVals", new UFOProgramSearch());
 
-        List<AccProgramDAM> output = new ArrayList<>();
+        List<AccProgram> output = new ArrayList<>();
         try
         {
-            output = accProgramDAO.search(AccProgramDAO.COL_ID ,"%");
+            // Get list of programDAMs
+            List<AccProgramDAM> programDAMs= accProgramDAO.search(AccProgramDAO.COL_ID ,"%");
+            // Convert programDAMs to AccPrograms with only needed info
+            for(AccProgramDAM programDAM : programDAMs)
+            {
+                List<AccProgram> programs = this.programService.getProgramsByName(programDAM.getName());
+                for(AccProgram program : programs) output.add(program);
+            }
             model.addAttribute("programs", output);
         }
         catch ( DataAccessException e )
@@ -81,10 +88,17 @@ public class ProgramController
     public String doSearch(@ModelAttribute UFOProgramSearch search, Model model)
     {
         logger.info("doSearch: Has started at post mapping `/class/search`");
-        List<AccProgramDAM> output = new ArrayList<>();
+        List<AccProgram> output = new ArrayList<>();
         try
         {
-            output = accProgramDAO.search(search.getTableHeader(), "%" + search.getQuerry() + "%");
+            // Get list of programDAMs
+            List<AccProgramDAM> programDAMs =  accProgramDAO.search(search.getTableHeader(), "%" + search.getQuerry() + "%");
+            // Convert programDAMs to AccPrograms with only needed info
+            for(AccProgramDAM programDAM : programDAMs)
+            {
+                List<AccProgram> programs = this.programService.getProgramsByName(programDAM.getName());
+                for(AccProgram program : programs) output.add(program);
+            }
             model.addAttribute("programs", output);
             model.addAttribute("searchVals", search);
             logger.info("doSearch: Programs are being returned to view 'programs/searchResults'");

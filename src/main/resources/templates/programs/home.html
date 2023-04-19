@@ -53,11 +53,13 @@
                 <table class="search-results-programs-table">
                     <tr class="search-results-programs-header-row">
                         <td class="search-results-programs-header">Name</td>
+                        <td class="search-results-programs-header">Total Credits</td>
                     </tr>
                     <tr th:each="program : ${programs}" class="search-results-programs-row">
                         <td class="search-results-programs-data">
                             <a th:href="@{/program/name/{name}(name=${program.name})}" th:text="${program.name}"></a>
                         </td>
+						<td class="search-results-programs-data" th:text="${program.totalMinCredits}"></td>
                     </tr>
                 </table>
             </div>
