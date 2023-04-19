@@ -48,7 +48,7 @@ public class ScheduleController
 
 
     //#region
-    // Ajax Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
+    // Ajax Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
 
     @PostMapping("/ajax/schedule/importjson")
     public String ajaxImportJSON(@ModelAttribute String importJSON, Model model)
@@ -91,6 +91,30 @@ public class ScheduleController
         logger.info("ajaxScheduleNewRow: returning schedule/ajax/newScheduleRow");
         return "schedule/ajax/newScheduleRow";
     }
+
+    @PostMapping("/ajax/schedule/table")
+    public String ajaxScheduleTable(@ModelAttribute String importJSON, Model model)
+    {
+        logger.info("ajaxScheduleTable: Starting at /ajax/schedule/newschedulerow");
+        Schedule output;
+        // Check to see if import string is blank
+        if(importJSON.isBlank()) 
+        {
+            logger.warn("ajaxScheduleTable: import string is blank.");
+            output = new Schedule();
+        }
+        else
+        {
+            Schedule schedule = Schedule.parse(importJSON);
+            if(schedule.equals(new Schedule())) output = new Schedule(); 
+            output = schedule;
+        }
+        model.addAttribute("scheduleTable", output);
+        // Return ajax 
+        logger.info("ajaxScheduleTable: returning schedule/ajax/scheduletable");
+        return "schedule/ajax/scheduletable";
+    }
+
 
     //#endregion
 }

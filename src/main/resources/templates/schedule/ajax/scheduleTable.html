@@ -1,0 +1,21 @@
+<h4>Your Course Schedule</h4>
+<table th:if="${not #lists.isEmpty(scheduleTable.rows)}">
+    <tr>
+        <td>Number</td>
+        <td>Passed?</td>
+    </tr>
+    <tr th:each="scheduleRow : ${scheduleTable.rows}">
+        <td class="classes-data">
+            <a  th:href="@{/class/number/{number}(number=${scheduleRow.courseNumber})}" 
+                th:text="${scheduleRow.courseNumber}">CourseNumber</a>
+        </td>
+        <td th:text="${scheduleRow.isPassed ? 'Yes' : 'No'}"></td>
+    </tr>
+</table>
+<div th:if="${#lists.isEmpty(scheduleTable.rows)}">
+    <div>Schedule not on file. Add courses to you Schedule.</div>
+</div>
+<div th:if="${not #lists.isEmpty(scheduleTable.rows)}">
+    <h5>Schedule Import String</h5>
+    <div th:text="${scheduleTable.toString}"></div>
+</div>

@@ -14,6 +14,20 @@
 				courseSchedule="";
 			}
 			$.ajax({
+				url: "/ajax/schedule/table",
+				type: "POST",
+				data: importJSON=courseSchedule,
+				success: function(response)
+				{
+					$("#ajax-current-schedule").html(response);
+					//console.log(response);
+				},
+				error: function(jqXHR, textStatus, errorThrown) 
+				{
+					console.log(textStatus, errorThrown);
+				}
+			});
+			$.ajax({
 				url: "/ajax/schedule/importjson",
 				type: "POST",
 				data: importJSON=courseSchedule,
@@ -56,8 +70,7 @@
 			<hr>
 		</div>
 		<div layout:fragment="content">
-			<h3>Import Course Schedule</h3>
-			<div id="import-json-form-ajax">"{[0,CST-339,0]}"</div>
+			<div id="ajax-current-schedule"></div>
 			<div class="schedule edit-create">
 				<div class="schedule edit" th:if="${not #lists.isEmpty(scheduleModel.rows)}">
 					<a href="/schedule/edit">Edit Schedule</a>
@@ -66,6 +79,9 @@
 					<a href="/schedule/edit">Create Schedule</a>
 				</div>
 			</div>
+			<hr>
+			<h3>Import Course Schedule</h3>
+			<div id="import-json-form-ajax">"{[0,CST-339,0]}"</div>
 		</div>
 	</body>
 </html>
