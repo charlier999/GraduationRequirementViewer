@@ -172,8 +172,7 @@ public class ProgramController
         catch ( NoRowsFoundException e )
         {
             logger.warn("displayProgram: NoRowsFoundException occured");
-            e.printStackTrace();
-            return "error";
+            return this.displayHome(model);
         }
         catch ( Exception e )
         {

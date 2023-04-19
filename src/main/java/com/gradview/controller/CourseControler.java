@@ -157,8 +157,7 @@ public class CourseControler
         catch ( NoRowsFoundException e )
         {
             logger.warn("displayClass: NoRowsFoundException occured");
-            e.printStackTrace();
-            return "error";
+            return this.displayHome(model);
         }
         catch ( Exception e )
         {
