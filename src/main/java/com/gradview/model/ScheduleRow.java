@@ -32,7 +32,7 @@ public class ScheduleRow
     @Override
     public String toString()
     {
-        String output = "['"+this.id+"','"+this.courseNumber+"','"+(this.isPassed ? 1:0)+"']";
+        String output = "["+this.id+","+this.courseNumber+","+(this.isPassed ? 1:0)+"]";
         return output;
     }
 
