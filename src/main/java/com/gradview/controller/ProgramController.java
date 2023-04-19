@@ -24,6 +24,7 @@ import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.AccClass;
 import com.gradview.model.AccProgram;
 import com.gradview.service.ClassService;
+import com.gradview.service.ProgramChartGenService;
 import com.gradview.service.ProgramImportService;
 import com.gradview.service.ProgramService;
 import com.gradview.ui.ufo.UFOFileSelect;
@@ -41,6 +42,8 @@ public class ProgramController
     private ProgramService programService;
     @Autowired
     private ClassService classService;
+    @Autowired
+    private ProgramChartGenService programChartGenService;
     
     @GetMapping("/program")
     public String displayHome(Model model)
@@ -132,6 +135,7 @@ public class ProgramController
         logger.info("displayProgram: Has started at mapping `/program/name/{name}");
         List<AccProgram> output = new ArrayList<>();
         List<AccClass> classes = new ArrayList<>();
+        String programChartData = "[['Error In Generating Chart Occured']]";
         logger.info("displayProgram: " + name + " requested to be viewed");
         try
         {
@@ -151,11 +155,13 @@ public class ProgramController
                     classIDsInt = classIDList.stream().mapToInt(j -> j).toArray();
                     output.get(i).setRequiredMajorClasses(classIDsInt);
                 }
+                programChartData = this.programChartGenService.genOrgChartDataByProgramModel(output.get(0));
             }
             else
             {
                 logger.info("displayProgram: " + name + " cannot be found");
             }
+
         }
         catch ( DataAccessException e )
         {
@@ -175,6 +181,9 @@ public class ProgramController
             e.printStackTrace();
             return "error";
         }
+        
+        
+        model.addAttribute("programChartData", programChartData);
         model.addAttribute("programs", output);
         model.addAttribute("reqClasses", classes);
         logger.info("displayProgram: Program is being returned to view 'programs/view'");
