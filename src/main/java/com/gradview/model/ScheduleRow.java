@@ -29,7 +29,12 @@ public class ScheduleRow
         this.isPassed = isPassed;
     }
 
-    @Override
+    public ScheduleRow()
+	{
+        super();
+	}
+
+	@Override
     public String toString()
     {
         String output = "["+this.id+","+this.courseNumber+","+(this.isPassed ? 1:0)+"]";
@@ -57,4 +62,36 @@ public class ScheduleRow
         }
         else return null;
     }
+
+    public int getId()
+    {
+        return id;
+    }
+
+    public void setId( int id )
+    {
+        this.id = id;
+    }
+
+    public String getCourseNumber()
+    {
+        return courseNumber;
+    }
+
+    public void setCourseNumber( String courseNumber )
+    {
+        this.courseNumber = courseNumber;
+    }
+
+    public boolean getIsPassed()
+    {
+        return isPassed;
+    }
+
+    public void setIsPassed( boolean isPassed )
+    {
+        this.isPassed = isPassed;
+    }
+
+    
 }

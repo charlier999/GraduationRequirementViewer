@@ -39,7 +39,7 @@ public class Schedule
         return output;
     }
 
-    public Schedule parse(String input)
+    static public Schedule parse(String input)
     {
         Schedule output = new Schedule();
         if(input.startsWith("{") && input.endsWith("}") && input.length() > 2)

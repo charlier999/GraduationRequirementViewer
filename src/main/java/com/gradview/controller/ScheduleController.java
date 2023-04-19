@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.fasterxml.jackson.annotation.JsonCreator.Mode;
 import com.gradview.model.Schedule;
+import com.gradview.model.ScheduleRow;
+import com.gradview.ui.ufo.UFONewScheduleRow;
 import com.gradview.ui.ufo.UFOScheduleJsonImport;
 
 @Controller
@@ -30,6 +33,14 @@ public class ScheduleController
         return "schedule/home";
     }
 
+    @GetMapping("/schedule/edit")
+    public String displayEdit(Model model)
+    {
+        logger.info("displayHome: Has started at mapping /schedule/edit");
+        logger.info("displayHome: Returning view schedule/edit");
+        return "schedule/edit";
+    }
+
     //#endregion
 
     //public String displayScheduleEdit(@PathVariable(""))
@@ -42,7 +53,7 @@ public class ScheduleController
     @PostMapping("/ajax/schedule/importjson")
     public String ajaxImportJSON(@ModelAttribute String importJSON, Model model)
     {
-        logger.info("ajaxImportJSON: Starting at /schedule/ajax/importjson");
+        logger.info("ajaxImportJSON: Starting at /ajax/schedule/importjson");
         // Check to see if import string is blank
         if(importJSON.isBlank()) 
         {
@@ -57,5 +68,29 @@ public class ScheduleController
         logger.info("ajaxImportJSON: returning schedule/ajax/importJSON");
         return "schedule/ajax/importJSON";
     }
+
+    @PostMapping("/ajax/schedule/newschedulerow")
+    public String ajaxScheduleNewRow(@ModelAttribute String importJSON, Model model)
+    {
+        logger.info("ajaxScheduleNewRow: Starting at /ajax/schedule/newschedulerow");
+        UFONewScheduleRow ufoOutput;
+        // Check to see if import string is blank
+        if(importJSON.isBlank()) 
+        {
+            logger.warn("ajaxScheduleNewRow: import string is blank.");
+            ufoOutput = new UFONewScheduleRow(new Schedule());
+        }
+        else
+        {
+            Schedule schedule = Schedule.parse(importJSON);
+            if(schedule.equals(new Schedule())) ufoOutput = new UFONewScheduleRow(new Schedule()); 
+            ufoOutput = new UFONewScheduleRow(schedule);
+        }
+        model.addAttribute("ufoNewScheduleRow", ufoOutput);
+        // Return ajax 
+        logger.info("ajaxScheduleNewRow: returning schedule/ajax/newScheduleRow");
+        return "schedule/ajax/newScheduleRow";
+    }
+
     //#endregion
 }

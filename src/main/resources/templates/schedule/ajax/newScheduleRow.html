@@ -1,0 +1,17 @@
+<h4>Add Course to Schedule</h4>
+<form th:action="@{/schedule/edit/newRow}" th:object="${ufoNewScheduleRow}" method="post">
+    <div class="form-row">
+        <label>Course Number</label>
+        <input type="text" class="form-control" th:field="*{newRow.courseNumber}" th:classappend="${#fields.hasErrors('newRow.courseNumber')} ? 'error-field'">
+    </div>
+    <div class="form-row">
+        <label>Course Passed?</label>
+        <input type="checkbox" class="form-control" th:field="*{newRow.isPassed}" th:classappend="${#fields.hasErrors('newRow.isPassed')} ? 'error-field'">
+    </div>
+    <div class="form-row">
+        <input type="hidden" th:field="*{schedule}">
+    </div>
+    <div class="form-row">
+        <input type="submit" value="Submit" class="form-input-submit">
+    </div>
+</form>

@@ -4,7 +4,32 @@
 	layout:decorate="layouts/defaultTemplate">
 	<head>
 		<meta charset="UTF-8">
-		<title>Programs</title>
+		<title>Course Schedule Edit</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			// Get the course schedule from client storage
+			var courseSchedule = localStorage.getItem('courseSchedule');
+			if(courseSchedule === null)
+			{ 
+				courseSchedule="";
+			}
+			$.ajax({
+				url: "/ajax/schedule/newschedulerow",
+				type: "POST",
+				data: importJSON=courseSchedule,
+				success: function(response)
+				{
+					$("#ajax-new-schedule-row").html(response);
+					//console.log(response);
+				},
+				error: function(jqXHR, textStatus, errorThrown) 
+				{
+					console.log(textStatus, errorThrown);
+				}
+			});
+			
+
+		</script>
 	</head>
 	<body>
 		<div th:fragment="header">
@@ -29,10 +54,11 @@
 			
 			<!-- Page Title and Logo -->
 			
-			<br/><br/>
+			<hr>
 		</div>
 		<div layout:fragment="content">
-			
+			<div id="ajax-current-schedule"></div>
+			<div id="ajax-new-schedule-row"></div>
 		</div>
 	</body>
 </html>

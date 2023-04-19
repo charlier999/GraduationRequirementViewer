@@ -60,10 +60,10 @@
 			<div id="import-json-form-ajax">"{[0,CST-339,0]}"</div>
 			<div class="schedule edit-create">
 				<div class="schedule edit" th:if="${not #lists.isEmpty(scheduleModel.rows)}">
-					<a>Edit Schedule</a>
+					<a href="/schedule/edit">Edit Schedule</a>
 				</div>
 				<div class="schedule create" th:if="${#lists.isEmpty(scheduleModel.rows)}">
-					<a>Create Schedule</a>
+					<a href="/schedule/edit">Create Schedule</a>
 				</div>
 			</div>
 		</div>
