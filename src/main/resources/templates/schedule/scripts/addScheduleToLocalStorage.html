@@ -1,0 +1,12 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script th:inline="javascript">
+	// Get the course schedule from client storage
+	const courseSchedule=[[${scheduleImport}]];
+    // Set courseSchedule to Local storage
+	localStorage.setItem("courseSchedule",courseSchedule);
+    // Check for successful update
+    const updatedCourseSchedule = localStorage.getItem('courseSchedule');
+    const currentURL = window.location.href;
+    const newURL = window.location.protocol+'//'+window.location.host+'/schedule';
+    window.location.href = newURL;
+</script>

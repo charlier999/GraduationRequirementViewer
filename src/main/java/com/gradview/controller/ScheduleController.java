@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import com.fasterxml.jackson.annotation.JsonCreator.Mode;
 import com.gradview.model.Schedule;
-import com.gradview.model.ScheduleRow;
 import com.gradview.ui.ufo.UFONewScheduleRow;
 import com.gradview.ui.ufo.UFOScheduleJsonImport;
 
@@ -21,7 +20,7 @@ public class ScheduleController
     private static final Logger logger = LoggerFactory.getLogger( ScheduleController.class );
 
     //#region
-    // Display Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
+    // Display Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
 
     @GetMapping("/schedule")
     public String displayHome(Model model)
@@ -36,9 +35,39 @@ public class ScheduleController
     @GetMapping("/schedule/edit")
     public String displayEdit(Model model)
     {
-        logger.info("displayHome: Has started at mapping /schedule/edit");
-        logger.info("displayHome: Returning view schedule/edit");
+        logger.info("displayEdit: Has started at mapping /schedule/edit");
+        logger.info("displayEdit: Returning view schedule/edit");
         return "schedule/edit";
+    }
+
+    //#endregion
+
+    //#region
+    // POST Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
+
+    @PostMapping("/schedule/importjson")
+    public String postImportJSON(@ModelAttribute UFOScheduleJsonImport scheduleImport, Model model)
+    {
+        //{[0,CST-321,1]}
+        logger.info("postImportJSON: Has started at mapping /schedule/importjson");
+        logger.info("postImportJSON: Schedule input: "+ scheduleImport.getQuery());
+        // Pase Schedule from import string.
+        Schedule output = Schedule.parse(scheduleImport.getQuery());
+        // Check for defalt schedule
+        if(output.equals(new Schedule()))
+        {
+            logger.info("postImportJSON: Schedule not found. Returning schedule home page.");
+            // Return to home page
+            return this.displayHome(model);
+        }
+        else
+        {
+            logger.info("postImportJSON: Schedule not found. Returning schedule home page.");
+            logger.info("postImportJSON: Schedule toString: "+ output.toString());
+            model.addAttribute("scheduleImport", output.toString());
+            return "schedule/scripts/addScheduleToLocalStorage";
+        }
+
     }
 
     //#endregion
@@ -51,7 +80,7 @@ public class ScheduleController
     // Ajax Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
 
     @PostMapping("/ajax/schedule/importjson")
-    public String ajaxImportJSON(@ModelAttribute String importJSON, Model model)
+    public String ajaxImportJSON(@RequestParam String importJSON, Model model)
     {
         logger.info("ajaxImportJSON: Starting at /ajax/schedule/importjson");
         // Check to see if import string is blank
@@ -70,7 +99,7 @@ public class ScheduleController
     }
 
     @PostMapping("/ajax/schedule/newschedulerow")
-    public String ajaxScheduleNewRow(@ModelAttribute String importJSON, Model model)
+    public String ajaxScheduleNewRow(@RequestParam String importJSON, Model model)
     {
         logger.info("ajaxScheduleNewRow: Starting at /ajax/schedule/newschedulerow");
         UFONewScheduleRow ufoOutput;
@@ -93,7 +122,7 @@ public class ScheduleController
     }
 
     @PostMapping("/ajax/schedule/table")
-    public String ajaxScheduleTable(@ModelAttribute String importJSON, Model model)
+    public String ajaxScheduleTable(@RequestParam String importJSON, Model model)
     {
         logger.info("ajaxScheduleTable: Starting at /ajax/schedule/newschedulerow");
         Schedule output;

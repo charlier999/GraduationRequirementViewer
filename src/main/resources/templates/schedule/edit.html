@@ -16,7 +16,7 @@
 			$.ajax({
 				url: "/ajax/schedule/table",
 				type: "POST",
-				data: importJSON=courseSchedule,
+				data: {importJSON:courseSchedule},
 				success: function(response)
 				{
 					$("#ajax-current-schedule").html(response);
@@ -31,7 +31,7 @@
 			$.ajax({
 				url: "/ajax/schedule/newschedulerow",
 				type: "POST",
-				data: importJSON=courseSchedule,
+				data: {importJSON:courseSchedule},
 				success: function(response)
 				{
 					$("#ajax-new-schedule-row").html(response);
