@@ -15,10 +15,10 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+	//implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
 	// Jung Implementation
 	//implementation 'net.sf.jung:jung-algorithms:2.1.1'
 	//implementation 'net.sf.jung:jung-graph-impl:2.1.1'
@@ -28,7 +28,7 @@ dependencies {
 	
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
+	// testImplementation 'org.springframework.security:spring-security-test'
 }
 
 tasks.named('test') {
