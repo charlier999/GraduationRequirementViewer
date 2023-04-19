@@ -52,7 +52,7 @@ public class CourseControler
         try
         {
             output = classService.search(new UFOClassSearch("%", AccClassDAO.COL_NUMBER));
-            model.addAttribute("classes", output);
+            model.addAttribute("classes", output.subList(0, 10));
         }
         catch ( DataAccessException e )
         {
