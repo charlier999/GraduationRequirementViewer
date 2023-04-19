@@ -37,7 +37,9 @@ public class ScheduleRow
 	@Override
     public String toString()
     {
-        String output = "["+this.id+","+this.courseNumber+","+(this.isPassed ? 1:0)+"]";
+        String output;
+        if(this.isPassed) output = "["+this.id+","+this.courseNumber+",1]";
+        else output = "["+this.id+","+this.courseNumber+",0]";
         return output;
     }
 
@@ -58,7 +60,9 @@ public class ScheduleRow
             // check for Not three values
             if(rows.length != 3) return null;
             // Assign row values to new ScheduleRow and return it
-            return new ScheduleRow(Integer.parseInt(rows[0]), rows[1], Boolean.parseBoolean(rows[2]));
+            if(rows[2].equals("1")) return new ScheduleRow(Integer.parseInt(rows[0]), rows[1], true);
+            else if(rows[2].equals("0")) return new ScheduleRow(Integer.parseInt(rows[0]), rows[1], false);
+            return new ScheduleRow(-1, "ERROR OCCURED", false);
         }
         else return null;
     }

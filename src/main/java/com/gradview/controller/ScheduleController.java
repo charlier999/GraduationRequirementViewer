@@ -50,7 +50,6 @@ public class ScheduleController
     {
         //{[0,CST-321,1]}
         logger.info("postImportJSON: Has started at mapping /schedule/importjson");
-        logger.info("postImportJSON: Schedule input: "+ scheduleImport.getQuery());
         // Pase Schedule from import string.
         Schedule output = Schedule.parse(scheduleImport.getQuery());
         // Check for defalt schedule
@@ -62,14 +61,27 @@ public class ScheduleController
         }
         else
         {
-            logger.info("postImportJSON: Schedule not found. Returning schedule home page.");
-            logger.info("postImportJSON: Schedule toString: "+ output.toString());
+            logger.info("postImportJSON: Schedule found. Updateing local storage");
+            
             model.addAttribute("scheduleImport", output.toString());
             return "schedule/scripts/addScheduleToLocalStorage";
         }
-
     }
 
+    @PostMapping("/schedule/edit/newRow")
+    public String postNewScheduleRow(@ModelAttribute UFONewScheduleRow row, Model model)
+    {
+        logger.info("postNewScheduleRow: Has started at mapping /schedule/edit/newRow");
+        Schedule output = Schedule.parse(row.schedule);
+        // set the newRow id to the size of the schedule rows list.
+        row.newRow.id = output.rows.size();
+        // add the newRow to the schedule rows list
+        output.rows.add(row.newRow);
+        // add schedule string to attribute.
+        model.addAttribute("scheduleImport", output.toString());
+        logger.info("postImportJSON: Schedule found. Updateing local storage");
+        return "schedule/scripts/editScheduleToLocalStorage";
+    }
     //#endregion
 
     //public String displayScheduleEdit(@PathVariable(""))
@@ -107,13 +119,13 @@ public class ScheduleController
         if(importJSON.isBlank()) 
         {
             logger.warn("ajaxScheduleNewRow: import string is blank.");
-            ufoOutput = new UFONewScheduleRow(new Schedule());
+            ufoOutput = new UFONewScheduleRow(new Schedule().toString());
         }
         else
         {
             Schedule schedule = Schedule.parse(importJSON);
-            if(schedule.equals(new Schedule())) ufoOutput = new UFONewScheduleRow(new Schedule()); 
-            ufoOutput = new UFONewScheduleRow(schedule);
+            if(schedule.equals(new Schedule())) ufoOutput = new UFONewScheduleRow(new Schedule().toString()); 
+            ufoOutput = new UFONewScheduleRow(schedule.toString());
         }
         model.addAttribute("ufoNewScheduleRow", ufoOutput);
         // Return ajax 

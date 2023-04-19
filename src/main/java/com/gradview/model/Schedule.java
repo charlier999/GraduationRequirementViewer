@@ -50,7 +50,7 @@ public class Schedule
             for(String row : input.split("],"))
             {
                 // Add row tail back
-                row += "]";
+                if(!row.endsWith("]")) row += "]";
                 // Parse schedule row
                 ScheduleRow scheduleRow = ScheduleRow.parse(row);
                 // if scheduleRow is not null, add scheduleRow to output.rows
