@@ -6,7 +6,7 @@
     <div class="form-row">
         <label>Course Number</label>
         <select id="courseDropdown" th:field="*{newRow.courseNumber}">
-            <option th:each="course : ${courseOptions}" value="${course}" th:text="${course}"></option>
+            <option th:each="course : ${courseOptions}" th:value="${course}" th:text="${course}"></option>
         </select>
         <!-- <input  type="text" 
                 class="form-control" 
