@@ -21,7 +21,9 @@ import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.gradview.data.dam.AccClassDAM;
 import com.gradview.data.dao.AccClassDAO;
 import com.gradview.exception.NoRowsFoundException;
+import com.gradview.model.AccProgram;
 import com.gradview.model.Schedule;
+import com.gradview.service.ProgramService;
 import com.gradview.ui.ufo.UFONewScheduleRow;
 import com.gradview.ui.ufo.UFOScheduleJsonImport;
 
@@ -32,9 +34,10 @@ public class ScheduleController
 
     @Autowired
     AccClassDAO accClassDAO = new AccClassDAO();
+    @Autowired
+    ProgramService programService = new ProgramService();
 
-    //#region
-    // Display Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
+    //#region Get Mappings
 
     @GetMapping("/schedule")
     public String displayHome(Model model)
@@ -54,10 +57,28 @@ public class ScheduleController
         return "schedule/edit";
     }
 
+    @GetMapping("/schedule/compare")
+    public String displayCompareProgram(Model model)
+    {
+        logger.info("displayCompareProgram: Has started at mapping /schedule/compare/{program}");
+        logger.info("displayCompareProgram: No path variable included.");
+        logger.info("displayCompareProgram: Returning view schedule/compare");
+        return "schedule/compare";
+    }
+    
+    @GetMapping("/schedule/compare/{urlProgram}")
+    public String displayCompareProgram(@PathVariable String urlProgram, Model model)
+    {
+        logger.info("displayCompareProgram: Has started at mapping /schedule/compare/{program}");
+        logger.info("displayCompareProgram: Path variable included.");
+        model.addAttribute("urlProgram", urlProgram);
+        logger.info("displayCompareProgram: Returning view schedule/compare");
+        return "schedule/compare";
+    }
+
     //#endregion
 
-    //#region
-    // POST Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
+    //#region Post Mappings
 
     @PostMapping("/schedule/importjson")
     public String postImportJSON(@ModelAttribute UFOScheduleJsonImport scheduleImport, Model model)
@@ -96,10 +117,11 @@ public class ScheduleController
         logger.info("postImportJSON: Schedule found. Updateing local storage");
         return "schedule/scripts/editScheduleToLocalStorage";
     }
-    //#endregion
 
-    //#region
-    // Ajax Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
+
+    //#endregion Get Mappings
+
+    //#region Ajax Maps
 
     @PostMapping("/ajax/schedule/importjson")
     public String ajaxImportJSON(@RequestParam String importJSON, Model model)
@@ -167,12 +189,43 @@ public class ScheduleController
         return "schedule/ajax/scheduletable";
     }
 
+    @GetMapping("/ajax/schedule/programSelectForm")
+    public String ajaxProgramSelectForm(Model model)
+    {
+        logger.info("ajaxProgramSelectForm: Starting at /ajax/schedule/programSelectForm");
+        List<String> programNames = new ArrayList<>();
+        try
+        {
+            // TODO: Add getProgramNames to ProgramService.java
+            // Get list of programs
+            List<AccProgram> programs = this.programService.getProgramsByName("%");
+            // Extract names from programs list
+            for(AccProgram program : programs) programNames.add(program.getName());
+        }
+        catch ( DataAccessException e )
+        {
+            logger.error("ajaxProgramSelectForm: DataAccessException Occured. ", e);
+            e.printStackTrace();
+            return "error";
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.info("ajaxProgramSelectForm: No programs found");
+        }
+        catch ( Exception e )
+        {
+            logger.error("ajaxProgramSelectForm: Exception Occured. ", e);
+            e.printStackTrace();
+            return "error";
+        }
+        model.addAttribute("programNames", programNames);
+        logger.info("ajaxProgramSelectForm: returning schedule/ajax/selectProgramForm");
+        return "schedule/ajax/selectProgramForm";
+    }
 
-    //#endregion
+    //#endregion Ajax Maps
 
-    //#region
-    // Helper Functions -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
-
+    //#region Helper Functions
     /**
      * Returns a List of of course numbers.
      * @return List of of course numbers.
@@ -205,5 +258,5 @@ public class ScheduleController
         return classNumbers;
     }
 
-    //#endregion
+    //#endregion Helper Functions
 }

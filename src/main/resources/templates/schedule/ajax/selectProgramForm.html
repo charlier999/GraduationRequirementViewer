@@ -1,0 +1,21 @@
+<script th:inline="javascript">
+    // Pull the selectElement
+    const selectElement = document.getElementById("programsDropdown");
+
+    // Detect change in the selectedOption
+    selectElement.addEventListener("change", (event) => 
+    {
+        // Get the value of the selected value
+        const selectedOption = event.target.value;
+        console.log(selectedOption);
+
+    });
+
+</script>
+<h4>Select Program to Compare Against</h4>
+<div th:if="${not #lists.isEmpty(programNames)}">
+    <label>Course Number</label>
+    <select id="programsDropdown" th:field="${programNames}">
+        <option th:each="programName : ${programNames}" th:value="${programName}" th:text="${programName}"></option>
+    </select>
+</div>
