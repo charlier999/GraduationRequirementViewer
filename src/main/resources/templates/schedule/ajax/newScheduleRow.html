@@ -5,7 +5,13 @@
     </div>
     <div class="form-row">
         <label>Course Number</label>
-        <input type="text" class="form-control" th:field="*{newRow.courseNumber}" th:classappend="${#fields.hasErrors('newRow.courseNumber')} ? 'error-field'">
+        <select id="courseDropdown" th:field="*{newRow.courseNumber}">
+            <option th:each="course : ${courseOptions}" value="${course}" th:text="${course}"></option>
+        </select>
+        <!-- <input  type="text" 
+                class="form-control" 
+                th:field="*{newRow.courseNumber}" 
+                th:classappend="${#fields.hasErrors('newRow.courseNumber')} ? 'error-field'"> -->
     </div>
     <div class="form-row">
         <label>Course Passed?</label>

@@ -1,7 +1,12 @@
 package com.gradview.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +15,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.gradview.data.dam.AccClassDAM;
+import com.gradview.data.dao.AccClassDAO;
+import com.gradview.exception.NoRowsFoundException;
 import com.gradview.model.Schedule;
 import com.gradview.ui.ufo.UFONewScheduleRow;
 import com.gradview.ui.ufo.UFOScheduleJsonImport;
@@ -18,6 +29,9 @@ import com.gradview.ui.ufo.UFOScheduleJsonImport;
 public class ScheduleController 
 {
     private static final Logger logger = LoggerFactory.getLogger( ScheduleController.class );
+
+    @Autowired
+    AccClassDAO accClassDAO = new AccClassDAO();
 
     //#region
     // Display Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
@@ -84,10 +98,6 @@ public class ScheduleController
     }
     //#endregion
 
-    //public String displayScheduleEdit(@PathVariable(""))
-
-
-
     //#region
     // Ajax Maps -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
 
@@ -128,6 +138,7 @@ public class ScheduleController
             ufoOutput = new UFONewScheduleRow(schedule.toString());
         }
         model.addAttribute("ufoNewScheduleRow", ufoOutput);
+        model.addAttribute("courseOptions", this.courseNumberList());
         // Return ajax 
         logger.info("ajaxScheduleNewRow: returning schedule/ajax/newScheduleRow");
         return "schedule/ajax/newScheduleRow";
@@ -156,6 +167,43 @@ public class ScheduleController
         return "schedule/ajax/scheduletable";
     }
 
+
+    //#endregion
+
+    //#region
+    // Helper Functions -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=- -=-
+
+    /**
+     * Returns a List of of course numbers.
+     * @return List of of course numbers.
+     */
+    private List<String> courseNumberList()
+    {
+        List<String> classNumbers = new ArrayList<>();  
+        List< AccClassDAM > classList = new ArrayList<>();
+        try
+        {
+            // Get list of classes
+            classList = this.accClassDAO.getAll();
+        }
+        catch ( DataAccessException e )
+        {
+            logger.error("courseNumberList: DataAccessException Occured", e);
+            e.printStackTrace();
+        }
+        catch ( NoRowsFoundException e )
+        {
+            logger.warn("courseNumberList: NoRowsFoundException Occured", e);
+        }
+        catch ( Exception e )
+        {
+            logger.error("courseNumberList: Exception Occured", e);
+            e.printStackTrace();
+        }
+        // Pull list class numbers from class list
+        for(AccClassDAM iClass : classList) classNumbers.add(iClass.getNumber());
+        return classNumbers;
+    }
 
     //#endregion
 }
