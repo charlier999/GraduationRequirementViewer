@@ -1,1 +1,19 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<div class="navbar">
+    <script>
+    $.ajax({
+        url: "/ajax/navbar",
+        type: "GET",
+        success: function(response)
+        {
+            $("#ajax-navbar").html(response);
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            console.log(textStatus, errorThrown);
+        }
+    });
+    </script>
+    <div id="ajax-navbar"></div>
+</div>
 An error occured. Admin see logs.

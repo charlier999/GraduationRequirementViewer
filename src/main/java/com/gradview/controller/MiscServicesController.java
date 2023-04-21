@@ -30,4 +30,11 @@ public class MiscServicesController
 		return "test/home";
 	}
 	
+	@GetMapping("/ajax/navbar")
+	public String ajaxNavBar(Model model)
+	{
+		logger.info( "ajaxNavBar: Has started at mapping '/ajax/navbar'." );
+		return "ajax/navbar";
+	}
+	
 }

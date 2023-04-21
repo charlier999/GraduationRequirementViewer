@@ -48,23 +48,22 @@
 	</head>
 	<body>
 		<div th:fragment="header">
-			<div align="center">
-				<h1>GCU Requirement Viewer</h1>
-			</div>
 			<div class="navbar">
-				<nav class="navbar navbar-default">
-					<!-- Collection of nav links and other content for toggling -->
-					<div id="navbarCollapse" class="collapse navbar-collapse">
-						<label>Navbar</label>
-						<ul class="nav navbar-nav">
-							<li><a href="/home">Home</a></li>
-							<li><a href="/class">Class Home</a></li>
-							<li><a href="/program">Program Home</a></li>
-							<li><a href="/schedule">Schedule Home</a></li>
-							<li><a href="/test">Testing Home</a></li>
-						</ul>
-					</div>
-				</nav>
+				<script>
+				$.ajax({
+					url: "/ajax/navbar",
+					type: "GET",
+					success: function(response)
+					{
+						$("#ajax-navbar").html(response);
+					},
+					error: function(jqXHR, textStatus, errorThrown) 
+					{
+						console.log(textStatus, errorThrown);
+					}
+				});
+				</script>
+				<div id="ajax-navbar"></div>
 			</div>
 			
 			<!-- Page Title and Logo -->
