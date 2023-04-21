@@ -7,8 +7,9 @@
     {
         // Get the value of the selected value
         const selectedOption = event.target.value;
-        console.log(selectedOption);
-
+        // Redirect to Selected Program
+        const newURL = window.location.protocol+'//'+window.location.host+'/schedule/compare/'+selectedOption;
+        window.location.href = newURL;
     });
 
 </script>

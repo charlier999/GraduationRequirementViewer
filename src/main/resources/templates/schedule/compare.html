@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<title>Compare Schedule to Program</title>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script>
+		<script th:inline="javascript">
 			// Get the course schedule from client storage
 			var courseSchedule = localStorage.getItem('courseSchedule');
 			//console.log("Stored Schedule: "+courseSchedule);
@@ -14,6 +14,7 @@
 			{ 
 				courseSchedule="";
 			}
+			// Schedue Table
 			$.ajax({
 				url: "/ajax/schedule/table",
 				type: "POST",
@@ -28,6 +29,7 @@
 					console.log(textStatus, errorThrown);
 				}
 			});
+			// Program Select Form
 			$.ajax({
 				url: "/ajax/schedule/programSelectForm",
 				type: "GET",
@@ -41,6 +43,29 @@
 					console.log(textStatus, errorThrown);
 				}
 			});
+			// Compare Schedule to Program Div
+			var urlProgramName=[[${urlProgram}]];
+			if(urlProgramName === null)
+			{
+				urlProgramName="Bachelor of Science in Software Development";
+				const newURL = window.location.protocol+'//'+window.location.host+'/schedule/compare/'+urlProgramName;
+        		window.location.href = newURL;
+			}
+			$.ajax({
+				url: "/ajax/schedule/programCompare/",
+				type: "POST",
+				data: {importJSON:courseSchedule, programName:urlProgramName},
+				success: function(response)
+				{
+					$("#ajax-program-compare-div").html(response);
+					//console.log(response);
+				},
+				error: function(jqXHR, textStatus, errorThrown) 
+				{
+					console.log(textStatus, errorThrown);
+				}
+			});
+			
 		</script>
 	</head>
 	<body>
@@ -73,6 +98,7 @@
 			<div id="ajax-current-schedule"></div>
 			<hr>
 			<div id="ajax-program-compare-select"></div>
+			<div id="ajax-program-compare-div"></div>
 		</div>
 	</body>
 </html>

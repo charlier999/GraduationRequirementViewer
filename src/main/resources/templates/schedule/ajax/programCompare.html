@@ -1,0 +1,99 @@
+<div>
+    <p th:if="${scheduleCompare.rows == null}">Schedule not found!</p>
+    <p th:if="${programsCompare == null}">Program not found!</p>
+</div>
+<div th:if="${scheduleCompare.rows != null && programsCompare != null}">
+    <div th:each="program : ${programsCompare}">
+        <h3 th:text="${program.program.name}"></h3>
+        <div th:text="'Total Credits: '+${program.totalPassedCredits}+' of '+${program.program.totalMinCredits}"></div>
+        <div th:text="'Program Credits: '+${program.totalPassedProgramCredits}+' of '+${program.program.majorMinCredits}"></div>
+        <div th:text="'Elective Credits: '+${program.totalPassedElectiveCredtis}+' of '+${program.program.electiveMinCredits}"></div>
+        <div class="table-div">
+            <div class="table-div passed-classes" th:if="${not #lists.isEmpty(program.passedClasses)}">
+                <h4>Passed Classes</h4>
+                <table>
+                    <tr>
+                        <td>Number</td>
+                        <td>Credits</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr th:each="class : ${program.passedClasses}" class="classes-row">
+                        <td class="classes-data">
+                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+                        </td>
+                        <td>
+                            <div th:text="${class.credits}">Credits</div>
+                        </td>
+                        <td class="classes-data">
+                            <div th:text="${class.name}">Class Name</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-div passed-classes" th:if="${not #lists.isEmpty(program.passedRequriredClasses)}">
+                <h4>Passed Requrired Classes</h4>
+                <table>
+                    <tr>
+                        <td>Number</td>
+                        <td>Credits</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr th:each="class : ${program.passedRequriredClasses}" class="classes-row">
+                        <td class="classes-data">
+                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+                        </td>
+                        <td>
+                            <div th:text="${class.credits}">Credits</div>
+                        </td>
+                        <td class="classes-data">
+                            <div th:text="${class.name}">Class Name</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-div passed-classes" th:if="${not #lists.isEmpty(program.missingRequriredClasses)}">
+                <h4>Missing Requrired Classes</h4>
+                <table>
+                    <tr>
+                        <td>Number</td>
+                        <td>Credits</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr th:each="class : ${program.missingRequriredClasses}" class="classes-row">
+                        <td class="classes-data">
+                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+                        </td>
+                        <td>
+                            <div th:text="${class.credits}">Credits</div>
+                        </td>
+                        <td class="classes-data">
+                            <div th:text="${class.name}">Class Name</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-div passed-classes" th:if="${not #lists.isEmpty(program.passedNonRequiredClasses)}">
+                <h4>Passed Elective Classes</h4>
+                <table>
+                    <tr>
+                        <td>Number</td>
+                        <td>Credits</td>
+                        <td>Name</td>
+                    </tr>
+                    <tr th:each="class : ${program.passedNonRequiredClasses}" class="classes-row">
+                        <td class="classes-data">
+                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+                        </td>
+                        <td>
+                            <div th:text="${class.credits}">Credits</div>
+                        </td>
+                        <td class="classes-data">
+                            <div th:text="${class.name}">Class Name</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- refrenceClasses -->

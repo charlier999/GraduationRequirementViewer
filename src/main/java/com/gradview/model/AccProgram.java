@@ -3,6 +3,7 @@
  */
 package com.gradview.model;
 
+import java.text.ParseException;
 import java.util.Arrays;
 
 import com.gradview.data.dam.AccProgramDAM;
@@ -180,6 +181,48 @@ public class AccProgram
 				+ ", majorMaxCredits=" + majorMaxCredits + ", totalMinCredits=" + totalMinCredits
 				+ ", requiredMajorClasses=" + Arrays.toString( requiredMajorClasses ) + "]";
 	}
+
+	public static AccProgram parse(String input) throws ParseException {
+		AccProgram output = new AccProgram();
+	
+		String[] fields = input.split(", ");
+	
+		if (fields.length != 14) 
+		{
+			throw new ParseException("Invalid input format", 0);
+		}
+	
+		try 
+		{
+			output.id = Integer.parseInt(fields[0].substring(fields[0].indexOf('=') + 1));
+			output.name = fields[1].substring(fields[1].indexOf('=') + 1);
+			output.description = fields[2].substring(fields[2].indexOf('=') + 1);
+			output.level = fields[3].substring(fields[3].indexOf('=') + 1);
+			output.baOfArts = Boolean.parseBoolean(fields[4].substring(fields[4].indexOf('=') + 1));
+			output.baOfScience = Boolean.parseBoolean(fields[5].substring(fields[5].indexOf('=') + 1));
+			output.genEdMinCredits = Integer.parseInt(fields[6].substring(fields[6].indexOf('=') + 1));
+			output.genEdMaxCredits = Integer.parseInt(fields[7].substring(fields[7].indexOf('=') + 1));
+			output.electiveMinCredits = Integer.parseInt(fields[8].substring(fields[8].indexOf('=') + 1));
+			output.electiveMaxCredits = Integer.parseInt(fields[9].substring(fields[9].indexOf('=') + 1));
+			output.majorMinCredits = Integer.parseInt(fields[10].substring(fields[10].indexOf('=') + 1));
+			output.majorMaxCredits = Integer.parseInt(fields[11].substring(fields[11].indexOf('=') + 1));
+			output.totalMinCredits = Integer.parseInt(fields[12].substring(fields[12].indexOf('=') + 1));
+	
+			String[] classIds = fields[13].substring(fields[13].indexOf('=') + 1, fields[13].indexOf(']')).split(", ");
+			output.requiredMajorClasses = new int[classIds.length];
+			for (int i = 0; i < classIds.length; i++) 
+			{
+				output.requiredMajorClasses[i] = Integer.parseInt(classIds[i]);
+			}
+		} catch (NumberFormatException e) 
+		{
+			throw new ParseException("Invalid input format", 0);
+		}
+	
+		return output;
+	}
+	
+
 
 	/**
 	 * Retruns the program as a {@link AccProgramDAM}
