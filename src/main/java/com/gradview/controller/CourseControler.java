@@ -24,7 +24,6 @@ import com.gradview.model.AccClassPrerequisite;
 import com.gradview.service.ClassService;
 import com.gradview.service.CourseImportService;
 import com.gradview.service.LogMessage;
-import com.gradview.service.ComponentLogger;
 import com.gradview.ui.ufo.UFOClassSearch;
 import com.gradview.ui.ufo.UFOFileSelect;;
 
@@ -32,7 +31,6 @@ import com.gradview.ui.ufo.UFOFileSelect;;
 public class CourseControler 
 {
     private static final Logger logger = LoggerFactory.getLogger( CourseControler.class );
-    private ComponentLogger compLogger = new ComponentLogger("gradview.controller.CourseControler");
     @Autowired
     private ClassService classService;
     @Autowired
@@ -190,22 +188,22 @@ public class CourseControler
         }
         catch ( IOException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doPrerequisiteImport: IOException Occured: ", e);
             e.printStackTrace();
         }
         catch ( DataAccessException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doPrerequisiteImport: DataAccessException Occured: ", e);
             e.printStackTrace();
         }
         catch ( NoRowsFoundException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doPrerequisiteImport: NoRowsFoundException Occured: ", e);
             e.printStackTrace();
         }
         catch ( Exception e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doPrerequisiteImport: Exception Occured: ", e);
             e.printStackTrace();
         }
         // attach list of files to model
@@ -241,22 +239,22 @@ public class CourseControler
         }
         catch ( IOException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doClassImport: IOException Occured: ", e);
             e.printStackTrace();
         }
         catch ( DataAccessException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doClassImport: DataAccessException Occured: ", e);
             e.printStackTrace();
         }
         catch ( NoRowsFoundException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doClassImport: NoRowsFoundException Occured: ", e);
             e.printStackTrace();
         }
         catch ( Exception e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doClassImport: Exception Occured: ", e);
             e.printStackTrace();
         }
         // attach list of files to model
@@ -281,7 +279,7 @@ public class CourseControler
         }
         catch ( IOException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("displayClassImportPage: IOException Occured: ", e);
             e.printStackTrace();
         }
         // attach list of files to model

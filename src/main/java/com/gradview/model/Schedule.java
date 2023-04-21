@@ -3,8 +3,6 @@ package com.gradview.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.print.attribute.standard.MediaSize.Other;
-
 public class Schedule 
 {
     public List<ScheduleRow> rows;

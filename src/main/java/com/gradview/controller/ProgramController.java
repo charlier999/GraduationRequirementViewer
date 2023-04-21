@@ -230,17 +230,17 @@ public class ProgramController
         }
         catch ( IOException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doProgramImport: IOException Occured: ", e);
             e.printStackTrace();
         }
         catch ( DataAccessException e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doProgramImport: DataAccessException Occured: ", e);
             e.printStackTrace();
         }
         catch ( Exception e )
         {
-            // TODO Auto-generated catch block
+            logger.error("doProgramImport: Exception Occured: ", e);
             e.printStackTrace();
         }
         // attach list of files to model

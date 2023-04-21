@@ -321,26 +321,26 @@ public class ScheduleController
         return output;
     }
     
-    /**
-     * Remove duplicate {@link AccClass classes} by classID from list of {@link AccClass classes}.
-     * @param classes List of {@link AccClass classes} to have duplicate {@link AccClass classes} removed from.
-     * @return List of {@link AccClass classes} with duplicate {@link AccClass classes} removed.
-     */
-    private List<AccClass> removeDuplicatClasses(List<AccClass> classes)
-    {
-        // Loop through all courses
-        for(int i = 0; i < classes.size(); i++)
-        {
-            // Loop through all courses
-            for(int j = 0; j < classes.size(); j++)
-            {
-                // If first loop's class id equals second loop's class id
-                // AND first loop iteration does not equal second loop iteration 
-                // Remove duplicate using second loop's iteration value
-                if(classes.get(i).getId() == classes.get(j).getId() && i != j) classes.remove(j);
-            }
-        }
-        return classes;
-    }
+    // /**
+    //  * Remove duplicate {@link AccClass classes} by classID from list of {@link AccClass classes}.
+    //  * @param classes List of {@link AccClass classes} to have duplicate {@link AccClass classes} removed from.
+    //  * @return List of {@link AccClass classes} with duplicate {@link AccClass classes} removed.
+    //  */
+    // private List<AccClass> removeDuplicatClasses(List<AccClass> classes)
+    // {
+    //     // Loop through all courses
+    //     for(int i = 0; i < classes.size(); i++)
+    //     {
+    //         // Loop through all courses
+    //         for(int j = 0; j < classes.size(); j++)
+    //         {
+    //             // If first loop's class id equals second loop's class id
+    //             // AND first loop iteration does not equal second loop iteration 
+    //             // Remove duplicate using second loop's iteration value
+    //             if(classes.get(i).getId() == classes.get(j).getId() && i != j) classes.remove(j);
+    //         }
+    //     }
+    //     return classes;
+    // }
     //#endregion Helper Functions
 }

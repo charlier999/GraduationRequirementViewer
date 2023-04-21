@@ -91,7 +91,7 @@ public class CourseImportService
         }
         catch ( Exception e )
         {
-            // TODO Auto-generated catch block
+            logger.error("importPrerequisites: Exception Occured: ", e);
             e.printStackTrace();
         }
         logger.info("importPrerequisites: Import Prerequistes Finished");
@@ -423,7 +423,6 @@ public class CourseImportService
                     Boolean isAndPreReq = false;
                     Boolean isOrPreReq = false;
                     String tempClassNumber = "";
-                    char[] devChars = input.get(4).toCharArray();
                     // Find : at end of Prerequisite:/Prerequisites:
                     int colonInd = input.get(4).indexOf(":");
                     for(int i = colonInd; i < input.get(4).length(); i++)
