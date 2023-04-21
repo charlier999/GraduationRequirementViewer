@@ -1,4 +1,4 @@
-<h4>Your Course Schedule</h4>
+<h4>Your Course History</h4>
 <table th:if="${not #lists.isEmpty(scheduleTable.rows)}">
     <tr>
         <td>Number</td>
@@ -13,9 +13,15 @@
     </tr>
 </table>
 <div th:if="${#lists.isEmpty(scheduleTable.rows)}">
-    <div>Schedule not on file. Add courses to you Schedule.</div>
+    <div>History not on file. Add courses taken to your History.</div>
 </div>
 <div th:if="${not #lists.isEmpty(scheduleTable.rows)}">
-    <h5>Schedule Import String</h5>
+    <h5>Export Course History JSON:</h5>
+    <p>
+        Your web browser may clear your course history after a period
+        of time. To prevent keying in previosuly entered course history,
+        copy the line below and save course history to a file of your chosing
+        that can be imported later.
+    </p>
     <div th:text="${scheduleTable.toString}"></div>
 </div>

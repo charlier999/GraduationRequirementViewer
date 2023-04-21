@@ -6,6 +6,16 @@
 		<meta charset="UTF-8">
 		<title>View Class</title>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<style>
+			.inline
+			{
+				display: inline-block;
+			}
+			.bold 
+			{
+  				font-weight: bold;
+			}
+		</style>
 	</head>
 	<body>
 		<div th:fragment="header">
@@ -32,38 +42,53 @@
 			<br/><br/>
 		</div>
 		<div layout:fragment="content">
+			<h2>Class Information</h2>
 			<div th:each="class : ${classes}">
                 <div>
-                    <div th:text="${'Name: ' + class.name}">Class Name</div>
-                    <div th:text="${'Number: ' + class.number}">Class Number</div>
-                    <div th:text="${'Description: ' + class.description}">Class Description</div>
-                    <div th:text="${'Credits: ' + class.credits}">Class Credits</div>
-					<table th:if="${not #lists.isEmpty(class.prerequisites)}">
-						<thead>
-							<tr>
-								<th>And/Or</th>
-								<th>Class IDs</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr th:each="prerequisite : ${class.prerequisites}">
-								<td th:text="${prerequisite.andOr ? 'AND' : 'OR'}"></td>
-								<td>
-									<ul>
-										<div th:each="reqClass : ${requiredClasses}">
-											<div th:each="classID : ${prerequisite.classIDs}">
-												<a 
-													th:if="${classID == reqClass.id}"
-													th:href="@{/class/number/{number}(number=${reqClass.number})}" 
-													th:text="${reqClass.number}">
-												</a>
+					<label class="bold inline" for="class-name-div">Name:</label>
+                    <div class="inline" id="class-name-div" th:text="${class.name}">Class Name</div>
+					<br>
+					<label class="bold inline" for="class-number-div">Number:</label>
+                    <div class="inline" id="class-number-div" th:text="${class.number}">Class Number</div>
+					<br>
+					<label class="bold inline" for="class-credits-div">Credits:</label>
+                    <div class="inline" id="class-credits-div" th:text="${class.credits}">Class Credits</div>
+					<br>
+					<label class="bold inline" for="class-description-div">Description:</label>
+                    <div class="inline" id="class-description-div" th:text="${class.description}">Class Description</div>
+					<br>
+					<div th:if="${not #lists.isEmpty(class.prerequisites)}">
+						<br>
+						<label class="bold">Prerequisites:</label>
+						<table>
+							<thead>
+								<tr>
+									<th>And/Or</th>
+									<th>Class #</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each="prerequisite : ${class.prerequisites}">
+									<td th:text="${prerequisite.andOr ? 'AND' : 'OR'}"></td>
+									<td>
+										<ul>
+											<div th:each="reqClass : ${requiredClasses}">
+												<div th:each="classID : ${prerequisite.classIDs}">
+													<a 
+														th:if="${classID == reqClass.id}"
+														th:href="@{/class/number/{number}(number=${reqClass.number})}" 
+														th:text="${reqClass.number}">
+													</a>
+												</div>
 											</div>
-										</div>
-									</ul>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>AND = Required prerequiste class.</p>
+						<p>OR = Alternative prerequiste class.</p>
+					</div>
                 </div>
             </div>
 		</div>

@@ -2,6 +2,8 @@ package com.gradview.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -50,7 +52,8 @@ public class CourseControler
         try
         {
             output = classService.search(new UFOClassSearch("%", AccClassDAO.COL_NUMBER));
-            model.addAttribute("classes", output.subList(0, 10));
+            model.addAttribute("classes", 
+                this.sortClassList(output).subList(0, 10));
         }
         catch ( DataAccessException e )
         {
@@ -79,11 +82,14 @@ public class CourseControler
     public String doSearch(@ModelAttribute UFOClassSearch search, Model model)
     {
         logger.info("doSearch: Has started at post mapping `/class/search`");
+
         List<AccClass> output = new ArrayList<>();
         try
         {
+            if(search.getQuerry() == null && search.getTableHeader() == null) 
+                search = new UFOClassSearch("%", AccClassDAO.COL_NUMBER);
             output = classService.search(search);
-            model.addAttribute("classes", output);
+            model.addAttribute("classes", this.sortClassList(output));
             model.addAttribute("searchVals", search);
             logger.info("doSearch: Classes are being returned to view 'classes/searchResults'");
             return "classes/searchResults";
@@ -288,5 +294,25 @@ public class CourseControler
         model.addAttribute("formObjectPrerequisite", new UFOFileSelect());
         logger.info("displayClassImportPage: Returning view classes/importTool");
         return "classes/importTool"; 
+    }
+
+
+
+    /**
+     * Sorts the {@link AccClass Class} List alabeticlay
+     * @param classes
+     * @return
+     */
+    private List<AccClass> sortClassList(List<AccClass> classes)
+    {
+        Collections.sort(classes, new Comparator<AccClass>()
+        {
+            @Override
+            public int compare(AccClass class1, AccClass class2)
+            {
+                return class1.getNumber().compareTo(class2.getNumber());
+            }
+        });
+        return classes;
     }
 }

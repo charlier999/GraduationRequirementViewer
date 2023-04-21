@@ -1,6 +1,8 @@
+<h3>Import Course History</h3>
+<p>Enter previously exported course history JSON to import the previously entered course history.</p>
 <form th:action="@{/schedule/importjson}" th:object="${scheduleImport}" method="post">
 	<div class="form-row">
-		<label>Import Schedule JSON</label>
+		<label>Import Course History JSON</label>
 		<input type="text" class="form-control" th:field="*{query}" th:classappend="${#fields.hasErrors('query')} ? 'error-field'">
 		<input type="submit" value="Submit" class="form-input-submit">
 	</div>

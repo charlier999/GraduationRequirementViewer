@@ -1,6 +1,8 @@
 package com.gradview.ui.uio;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import com.gradview.model.AccClass;
@@ -35,6 +37,16 @@ public class UIOCompareProgram
         this.fillMissingRequriredClassesList();
         this.fillPassedNonRequiredClassesList();
         this.calculateCredits();
+        this.sortAllClassLists();
+    }
+
+    private void sortAllClassLists()
+    {
+        this.passedClasses = this.sortClassList(this.passedClasses);
+        this.requriredClassesList = this.sortClassList(this.requriredClassesList);
+        this.passedRequriredClasses = this.sortClassList(this.passedRequriredClasses);
+        this.missingRequriredClasses = this.sortClassList(this.missingRequriredClasses);
+        this.passedNonRequiredClasses = this.sortClassList(this.passedNonRequiredClasses);
     }
 
     private void calculateCredits()
@@ -202,6 +214,22 @@ public class UIOCompareProgram
                 + totalPassedElectiveCredtis + "]";
     }
 
-    
+     /**
+     * Sorts the {@link AccClass Class} List alabeticlay
+     * @param classes
+     * @return
+     */
+    private List<AccClass> sortClassList(List<AccClass> classes)
+    {
+        Collections.sort(classes, new Comparator<AccClass>()
+        {
+            @Override
+            public int compare(AccClass class1, AccClass class2)
+            {
+                return class1.getNumber().compareTo(class2.getNumber());
+            }
+        });
+        return classes;
+    }
 
 }

@@ -7,6 +7,16 @@
 		<title>View Program</title>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<style>
+			.inline
+			{
+				display: inline-block;
+			}
+			.bold 
+			{
+  				font-weight: bold;
+			}
+		</style>
 	</head>
 	<body>
 		<div th:fragment="header">
@@ -33,14 +43,30 @@
 			<br/><br/>
 		</div>
 		<div layout:fragment="content">
+			<h2>Program Information</h2>
 			<div th:each="program : ${programs}">
-                <div th:text="${'Name: ' + program.name}"></div>
-                <div th:text="${'Description: ' + program.description}"></div>
-                <div th:text="${'Level: ' + program.level}"></div>
-				<div th:text="${'General Education Credits: ' + program.genEdMinCredits + '-' + program.genEdMaxCredits}"></div>
-				<div th:text="${'Elective Credits: ' + program.electiveMinCredits + '-' + program.electiveMaxCredits}"></div>
-				<div th:text="${'Major Credits: ' + program.majorMinCredits}"></div>
-				<div th:text="${'Total Credits: ' + program.totalMinCredits}"></div>
+				<label class="bold inline" for="program-name-div">Name:</label>
+                <div class="inline" id="program-name-div" th:text="${program.name}"></div>
+				<br>
+				<label class="bold inline" for="program-description-div">Description:</label>
+                <div class="inline" id="program-description-div" th:text="${program.description}"></div>
+				<br>
+				<label class="bold inline" for="program-level-div">Level:</label>
+                <div class="inline" id="program-level-div" th:text="${program.level}"></div>
+				<br>
+				<label class="bold inline" for="program-genEdCredits-div">General Education Credits:</label>
+				<div class="inline" id="program-genEdCredits-div" th:text="${program.genEdMinCredits + ' to ' + program.genEdMaxCredits}"></div>
+				<br>
+				<label class="bold inline" for="program-electiveCredits-div">Elective Credits:</label>
+				<div class="inline" id="program-electiveCredits-div" th:text="${program.electiveMinCredits + ' to ' + program.electiveMaxCredits}"></div>
+				<br>
+				<label class="bold inline" for="program-majorCredits-div">Major Credits:</label>
+				<div class="inline" id="program-majorCredits-div" th:text="${program.majorMinCredits}"></div>
+				<br>
+				<label class="bold inline" for="program-totalCredits-div">Total Credits:</label>
+				<div class="inline" id="program-totalCredits-div" th:text="${program.totalMinCredits}"></div>
+				<br>
+				<h3>Required Courses</h3>
 				<table>
 					<thead>
 						<tr>

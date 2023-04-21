@@ -3,6 +3,8 @@ package com.gradview.controller;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -94,6 +96,11 @@ public class ProgramController
         List<AccProgram> output = new ArrayList<>();
         try
         {
+            if(search.getTableHeader() == null)
+            {
+                search.setTableHeader(AccProgramDAO.COL_NAME);
+                search.setQuerry(" ");
+            }
             // Get list of programDAMs
             List<AccProgramDAM> programDAMs =  accProgramDAO.search(search.getTableHeader(), "%" + search.getQuerry() + "%");
             // Convert programDAMs to AccPrograms with only needed info
@@ -152,7 +159,9 @@ public class ProgramController
                     classIDList.clear();
                     classIDList.addAll(set);
                     classes = this.classService.getBasicClassesByClassIDs(classIDList);
+                    classes = this.sortClassList(classes); 
                     classIDsInt = classIDList.stream().mapToInt(j -> j).toArray();
+                    //Arrays.sort(classIDsInt);
                     output.get(i).setRequiredMajorClasses(classIDsInt);
                 }
                 programChartData = this.programChartGenService.genOrgChartDataByProgramModel(output.get(0));
@@ -250,5 +259,29 @@ public class ProgramController
         model.addAttribute("logs", this.programImportService.getLogs());
         logger.info("doProgramImport: Returning view program/importTool");
         return "programs/importTool"; 
+    }
+
+
+
+
+
+
+
+    /**
+     * Sorts the {@link AccClass Class} List alabeticlay
+     * @param classes
+     * @return
+     */
+    private List<AccClass> sortClassList(List<AccClass> classes)
+    {
+        Collections.sort(classes, new Comparator<AccClass>()
+        {
+            @Override
+            public int compare(AccClass class1, AccClass class2)
+            {
+                return class1.getNumber().compareTo(class2.getNumber());
+            }
+        });
+        return classes;
     }
 }

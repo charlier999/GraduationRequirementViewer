@@ -32,6 +32,7 @@
 			<br/><br/>
 		</div>
 		<div layout:fragment="content">
+			<h2>Program Requirements</h2>
             <div class="form-div search-div">
 				<form th:action="@{/program/search}" th:object="${searchVals}" method="PoSt">
 					<div class="form-row">
@@ -49,7 +50,6 @@
 				</form>
 			</div>
             <div th:if="${not #lists.isEmpty(programs)}" class="table-div search-results-programs">
-                <label>Search Results</label>
                 <table class="search-results-programs-table">
                     <tr class="search-results-programs-header-row">
                         <td class="search-results-programs-header">Name</td>

@@ -33,6 +33,7 @@
 			<br/><br/>
 		</div>
 		<div layout:fragment="content">
+			<h2>Classes</h2>
             <div id="classes-links">
                 <ul>
                     
@@ -57,7 +58,6 @@
 			</div>
 			<hr>
 			<div class="table-div classes">
-                <label>All Classes</label>
                 <table class="classes-table">
                     <tr class="classes-header-row">
                         <td class="classes-header">Number</td>
@@ -77,6 +77,12 @@
                     </tr>
                 </table>
             </div>
+			<div>
+				<form th:action="@{/class/search}" th:object="${searchVals}" method="PoSt">
+					<button type="submit">View All</button>
+				</form>
+				<!-- TODO: View all classes button -->
+			</div>
 		</div>
 	</body>
 </html>
