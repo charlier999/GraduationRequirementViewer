@@ -206,7 +206,7 @@ public class ScheduleController
         List<UIOCompareProgram> comparePrograms = new ArrayList<>();
         // Temp values
         List<AccProgram> programs = new ArrayList<>();
-        List<List<AccClass>> passedClasses = new ArrayList<>();
+        List<AccClass> passedClasses = new ArrayList<>();
         List<List<AccClass>> requriredClasses = new ArrayList<>();
         try
         {
@@ -219,7 +219,7 @@ public class ScheduleController
                     // Get Class info
                     List<AccClass> tempAccClasses = this.classService.getBasicClassByNumber(row.courseNumber);
                     // Add all retirved classes to refrence list
-                    passedClasses.add(tempAccClasses);
+                    passedClasses.addAll(tempAccClasses);
                 }
             }
             // Pull courses from programs
@@ -254,8 +254,8 @@ public class ScheduleController
         {
             comparePrograms.add(
                 new UIOCompareProgram(programs.get(count), 
-                passedClasses.get(count), requriredClasses.get(count)));
-            logger.info("ajaxProgramCompare: UIOCompareProgram["+count+"]"+comparePrograms.get(count));
+                passedClasses, requriredClasses.get(count)));
+            //logger.info("ajaxProgramCompare: UIOCompareProgram["+count+"]"+comparePrograms.get(count));
         }
 
         model.addAttribute("programsCompare", comparePrograms);

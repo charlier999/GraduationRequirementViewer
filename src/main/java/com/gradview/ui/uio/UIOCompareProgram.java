@@ -191,6 +191,17 @@ public class UIOCompareProgram
         this.passedNonRequiredClasses = passedNonRequiredClasses;
     }
 
+    @Override
+    public String toString()
+    {
+        return "UIOCompareProgram [program=" + program + ", passedClasses=" + passedClasses + ", requriredClassesList="
+                + requriredClassesList + ", passedRequriredClasses=" + passedRequriredClasses
+                + ", missingRequriredClasses=" + missingRequriredClasses + ", passedNonRequiredClasses="
+                + passedNonRequiredClasses + ", totalPassedCredits=" + totalPassedCredits
+                + ", totalPassedProgramCredits=" + totalPassedProgramCredits + ", totalPassedElectiveCredtis="
+                + totalPassedElectiveCredtis + "]";
+    }
+
     
 
 }

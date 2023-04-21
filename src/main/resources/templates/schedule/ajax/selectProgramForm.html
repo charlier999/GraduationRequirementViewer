@@ -15,7 +15,7 @@
 </script>
 <h4>Select Program to Compare Against</h4>
 <div th:if="${not #lists.isEmpty(programNames)}">
-    <label>Course Number</label>
+    <label>Program</label>
     <select id="programsDropdown" th:field="${programNames}">
         <option th:each="programName : ${programNames}" th:value="${programName}" th:text="${programName}"></option>
     </select>

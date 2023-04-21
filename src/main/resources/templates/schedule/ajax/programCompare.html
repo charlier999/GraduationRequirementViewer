@@ -10,28 +10,28 @@
         <div th:text="'Elective Credits: '+${program.totalPassedElectiveCredtis}+' of '+${program.program.electiveMinCredits}"></div>
         <div class="table-div">
             <div class="table-div passed-classes" th:if="${not #lists.isEmpty(program.passedClasses)}">
-                <h4>Passed Classes</h4>
+                <h4>All Passed Classes</h4>
                 <table>
                     <tr>
                         <td>Number</td>
                         <td>Credits</td>
                         <td>Name</td>
                     </tr>
-                    <tr th:each="class : ${program.passedClasses}" class="classes-row">
+                    <tr th:each="passedClass : ${program.passedClasses}" class="classes-row">
                         <td class="classes-data">
-                            <a th:href="@{/class/number/{number}(number=${class.number})}" th:text="${class.number}"></a>
+                            <a th:href="@{/class/number/{number}(number=${passedClass.number})}" th:text="${passedClass.number}"></a>
                         </td>
                         <td>
-                            <div th:text="${class.credits}">Credits</div>
+                            <div th:text="${passedClass.credits}">Credits</div>
                         </td>
                         <td class="classes-data">
-                            <div th:text="${class.name}">Class Name</div>
+                            <div th:text="${passedClass.name}">Class Name</div>
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="table-div passed-classes" th:if="${not #lists.isEmpty(program.passedRequriredClasses)}">
-                <h4>Passed Requrired Classes</h4>
+                <h4>Passed Program Required Classes</h4>
                 <table>
                     <tr>
                         <td>Number</td>
@@ -52,7 +52,7 @@
                 </table>
             </div>
             <div class="table-div passed-classes" th:if="${not #lists.isEmpty(program.missingRequriredClasses)}">
-                <h4>Missing Requrired Classes</h4>
+                <h4>Missing Program Required Classes</h4>
                 <table>
                     <tr>
                         <td>Number</td>
@@ -94,6 +94,7 @@
                 </table>
             </div>
         </div>
+        <hr>
     </div>
 </div>
 <!-- refrenceClasses -->

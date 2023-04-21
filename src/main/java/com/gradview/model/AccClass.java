@@ -325,4 +325,14 @@ public class AccClass
 		this.prerequisites = prerequisites;
 	}
 
+	@Override
+	public String toString()
+	{
+		return "AccClass [id=" + id + ", name=" + name + ", description=" + description + ", number=" + number
+				+ ", credits=" + credits + ", isGenEd=" + isGenEd + ", genEdCompID=" + genEdCompID + ", baOfArts="
+				+ baOfArts + ", baOfScience=" + baOfScience + ", prerequisites=" + prerequisites + "]";
+	}
+
+	
+
 }
