@@ -5,6 +5,8 @@ package com.gradview.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,6 +36,9 @@ public class MiscServicesController
 	public String ajaxNavBar(Model model)
 	{
 		logger.info( "ajaxNavBar: Has started at mapping '/ajax/navbar'." );
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		if(auth.getPrincipal().equals("anonymousUser")) model.addAttribute("isAuthenticated", false);
+		else model.addAttribute("isAuthenticated", auth.isAuthenticated());
 		return "ajax/navbar";
 	}
 	

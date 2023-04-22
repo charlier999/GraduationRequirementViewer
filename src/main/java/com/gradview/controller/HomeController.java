@@ -38,9 +38,15 @@ public class HomeController
 	public String displayHome( Model model, HttpServletResponse httpResponse ) throws FileNotFoundException
 	{
 		logger.info( "displayLogin: Has started at mapping '/home'." );
-		//cis.importClassesWithoutRequisites();
-		//pis.importProgramsWithoutClasses();
 		logger.info( "displayLogin: Returning view 'home'." );
 		return "home";
+	}
+	
+	@GetMapping("/login")
+	public String displayLoginForm()
+	{
+		logger.info( "displayLogin: Has started at mapping '/login'." );
+		logger.info( "displayLogin: Returning view 'login'." );
+		return "login";
 	}
 }

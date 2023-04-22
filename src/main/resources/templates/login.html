@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="layouts/defaultTemplate">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Login</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            console.log("LOGIN PAGE");
+        </script>
+	</head>
+	<body>
+		<div th:fragment="header">
+			<div class="navbar">
+				<script>
+				$.ajax({
+					url: "/ajax/navbar",
+					type: "GET",
+					success: function(response)
+					{
+						$("#ajax-navbar").html(response);
+					},
+					error: function(jqXHR, textStatus, errorThrown) 
+					{
+						console.log(textStatus, errorThrown);
+					}
+				});
+				</script>
+				<div id="ajax-navbar"></div>
+			</div>
+			
+			<!-- Page Title and Logo -->
+			<hr>
+		</div>
+		<div layout:fragment="content">
+			<h1>Login</h1>
+            <form th:action="@{/login}" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"/>
+                <br/>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"/>
+                <br/>
+                <input type="submit" value="Log in"/>
+            </form>
+            <div th:if="${param.error}">
+                <p>Invalid username or password.</p>
+            </div>
+            <div th:if="${param.logout}">
+                <p>You have been logged out.</p>
+            </div>
+		</div>
+	</body>
+</html>
