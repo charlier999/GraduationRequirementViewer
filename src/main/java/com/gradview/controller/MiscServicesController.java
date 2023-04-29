@@ -26,8 +26,8 @@ public class MiscServicesController
 	public String displayTestingHome(Model model)
 	{
 		logger.info( "displayLogin: Has started at mapping '/home'." );
-		//cis.importClassesWithoutRequisites();
-		//pis.importProgramsWithoutClasses();
+		if(SecurityContextHolder.getContext().getAuthentication()
+			.getPrincipal().equals("anonymousUser")) return "home";
 		logger.info( "displayLogin: Returning view 'home'." );
 		return "test/home";
 	}

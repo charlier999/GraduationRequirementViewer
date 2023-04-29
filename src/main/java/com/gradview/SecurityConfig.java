@@ -35,8 +35,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
     {
         logger.info("configure(HttpSecurity): Starting.");
         http
-        .authorizeRequests()
-            .antMatchers("/test**").hasRole("ADMIN")
+        .authorizeHttpRequests()
+            //.antMatchers("/test").hasRole("ADMIN")
             .anyRequest().permitAll()
             .and()
         .formLogin()
@@ -87,7 +87,8 @@ class AdminAuthenticationProvider implements AuthenticationProvider
         {
             logger.info("authenticate: User `"+username+"` is authenticated.");
             Collection<? extends GrantedAuthority> authorities = Collections.singleton(new SimpleGrantedAuthority("ADMIN"));
-            return new UsernamePasswordAuthenticationToken(username, password, authorities);
+            UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(username, password, authorities);
+            return authToken;
         }
         else
         {

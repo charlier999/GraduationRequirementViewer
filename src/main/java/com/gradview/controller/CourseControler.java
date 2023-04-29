@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -175,6 +176,8 @@ public class CourseControler
     public String doPrerequisiteImport(@ModelAttribute UFOFileSelect fileSelect, Model model)
     {
         logger.info("doPrerequisiteImport: Has started at mapping `/class/importPrerequisite`");
+        if(SecurityContextHolder.getContext().getAuthentication()
+			.getPrincipal().equals("anonymousUser")) return "home";
         List<String> fileNames = new ArrayList<>();
         List<AccClass> classes = new ArrayList<>();
         List<LogMessage> logs = new ArrayList<>();
@@ -226,6 +229,8 @@ public class CourseControler
     public String doClassImport(@ModelAttribute UFOFileSelect fileSelect, Model model)
     {
         logger.info("doClassImport: Has started at mapping `/class/importClasses");
+        if(SecurityContextHolder.getContext().getAuthentication()
+			.getPrincipal().equals("anonymousUser")) return "home";
         List<String> fileNames = new ArrayList<>();
         List<AccClass> classes = new ArrayList<>();
         List<LogMessage> logs = new ArrayList<>();
@@ -277,6 +282,8 @@ public class CourseControler
     public String displayClassImportPage(Model model)
     {
         logger.info("displayClassImportPage: Has started at mapping `/class/import");
+        if(SecurityContextHolder.getContext().getAuthentication()
+			.getPrincipal().equals("anonymousUser")) return "home";
         List<String> fileNames = new ArrayList<>();
         // Retreive list of files
         try

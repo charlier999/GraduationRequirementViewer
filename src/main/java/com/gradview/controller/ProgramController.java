@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -202,6 +203,8 @@ public class ProgramController
     public String displayProgramImportPage(Model model)
     {
         logger.info("displayProgramImportPage: Has started at mapping `/program/import");
+        if(SecurityContextHolder.getContext().getAuthentication()
+			.getPrincipal().equals("anonymousUser")) return "home";
         List<String> fileNames = new ArrayList<>();
         // Retreive list of files
         try
@@ -224,6 +227,8 @@ public class ProgramController
     public String doProgramImport(@ModelAttribute UFOFileSelect fileSelect, Model model)
     {
         logger.info("doProgramImport: Has started at mapping `/program/import");
+        if(SecurityContextHolder.getContext().getAuthentication()
+			.getPrincipal().equals("anonymousUser")) return "home";
         List<String> fileNames = new ArrayList<>();
         List<AccProgram> programs = new ArrayList<>();
         // Retreive list of files
