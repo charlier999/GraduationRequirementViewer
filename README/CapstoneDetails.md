@@ -9,7 +9,7 @@ Spring Boot Security is a module of the Spring framework that provides security 
 Spring Boot Thymeleaf is a template engine that integrates with Spring Boot, providing a powerful and flexible way to create dynamic HTML content. It supports server-side rendering and provides a wide range of features, including expression evaluation, layout templates, and more.
 ### MySQL
 MySQL is an open-source relational database management system (RDBMS) that provides a scalable, reliable, and fast way to store and retrieve data. It is widely used in web applications and provides many features, including ACID compliance, data encryption, and replication.
-# Capstone Details
+
 ## Best Practaices/DevOps Used
 - Model-View-Controller Architecture
 - Keep it simple
