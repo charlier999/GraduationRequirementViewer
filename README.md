@@ -40,4 +40,4 @@ git clone https://github.com/charlier999/GraduationRequirementViewer
 ```
 ./gradlew bootRun
 ```
-Now when you navigate to http://localhost:8080 you will see home page for the Graduation Requirement Viewer.
+Now when you navigate to http://localhost:8080 you will see home page for the site.
