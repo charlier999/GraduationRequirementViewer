@@ -1,5 +1,5 @@
 # GraduationRequirementViewer
-A web application that allows users to search, view, and compare the different programs and courses in a university to your course schedule. This app is currently still in development with sample data from GCU's academic catalog from 2022.
+A web application that allows users to search, view, and compare the different programs and courses in a university to your course schedule. This app is currently still in development with sample data from GCU's academic catalog from 2022. 
 
 [![Demo](https://img.youtube.com/vi/ohuQ9Zoh8X0/hqdefault.jpg)](https://youtu.be/ohuQ9Zoh8X0)
 
@@ -10,20 +10,21 @@ A web application that allows users to search, view, and compare the different p
 - Compare your schedule against different Academic Programs
 - Admin: Import new programs and courses through import pages
 
-## Technologies Used
-
+# Technologies Used
 - Java
 - Spring Framework Boot
 - Spring Boot Security
 - Spring Boot Thymeleaf
 - MySQL
 
-## Setup
-**Prerequisites**
+Why the technologies were used can be found [here](/README/CapstoneDetails.md) along with additional development information.
+
+# Setup
+## Prerequisites
 - MySQL Server
 - Gradle version prior to 8.0
 
-**Installation**
+## Installation
 1. Clone the repository:
 ```
 git clone https://github.com/charlier999/GraduationRequirementViewer
@@ -43,3 +44,7 @@ Run the below command in the cloned repository directory.
 ./gradlew bootRun
 ```
 Now when you navigate to http://localhost:8080 you will see home page for the site.
+
+
+# Additional Information
+Additional Information can be found [here](/README/CapstoneDetails.md).
