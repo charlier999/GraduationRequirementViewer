@@ -1,7 +1,7 @@
 # GraduationRequirementViewer
 A web application that allows users to search, view, and compare the different programs and courses in a university to your course schedule. This app is currently still in development with sample data from GCU's academic catalog from 2022.
 
-[![Demo](https://img.youtube.com/vi/bf2nV8MJbJc/hqdefault.jpg)](https://youtu.be/bf2nV8MJbJc)
+[![Demo](https://img.youtube.com/vi/ohuQ9Zoh8X0/hqdefault.jpg)](https://youtu.be/ohuQ9Zoh8X0)
 
 # Features
 - Search and View Academic Program Information
