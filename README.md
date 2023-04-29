@@ -33,10 +33,12 @@ git clone https://github.com/charlier999/GraduationRequirementViewer
     2. On line 243, under the create users table, is an insert command to instert a user. Change the password of the administrator user, *{YOUR PASSWORD HERE}*, to the password you wish to use.
     3. Run the [Create Gradview Database.sql](/Create%20Gradview%20Database.sql) script on your MySQL database.
 3. Build Application
+Run the below command in the cloned repository directory.
 ```
 ./gradlew build
 ```
 4. Run Application
+Run the below command in the cloned repository directory.
 ```
 ./gradlew bootRun
 ```
