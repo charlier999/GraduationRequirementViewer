@@ -54,6 +54,25 @@ Additional Information can be found [here](/README/CapstoneDetails.md).
 # Guides
 
 ## User Guide
+
+### Accessing Program Infomation Home Page
+1. Click "Program Requirements" in the navigation bar to be taken to program home.
+
+### Viewing All Programs List
+1. Click "Program Requirements" in the navigation bar to be taken to program home.
+2. CLick "View ALl" button at the bottom of the small list of programs. You are then taken to a search results page containing all programs available to view.
+
+### Search for Program By Name
+1. Click "Program Requirements" in the navigation bar to be taken to program home.
+2. Enter your word or set of letters into the search bar at the top of the page.
+3. Click submit. You are then taken to a results page containing the results of your search.
+
+### View a Program's Details
+1. Click "Program Requirements" in the navigation bar to be taken to program home.
+    a. Conduct a search in the search bar.
+    b. Click "View ALl Button"
+2. Click one of the program name links. You are then taken to a program details page containing details about the program you selected.
+
 ### Adding Your Course History
 1. Click "Your Program Status" in the navigation bar to be taken to the schedule home.
 2. If you already have a portion of you course history still on your web browser, your schedule will be displayed to you. If not, a message saying to import your course history will be displayed instead.
