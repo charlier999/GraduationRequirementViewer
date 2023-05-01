@@ -57,7 +57,7 @@ The views display the information from the controller to the user.
 ### Implementing Solution
 The main strategy for implementing the solution for this project, is to complete features from bottom up, database, logic, then views. This is further shown in the lack of view decorations and being strait html tags.
 
-## Chalenges 
+## Challenges 
 1. Academic catalog not in a parseable format
 ```
 The academic catalog being used for example data for the project was not in a format to easily parse into useable data due to pdf-to-txt tool being used had missing portions of the catalog and artifacts of incorect conversion in the output.
@@ -65,7 +65,7 @@ To solve the issue, the data from the acadmic catalog was hand formated from pdf
 ```
 2. Storing user course history
 ```
-The inital design for haneling the user's course history was to have the database tables store the course history. This inital design did not scale cheeply when new users are made. 
+The inital design for handling the user's course history was to have the database tables store the course history. This inital design did not scale cheeply when new users are made. 
 To solve the issue, the web browser's local storage was used to store a JSON of the user's course history. This allowed for the removal of the public users system and thier related tables in the database.
 ```
 
