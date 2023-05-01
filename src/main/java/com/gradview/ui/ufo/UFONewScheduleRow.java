@@ -21,6 +21,10 @@ public class UFONewScheduleRow
     {
         super();
     }
+    
+    /** 
+     * @return String
+     */
     public String getSchedule()
     {
         return schedule;

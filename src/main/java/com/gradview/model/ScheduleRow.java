@@ -34,7 +34,11 @@ public class ScheduleRow
         super();
 	}
 
-	@Override
+	
+    /** 
+     * @return String
+     */
+    @Override
     public String toString()
     {
         String output;

@@ -60,6 +60,10 @@ public class ProgramImportService
     @Autowired
     private CourseImportService courseImportService;
 
+    
+    /** 
+     * @return List<LogMessage>
+     */
     public List<LogMessage> getLogs()
     {
         return this.compLogger.getLogs();

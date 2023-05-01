@@ -43,6 +43,10 @@ public class AccClassPrerequisiteAndDAM
      */
     public AccClassPrerequisiteAndDAM(){}
 
+    
+    /** 
+     * @return int
+     */
     public int getPrerequisiteID()
     {
         return prerequisiteID;

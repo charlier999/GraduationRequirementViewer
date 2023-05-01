@@ -19,6 +19,10 @@ public class Schedule
         this.rows = new ArrayList<ScheduleRow>();
     }
 
+    
+    /** 
+     * @return String
+     */
     @Override
     public String toString()
     {

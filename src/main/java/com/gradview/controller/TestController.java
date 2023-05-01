@@ -15,6 +15,11 @@ public class TestController
 {
     private static final Logger logger = LoggerFactory.getLogger( TestController.class );
 
+    
+    /** 
+     * @param model
+     * @return String
+     */
     @GetMapping("/test/chart")
     public String displayChartTest(Model model)
     {

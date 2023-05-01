@@ -79,6 +79,12 @@ public class CourseControler
         return "classes/home";       
     }
 
+    
+    /** 
+     * @param search
+     * @param model
+     * @return String
+     */
     @PostMapping("/class/search")
     public String doSearch(@ModelAttribute UFOClassSearch search, Model model)
     {

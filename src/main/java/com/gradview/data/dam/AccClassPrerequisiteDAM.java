@@ -45,6 +45,10 @@ public class AccClassPrerequisiteDAM
      */
     public AccClassPrerequisiteDAM(){}
 
+    
+    /** 
+     * @return AccClassPrerequisite
+     */
     public AccClassPrerequisite toAccClassPrerequisite()
     {
         AccClassPrerequisite output = new AccClassPrerequisite();

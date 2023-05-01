@@ -13,6 +13,10 @@ public class UFOClassSearch
 
     public UFOClassSearch(){}
 
+    
+    /** 
+     * @return String
+     */
     public String getQuerry()
     {
         return querry;

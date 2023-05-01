@@ -15,6 +15,10 @@ public class UFOScheduleJsonImport
         super();
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getQuery()
     {
         return query;

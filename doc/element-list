@@ -1,8 +1,5 @@
 com.gradview
 com.gradview.controller
 com.gradview.data.dao
-com.gradview.data.dts
 com.gradview.exception
 com.gradview.model
-com.gradview.service
-com.gradview.ui.ufo

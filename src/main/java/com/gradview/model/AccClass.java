@@ -315,6 +315,10 @@ public class AccClass
 		this.checkGenEdProps();
 	}
 
+	
+	/** 
+	 * @return List<AccClassPrerequisite>
+	 */
 	public List< AccClassPrerequisite > getPrerequisites()
 	{
 		return prerequisites;

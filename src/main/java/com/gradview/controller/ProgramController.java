@@ -48,6 +48,11 @@ public class ProgramController
     @Autowired
     private ProgramChartGenService programChartGenService;
     
+    
+    /** 
+     * @param model
+     * @return String
+     */
     @GetMapping("/program")
     public String displayHome(Model model)
     {

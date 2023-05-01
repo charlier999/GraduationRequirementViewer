@@ -103,6 +103,10 @@ public class UIOCompareProgram
         }
     }
 
+    
+    /** 
+     * @return AccProgram
+     */
     public AccProgram getProgram()
     {
         return program;

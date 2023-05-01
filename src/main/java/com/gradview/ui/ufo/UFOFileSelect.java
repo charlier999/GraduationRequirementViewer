@@ -11,6 +11,10 @@ public class UFOFileSelect
     
     public UFOFileSelect(){}
 
+    
+    /** 
+     * @return String
+     */
     public String getFilename()
     {
         return filename;

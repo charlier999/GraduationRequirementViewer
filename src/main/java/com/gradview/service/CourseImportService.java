@@ -51,6 +51,11 @@ public class CourseImportService
     @Autowired
     private AccClassPrerequisiteOrDAO accClassPrerequisiteOrDAO;
 
+    
+    /** 
+     * @return List<String>
+     * @throws IOException
+     */
     // @Autowired
     // private AccGeneralEducationClassesDAO accGeneralEducationClassesDAO;
 

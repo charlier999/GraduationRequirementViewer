@@ -24,6 +24,10 @@ public class UserDAM
         this.enabled = true;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getId()
     {
         return id;

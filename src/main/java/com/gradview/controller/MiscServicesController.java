@@ -22,6 +22,11 @@ public class MiscServicesController
 {
 	private static final Logger logger = LoggerFactory.getLogger( MiscServicesController.class );
 
+	
+	/** 
+	 * @param model
+	 * @return String
+	 */
 	@GetMapping("/test")
 	public String displayTestingHome(Model model)
 	{

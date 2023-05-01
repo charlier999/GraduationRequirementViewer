@@ -30,6 +30,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 {
     private static final Logger logger = LoggerFactory.getLogger(SecurityConfig.class);
 
+    
+    /** 
+     * @param http
+     * @throws Exception
+     */
     @Override
     protected void configure(HttpSecurity http) throws Exception
     {

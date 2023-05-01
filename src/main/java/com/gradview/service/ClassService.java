@@ -236,6 +236,13 @@ public class ClassService
     }
 
 
+    
+    /** 
+     * @param classID
+     * @return List<AccClassPrerequisite>
+     * @throws DataAccessException
+     * @throws Exception
+     */
     private List<AccClassPrerequisite> getClassPrerequisitesByClassID(int classID) throws DataAccessException, Exception
     {
         List<AccClassPrerequisite> output = new ArrayList<>();

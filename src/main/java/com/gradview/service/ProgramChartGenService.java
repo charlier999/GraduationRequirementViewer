@@ -25,6 +25,11 @@ public class ProgramChartGenService
     @Autowired
     private ClassService classService;
 
+    
+    /** 
+     * @param program
+     * @return String
+     */
     public String genOrgChartDataByProgramModel(AccProgram program)
     {
         // Create error output chart

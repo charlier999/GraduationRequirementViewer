@@ -6,6 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = {"com.gradview"})
 public class GraduationRequirementViewerApplication
 {
+	
+	/** 
+	 * @param args
+	 */
 	public static void main( String[] args )
 	{
 		SpringApplication.run( GraduationRequirementViewerApplication.class, args );

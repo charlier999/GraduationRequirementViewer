@@ -42,8 +42,13 @@ public class ScheduleController
     @Autowired
     ProgramService programService;
 
+    
     //#region Get Mappings
-
+    
+    /** 
+     * @param model
+     * @return String
+     */
     @GetMapping("/schedule")
     public String displayHome(Model model)
     {
