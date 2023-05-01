@@ -55,6 +55,39 @@ Additional Information can be found [here](/README/CapstoneDetails.md).
 
 ## User Guide
 
+### Navigation Bar
+THe hompage of the requirement viewer provides links to the different areas of the website.
+1. Home - Takes you to the Home page of the site.
+2. Classes - Takes you to a list of courses.
+3. Program Requirements - Takes you to a list of degree programs.
+4. Your Program Status - Takes you to the page to add you courses to a schedule and then compare them against degree programs.
+5. Login - Where the administrator signs into thier accout.
+
+### Accessing Class Information Home Page
+1. Click "Classes" in the navigation bar to be take to class home.
+
+### VIewing All Classes List
+1. Click "Classes" in the navigation bar to be take to class home.
+2. CLick "View ALl" button at the bottom of the small list of classes. You are then taken to a search results page containing all classes available to view.
+
+### Search for Class by Number
+1. Click "Classes" in the navigation bar to be take to class home.
+2. Select "number" in the search drop down menu.
+3. Then enter your query into the search bar. % is a whild card. (ex. CST% returns anything starting with CST).
+4. Then click submit. You are then taken to the search results of your query.
+
+### Search for Class by Name
+1. Click "Classes" in the navigation bar to be take to class home.
+2. Select "name" in the search drop down menu.
+3. Then enter your query into the search bar. % is a whild card. (ex. Introduction% returns anything starting with Introduction).
+4. Then click submit. You are then taken to the search results of your query.
+
+### View a Class's Details
+1. Click "Classes" in the navigation bar to be take to class home.
+    a. Conduct a search in the search bar.
+    b. Click "View ALl Button"
+2. Click one of the class number links. You are then taken to a class details page containing details about the class you selected.
+
 ### Accessing Program Infomation Home Page
 1. Click "Program Requirements" in the navigation bar to be taken to program home.
 
